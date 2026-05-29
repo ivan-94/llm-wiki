@@ -75,6 +75,7 @@ status: ingested
 - compiled-concept: Agent 可观测性 — 资料强调 UI、日志、指标、浏览器、测试和错误信息对 Agent 可读。
 - compiled-concept: Agentic 软件控制系统 — 未来框架 sheet 将软件系统建模为 Intent、Constraints、Feedback 和系统认知层。
 - compiled-synthesis: Harness Engineering 与控制论 — 候选综合；控制论 sheet 可与 Kubernetes、蒸汽机调速器和 Agentic 开发形成对比。
+- compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 支撑 harness 作为目标、约束、反馈和学习闭环的控制系统。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 适合作为 Vibe 主题中的核心工程方法论。
 
 ## Maintenance Notes

@@ -53,6 +53,7 @@ No external links found in extracted content.
 - related: GitHub 原生工作流 — 可沉淀 Issue 到 PR、Actions、Release 的闭环模型。
 - related: Issue 驱动开发 — source 强调 Issue 是唯一任务源和 triage 入口。
 - related: PR 质量门禁 — source 汇总 PR 模板、review 分级、CI 与 issue 关联。
+- compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 支撑 GitHub 作为 Agentic delivery 的状态机与证据流转层。
 - related: Vibe 工具学习地图 — 可作为 GitHub 协作与自动化工作流章节。
 
 ## Maintenance Notes

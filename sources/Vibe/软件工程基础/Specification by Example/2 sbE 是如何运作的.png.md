@@ -51,6 +51,7 @@ No external links found in extracted content.
 - compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 从示例到规则再到可执行规格的核心流程。
 - related: Example Mapping — 可沉淀主流程、备选、异常、边界示例的需求澄清方法。
 - related: Gherkin — 可补充 Given/When/Then 在 SbE 中的规格表达角色。
+- compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 支撑示例化验收作为行为层和反捷径证据的控制杆。
 - related: 软件工程基础学习地图 — 可作为行为规格与自动化验收的学习节点。
 
 ## Maintenance Notes

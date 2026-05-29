@@ -1,6 +1,7 @@
 # AI Wiki Index
 
 ## Recently Updated
+- 2026-05-30: Deepened Vibe compile with a layered engineering model linking intent, behavior specs, decision control, harness, evidence, and learning loops.
 - 2026-05-29: Ingested the full `Vibe/` raw directory into 102 source notes and compiled core Vibe Coding, Agentic Engineering, Agent Harness, Agent Skills, SDD, and SbE pages.
 - 2026-05-29: Opened ingest support and raw diff coverage for Markdown, PDF, and Excalidraw raw files.
 - 2026-05-29: Added PDF preview ingest skill for first-three-page vision summaries.
@@ -166,6 +167,7 @@
 - [[synthesis/提示语工程与上下文工程|提示语工程与上下文工程]]
 - [[synthesis/公文提示词优化评估清单|公文提示词优化评估清单]]
 - [[synthesis/Vibe Coding 与 Agentic Engineering|Vibe Coding 与 Agentic Engineering]]
+- [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 
@@ -206,6 +208,7 @@ No outputs yet.
 - 2026-06-05: [[synthesis/Vibe Coding 与 Agentic Engineering|Vibe Coding 与 Agentic Engineering]]
 - 2026-06-05: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]]
 - 2026-06-05: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
+- 2026-06-06: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 
 ## Needs Attention
 

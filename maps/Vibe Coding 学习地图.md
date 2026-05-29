@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-05-29
+updated_at: 2026-05-30
 status: active
 scope: Vibe
 ---
@@ -22,11 +22,12 @@ scope: Vibe
 ## Learning Path
 
 1. 读 [[concepts/Vibe Coding|Vibe Coding]]，建立自然语言驱动 Agent 的基本模型。
-2. 读 [[synthesis/Vibe Coding 与 Agentic Engineering|Vibe Coding 与 Agentic Engineering]]，理解生产力入口和严肃交付之间的差异。
-3. 读 [[concepts/Spec-Driven Development|Spec-Driven Development]]，理解 spec artifact 如何减少漂移。
-4. 读 [[concepts/Agent Harness|Agent Harness]]，理解工具、权限、反馈和验收如何形成控制面。
-5. 读 [[concepts/Agent Skills|Agent Skills]] 和 [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]]，把工具和 workflow skill 连接起来。
-6. 读 [[concepts/Specification by Example|Specification by Example]] 和 [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]]，补上示例、验收和协作基础。
+2. 读 [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]，建立意图、行为、决策、执行、证据和学习的分层控制模型。
+3. 读 [[synthesis/Vibe Coding 与 Agentic Engineering|Vibe Coding 与 Agentic Engineering]]，理解生产力入口和严肃交付之间的差异。
+4. 读 [[concepts/Spec-Driven Development|Spec-Driven Development]]，理解 spec artifact 如何减少漂移。
+5. 读 [[concepts/Agent Harness|Agent Harness]]，理解工具、权限、反馈和验收如何形成控制面。
+6. 读 [[concepts/Agent Skills|Agent Skills]] 和 [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]]，把工具和 workflow skill 连接起来。
+7. 读 [[concepts/Specification by Example|Specification by Example]] 和 [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]]，补上示例、验收和协作基础。
 
 ## Core Concepts
 
@@ -39,6 +40,7 @@ scope: Vibe
 
 ## Synthesis To Read
 
+- [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - [[synthesis/Vibe Coding 与 Agentic Engineering|Vibe Coding 与 Agentic Engineering]]
 - [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
@@ -49,6 +51,7 @@ scope: Vibe
 - 2026-06-05: [[concepts/Agentic Engineering|Agentic Engineering]]
 - 2026-06-05: [[concepts/Agent Harness|Agent Harness]]
 - 2026-06-05: [[concepts/Spec-Driven Development|Spec-Driven Development]]
+- 2026-06-06: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 
 ## Open Gaps
 
