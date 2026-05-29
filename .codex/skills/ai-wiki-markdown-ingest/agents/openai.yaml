@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Markdown Ingest"
+  short_description: "Ingest Markdown sources into the AI wiki"
+  default_prompt: "Use $ai-wiki-markdown-ingest to ingest one raw Markdown source into the AI wiki."

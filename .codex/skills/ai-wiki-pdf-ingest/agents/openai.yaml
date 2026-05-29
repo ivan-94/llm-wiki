@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki PDF Ingest"
+  short_description: "Preview-ingest PDFs into the AI wiki"
+  default_prompt: "Use $ai-wiki-pdf-ingest to preview-ingest one raw PDF source into the AI wiki."

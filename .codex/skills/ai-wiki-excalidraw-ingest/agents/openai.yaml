@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Excalidraw Ingest"
+  short_description: "Ingest Excalidraw sources into the AI wiki"
+  default_prompt: "Use $ai-wiki-excalidraw-ingest to ingest one raw Excalidraw source into the AI wiki."

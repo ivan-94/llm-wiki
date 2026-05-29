@@ -4,8 +4,8 @@
 
 ## Rule Priority
 
-- 本文件是执行入口和硬规则清单；写页面时还要读取 [wiki-templates.md](docs/wiki-templates.md) 中对应模板。
-- 如果本文件和模板附录冲突，以本文件为准；如果 skill 说明和本文件冲突，以本文件为准。
+- 本文件是执行入口、全局硬规则和 ingest 路由清单；写页面时还要读取 [wiki-templates.md](docs/wiki-templates.md) 中对应模板。
+- 类型专属 ingest 规则内聚到对应 skill；如果 skill 与本文件的全局硬规则冲突，以本文件为准。
 - raw 是只读事实来源；wiki 是 LLM 维护的编译后知识层。
 - 每次 ingest、query、review、lint 都要判断是否值得沉淀回 wiki。
 - 页面应帮助用户学习和复习，而不只是保存摘要。
@@ -57,10 +57,12 @@ AI/
 ## Hard Rules
 
 - Raw boundary: 禁止修改、重命名、移动、删除 raw 文件；禁止在 raw 目录或其旁边写中间产物；禁止为了工具成功而修复 raw；禁止直接解包、修改或手写解析 `.xmind`。允许读取 raw、使用 vision 理解图片、按 workflow 在 wiki 目录写派生产物。如果 raw 需要人工修复，必须记录到 source note `Maintenance Notes`、`index.md` Needs Attention 和 `log.md`。
-- Source mapping: `sources/` 必须镜像 raw 目录层级和文件名。raw `.md` 直接映射为同名 `.md`；其他 raw 文件映射为 `<原文件名含扩展名>.md`。
+- File scope: 当前支持 `.xmind`、图片、Markdown、PDF、Excalidraw raw。其他文件类型默认不 ingest、不转换、不创建 source note；发现时只在 `index.md` Needs Attention 或 `log.md` 记录为 unsupported，除非用户明确扩展支持范围。
+- Source mapping: 对当前支持的 raw，`sources/` 必须镜像 raw 目录层级和文件名。raw `.md` 直接映射为同名 `.md`；其他支持类型映射为 `<原文件名含扩展名>.md`。不支持类型不创建 `sources/...`。
 - Raw links: source note 必须同时保留 FinderX iCloud raw 链接和 `raw:<source_relpath>`；链接必须指向 raw 文件，不指向 wiki 派生文件。
-- External links: raw、导出 Markdown、图片可见文字、PDF 提取文本或 Excalidraw 元素中的 URL 必须进入 source note 的 `## External Links`，并尽量保留标题/锚文本、URL、支撑主题或用途；没有 URL 时写 `No external links found in extracted content.`。不要伪造只有标题没有 URL 的外链，将其放入 `Maintenance Notes` 或 `Open Questions`。不要联网核验外链，除非用户明确要求或当前任务需要当前事实；未核验时标注 `not verified`。
-- XMind: 处理 `.xmind` 必须使用 `ai-wiki-xmind-ingest` skill 或 `xmind-cli`。正常路径是读取 sheet 清单，再逐 sheet 导出/读取；不能依赖默认 `xmind export "$RAW_XMIND" --format markdown`。`xmind:#...` 只说明存在 sheet 引用，不代表目标 sheet 已读取。
+- Raw metadata: 新建或刷新 source note 时必须在 frontmatter 记录 `raw_created_at`、`raw_modified_at`、`raw_size`、`raw_fingerprint`、`raw_snapshot_at`。更新判断使用 raw 文件内容修改时间 `mtime`；不要使用 `ctime`，因为 iCloud 或本地元数据变化会污染它。旧 source note 缺少这些字段时，先标记为 `needs_metadata` 或重新 ingest/backfill 后再依赖更新/移动判断。
+- External links: 支持类型中可可靠提取或看见的 URL 必须进入 source note 的 `## External Links`，并尽量保留标题/锚文本、URL、支撑主题或用途；没有 URL 时写 `No external links found in extracted content.`。不要伪造只有标题没有 URL 的外链，将其放入 `Maintenance Notes` 或 `Open Questions`。不要联网核验外链，除非用户明确要求或当前任务需要当前事实；未核验时标注 `not verified`。
+- Skill routing: 处理 `.xmind` 必须使用 `ai-wiki-xmind-ingest`；处理图片必须使用 `ai-wiki-image-ingest`；处理 raw Markdown 必须使用 `ai-wiki-markdown-ingest`；处理 `.pdf` 必须使用 `ai-wiki-pdf-ingest`；处理 `.excalidraw` 必须使用 `ai-wiki-excalidraw-ingest`。底层命令和类型专属覆盖策略由对应 skill 定义，不在 `AGENTS.md` 分散维护。
 - Source digest: 导出材料只是临时输入。`Source Digest` 必须是 LLM 消化后的提炼，不得保存完整 raw 导出、机械 outline、前 N 行采样或截断导出。
 - Large source detail: 大型或多 sheet source 完成前，必须确认高信号细节已有落点：可复用二级分类、关键步骤、指标维度、命名框架、异常节点、编号/结构问题。落点可以是 `Source Digest`、`Key Claims`、`Maintenance Notes` 或下游页面。
 - Claims: source note 的 `Key Claims` 要区分 raw 明确表达和 agent 推断。建议用 `explicit:` 或 `inferred:` 开头；稀疏 source、案例 source 和 agent 补全较多的 source 必须这样标注。
@@ -80,17 +82,31 @@ wiki: sources/LLM/Transformer/Transformer.xmind.md
 raw:  生图/商品画图/高级1.png
 wiki: sources/生图/商品画图/高级1.png.md
 
+raw:  生图/人物画图/初级.PNG
+wiki: sources/生图/人物画图/初级.PNG.md
+
 raw:  Agent/build-cli-for-agent-checklist.md
 wiki: sources/Agent/build-cli-for-agent-checklist.md
+
+raw:  LLM/长文材料/Survey.pdf
+wiki: sources/LLM/长文材料/Survey.pdf.md
+
+raw:  Agent/闪极智能体/闪极智能体 2.excalidraw
+wiki: sources/Agent/闪极智能体/闪极智能体 2.excalidraw.md
 ```
 
-支持类型优先级：
+当前支持类型：
 
-- P0: `.xmind`、图片。
-- P1: `.md`。
-- P2: `.pdf`、`.excalidraw`。
+- `.xmind`
+- 图片：`.png`、`.jpg`、`.jpeg`、`.webp`、`.gif`、`.heic`、`.PNG` 等常见图片扩展名
+- `.md`
+- `.pdf`
+- `.excalidraw`
 
-P2 使用 best-effort 提取。失败时记录限制和待处理项，不要假装完整。
+不处理类型：
+
+- Office 文档、音视频、压缩包和其他非支持类型。
+- 不处理意味着不 ingest、不转换、不创建 `sources/...`；只在需要时记录 unsupported 状态和后续人工/规则扩展需求。
 
 FinderX raw 链接格式：
 
@@ -104,7 +120,7 @@ finderx://open?icloud=<URL encoded path under iCloud Drive>
 
 | Operation | Read First | Required Writes | Prohibited / Gate |
 | --- | --- | --- | --- |
-| Ingest | `AGENTS.md`, `docs/wiki-templates.md`, `index.md`, recent `log.md`, raw file | corresponding `sources/...`, `index.md` Source Coverage, `log.md`, then Compile判断 | do not write raw; do not paste full exports; do not skip XMind sheets; do not auto-create `questions/` |
+| Ingest | `AGENTS.md`, `docs/wiki-templates.md`, `index.md`, raw file, required type skill | corresponding `sources/...`, `index.md` Source Coverage, `log.md`, then Compile判断 | do not write raw; do not paste full exports; do not bypass required type skill; do not auto-create `questions/` |
 | Compile | relevant `sources/`, existing concepts/entities/synthesis/maps, templates | changed concepts/entities/synthesis/maps, source note `Links`, `index.md`, `log.md` | no empty pages; no product-name-only entity pages; no user-unrequested question pages |
 | Query | `index.md`, relevant wiki pages, raw if needed | answer with evidence; optionally update `synthesis/`/map/index/log when high value | create `questions/` only on explicit user request |
 | Output | relevant source/concept/synthesis pages and output target | file under `outputs/`, related `synthesis/` or user-created `questions/`, `index.md`, `log.md` | do not leave generated output unregistered |
@@ -121,27 +137,12 @@ Collect -> Ingest -> Compile -> Query -> Output -> File Back -> Review -> Lint -
 
 Ingest 处理的是单个 raw。目标是建立或更新对应 `sources/...`。
 
-1. 读取 `AGENTS.md`、[wiki-templates.md](docs/wiki-templates.md)、`index.md` 和最近的 `log.md`。
+1. 读取 `AGENTS.md`、[wiki-templates.md](docs/wiki-templates.md) 和 `index.md`。
 2. 确认 raw 文件路径和目标 source note 路径。
-3. 按类型读取 raw；`.xmind` 使用 `ai-wiki-xmind-ingest` skill 的 helper 或等价 `xmind sheets -> per-sheet export`。
-4. 写 `Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
+3. 按类型路由读取 raw；`.xmind`、图片、raw Markdown、`.pdf`、`.excalidraw` 分别使用对应 `ai-wiki-*-ingest` skill。
+4. 写 frontmatter raw metadata、`Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
 5. 更新 `index.md` Source Coverage 和 `log.md`。
 6. 进入 Compile 判断：这个 source 是否改变已有概念、实体、综合、学习地图，或用户显式创建的问题页。
-
-XMind 细则：
-
-- ingest 前必须读取 workbook sheet 清单，例如 `xmind sheets "$RAW_XMIND" --json`。
-- 多 sheet workbook 必须逐个 `--sheet-index`、`--sheet-id` 或 `--sheet` 导出/读取。
-- source note 的 `Source` 或 `Maintenance Notes` 必须记录 sheet 数量、sheet 标题，以及是否全部处理。
-- `Source Digest` 要综合所有可读 sheets。
-- 如果某个 sheet 导出失败，source note `status` 标为 `partial`，并记录失败 sheet、失败摘要、可行的人工下一步；继续处理其他 source。
-- 诊断命令如 `inspect`、`tree`、`validate` 只在导出失败、内容为空/乱码或用户要求元数据时使用。
-
-Image ingest 细则：
-
-- 用 vision 形成可复查描述，但不承诺完美 OCR。
-- 至少记录图像类型、可靠可见文字、结构描述、知识点、局限；不确定的可见文字标注 `uncertain`。
-- 同一目录多张图片明显属于一组时，先为每张图片建 source note，再按目录创建综合 concept 或 synthesis 页面。
 
 ## Compile Workflow
 
@@ -278,7 +279,7 @@ source note 的 `Links` 推荐类型：
 
 ## Asset Policy
 
-默认不复制 raw 图片或附件。source note 记录 `raw_path` 和 `source_relpath` 即可。
+默认不复制 raw 图片或附件。source note 记录 `raw_path`、`source_relpath` 和 raw metadata 即可。
 
 只有需要 Obsidian 内稳定预览、标注裁剪图、或生成派生图时，才复制到：
 
@@ -294,7 +295,12 @@ assets/sources/<raw 相对目录>/<原文件名>
 
 - `rg` 搜索 wiki 内容。
 - `find` 列 raw/wiki 文件。
-- `xmind-cli` / `ai-wiki-xmind-ingest` 处理 `.xmind`。
+- `ai-wiki-raw-diff` 检查 raw 与 `sources/` 的新增、删除、更新、移动、缺失元数据、iCloud 占位和 unsupported 文件。
+- `ai-wiki-xmind-ingest` 处理 `.xmind`。
+- `ai-wiki-image-ingest` 处理图片。
+- `ai-wiki-markdown-ingest` 处理 raw Markdown。
+- `ai-wiki-pdf-ingest` 处理 `.pdf`。
+- `ai-wiki-excalidraw-ingest` 处理 `.excalidraw`。
 - vision 查看图片。
 - 必要时写一次性脚本做统计、链接检查、表格或图表生成。
 

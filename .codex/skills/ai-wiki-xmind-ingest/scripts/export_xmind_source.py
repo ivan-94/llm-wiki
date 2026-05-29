@@ -7,6 +7,7 @@ import argparse
 import json
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -20,6 +21,29 @@ def _under_root(path: Path, root: Path) -> Path:
     except ValueError:
         print(f"error: raw xmind is not under raw root: {root}", file=sys.stderr)
         sys.exit(2)
+
+
+def iso_from_timestamp(timestamp: float) -> str:
+    return datetime.fromtimestamp(timestamp, timezone.utc).isoformat()
+
+
+def fingerprint(size: int, created_at: str, modified_at: str) -> str:
+    return f"size={size};birth={created_at};mtime={modified_at}"
+
+
+def raw_metadata(path: Path) -> dict[str, object]:
+    stat = path.stat()
+    created_at = iso_from_timestamp(getattr(stat, "st_birthtime", stat.st_mtime))
+    modified_at = iso_from_timestamp(stat.st_mtime)
+    size = stat.st_size
+    snapshot_at = datetime.now(timezone.utc).isoformat()
+    return {
+        "raw_created_at": created_at,
+        "raw_modified_at": modified_at,
+        "raw_size": size,
+        "raw_fingerprint": fingerprint(size, created_at, modified_at),
+        "raw_snapshot_at": snapshot_at,
+    }
 
 
 def parse_args() -> argparse.Namespace:
@@ -57,12 +81,17 @@ def main() -> int:
     sheets_command = [args.xmind_bin, "sheets", str(raw_path), "--json"]
     sheets_result = subprocess.run(sheets_command, text=True, capture_output=True)
     sheets = []
+    sheets_error = ""
     if sheets_result.returncode == 0:
         try:
             sheets_payload = json.loads(sheets_result.stdout)
             sheets = sheets_payload.get("result", {}).get("sheets", [])
         except json.JSONDecodeError:
-            sheets = []
+            sheets_error = "error: xmind sheets did not emit valid JSON"
+    else:
+        sheets_error = "error: xmind sheets failed"
+    if sheets_result.returncode == 0 and not sheets and not sheets_error:
+        sheets_error = "error: xmind sheets returned no sheets; refusing default export because sheet coverage is unknown"
 
     export_results = []
     if sheets:
@@ -87,18 +116,6 @@ def main() -> int:
                     "returncode": result.returncode,
                 }
             )
-    else:
-        command = [args.xmind_bin, "export", str(raw_path), "--format", "markdown"]
-        result = subprocess.run(command, text=True, capture_output=True)
-        export_results.append(
-            {
-                "sheet": None,
-                "command": command,
-                "stdout": result.stdout,
-                "stderr": result.stderr,
-                "returncode": result.returncode,
-            }
-        )
 
     markdown_parts = []
     for export in export_results:
@@ -110,7 +127,7 @@ def main() -> int:
         else:
             markdown_parts.append(export["stdout"])
 
-    returncode = 0
+    returncode = 0 if sheets else (sheets_result.returncode or 1)
     for export in export_results:
         if export["returncode"] != 0:
             returncode = export["returncode"]
@@ -118,23 +135,25 @@ def main() -> int:
     if sheets_result.returncode != 0:
         returncode = sheets_result.returncode
 
-    stderr = "".join(
-        part
-        for part in [sheets_result.stderr, *(export["stderr"] for export in export_results)]
+    stderr = "\n".join(
+        part.rstrip()
+        for part in [sheets_result.stderr, sheets_error, *(export["stderr"] for export in export_results)]
         if part
     )
     payload = {
         "ok": returncode == 0,
         "raw_path": str(raw_path),
-        "source_relpath": str(relpath),
+        "source_relpath": relpath.as_posix(),
         "target_source_note": str(target),
         "sheets_command": sheets_command,
+        "sheets_error": sheets_error,
         "sheet_count": len(sheets),
         "sheets": sheets,
         "exports": export_results,
         "markdown": "\n\n".join(markdown_parts),
         "stderr": stderr,
         "returncode": returncode,
+        **raw_metadata(raw_path),
     }
 
     if args.markdown_only:

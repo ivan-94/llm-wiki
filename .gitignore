@@ -1,7 +1,9 @@
 .DS_Store
 assets/tmp/
 outputs/tmp/
-.obsidian/plugins/
+tmp/
+.scratch/
+.obsidian/
 
 # Python/local tooling caches
 __pycache__/

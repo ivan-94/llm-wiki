@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Image Ingest"
+  short_description: "Ingest image sources into the AI wiki"
+  default_prompt: "Use $ai-wiki-image-ingest to ingest one raw image source into the AI wiki."

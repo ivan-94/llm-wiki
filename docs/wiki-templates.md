@@ -29,26 +29,32 @@ review_after: 2026-06-05
 
 ## Source Note Template
 
-每个 `sources/*.md` 必须使用此结构。`.xmind` source 应记录 sheet 数量和 sheet 标题。
+每个 `sources/*.md` 必须使用此结构。类型专属读取方式、覆盖范围和限制按对应 ingest skill 记录到 `Source` / `Maintenance Notes`。
 
 ```markdown
 ---
-source_type: xmind
-raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/LLM/Transformer/Transformer.xmind"
-source_relpath: "LLM/Transformer/Transformer.xmind"
+source_type: <source_type>
+raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/<raw-relative-path>"
+source_relpath: "<raw-relative-path>"
+raw_created_at: 2026-05-29T00:00:00+00:00
+raw_modified_at: 2026-05-29T00:00:00+00:00
+raw_size: 123456
+raw_fingerprint: "size=123456;birth=2026-05-29T00:00:00+00:00;mtime=2026-05-29T00:00:00+00:00"
+raw_snapshot_at: 2026-05-29T00:00:00+00:00
 ingested_at: 2026-05-29
 status: ingested
 ---
 
-# Transformer.xmind
+# <Raw filename>
 
 ## Source
 
-- Raw file: [LLM/Transformer/Transformer.xmind](<finderx://open?icloud=%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/AI/LLM/Transformer/Transformer.xmind>)
-- Raw ref: `raw:LLM/Transformer/Transformer.xmind`
-- Type: xmind
+- Raw file: [<raw-relative-path>](<finderx://open?icloud=encoded-icloud-path>)
+- Raw ref: `raw:<raw-relative-path>`
+- Type: <source_type>
 - Status: ingested
-- Sheets processed: 1/1 (`Sheet 1`)
+- Raw metadata: created `2026-05-29T00:00:00+00:00`; modified `2026-05-29T00:00:00+00:00`; size `123456`; snapshot `2026-05-29T00:00:00+00:00`
+- Coverage: <processed scope from ingest skill>
 
 ## Summary
 
@@ -63,18 +69,28 @@ status: ingested
 ## Maintenance Notes
 ```
 
-`source_type` 建议值：`xmind`、`image`、`markdown`、`pdf`、`excalidraw`、`other`。
+`source_type` 当前建议值：`xmind`、`image`、`markdown`、`pdf`、`excalidraw`。其他 raw 类型当前不处理，不应创建 source note，除非 `AGENTS.md` 明确扩展支持范围。
+
+Raw metadata 字段用于后续 raw/source diff：
+
+- `raw_created_at`: raw 文件创建时间，优先用 filesystem birth time。
+- `raw_modified_at`: raw 文件内容修改时间 `mtime`，用于判断 source 是否需要刷新。
+- `raw_size`: raw 文件字节数，用于辅助判断更新与移动。
+- `raw_fingerprint`: `size + birth + mtime` 的轻量指纹，用于识别可能移动；不是内容哈希。
+- `raw_snapshot_at`: 读取 metadata 的时间。
+
+不要使用 `ctime` 作为更新依据；iCloud 同步、本地下载状态或 metadata 变化可能改变 `ctime`，但不代表 raw 内容变化。
 
 `status` 建议值：
 
-- `ingested`: 已完整处理。
+- `ingested`: 已按对应 ingest skill 的覆盖范围完成处理；具体覆盖范围必须写入 `Source` 的 `Coverage` 或 `Maintenance Notes`。
 - `partial`: 有可用内容，但存在缺失或解析限制。
 - `blocked`: 当前无法提取有效内容，需要人工处理。
 - `needs-review`: 已处理但需要用户审阅。
 
 区块含义：
 
-- `Source`: raw 路径、类型、状态、sheet 覆盖等可复查元数据。
+- `Source`: raw 路径、类型、状态、覆盖范围等可复查元数据。
 - `Summary`: 该 raw 的整体摘要。
 - `Source Digest`: LLM 理解 source 后写出的提炼摘要，不是机械 outline、抽样文本、截断导出或完整 raw 导出。
 - `Key Claims`: 可被 concept/entity/synthesis 引用的主张或事实；重要 claim 要可追溯，并区分 raw 明确表达与 agent 推断。
@@ -84,12 +100,9 @@ status: ingested
 
 `Source Digest` 边界：
 
-- 先读完整可用 source，再用自己的话概括它“讲了什么、为什么重要、能贡献给哪些知识节点”。
-- 对 `.xmind`，不要机械复制层级树；只提炼主题结构、关键分支含义、重要路径、异常占位和可编译知识点。
-- 对大型 `.xmind`，digest 通常控制在 30-80 行以内，除非用户明确要求更详细；行数不是目标，理解密度才是目标。
-- 对大型或多 sheet source，压缩前必须检查高信号细节是否被保留。
-- 对图片，提炼视觉结构、可靠可见文字、关系和局限，不做伪 OCR 全文。
-- 对 PDF/Excalidraw，提炼可复用内容、关键结构和提取限制，不保存大段文本预览或元素清单。
+- 先读完对应 ingest skill 覆盖范围内的全部可用材料，再用自己的话概括它“讲了什么、为什么重要、能贡献给哪些知识节点”。
+- 对大型或结构复杂 source，压缩前必须检查高信号细节是否被保留。
+- 非支持类型 raw 当前不处理；不要为 Office 文档、音视频、压缩包等创建 source digest。
 - 完整 raw 细节必须回 raw 读取，不能把 `sources/` 变成 raw 的 markdown cache。
 
 `Key Claims` 证据边界：
@@ -103,8 +116,9 @@ External links 示例：
 ## External Links
 
 - learning-source: [OpenAI Prompt Engineering](https://platform.openai.com/docs/guides/prompt-engineering) — source 中列为提示语工程学习来源；not verified.
-- related-reading: `How Long Contexts Fail` — source 只有标题，没有 URL；needs follow-up.
 ```
+
+source 只有标题但没有 URL 的外部资料引用，不写入 `External Links`；放入 `Maintenance Notes` 或 `Open Questions`。
 
 Source Links 示例：
 
