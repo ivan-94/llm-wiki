@@ -2,6 +2,11 @@
 source_type: xmind
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/提示语工程:上下文工程/LLM 评估.xmind"
 source_relpath: "提示语工程:上下文工程/LLM 评估.xmind"
+raw_created_at: 2026-01-13T08:45:25.503710+00:00
+raw_modified_at: 2026-01-15T10:17:38.492518+00:00
+raw_size: 3408702
+raw_fingerprint: "size=3408702;birth=2026-01-13T08:45:25.503710+00:00;mtime=2026-01-15T10:17:38.492518+00:00"
+raw_snapshot_at: 2026-05-29T22:17:37+00:00
 ingested_at: 2026-05-29
 status: ingested
 ---
@@ -14,6 +19,7 @@ status: ingested
 - Raw ref: `raw:提示语工程:上下文工程/LLM 评估.xmind`
 - Type: xmind
 - Status: ingested
+- Raw metadata: created `2026-01-13T08:45:25.503710+00:00`; modified `2026-01-15T10:17:38.492518+00:00`; size `3408702`; snapshot `2026-05-29T22:17:37+00:00`
 - Sheets processed: 1/1 (`LLM 评估`)
 
 ## Summary
