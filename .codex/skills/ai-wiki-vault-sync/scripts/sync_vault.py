@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
-VAULT_ROOT = Path("/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/obsidian/ai")
+VAULT_ROOT = Path("/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/ai")
 TOP_LEVEL_FILES = ("index.md", "log.md", "AGENTS.md")
 DIRECTORIES = ("sources", "concepts", "entities", "synthesis", "questions", "maps", "outputs", "assets")
 DOC_FILES = ("docs/wiki-templates.md",)

@@ -30,6 +30,17 @@ def run_sync(repo_root, vault_root, *extra_args):
 
 
 class SyncVaultTests(unittest.TestCase):
+    def test_default_vault_root_uses_uppercase_obsidian_directory(self):
+        result = subprocess.run(
+            [sys.executable, str(SCRIPT), "--repo-root", str(Path.cwd()), "--json"],
+            text=True,
+            capture_output=True,
+            check=True,
+        )
+        payload = json.loads(result.stdout)
+
+        self.assertTrue(payload["vault_root"].endswith("/Obsidian/ai"))
+
     def test_dry_run_reports_allowed_files_without_writing_or_syncing_skill_files(self):
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp)

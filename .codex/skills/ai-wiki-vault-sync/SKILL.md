@@ -1,6 +1,6 @@
 ---
 name: ai-wiki-vault-sync
-description: Publish this AI wiki repository to the iCloud Drive Obsidian vault mirror for read-only iOS viewing. Use when syncing, publishing, dry-running, applying, pruning, or checking conflicts between `/Users/ivan/workspace/ai/ai_llm_wiki` and the iCloud vault target `obsidian/ai`.
+description: Publish this AI wiki repository to the iCloud Drive Obsidian vault mirror for read-only iOS viewing. Use when syncing, publishing, dry-running, applying, pruning, or checking conflicts between `/Users/ivan/workspace/ai/ai_llm_wiki` and the iCloud vault target `Obsidian/ai`.
 ---
 
 # AI Wiki Vault Sync
@@ -32,7 +32,7 @@ python3 .codex/skills/ai-wiki-vault-sync/scripts/sync_vault.py --apply --prune -
 The default target is:
 
 ```text
-/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/obsidian/ai
+/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/ai
 ```
 
 Override roots for testing or a temporary vault:
@@ -40,7 +40,7 @@ Override roots for testing or a temporary vault:
 ```bash
 python3 .codex/skills/ai-wiki-vault-sync/scripts/sync_vault.py \
   --repo-root "/path/to/ai_llm_wiki" \
-  --vault-root "/path/to/icloud/obsidian/ai" \
+  --vault-root "/path/to/icloud/Obsidian/ai" \
   --json
 ```
 
