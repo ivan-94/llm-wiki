@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki XMind Ingest"
+  short_description: "Export XMind sources for this AI wiki"
+  default_prompt: "Use $ai-wiki-xmind-ingest to ingest one raw XMind source into the AI wiki."
