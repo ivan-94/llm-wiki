@@ -54,22 +54,91 @@ def main() -> int:
 
     relpath = _under_root(raw_path, raw_root)
     target = wiki_root / "sources" / relpath.parent / f"{relpath.name}.md"
-    command = [args.xmind_bin, "export", str(raw_path), "--format", "markdown"]
+    sheets_command = [args.xmind_bin, "sheets", str(raw_path), "--json"]
+    sheets_result = subprocess.run(sheets_command, text=True, capture_output=True)
+    sheets = []
+    if sheets_result.returncode == 0:
+        try:
+            sheets_payload = json.loads(sheets_result.stdout)
+            sheets = sheets_payload.get("result", {}).get("sheets", [])
+        except json.JSONDecodeError:
+            sheets = []
 
-    result = subprocess.run(command, text=True, capture_output=True)
+    export_results = []
+    if sheets:
+        for sheet in sheets:
+            index = sheet.get("index")
+            command = [
+                args.xmind_bin,
+                "export",
+                str(raw_path),
+                "--sheet-index",
+                str(index),
+                "--format",
+                "markdown",
+            ]
+            result = subprocess.run(command, text=True, capture_output=True)
+            export_results.append(
+                {
+                    "sheet": sheet,
+                    "command": command,
+                    "stdout": result.stdout,
+                    "stderr": result.stderr,
+                    "returncode": result.returncode,
+                }
+            )
+    else:
+        command = [args.xmind_bin, "export", str(raw_path), "--format", "markdown"]
+        result = subprocess.run(command, text=True, capture_output=True)
+        export_results.append(
+            {
+                "sheet": None,
+                "command": command,
+                "stdout": result.stdout,
+                "stderr": result.stderr,
+                "returncode": result.returncode,
+            }
+        )
+
+    markdown_parts = []
+    for export in export_results:
+        sheet = export["sheet"]
+        if sheet:
+            markdown_parts.append(
+                f"<!-- Sheet {sheet.get('index')}: {sheet.get('title')} -->\n\n{export['stdout']}"
+            )
+        else:
+            markdown_parts.append(export["stdout"])
+
+    returncode = 0
+    for export in export_results:
+        if export["returncode"] != 0:
+            returncode = export["returncode"]
+            break
+    if sheets_result.returncode != 0:
+        returncode = sheets_result.returncode
+
+    stderr = "".join(
+        part
+        for part in [sheets_result.stderr, *(export["stderr"] for export in export_results)]
+        if part
+    )
     payload = {
-        "ok": result.returncode == 0,
+        "ok": returncode == 0,
         "raw_path": str(raw_path),
         "source_relpath": str(relpath),
         "target_source_note": str(target),
-        "command": command,
-        "markdown": result.stdout,
-        "stderr": result.stderr,
-        "returncode": result.returncode,
+        "sheets_command": sheets_command,
+        "sheet_count": len(sheets),
+        "sheets": sheets,
+        "exports": export_results,
+        "markdown": "\n\n".join(markdown_parts),
+        "stderr": stderr,
+        "returncode": returncode,
     }
 
     if args.markdown_only:
-        print(result.stdout, end="")
+        print(payload["markdown"], end="")
     elif args.json:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
     else:
@@ -77,12 +146,12 @@ def main() -> int:
         print(f"source_relpath: {payload['source_relpath']}")
         print(f"target_source_note: {payload['target_source_note']}")
         print("--- markdown ---")
-        print(result.stdout, end="")
-        if result.stderr:
+        print(payload["markdown"], end="")
+        if payload["stderr"]:
             print("\n--- stderr ---", file=sys.stderr)
-            print(result.stderr, end="", file=sys.stderr)
+            print(payload["stderr"], end="", file=sys.stderr)
 
-    return result.returncode
+    return returncode
 
 
 if __name__ == "__main__":
