@@ -53,7 +53,9 @@ No external links found in extracted content.
 
 ## Links
 
-- related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.
+- compiled-concept: [[concepts/Transformer|Transformer]] — source 提供从 one-hot/词袋、Word2Vec、RNN 到注意力和 Transformer 的演进证据。
+- compiled-concept: [[concepts/Token 和 Embedding|Token 和 Embedding]] — source 支撑分布式表示、词向量和文本表示学习的前置脉络。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — source 是 LLM 基础学习路径中的架构演进入口。
 
 ## Maintenance Notes
 

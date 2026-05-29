@@ -57,6 +57,8 @@ status: ingested
 
 ## Links
 
+- compiled-concept: [[concepts/Agent 工具调用|Agent 工具调用]] - source 把结构化输出、退出码、幂等、dry-run 和 help 文档编译为 Agent 友好工具接口原则。
+- compiled-synthesis: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] - source 支撑 Agent 系统工程中的工具契约与执行反馈。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 给出 Agent 可操作工具接口的工程约束。
 - related: [[concepts/Agent Harness|Agent Harness]] - CLI 退出码、结构化错误、dry-run 和非交互控制可作为执行边界与反馈信号。
 - related: [[entities/Agent Client Protocol|Agent Client Protocol]] - source 与 Agent 工具协议和 ACI 方向高度相关，但讨论对象是 CLI 而不是具体协议。

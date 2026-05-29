@@ -63,6 +63,7 @@ status: ingested
 - compiled-concept: [[concepts/LLM-as-a-Judge|LLM-as-a-Judge]] — 将“提示词 + 模型”的自动评估器沉淀为独立概念。
 - compiled-entity: [[entities/Langfuse|Langfuse]] — source 以 Langfuse 为评估平台参照。
 - compiled-synthesis: [[synthesis/公文提示词优化评估清单|公文提示词优化评估清单]] — 提供数据集、指标和模型对比的评估维度。
+- compiled-synthesis: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 本轮用于补充 Agent 系统中的评估反馈层。
 - map-entry: [[maps/提示语与上下文工程学习地图|提示语与上下文工程学习地图]] — 纳入提示语/上下文学习路径的评估闭环入口。
 
 ## Maintenance Notes

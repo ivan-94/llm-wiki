@@ -53,8 +53,9 @@ No external links found in extracted content.
 
 ## Links
 
-- No wiki pages created or modified in this task.
-- Compile candidates: Token 和 Embedding; 表示学习演进; Transformer; BERT; GPT; RAG 中的文本嵌入.
+- compiled-concept: [[concepts/Token 和 Embedding|Token 和 Embedding]] — source 提供 token、embedding、Word2Vec、BPE/WordPiece 和 text embedding 的学习证据。
+- compiled-concept: [[concepts/Transformer|Transformer]] — source 把表示学习演进连接到 Transformer、BERT 和 GPT。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — source 是 LLM 基础学习路径中的表示学习入口。
 
 ## Maintenance Notes
 

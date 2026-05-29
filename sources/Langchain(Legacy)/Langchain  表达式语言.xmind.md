@@ -58,6 +58,8 @@ LCEL 的中心是 Runnable。source 先用 `setup_and_retrieval | prompt | model
 
 ## Links
 
+- compiled-entity: [[entities/LangChain|LangChain]] — source 提供 LCEL 的 Runnable、Sequence、Parallel、Config、history、events 和 RemoteRunnable 证据。
+- map-entry: [[maps/LLM 应用与数据处理学习地图|LLM 应用与数据处理学习地图]] — source 是 LLM 应用编排与 LangChain 运行抽象的学习材料。
 - related: [[sources/Agent/LangChain.xmind|Agent/LangChain.xmind]] — 现有 LangChain source 可作为 LCEL 所在框架的背景证据。
 - related: [[concepts/上下文工程|上下文工程]] — LCEL 的 RunnableConfig、历史消息、路由、stream 和 callbacks 都与上下文传递相关。
 - related: [[concepts/Agent Harness|Agent Harness]] — LCEL 的观测、fallback、配置和事件机制可作为 Agent 运行控制面的实现候选。

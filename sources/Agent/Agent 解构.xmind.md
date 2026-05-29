@@ -55,6 +55,9 @@ OpenClaw 和多 Agent 章节把这些原则具体化：通过 Gateway、Channel 
 
 ## Links
 
+- compiled-concept: [[concepts/AI Agent|AI Agent]] - source 提供 Agent Loop、控制模式、多 Agent 和记忆边界，是本轮 AI Agent 概念页的核心证据。
+- compiled-synthesis: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] - source 支撑把 Agent 编译为 loop、harness、context、tools、memory、sandbox 的系统工程视角。
+- map-entry: [[maps/Agent 学习地图|Agent 学习地图]] - source 作为 Agent 学习路径的系统总览入口。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 提供 Agent 控制模式、多 Agent 组织、自主度和工程化基础设施的系统框架。
 - related: [[concepts/Agent Harness|Agent Harness]] - source 明确定义 harness 的四个组成，并列出 OpenAI Agent 优先开发实践。
 - related: [[concepts/Agent Skills|Agent Skills]] - source 将 Skills 作为 Agent Loop 外围能力和程序性记忆的一部分。

@@ -54,6 +54,9 @@ source 从 Needle-in-a-Haystack 基准切入，指出长上下文窗口扩大不
 
 ## Links
 
+- compiled-concept: [[concepts/RAG|RAG]] — source 提供长上下文与 RAG 的取舍边界、摘要索引和分层检索证据。
+- compiled-synthesis: [[synthesis/RAG 与长上下文|RAG 与长上下文]] — source 是本轮 RAG 与长上下文综合页的核心对比材料。
+- map-entry: [[maps/LLM 应用与数据处理学习地图|LLM 应用与数据处理学习地图]] — source 支撑应用层检索与上下文策略学习路径。
 - related: [[concepts/上下文工程|上下文工程]] — 长上下文、RAG、摘要索引和查询分析都是上下文选择与压缩策略。
 
 ## Maintenance Notes

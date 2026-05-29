@@ -53,6 +53,9 @@ source 的主线是把 MCP 解释为一种让应用向 LLM 标准化提供上下
 
 ## Links
 
+- compiled-concept: [[concepts/Agent 工具调用|Agent 工具调用]] — source 用 MCP 的 Resources、Tools、Prompts 和 Sampling 补充工具接入协议层。
+- compiled-entity: [[entities/Model Context Protocol|Model Context Protocol]] — source 提供 MCP 的 Host/Client/Server、传输和基本概念证据。
+- map-entry: [[maps/Agent 学习地图|Agent 学习地图]] — source 是 Agent 工具与协议阶段的学习入口之一。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] — MCP 可作为 Agent 能力集成和上下文供给协议的证据。
 - related: [[concepts/Agent Harness|Agent Harness]] — MCP 的 Host/Client/Server 与传输层可补充 harness 外部工具接入模型。
 - related: [[entities/Claude Code|Claude Code]] — source 把 Claude Code 作为 MCP 应用和 server 生态入口之一。

@@ -50,12 +50,12 @@ No external links found in extracted content.
 
 ## Links
 
-No wiki pages were created or updated in this constrained batch; compile candidates are recorded in Maintenance Notes as plain text.
+- compiled-concept: [[concepts/问题定义|问题定义]] — source 提供识别问题主人和利益相关者的判断框架证据。
+- compiled-synthesis: [[synthesis/问题定义实践框架|问题定义实践框架]] — source 支撑实践框架中的问题主人识别步骤。
+- map-entry: [[maps/问题定义学习地图|问题定义学习地图]] — source 是问题主人主题的学习材料。
 
 ## Maintenance Notes
 
 - 图片清晰，主要文字、图示关系和例子可读；未做逐字 OCR。
-- 本图明显属于问题定义系列中的“问题主人/利益相关者”主题，可与同目录其他图片联合编译。
-- compile-candidate: 问题主人（concept）— 可沉淀“受影响、在意、推动力、能力、损失”判断框架。
-- compile-candidate: 利益相关者视角的问题定义（synthesis）— 可和“问题是差距”“重述问题”联合形成问题定义路线。
+- 本图属于问题定义系列中的“问题主人/利益相关者”主题，已与同目录其他图片联合编译。
 - entity-candidate: 《你的灯亮着吗？》— 当前作为书名/资料系列候选，不创建实体页。
