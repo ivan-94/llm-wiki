@@ -12,8 +12,8 @@
 ## Fixed Paths
 
 - Raw source root: `/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI`
-- Wiki root: `/Users/ivan/workspace/ai/ai_llm_wiki`
-- Canonical guide: `/Users/ivan/workspace/ai/ai_llm_wiki/AGENTS.md`
+- Wiki root: 当前项目根目录。
+- Canonical guide: 当前项目根目录下的 `AGENTS.md`。
 
 处理路径时必须保留空格、中文、括号、冒号等原始字符。shell 命令中始终引用完整路径。
 

@@ -2,7 +2,7 @@
 
 ## Recently Updated
 
-- 2026-05-29: Moved canonical wiki workspace to `/Users/ivan/workspace/ai/ai_llm_wiki` and reset generated knowledge artifacts.
+- 2026-05-29: Moved canonical wiki workspace to the current project and reset generated knowledge artifacts.
 
 ## Source Coverage
 

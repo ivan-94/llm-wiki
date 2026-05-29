@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 RAW_ROOT = Path("/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI")
-WIKI_ROOT = Path("/Users/ivan/workspace/ai/ai_llm_wiki")
+WIKI_ROOT = Path(__file__).resolve().parents[4]
 
 
 def _under_root(path: Path, root: Path) -> Path:

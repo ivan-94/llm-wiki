@@ -10,7 +10,7 @@ Use this skill for this project's XMind source ingestion. The fast path is a sin
 ## Fixed Paths
 
 - Raw source root: `/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI`
-- Wiki root: `/Users/ivan/workspace/ai/ai_llm_wiki`
+- Wiki root: 当前项目根目录。
 - Source notes live under `sources/` and mirror the raw relative path.
 - A raw `.xmind` maps to `sources/<raw-relative-path>.md`, preserving the original filename including `.xmind`.
 
