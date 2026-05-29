@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Raw Diff"
+  short_description: "Diff raw files against source notes"
+  default_prompt: "Use $ai-wiki-raw-diff to compare the AI wiki raw directory with sources and report added, deleted, updated, moved, unchanged, metadata-missing, unsupported, and iCloud-unavailable files."

@@ -1,19 +1,9 @@
 # AI Wiki Index
 
 ## Recently Updated
-
-- 2026-05-29: Changed `log.md` to single-line entries and compacted existing log history.
-- 2026-05-29: Ingested `生图` directory with 17 source notes and compiled AI image-generation learning nodes.
-- 2026-05-29: Restored execution-safety details after reviewing AGENTS.md template split.
-- 2026-05-29: Split AGENTS.md into concise hard rules and `docs/wiki-templates.md` template appendix.
-- 2026-05-29: Re-ingested existing XMind source notes with all-sheet export and extracted external links.
-- 2026-05-29: Tightened source-note rules for explicit/inferred claims and high-signal detail preservation.
-- 2026-05-29: Updated XMind ingest rules and helper to account for every workbook sheet.
-- 2026-05-29: Restricted `questions/` pages to user-explicit creation and removed the auto-created question page.
-- 2026-05-29: Tightened source-note rules for external links and typed source `Links`.
-- 2026-05-29: Compiled system-prompt and prompt-evaluation nodes from the `提示语工程:上下文工程` source set.
-- 2026-05-29: Ingested `提示语工程:上下文工程` XMind set and created first prompt/context/evaluation knowledge graph.
-- 2026-05-29: Moved canonical wiki workspace to the current project and reset generated knowledge artifacts.
+- 2026-05-29: Opened ingest support and raw diff coverage for Markdown, PDF, and Excalidraw raw files.
+- 2026-05-29: Added PDF preview ingest skill for first-three-page vision summaries.
+ 2026-05-29: Moved canonical wiki workspace to the current project and reset generated knowledge artifacts.
 
 ## Source Coverage
 
@@ -92,6 +82,7 @@ No outputs yet.
 
 ## Needs Attention
 
+- Existing source notes predating raw metadata fields need metadata backfill before update/move detection is reliable.
 - `生图/电商商品图绘制.xmind` currently contains only placeholder branches and needs raw source completion before it can support substantive compile.
 - `生图` image source notes are vision-based ingests, not full OCR; small visible text should be rechecked against raw images when exact wording matters.
 - `提示语工程:上下文工程/公文提示词优化.xmind` lacks concrete prompt/output/evaluation examples.
