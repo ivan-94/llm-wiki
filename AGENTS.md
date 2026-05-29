@@ -334,12 +334,12 @@ assets/sources/<raw 相对目录>/<原文件名>
 
 ## Log Contract
 
-`log.md` 是 append-only 时间线。不要改写历史记录；修正用新记录追加。
+`log.md` 是 append-only 单行时间线。从 2026-05-29 起，每次操作只追加一行；不要再写 `Sources`、`Produced`、`Summary`、`Issues` 多行块。历史压缩只能在用户明确要求时进行；普通修正用新记录追加。
 
-标题格式必须可 grep：
+单行格式必须可 grep：
 
 ```markdown
-## [2026-05-29] ingest | LLM/Transformer/Transformer.xmind
+## [2026-05-29] ingest | LLM/Transformer/Transformer.xmind — ingested source note; issues: none
 ```
 
 操作类型固定为：
@@ -348,20 +348,9 @@ assets/sources/<raw 相对目录>/<原文件名>
 ingest | compile | query | output | review | lint | maintenance | schema
 ```
 
-条目模板：
-
-```markdown
-## [2026-05-29] ingest | LLM/Transformer/Transformer.xmind
-
-- Sources:
-  - `raw:LLM/Transformer/Transformer.xmind`
-- Produced:
-  - `sources/LLM/Transformer/Transformer.xmind.md`
-- Summary:
-  - ...
-- Issues:
-  - ...
-```
+- summary 和 issues 都压缩在同一行；详细来源、产物和问题写入 source note、index、synthesis 或对应页面。
+- 如果一次操作涉及很多文件，用主题或目录概括，不在 `log.md` 展开清单。
+- 如果没有问题，写 `issues: none`。
 
 常用检查命令：
 

@@ -77,7 +77,7 @@ Recommended `Links` relation types for source notes:
 Also update:
 
 - `index.md`: `Recently Updated`, `Source Coverage`, relevant page lists, and `Needs Attention`.
-- `log.md`: append one `## [YYYY-MM-DD] ingest | <source_relpath>` entry.
+- `log.md`: append one single-line `## [YYYY-MM-DD] ingest | <source_relpath> — <summary>; issues: <issue or none>` entry.
 
 ## Boundaries
 
