@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Vault Sync"
+  short_description: "Publish AI wiki to iCloud vault"
+  default_prompt: "Use $ai-wiki-vault-sync to dry-run publishing this AI wiki to the iCloud Obsidian vault for iOS reading."
