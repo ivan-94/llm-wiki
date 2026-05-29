@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/Spec/SpecKit/Spec_kit.png"
 source_relpath: "Vibe/Spec/SpecKit/Spec_kit.png"
-raw_created_at: 2026-05-05T18:28:36+08:00
-raw_modified_at: 2026-05-05T18:28:36+08:00
+raw_created_at: 2026-05-05T10:28:36.218483+00:00
+raw_modified_at: 2026-05-05T10:28:36.218729+00:00
 raw_size: 1667851
-raw_fingerprint: "size=1667851;birth=2026-05-05T18:28:36+08:00;mtime=2026-05-05T18:28:36+08:00"
+raw_fingerprint: "size=1667851;birth=2026-05-05T10:28:36.218483+00:00;mtime=2026-05-05T10:28:36.218729+00:00"
 raw_snapshot_at: 2026-05-29T23:54:22+08:00
 ingested_at: 2026-05-29
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/Spec/SpecKit/Spec_kit.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T18:28:36+08:00`; modified `2026-05-05T18:28:36+08:00`; size `1667851`; snapshot `2026-05-29T23:54:22+08:00`
+- Raw metadata: created `2026-05-05T10:28:36.218483+00:00`; modified `2026-05-05T10:28:36.218729+00:00`; size `1667851`; snapshot `2026-05-29T23:54:22+08:00`
 - Coverage: Agent vision inspected the full 1672x941 infographic. Core commands, main ideas, artifact tree, quality loop, and OpenSpec comparison are readable; smaller tree labels were summarized.
 
 ## Summary
@@ -48,10 +48,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/SpecKit 工作流|SpecKit 工作流]] — 可沉淀 SpecKit 命令序列、产物链和质量闭环。
-- compiled-concept candidate: [[concepts/Specification-Driven Development|Specification-Driven Development]] — 可沉淀“规格是 source of truth，代码是规格表达”的开发模型。
-- compiled-synthesis candidate: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可支撑 OpenSpec 与 SpecKit 在账本/脚手架定位上的差异。
-- map-entry candidate: [[maps/Vibe Spec 工作流学习地图|Vibe Spec 工作流学习地图]] — 可作为 SpecKit 入口节点。
+- related: SpecKit 工作流 — 可沉淀 SpecKit 命令序列、产物链和质量闭环。
+- related: Specification-Driven Development — 可沉淀“规格是 source of truth，代码是规格表达”的开发模型。
+- compiled-synthesis: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可支撑 OpenSpec 与 SpecKit 在账本/脚手架定位上的差异。
+- related: Vibe Spec 工作流学习地图 — 可作为 SpecKit 入口节点。
 
 ## Maintenance Notes
 

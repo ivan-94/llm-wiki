@@ -54,9 +54,9 @@ status: ingested
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Vibe Coding|Vibe Coding]] — 可提炼 Vibe Coding 的实践边界、漂移风险、会话隔离和声明式成功标准。
-- compiled-concept candidate: [[concepts/Agent 工作流|Agent 工作流]] — 可沉淀 PRD 生成、模糊点排除、规划/执行/验收会话分离。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe Coding 方法论、前端生成、规格驱动开发和 agent skills 的入口 source。
+- compiled-concept: [[concepts/Vibe Coding|Vibe Coding]] — 可提炼 Vibe Coding 的实践边界、漂移风险、会话隔离和声明式成功标准。
+- related: Agent 工作流 — 可沉淀 PRD 生成、模糊点排除、规划/执行/验收会话分离。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe Coding 方法论、前端生成、规格驱动开发和 agent skills 的入口 source。
 
 ## Maintenance Notes
 

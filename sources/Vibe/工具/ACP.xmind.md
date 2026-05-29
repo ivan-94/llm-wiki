@@ -49,9 +49,9 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-entity-candidate: [[entities/Agent Client Protocol|Agent Client Protocol]] — 可沉淀 ACP 的治理、定位、协议模块、生态角色和限制；候选，未创建。
-- compiled-concept-candidate: [[concepts/Agent Client 协议层|Agent Client 协议层]] — 可描述 IDE/client 与 agent 的标准交互边界；候选，未创建。
-- map-entry-candidate: [[maps/Vibe Coding 工具体系|Vibe Coding 工具体系]] — 可作为 agentic coding client/agent 协议工具入口；候选，未创建。
+- compiled-entity: [[entities/Agent Client Protocol|Agent Client Protocol]] — 可沉淀 ACP 的治理、定位、协议模块、生态角色和限制。
+- related: Agent Client 协议层 — 可描述 IDE/client 与 agent 的标准交互边界。
+- related: Vibe Coding 工具体系 — 可作为 agentic coding client/agent 协议工具入口。
 
 ## Maintenance Notes
 

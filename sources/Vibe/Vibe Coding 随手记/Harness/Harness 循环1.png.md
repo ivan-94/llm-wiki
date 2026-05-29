@@ -50,10 +50,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent Harness|Agent Harness]] — 可提供从代码到 harness runtime 的类比和组件结构。
-- compiled-concept candidate: [[concepts/Agent Runtime|Agent Runtime]] — 可补充 Agent 操作系统、runtime、syscall/library/config 的比喻。
-- compiled-concept candidate: [[concepts/Agent 可观测性|Agent 可观测性]] — 图中明确列出 runtime observability 作为新工程能力。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可纳入 AI coding 从写代码转向优化运行环境的学习路径。
+- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 可提供从代码到 harness runtime 的类比和组件结构。
+- related: Agent Runtime — 可补充 Agent 操作系统、runtime、syscall/library/config 的比喻。
+- related: Agent 可观测性 — 图中明确列出 runtime observability 作为新工程能力。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可纳入 AI coding 从写代码转向优化运行环境的学习路径。
 
 ## Maintenance Notes
 

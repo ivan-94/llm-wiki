@@ -54,10 +54,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Vibe Coding Sweet Spot|Vibe Coding Sweet Spot]] — 可定义模型适配的上下文规模、任务粒度和成本/质量区间。
-- compiled-concept candidate: [[concepts/约束式任务拆解|约束式任务拆解]] — 可沉淀 Independent、I/O closed、无隐式状态、可验证等拆解准则。
-- compiled-concept candidate: [[concepts/Agent Harness|Agent Harness]] — 可总结状态外置、DAG、强验证和持久化输出的确定性执行机制。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为大规模 AI Coding 从粗生成到精修的关键节点。
+- related: Vibe Coding Sweet Spot — 可定义模型适配的上下文规模、任务粒度和成本/质量区间。
+- related: 约束式任务拆解 — 可沉淀 Independent、I/O closed、无隐式状态、可验证等拆解准则。
+- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 可总结状态外置、DAG、强验证和持久化输出的确定性执行机制。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为大规模 AI Coding 从粗生成到精修的关键节点。
 
 ## Maintenance Notes
 

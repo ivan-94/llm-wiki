@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/codex/cli.png"
 source_relpath: "Vibe/工具/codex/cli.png"
-raw_created_at: 2026-05-10T02:31:00+00:00
-raw_modified_at: 2026-05-10T02:31:00+00:00
+raw_created_at: 2026-05-10T02:31:00.292231+00:00
+raw_modified_at: 2026-05-10T02:31:00.292789+00:00
 raw_size: 1576040
-raw_fingerprint: "size=1576040;birth=2026-05-10T02:31:00+00:00;mtime=2026-05-10T02:31:00+00:00"
+raw_fingerprint: "size=1576040;birth=2026-05-10T02:31:00.292231+00:00;mtime=2026-05-10T02:31:00.292789+00:00"
 raw_snapshot_at: 2026-05-29T16:07:00+00:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/codex/cli.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-10T02:31:00+00:00`; modified `2026-05-10T02:31:00+00:00`; size `1576040`; snapshot `2026-05-29T16:07:00+00:00`
+- Raw metadata: created `2026-05-10T02:31:00.292231+00:00`; modified `2026-05-10T02:31:00.292789+00:00`; size `1576040`; snapshot `2026-05-29T16:07:00+00:00`
 - Coverage: opened with Agent vision; full infographic inspected; dimensions `2658x3918`; visible text is clear enough for source note, but exact command syntax should be rechecked against raw image or current docs before operational use.
 
 ## Summary
@@ -55,10 +55,10 @@ status: ingested
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Codex CLI|Codex CLI]] — 可提炼安装登录、交互会话、flags、配置、脚本化和排错的操作模型。
-- compiled-concept candidate: [[concepts/Agent 权限与沙箱|Agent 权限与沙箱]] — 可补充 sandbox、approval、workspace-write、danger-full-access 和 yolo 风险边界。
-- compiled-concept candidate: [[concepts/AGENTS.md|AGENTS.md]] — 可补充 repo 级长期记忆、工程约定和 done means 的角色。
-- map-entry candidate: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 Codex CLI 日常操作入口。
+- related: Codex CLI — 可提炼安装登录、交互会话、flags、配置、脚本化和排错的操作模型。
+- related: Agent 权限与沙箱 — 可补充 sandbox、approval、workspace-write、danger-full-access 和 yolo 风险边界。
+- related: AGENTS.md — 可补充 repo 级长期记忆、工程约定和 done means 的角色。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 Codex CLI 日常操作入口。
 
 ## Maintenance Notes
 

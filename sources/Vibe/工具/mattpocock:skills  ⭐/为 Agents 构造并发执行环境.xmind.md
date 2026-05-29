@@ -50,8 +50,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent 并发执行环境|Agent 并发执行环境]] — 可沉淀 worktree、Compose sandbox、动态端口、manifest 和 CLI 生命周期契约。
-- map-entry candidate: [[maps/Vibe Coding 工作流学习地图|Vibe Coding 工作流学习地图]] — 可作为多 agent 执行和 HAT 验收基础设施节点。
+- related: Agent 并发执行环境 — 可沉淀 worktree、Compose sandbox、动态端口、manifest 和 CLI 生命周期契约。
+- related: Vibe Coding 工作流学习地图 — 可作为多 agent 执行和 HAT 验收基础设施节点。
 
 ## Maintenance Notes
 

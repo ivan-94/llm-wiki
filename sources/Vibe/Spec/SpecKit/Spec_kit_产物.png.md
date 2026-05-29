@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/Spec/SpecKit/Spec_kit_产物.png"
 source_relpath: "Vibe/Spec/SpecKit/Spec_kit_产物.png"
-raw_created_at: 2026-05-05T18:34:03+08:00
-raw_modified_at: 2026-05-05T18:34:03+08:00
+raw_created_at: 2026-05-05T10:34:03.557359+00:00
+raw_modified_at: 2026-05-05T10:34:03.557596+00:00
 raw_size: 1731097
-raw_fingerprint: "size=1731097;birth=2026-05-05T18:34:03+08:00;mtime=2026-05-05T18:34:03+08:00"
+raw_fingerprint: "size=1731097;birth=2026-05-05T10:34:03.557359+00:00;mtime=2026-05-05T10:34:03.557596+00:00"
 raw_snapshot_at: 2026-05-29T23:54:22+08:00
 ingested_at: 2026-05-29
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/Spec/SpecKit/Spec_kit_产物.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T18:34:03+08:00`; modified `2026-05-05T18:34:03+08:00`; size `1731097`; snapshot `2026-05-29T23:54:22+08:00`
+- Raw metadata: created `2026-05-05T10:34:03.557359+00:00`; modified `2026-05-05T10:34:03.557596+00:00`; size `1731097`; snapshot `2026-05-29T23:54:22+08:00`
 - Coverage: Agent vision inspected the full 1672x941 artifact map. Project-level artifacts, feature directory artifacts, and specification relationship chain are readable; dense formatting constraints were summarized.
 
 ## Summary
@@ -51,10 +51,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/SpecKit Artifact 图谱|SpecKit Artifact 图谱]] — 可沉淀项目级和 feature 级产物结构及格式约束。
-- compiled-concept candidate: [[concepts/需求到任务的可追踪链|需求到任务的可追踪链]] — 可沉淀 User Story 到 Implementation 的编号与证据关系。
-- compiled-synthesis candidate: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可补充 SpecKit 产物结构侧的对比证据。
-- map-entry candidate: [[maps/Vibe Spec 工作流学习地图|Vibe Spec 工作流学习地图]] — 可作为 SpecKit artifact 细节节点。
+- related: SpecKit Artifact 图谱 — 可沉淀项目级和 feature 级产物结构及格式约束。
+- related: 需求到任务的可追踪链 — 可沉淀 User Story 到 Implementation 的编号与证据关系。
+- compiled-synthesis: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可补充 SpecKit 产物结构侧的对比证据。
+- related: Vibe Spec 工作流学习地图 — 可作为 SpecKit artifact 细节节点。
 
 ## Maintenance Notes
 

@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/软件工程基础/Specification by Example/1为什么需要 sbE.png"
 source_relpath: "Vibe/软件工程基础/Specification by Example/1为什么需要 sbE.png"
-raw_created_at: 2026-05-04T21:43:05+08:00
-raw_modified_at: 2026-05-04T21:43:31+08:00
+raw_created_at: 2026-05-04T13:43:05.720231+00:00
+raw_modified_at: 2026-05-04T13:43:31.768462+00:00
 raw_size: 1671937
-raw_fingerprint: "size=1671937;birth=2026-05-04T21:43:05+08:00;mtime=2026-05-04T21:43:31+08:00"
+raw_fingerprint: "size=1671937;birth=2026-05-04T13:43:05.720231+00:00;mtime=2026-05-04T13:43:31.768462+00:00"
 raw_snapshot_at: 2026-05-30T00:14:12+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/软件工程基础/Specification by Example/1为什么需要 sbE.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-04T21:43:05+08:00`; modified `2026-05-04T21:43:31+08:00`; size `1671937`; snapshot `2026-05-30T00:14:12+08:00`
+- Raw metadata: created `2026-05-04T13:43:05.720231+00:00`; modified `2026-05-04T13:43:31.768462+00:00`; size `1671937`; snapshot `2026-05-30T00:14:12+08:00`
 - Coverage: Agent vision inspected the full 1149x1369 course infographic. Main headings, examples, process diagram, comparison panels, and takeaway are readable.
 
 ## Summary
@@ -47,9 +47,9 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 解决需求误解、模糊需求和验收不可执行的问题背景。
-- compiled-concept candidate: [[concepts/可执行规格|可执行规格]] — 可补充从自然语言文档到 Given/When/Then 验收示例的转换价值。
-- map-entry candidate: [[maps/软件工程基础学习地图|软件工程基础学习地图]] — 可作为需求沟通与验收测试主题的入口。
+- compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 解决需求误解、模糊需求和验收不可执行的问题背景。
+- related: 可执行规格 — 可补充从自然语言文档到 Given/When/Then 验收示例的转换价值。
+- related: 软件工程基础学习地图 — 可作为需求沟通与验收测试主题的入口。
 
 ## Maintenance Notes
 

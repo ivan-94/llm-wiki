@@ -49,9 +49,9 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept-candidate: [[concepts/规格驱动 AI 开发|规格驱动 AI 开发]] — 可沉淀概要设计、里程碑、详细设计、变更请求和验收链路；候选，未创建。
-- compiled-concept-candidate: [[concepts/Agent 友好工程环境|Agent 友好工程环境]] — 可承载模块化、依赖倒置、声明式、可观测性、CLI、沙箱和质量门控；候选，未创建。
-- map-entry-candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe 实践工作流的核心节点；候选，未创建。
+- related: 规格驱动 AI 开发 — 可沉淀概要设计、里程碑、详细设计、变更请求和验收链路。
+- related: Agent 友好工程环境 — 可承载模块化、依赖倒置、声明式、可观测性、CLI、沙箱和质量门控。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe 实践工作流的核心节点。
 
 ## Maintenance Notes
 

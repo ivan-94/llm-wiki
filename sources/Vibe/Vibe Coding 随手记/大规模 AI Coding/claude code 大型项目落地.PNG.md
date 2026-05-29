@@ -52,10 +52,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Claude Code 大型项目落地|Claude Code 大型项目落地]] — 可沉淀工程视角、工具链、持续迭代和组织治理四维框架。
-- compiled-concept candidate: [[concepts/上下文工程|上下文工程]] — 图片强调合理上下文范围、按需加载和减少无关信息。
-- compiled-entity candidate: [[entities/Claude Code|Claude Code]] — 可作为 Claude Code 在大型代码库中发挥价值的证据材料。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可纳入大规模 AI Coding 工程落地章节。
+- related: Claude Code 大型项目落地 — 可沉淀工程视角、工具链、持续迭代和组织治理四维框架。
+- related: [[concepts/上下文工程|上下文工程]] — 图片强调合理上下文范围、按需加载和减少无关信息。
+- compiled-entity: [[entities/Claude Code|Claude Code]] — 可作为 Claude Code 在大型代码库中发挥价值的证据材料。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可纳入大规模 AI Coding 工程落地章节。
 
 ## Maintenance Notes
 

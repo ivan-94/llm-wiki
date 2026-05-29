@@ -49,8 +49,8 @@ status: ingested
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Claude Code CLI|Claude Code CLI]] — 可沉淀 CLI 入口、权限、上下文、脚本化和远程能力。
-- map-entry candidate: [[maps/Claude Code 学习地图|Claude Code 学习地图]] — 可作为命令行能力速查入口。
+- related: Claude Code CLI — 可沉淀 CLI 入口、权限、上下文、脚本化和远程能力。
+- related: Claude Code 学习地图 — 可作为命令行能力速查入口。
 
 ## Maintenance Notes
 

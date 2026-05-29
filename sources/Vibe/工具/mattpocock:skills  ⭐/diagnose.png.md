@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/diagnose.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/diagnose.png"
-raw_created_at: 2026-05-05T12:32:06+00:00
-raw_modified_at: 2026-05-05T12:32:06+00:00
+raw_created_at: 2026-05-05T12:32:06.753685+00:00
+raw_modified_at: 2026-05-05T12:32:06.754339+00:00
 raw_size: 1834863
-raw_fingerprint: "size=1834863;birth=2026-05-05T12:32:06+00:00;mtime=2026-05-05T12:32:06+00:00"
+raw_fingerprint: "size=1834863;birth=2026-05-05T12:32:06.753685+00:00;mtime=2026-05-05T12:32:06.754339+00:00"
 raw_snapshot_at: 2026-05-29T16:07:00+00:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/diagnose.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T12:32:06+00:00`; modified `2026-05-05T12:32:06+00:00`; size `1834863`; snapshot `2026-05-29T16:07:00+00:00`
+- Raw metadata: created `2026-05-05T12:32:06.753685+00:00`; modified `2026-05-05T12:32:06.754339+00:00`; size `1834863`; snapshot `2026-05-29T16:07:00+00:00`
 - Coverage: opened with Agent vision; full infographic inspected; dimensions `1024x1536`; visible text is clear enough for source note.
 
 ## Summary
@@ -47,9 +47,9 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Diagnose 调试闭环|Diagnose 调试闭环]] — 可提炼困难 bug 诊断的六阶段纪律和红绿反馈标准。
-- compiled-concept candidate: [[concepts/Agent 反馈回路|Agent 反馈回路]] — 可补充失败信号、复现率、确定性和成本排序。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 bug 诊断和调试 skill 主题入口。
+- related: Diagnose 调试闭环 — 可提炼困难 bug 诊断的六阶段纪律和红绿反馈标准。
+- related: Agent 反馈回路 — 可补充失败信号、复现率、确定性和成本排序。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 bug 诊断和调试 skill 主题入口。
 
 ## Maintenance Notes
 

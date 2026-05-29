@@ -46,10 +46,10 @@ source 的核心是把一个可持续运行的文本游戏拆成可被 agent 读
 
 ## Links
 
-- compiled-concept: [[concepts/文件系统作为 Agent 状态层|文件系统作为 Agent 状态层]] — 候选概念；source 提供目录职责、状态文件、历史日志和规则文件的完整示例。
-- compiled-concept: [[concepts/Agent Hooks|Agent Hooks]] — 候选概念；source 以强制存档和随机变量说明 hook 对长期运行的干预作用。
-- compiled-entity: [[entities/Agent Game|Agent Game]] — 候选实体；source 明确指向 Agent Game 项目及其文件系统设计。
-- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 候选地图入口；source 可归入 Agent 运行时文件系统设计。
+- compiled-concept: 文件系统作为 Agent 状态层 — source 提供目录职责、状态文件、历史日志和规则文件的完整示例。
+- compiled-concept: Agent Hooks — source 以强制存档和随机变量说明 hook 对长期运行的干预作用。
+- compiled-entity: Agent Game — 候选实体；source 明确指向 Agent Game 项目及其文件系统设计。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — source 可归入 Agent 运行时文件系统设计。
 
 ## Maintenance Notes
 

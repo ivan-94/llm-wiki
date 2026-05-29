@@ -51,10 +51,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent Harness|Agent Harness]] — 可补充 empower/constraint 双轴和复杂度控制目标。
-- compiled-concept candidate: [[concepts/AI Coding 验证闭环|AI Coding 验证闭环]] — 可提炼自检、互审、对抗、E2E 行为检查等验证机制。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 AI coding 工程师能力转移的学习节点。
-- compiled-synthesis candidate: [[synthesis/Agent Harness 工程化框架|Agent Harness 工程化框架]] — 可与同目录循环图和 Agent Harness Engineering 共同形成框架页。
+- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 可补充 empower/constraint 双轴和复杂度控制目标。
+- related: AI Coding 验证闭环 — 可提炼自检、互审、对抗、E2E 行为检查等验证机制。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 AI coding 工程师能力转移的学习节点。
+- related: Agent Harness 工程化框架 — 可与同目录循环图和 Agent Harness Engineering 共同形成框架页。
 
 ## Maintenance Notes
 

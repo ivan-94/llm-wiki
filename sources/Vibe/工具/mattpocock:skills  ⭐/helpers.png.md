@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/helpers.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/helpers.png"
-raw_created_at: 2026-05-05T20:53:19+08:00
-raw_modified_at: 2026-05-05T20:53:19+08:00
+raw_created_at: 2026-05-05T12:53:19.522886+00:00
+raw_modified_at: 2026-05-05T12:53:19.523438+00:00
 raw_size: 1883374
-raw_fingerprint: "size=1883374;birth=2026-05-05T20:53:19+08:00;mtime=2026-05-05T20:53:19+08:00"
+raw_fingerprint: "size=1883374;birth=2026-05-05T12:53:19.522886+00:00;mtime=2026-05-05T12:53:19.523438+00:00"
 raw_snapshot_at: 2026-05-30T00:07:20+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/helpers.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T20:53:19+08:00`; modified `2026-05-05T20:53:19+08:00`; size `1883374`; snapshot `2026-05-30T00:07:20+08:00`
+- Raw metadata: created `2026-05-05T12:53:19.522886+00:00`; modified `2026-05-05T12:53:19.523438+00:00`; size `1883374`; snapshot `2026-05-30T00:07:20+08:00`
 - Coverage: Vision read of a 1024 x 1536 infographic. Four helper skill panels and the bottom principle row are readable; package names and command names are recorded only where visually clear.
 
 ## Summary
@@ -44,8 +44,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent 仓库治理 Skills|Agent 仓库治理 Skills]] — 可整合安全护栏、提交钩子、测试数据迁移和脚手架生成的仓库级辅助模式。
-- map-entry candidate: [[maps/Vibe 工具与 Agent Skills 学习地图|Vibe 工具与 Agent Skills 学习地图]] — 可作为 mattpocock skills 中“repo helper”分支。
+- related: Agent 仓库治理 Skills — 可整合安全护栏、提交钩子、测试数据迁移和脚手架生成的仓库级辅助模式。
+- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“repo helper”分支。
 
 ## Maintenance Notes
 

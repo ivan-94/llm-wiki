@@ -46,10 +46,10 @@ source 把 LLM Wiki 定义为一种“先编译、后查询、持续回写”的
 
 ## Links
 
-- compiled-concept: [[concepts/LLM Wiki|LLM Wiki]] — 候选概念；source 系统说明 raw/wiki/rules 三层结构和持续编译流程。
-- compiled-concept: [[concepts/知识复利|知识复利]] — 候选概念；source 强调每次新增资料都更新已有概念和综合，而不是产生孤立摘要。
-- compiled-concept: [[concepts/File Back|File Back]] — 候选概念；source 将有长期价值的 query/output 归档回 wiki。
-- map-entry: [[maps/AI Wiki 维护学习地图|AI Wiki 维护学习地图]] — 候选地图入口；source 可作为本 wiki 规则体系的元资料。
+- compiled-concept: LLM Wiki — source 系统说明 raw/wiki/rules 三层结构和持续编译流程。
+- compiled-concept: 知识复利 — source 强调每次新增资料都更新已有概念和综合，而不是产生孤立摘要。
+- compiled-concept: File Back — source 将有长期价值的 query/output 归档回 wiki。
+- map-entry: AI Wiki 维护学习地图 — source 可作为本 wiki 规则体系的元资料。
 
 ## Maintenance Notes
 

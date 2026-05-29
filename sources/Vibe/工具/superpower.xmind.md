@@ -49,10 +49,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: [[concepts/Agent Skills Framework|Agent Skills Framework]] — 候选概念；本 source 提供 skills 作为框架和方法论的总览。
-- compiled-concept: [[concepts/子代理驱动开发|子代理驱动开发]] — 候选概念；本 source 描述任务拆分、子代理执行和两阶段评审。
-- compiled-concept: [[concepts/TDD for AI Coding|TDD for AI Coding]] — 候选概念；本 source 把红绿重构作为 AI 编码约束。
-- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 候选地图入口；适合归入 agent skills/workflow 工具。
+- compiled-concept: Agent Skills Framework — 本 source 提供 skills 作为框架和方法论的总览。
+- compiled-concept: 子代理驱动开发 — 本 source 描述任务拆分、子代理执行和两阶段评审。
+- compiled-concept: TDD for AI Coding — 本 source 把红绿重构作为 AI 编码约束。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入 agent skills/workflow 工具。
 
 ## Maintenance Notes
 

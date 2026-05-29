@@ -51,10 +51,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent Skills|Agent Skills]] — 可提炼 Skills 作为结构化捷径、低熵搜索和经验复用机制的定义。
-- compiled-concept candidate: [[concepts/Agent Harness|Agent Harness]] — 可补充 Skills 在 harness 中负责降低搜索空间熵的角色。
-- compiled-synthesis candidate: [[synthesis/Agent Harness 工程化框架|Agent Harness 工程化框架]] — 可与 harness runtime 和循环图共同解释 skills/rules/tools 的组合价值。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Agent skills 设计与调优主题入口。
+- compiled-concept: [[concepts/Agent Skills|Agent Skills]] — 可提炼 Skills 作为结构化捷径、低熵搜索和经验复用机制的定义。
+- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 可补充 Skills 在 harness 中负责降低搜索空间熵的角色。
+- related: Agent Harness 工程化框架 — 可与 harness runtime 和循环图共同解释 skills/rules/tools 的组合价值。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Agent skills 设计与调优主题入口。
 
 ## Maintenance Notes
 

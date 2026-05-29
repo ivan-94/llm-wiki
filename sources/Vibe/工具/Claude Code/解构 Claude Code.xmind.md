@@ -70,12 +70,12 @@ status: ingested
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Claude Code|Claude Code]] — 可沉淀整体架构、交互、定制和运行模型。
-- compiled-concept candidate: [[concepts/Claude Code SubAgent|Claude Code SubAgent]] — source 有专门 sheet 说明子代理用途、委派、配置、生命周期和协作模式。
-- compiled-concept candidate: [[concepts/Agent Teams|Agent Teams]] — source 对比团队与 SubAgent 的粒度、人机交互和协作机制。
-- compiled-concept candidate: [[concepts/动态工作流|动态工作流]] — source 解释把编排逻辑搬进脚本后的执行模型。
-- compiled-concept candidate: [[concepts/CLAUDE.md 设计|CLAUDE.md 设计]] — source 汇总 CLAUDE.md、rules、skills、commands 和渐进披露原则。
-- map-entry candidate: [[maps/Claude Code 学习地图|Claude Code 学习地图]] — 该 source 可作为 Claude Code 主题学习地图的主入口。
+- related: Claude Code — 可沉淀整体架构、交互、定制和运行模型。
+- related: Claude Code SubAgent — source 有专门 sheet 说明子代理用途、委派、配置、生命周期和协作模式。
+- related: Agent Teams — source 对比团队与 SubAgent 的粒度、人机交互和协作机制。
+- related: 动态工作流 — source 解释把编排逻辑搬进脚本后的执行模型。
+- related: CLAUDE.md 设计 — source 汇总 CLAUDE.md、rules、skills、commands 和渐进披露原则。
+- related: Claude Code 学习地图 — 该 source 可作为 Claude Code 主题学习地图的主入口。
 
 ## Maintenance Notes
 

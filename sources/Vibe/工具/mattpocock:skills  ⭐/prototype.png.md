@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/prototype.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/prototype.png"
-raw_created_at: 2026-05-11T16:32:16+08:00
-raw_modified_at: 2026-05-11T16:32:16+08:00
+raw_created_at: 2026-05-11T08:32:16.967093+00:00
+raw_modified_at: 2026-05-11T08:32:16.967383+00:00
 raw_size: 1679636
-raw_fingerprint: "size=1679636;birth=2026-05-11T16:32:16+08:00;mtime=2026-05-11T16:32:16+08:00"
+raw_fingerprint: "size=1679636;birth=2026-05-11T08:32:16.967093+00:00;mtime=2026-05-11T08:32:16.967383+00:00"
 raw_snapshot_at: 2026-05-30T00:07:20+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/prototype.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-11T16:32:16+08:00`; modified `2026-05-11T16:32:16+08:00`; size `1679636`; snapshot `2026-05-30T00:07:20+08:00`
+- Raw metadata: created `2026-05-11T08:32:16.967093+00:00`; modified `2026-05-11T08:32:16.967383+00:00`; size `1679636`; snapshot `2026-05-30T00:07:20+08:00`
 - Coverage: Vision read of a 1024 x 1536 infographic. Main sections and flow steps are readable; terminal and UI mockup details are interpreted visually, not extracted as exact code.
 
 ## Summary
@@ -45,8 +45,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/可丢弃原型工作流|可丢弃原型工作流]] — 可沉淀 Logic/UI prototype 分支和“学到答案后清理”的原则。
-- map-entry candidate: [[maps/Vibe 工具与 Agent Skills 学习地图|Vibe 工具与 Agent Skills 学习地图]] — 可作为 mattpocock skills 中“设计不确定性探索”分支。
+- related: 可丢弃原型工作流 — 可沉淀 Logic/UI prototype 分支和“学到答案后清理”的原则。
+- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“设计不确定性探索”分支。
 
 ## Maintenance Notes
 

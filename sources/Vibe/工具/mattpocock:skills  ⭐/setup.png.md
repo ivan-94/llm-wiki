@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/setup.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/setup.png"
-raw_created_at: 2026-05-05T20:48:47+08:00
-raw_modified_at: 2026-05-05T20:48:47+08:00
+raw_created_at: 2026-05-05T12:48:47.825804+00:00
+raw_modified_at: 2026-05-05T12:48:47.826269+00:00
 raw_size: 1728909
-raw_fingerprint: "size=1728909;birth=2026-05-05T20:48:47+08:00;mtime=2026-05-05T20:48:47+08:00"
+raw_fingerprint: "size=1728909;birth=2026-05-05T12:48:47.825804+00:00;mtime=2026-05-05T12:48:47.826269+00:00"
 raw_snapshot_at: 2026-05-30T00:07:20+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/setup.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T20:48:47+08:00`; modified `2026-05-05T20:48:47+08:00`; size `1728909`; snapshot `2026-05-30T00:07:20+08:00`
+- Raw metadata: created `2026-05-05T12:48:47.825804+00:00`; modified `2026-05-05T12:48:47.826269+00:00`; size `1728909`; snapshot `2026-05-30T00:07:20+08:00`
 - Coverage: Vision read of a 928 x 1695 infographic. Process, exploration checklist, three confirmation areas, outputs, and general rules are readable; some small explanatory copy is summarized.
 
 ## Summary
@@ -44,8 +44,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent Skill 项目上下文初始化|Agent Skill 项目上下文初始化]] — 可沉淀 issue tracker、triage label、domain docs 三类上下文初始化规则。
-- map-entry candidate: [[maps/Vibe 工具与 Agent Skills 学习地图|Vibe 工具与 Agent Skills 学习地图]] — 可作为 mattpocock skills 中“setup/context bootstrap”分支。
+- related: Agent Skill 项目上下文初始化 — 可沉淀 issue tracker、triage label、domain docs 三类上下文初始化规则。
+- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“setup/context bootstrap”分支。
 
 ## Maintenance Notes
 

@@ -28,7 +28,7 @@ status: ingested
 
 ## Source Digest
 
-该快照展示了 Obsidian 知识图谱的一个较完整备份状态。它把 Obsidian 理解为一个本地文件夹型知识库工具：Vault 是知识库文件夹，Note 通常是普通 `.md` 文本文件，Link 用 `[[笔记名]]` 连接笔记，Attachment 作为图片、PDF 等附件存放在 Vault 中。笔记形式层面，它强调 Markdown 的轻量标记、Frontmatter 的 YAML 元数据、Tag 的横向分类、Embed 的内容嵌入，以及 Canvas 对卡片和连线的可视化组织。
+该快照展示了 Obsidian 知识图谱的一个较完整备份状态。它把 Obsidian 理解为一个本地文件夹型知识库工具：Vault 是知识库文件夹，Note 通常是普通 `.md` 文本文件，Link 用 `笔记名` 连接笔记，Attachment 作为图片、PDF 等附件存放在 Vault 中。笔记形式层面，它强调 Markdown 的轻量标记、Frontmatter 的 YAML 元数据、Tag 的横向分类、Embed 的内容嵌入，以及 Canvas 对卡片和连线的可视化组织。
 
 知识网络层面，快照将 Backlinks、Graph、Unlinked Mentions 和 MOC 放在一起：反链揭示哪些笔记提到了当前笔记，Graph 把笔记和链接视为节点与边，未链接提及用于补全潜在关系，MOC 则是人工维护的主题入口。UI 与工作流层面，它把 Obsidian 类比为 Markdown 领域的 VSCode，强调文件浏览器、编辑区、侧边栏、Command Palette、Plugin 和个人 Workflow 组合起来形成可定制工作区。
 
@@ -38,7 +38,7 @@ status: ingested
 
 - explicit: Vault 是整个 Obsidian 知识库，对应本地一个文件夹。
 - explicit: Note 通常是 `.md` 文件，可以被普通文本编辑器打开。
-- explicit: Link 常见写法是 `[[笔记名]]`，用于把分散笔记连成关系。
+- explicit: Link 常见写法是 `笔记名`，用于把分散笔记连成关系。
 - explicit: Frontmatter 是笔记开头的 YAML 信息，常用于日期、状态、分类等属性。
 - explicit: Backlinks、Graph、Unlinked Mentions 和 MOC 分别对应反向引用、关系图谱、潜在链接发现和主题索引页。
 - explicit: Obsidian 的价值不只来自工具本身，还来自用户如何收集、整理、连接和复用笔记。
@@ -50,7 +50,7 @@ No external links found in extracted content.
 
 ## Links
 
-- related: [[concepts/Obsidian|Obsidian]] — 候选概念；若主 Obsidian.xmind 缺失，可参考此备份恢复核心概念定义。
+- related: Obsidian — 若主 Obsidian.xmind 缺失，可参考此备份恢复核心概念定义。
 - maintenance-candidate: [[sources/Vibe/工具/.xmind-backups/Obsidian.before-id-repair.$(date +%s).xmind|Obsidian.before-id-repair.$(date +%s).xmind]] — 备份快照自记录；用于 ID 修复前后对比和恢复判断。
 
 ## Maintenance Notes

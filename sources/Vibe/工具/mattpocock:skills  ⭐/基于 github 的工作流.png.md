@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/基于 github 的工作流.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/基于 github 的工作流.png"
-raw_created_at: 2026-05-06T03:56:58+00:00
-raw_modified_at: 2026-05-06T03:56:58+00:00
+raw_created_at: 2026-05-06T03:56:58.984008+00:00
+raw_modified_at: 2026-05-06T03:56:58.984253+00:00
 raw_size: 1770551
-raw_fingerprint: "size=1770551;birth=2026-05-06T03:56:58+00:00;mtime=2026-05-06T03:56:58+00:00"
+raw_fingerprint: "size=1770551;birth=2026-05-06T03:56:58.984008+00:00;mtime=2026-05-06T03:56:58.984253+00:00"
 raw_snapshot_at: 2026-05-29T16:13:05+00:00
 ingested_at: 2026-05-29
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/基于 github 的工作流.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-06T03:56:58+00:00`; modified `2026-05-06T03:56:58+00:00`; size `1770551`; snapshot `2026-05-29T16:13:05+00:00`
+- Raw metadata: created `2026-05-06T03:56:58.984008+00:00`; modified `2026-05-06T03:56:58.984253+00:00`; size `1770551`; snapshot `2026-05-29T16:13:05+00:00`
 - Coverage: vision inspection of full 1536x1024 PNG; layer structure, state machine, runner strategy, feedback loops, and warning banner were read.
 
 ## Summary
@@ -46,8 +46,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: [[concepts/GitHub Issue 状态机|GitHub Issue 状态机]] — 候选概念；本图提供 labels、状态流转、失败回流与成功闭环。
-- compiled-concept: [[concepts/Agent Brief 交接合同|Agent Brief 交接合同]] — 候选概念；本图把 Brief 明确为 Agent 可接手的交付契约。
+- compiled-concept: GitHub Issue 状态机 — 本图提供 labels、状态流转、失败回流与成功闭环。
+- compiled-concept: Agent Brief 交接合同 — 本图把 Brief 明确为 Agent 可接手的交付契约。
 - compiled-synthesis: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 候选综合；本图可作为 GitHub Issues 工作流的核心证据。
 
 ## Maintenance Notes

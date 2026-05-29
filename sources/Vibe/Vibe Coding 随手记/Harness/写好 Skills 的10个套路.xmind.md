@@ -46,8 +46,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Agent Skill 写作|Agent Skill 写作]] — 仅作为候选主题；当前 source 缺少足够正文，不能单独支撑概念页。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为待补充条目，提醒后续补全 skill 写作套路来源。
+- related: Agent Skill 写作 — 仅作为候选主题；当前 source 缺少足够正文，不能单独支撑概念页。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为待补充条目，提醒后续补全 skill 写作套路来源。
 
 ## Maintenance Notes
 

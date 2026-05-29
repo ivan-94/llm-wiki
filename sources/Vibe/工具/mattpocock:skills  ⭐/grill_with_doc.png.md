@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/grill_with_doc.png"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/grill_with_doc.png"
-raw_created_at: 2026-05-05T20:41:11+08:00
-raw_modified_at: 2026-05-05T20:41:11+08:00
+raw_created_at: 2026-05-05T12:41:11.868883+00:00
+raw_modified_at: 2026-05-05T12:41:11.869152+00:00
 raw_size: 1879235
-raw_fingerprint: "size=1879235;birth=2026-05-05T20:41:11+08:00;mtime=2026-05-05T20:41:11+08:00"
+raw_fingerprint: "size=1879235;birth=2026-05-05T12:41:11.868883+00:00;mtime=2026-05-05T12:41:11.869152+00:00"
 raw_snapshot_at: 2026-05-30T00:07:20+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/grill_with_doc.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-05T20:41:11+08:00`; modified `2026-05-05T20:41:11+08:00`; size `1879235`; snapshot `2026-05-30T00:07:20+08:00`
+- Raw metadata: created `2026-05-05T12:41:11.868883+00:00`; modified `2026-05-05T12:41:11.869152+00:00`; size `1879235`; snapshot `2026-05-30T00:07:20+08:00`
 - Coverage: Vision read of a 864 x 1821 infographic. Main headings, process boxes, side panels, and visible labels are readable; small explanatory copy is summarized rather than treated as exact OCR.
 
 ## Summary
@@ -44,8 +44,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/设计拷问工作流|设计拷问工作流]] — 可沉淀“一次一个问题、场景压测、代码验证、文档回写”的 workflow skill 模式。
-- map-entry candidate: [[maps/Vibe 工具与 Agent Skills 学习地图|Vibe 工具与 Agent Skills 学习地图]] — 可作为 mattpocock skills 中“文档化设计澄清”分支。
+- related: 设计拷问工作流 — 可沉淀“一次一个问题、场景压测、代码验证、文档回写”的 workflow skill 模式。
+- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“文档化设计澄清”分支。
 
 ## Maintenance Notes
 

@@ -50,10 +50,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/GitHub 原生工作流|GitHub 原生工作流]] — 可沉淀 Issue 到 PR、Actions、Release 的闭环模型。
-- compiled-concept candidate: [[concepts/Issue 驱动开发|Issue 驱动开发]] — source 强调 Issue 是唯一任务源和 triage 入口。
-- compiled-concept candidate: [[concepts/PR 质量门禁|PR 质量门禁]] — source 汇总 PR 模板、review 分级、CI 与 issue 关联。
-- map-entry candidate: [[maps/Vibe 工具学习地图|Vibe 工具学习地图]] — 可作为 GitHub 协作与自动化工作流章节。
+- related: GitHub 原生工作流 — 可沉淀 Issue 到 PR、Actions、Release 的闭环模型。
+- related: Issue 驱动开发 — source 强调 Issue 是唯一任务源和 triage 入口。
+- related: PR 质量门禁 — source 汇总 PR 模板、review 分级、CI 与 issue 关联。
+- related: Vibe 工具学习地图 — 可作为 GitHub 协作与自动化工作流章节。
 
 ## Maintenance Notes
 

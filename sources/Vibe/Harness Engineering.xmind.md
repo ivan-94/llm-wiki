@@ -69,13 +69,13 @@ status: ingested
 
 ## Links
 
-- compiled-concept: [[concepts/Harness Engineering|Harness Engineering]] — 候选概念；本 source 提供定义、动机、反馈闭环、工程实践和未来框架想象。
-- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 候选概念；资料系统列出 harness 组件、循环步骤和设计决策。
+- compiled-concept: Harness Engineering — 本 source 提供定义、动机、反馈闭环、工程实践和未来框架想象。
+- compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 资料系统列出 harness 组件、循环步骤和设计决策。
 - compiled-concept: [[concepts/上下文工程|上下文工程]] — 候选更新；资料把 context 视为昂贵内存，并给出压缩、检索、子代理委派等治理策略。
-- compiled-concept: [[concepts/Agent 可观测性|Agent 可观测性]] — 候选概念；资料强调 UI、日志、指标、浏览器、测试和错误信息对 Agent 可读。
-- compiled-concept: [[concepts/Agentic 软件控制系统|Agentic 软件控制系统]] — 候选概念；未来框架 sheet 将软件系统建模为 Intent、Constraints、Feedback 和系统认知层。
-- compiled-synthesis: [[synthesis/Harness Engineering 与控制论|Harness Engineering 与控制论]] — 候选综合；控制论 sheet 可与 Kubernetes、蒸汽机调速器和 Agentic 开发形成对比。
-- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 候选地图入口；适合作为 Vibe 主题中的核心工程方法论。
+- compiled-concept: Agent 可观测性 — 资料强调 UI、日志、指标、浏览器、测试和错误信息对 Agent 可读。
+- compiled-concept: Agentic 软件控制系统 — 未来框架 sheet 将软件系统建模为 Intent、Constraints、Feedback 和系统认知层。
+- compiled-synthesis: Harness Engineering 与控制论 — 候选综合；控制论 sheet 可与 Kubernetes、蒸汽机调速器和 Agentic 开发形成对比。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 适合作为 Vibe 主题中的核心工程方法论。
 
 ## Maintenance Notes
 

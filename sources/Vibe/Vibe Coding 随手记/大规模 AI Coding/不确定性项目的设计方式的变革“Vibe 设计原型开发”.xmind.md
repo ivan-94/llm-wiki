@@ -53,10 +53,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Vibe 设计原型开发|Vibe 设计原型开发]] — 可沉淀定调、原型验证、复盘和正式工程化的流程。
-- compiled-concept candidate: [[concepts/不确定性项目设计|不确定性项目设计]] — 可总结从完备前置设计转向早期验证的设计范式变化。
-- compiled-synthesis candidate: [[synthesis/Vibe Coding 中的设计与工程边界|Vibe Coding 中的设计与工程边界]] — 可对比原型不可产品化、正式重构和工程质量底线。
-- map-entry candidate: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为“设计方式变革”章节入口。
+- related: Vibe 设计原型开发 — 可沉淀定调、原型验证、复盘和正式工程化的流程。
+- related: 不确定性项目设计 — 可总结从完备前置设计转向早期验证的设计范式变化。
+- related: Vibe Coding 中的设计与工程边界 — 可对比原型不可产品化、正式重构和工程质量底线。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为“设计方式变革”章节入口。
 
 ## Maintenance Notes
 

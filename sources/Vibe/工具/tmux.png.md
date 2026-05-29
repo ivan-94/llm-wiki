@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/tmux.png"
 source_relpath: "Vibe/工具/tmux.png"
-raw_created_at: 2026-05-06T17:22:47+08:00
-raw_modified_at: 2026-05-06T17:22:53+08:00
+raw_created_at: 2026-05-06T09:22:47.262651+00:00
+raw_modified_at: 2026-05-06T09:22:53.650306+00:00
 raw_size: 1772804
-raw_fingerprint: "size=1772804;birth=2026-05-06T17:22:47+08:00;mtime=2026-05-06T17:22:53+08:00"
+raw_fingerprint: "size=1772804;birth=2026-05-06T09:22:47.262651+00:00;mtime=2026-05-06T09:22:53.650306+00:00"
 raw_snapshot_at: 2026-05-29T16:13:22+00:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/tmux.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-06T17:22:47+08:00`; modified `2026-05-06T17:22:53+08:00`; size `1772804`; snapshot `2026-05-29T16:13:22+00:00`
+- Raw metadata: created `2026-05-06T09:22:47.262651+00:00`; modified `2026-05-06T09:22:53.650306+00:00`; size `1772804`; snapshot `2026-05-29T16:13:22+00:00`
 - Coverage: vision inspected full 1024x1536 cheat sheet; visible commands and workflow captured, QR code not decoded.
 
 ## Summary
@@ -49,8 +49,8 @@ status: ingested
 
 ## Links
 
-- compiled-concept: [[concepts/tmux 远程工作流|tmux 远程工作流]] — 候选概念；本图提供会话、窗格和恢复现场的操作基础。
-- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 候选地图入口；适合归入远程/长时间 agent 执行工具。
+- compiled-concept: tmux 远程工作流 — 本图提供会话、窗格和恢复现场的操作基础。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入远程/长时间 agent 执行工具。
 
 ## Maintenance Notes
 

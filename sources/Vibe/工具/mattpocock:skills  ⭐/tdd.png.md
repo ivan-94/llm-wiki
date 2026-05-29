@@ -47,8 +47,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/垂直切片 TDD|垂直切片 TDD]] — 可沉淀 Red-Green-Refactor、公开接口测试、mock 边界和 deep module 测试面。
-- map-entry candidate: [[maps/Vibe Coding 工作流学习地图|Vibe Coding 工作流学习地图]] — 可作为实现阶段的测试驱动开发节点。
+- related: 垂直切片 TDD — 可沉淀 Red-Green-Refactor、公开接口测试、mock 边界和 deep module 测试面。
+- related: Vibe Coding 工作流学习地图 — 可作为实现阶段的测试驱动开发节点。
 
 ## Maintenance Notes
 

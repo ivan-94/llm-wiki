@@ -47,9 +47,9 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: [[concepts/Cucumber|Cucumber]] — 候选概念；本图补充复杂项目中的 Cucumber 分层架构和反模式。
-- compiled-concept: [[concepts/端到端测试分层|端到端测试分层]] — 候选概念；本图说明 E2E 复杂度下沉和业务语义上浮。
-- map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 候选地图入口；可作为 Cucumber 工程化落地模块。
+- compiled-concept: Cucumber — 本图补充复杂项目中的 Cucumber 分层架构和反模式。
+- compiled-concept: 端到端测试分层 — 本图说明 E2E 复杂度下沉和业务语义上浮。
+- map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为 Cucumber 工程化落地模块。
 
 ## Maintenance Notes
 

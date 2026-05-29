@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/Vibe Coding 随手记/杂记/AI Native.png"
 source_relpath: "Vibe/Vibe Coding 随手记/杂记/AI Native.png"
-raw_created_at: 2026-05-09T02:19:41+00:00
-raw_modified_at: 2026-05-09T02:19:45+00:00
+raw_created_at: 2026-05-09T02:19:41.648334+00:00
+raw_modified_at: 2026-05-09T02:19:45.253988+00:00
 raw_size: 1864409
-raw_fingerprint: "size=1864409;birth=2026-05-09T02:19:41+00:00;mtime=2026-05-09T02:19:45+00:00"
+raw_fingerprint: "size=1864409;birth=2026-05-09T02:19:41.648334+00:00;mtime=2026-05-09T02:19:45.253988+00:00"
 raw_snapshot_at: 2026-05-29T15:59:51+00:00
 ingested_at: 2026-05-29
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/Vibe Coding 随手记/杂记/AI Native.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-09T02:19:41+00:00`; modified `2026-05-09T02:19:45+00:00`; size `1864409`; snapshot `2026-05-29T15:59:51+00:00`
+- Raw metadata: created `2026-05-09T02:19:41.648334+00:00`; modified `2026-05-09T02:19:45.253988+00:00`; size `1864409`; snapshot `2026-05-29T15:59:51+00:00`
 - Coverage: vision inspected the full 1254 x 1254 PNG infographic; text is mostly readable, no OCR-only hidden content inspected.
 
 ## Summary
@@ -46,10 +46,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: [[concepts/AI Native|AI Native]] — 候选概念；source 提供 AI Native 与 AI Enhanced 的边界和四维评估框架。
-- compiled-concept: [[concepts/Agent Friendly|Agent Friendly]] — 候选概念；source 将 Agent 可参与理解、执行、反馈和迭代作为系统原生能力。
-- compiled-concept: [[concepts/Human-to-Agent Alignment|Human-to-Agent Alignment]] — 候选概念；source 用组织对比说明共识成本迁移。
-- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 候选地图入口；source 可作为 AI Native 组织/工程/产品设计框架。
+- compiled-concept: AI Native — source 提供 AI Native 与 AI Enhanced 的边界和四维评估框架。
+- compiled-concept: Agent Friendly — source 将 Agent 可参与理解、执行、反馈和迭代作为系统原生能力。
+- compiled-concept: Human-to-Agent Alignment — source 用组织对比说明共识成本迁移。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — source 可作为 AI Native 组织/工程/产品设计框架。
 
 ## Maintenance Notes
 

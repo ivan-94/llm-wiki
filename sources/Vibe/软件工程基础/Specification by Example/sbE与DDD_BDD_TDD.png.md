@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/软件工程基础/Specification by Example/sbE与DDD_BDD_TDD.png"
 source_relpath: "Vibe/软件工程基础/Specification by Example/sbE与DDD_BDD_TDD.png"
-raw_created_at: 2026-05-04T13:50:33+00:00
-raw_modified_at: 2026-05-04T13:51:10+00:00
+raw_created_at: 2026-05-04T13:50:33.752357+00:00
+raw_modified_at: 2026-05-04T13:51:10.676127+00:00
 raw_size: 1834758
-raw_fingerprint: "size=1834758;birth=2026-05-04T13:50:33+00:00;mtime=2026-05-04T13:51:10+00:00"
+raw_fingerprint: "size=1834758;birth=2026-05-04T13:50:33.752357+00:00;mtime=2026-05-04T13:51:10.676127+00:00"
 raw_snapshot_at: 2026-05-29T16:20:35+00:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/软件工程基础/Specification by Example/sbE与DDD_BDD_TDD.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-04T13:50:33+00:00`; modified `2026-05-04T13:51:10+00:00`; size `1834758`; snapshot `2026-05-29T16:20:35+00:00`
+- Raw metadata: created `2026-05-04T13:50:33.752357+00:00`; modified `2026-05-04T13:51:10.676127+00:00`; size `1834758`; snapshot `2026-05-29T16:20:35+00:00`
 - Coverage: Vision inspection of a 1122x1402 infographic. Reliable visible text and layout were read at the diagram/table/summary level; exact small-print wording should be rechecked against the raw image if quoted.
 
 ## Summary
@@ -48,9 +48,9 @@ No external links found in extracted content.
 
 ## Links
 
-- related: [[concepts/Specification by Example|Specification by Example]] — 候选概念；图片提供 SbE 在需求对齐和验收层的定位。
-- related: [[synthesis/DDD SbE BDD TDD 协作链路|DDD SbE BDD TDD 协作链路]] — 候选综合；图片适合与同目录 SbE 流程图一起编译四种工程方法的关系。
-- related: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 候选地图入口；可作为软件工程基础中“从业务到测试实现”的学习节点。
+- related: [[concepts/Specification by Example|Specification by Example]] — 图片提供 SbE 在需求对齐和验收层的定位。
+- related: DDD SbE BDD TDD 协作链路 — 候选综合；图片适合与同目录 SbE 流程图一起编译四种工程方法的关系。
+- related: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为软件工程基础中“从业务到测试实现”的学习节点。
 
 ## Maintenance Notes
 

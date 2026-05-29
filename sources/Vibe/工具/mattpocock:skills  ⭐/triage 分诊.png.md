@@ -48,8 +48,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Issue 分诊状态机|Issue 分诊状态机]] — 可沉淀类别角色、状态角色、分流规则和 Agent Brief 输出。
-- map-entry candidate: [[maps/Vibe Coding 工作流学习地图|Vibe Coding 工作流学习地图]] — 可作为 issue 进入 agent 执行前的治理节点。
+- related: Issue 分诊状态机 — 可沉淀类别角色、状态角色、分流规则和 Agent Brief 输出。
+- related: Vibe Coding 工作流学习地图 — 可作为 issue 进入 agent 执行前的治理节点。
 
 ## Maintenance Notes
 

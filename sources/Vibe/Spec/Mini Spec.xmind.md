@@ -51,10 +51,10 @@ status: ingested
 
 ## Links
 
-- compiled-concept: [[concepts/Mini Spec|Mini Spec]] — 候选概念；本 source 提供轻量规格的适用场景、模板和验收边界。
-- compiled-concept: [[concepts/LLM 精细上下文边界|LLM 精细上下文边界]] — 候选概念；资料强调受影响文件、关键函数、范围外事项和外部输入。
-- compiled-concept: [[concepts/Agent 工作单元|Agent 工作单元]] — 候选概念；Mini Spec 将小需求整理成可执行、可验证的工作单元。
-- map-entry: [[maps/Vibe Spec 学习地图|Vibe Spec 学习地图]] — 候选地图入口；适合与 AGENTS.md 全局记忆共同组织 Spec 类资料。
+- compiled-concept: Mini Spec — 本 source 提供轻量规格的适用场景、模板和验收边界。
+- compiled-concept: LLM 精细上下文边界 — 资料强调受影响文件、关键函数、范围外事项和外部输入。
+- compiled-concept: Agent 工作单元 — Mini Spec 将小需求整理成可执行、可验证的工作单元。
+- map-entry: Vibe Spec 学习地图 — 适合与 AGENTS.md 全局记忆共同组织 Spec 类资料。
 
 ## Maintenance Notes
 

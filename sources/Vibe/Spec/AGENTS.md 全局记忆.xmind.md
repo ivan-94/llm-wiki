@@ -59,10 +59,10 @@ status: ingested
 
 ## Links
 
-- compiled-concept: [[concepts/AGENTS.md|AGENTS.md]] — 候选概念；本 source 提供项目入口、全局记忆、验证链路和规则拆分的设计清单。
-- compiled-concept: [[concepts/Agent 全局记忆|Agent 全局记忆]] — 候选概念；资料强调把项目事实和协作偏好外化为 Agent 可读记忆。
-- compiled-concept: [[concepts/Agent 项目验证链路|Agent 项目验证链路]] — 候选概念；资料列出测试、lint、format、集成测试和文件级命令。
-- map-entry: [[maps/Vibe Spec 学习地图|Vibe Spec 学习地图]] — 候选地图入口；适合作为 Spec/规则类资料的基础节点。
+- compiled-concept: AGENTS.md — 本 source 提供项目入口、全局记忆、验证链路和规则拆分的设计清单。
+- compiled-concept: Agent 全局记忆 — 资料强调把项目事实和协作偏好外化为 Agent 可读记忆。
+- compiled-concept: Agent 项目验证链路 — 资料列出测试、lint、format、集成测试和文件级命令。
+- map-entry: Vibe Spec 学习地图 — 适合作为 Spec/规则类资料的基础节点。
 
 ## Maintenance Notes
 

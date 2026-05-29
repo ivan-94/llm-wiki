@@ -2,10 +2,10 @@
 source_type: image
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/软件工程基础/Specification by Example/2 sbE 是如何运作的.png"
 source_relpath: "Vibe/软件工程基础/Specification by Example/2 sbE 是如何运作的.png"
-raw_created_at: 2026-05-04T21:45:00+08:00
-raw_modified_at: 2026-05-04T21:46:09+08:00
+raw_created_at: 2026-05-04T13:45:00.304548+00:00
+raw_modified_at: 2026-05-04T13:46:09.285295+00:00
 raw_size: 1796151
-raw_fingerprint: "size=1796151;birth=2026-05-04T21:45:00+08:00;mtime=2026-05-04T21:46:09+08:00"
+raw_fingerprint: "size=1796151;birth=2026-05-04T13:45:00.304548+00:00;mtime=2026-05-04T13:46:09.285295+00:00"
 raw_snapshot_at: 2026-05-30T00:14:12+08:00
 ingested_at: 2026-05-30
 status: ingested
@@ -19,7 +19,7 @@ status: ingested
 - Raw ref: `raw:Vibe/软件工程基础/Specification by Example/2 sbE 是如何运作的.png`
 - Type: image
 - Status: ingested
-- Raw metadata: created `2026-05-04T21:45:00+08:00`; modified `2026-05-04T21:46:09+08:00`; size `1796151`; snapshot `2026-05-30T00:14:12+08:00`
+- Raw metadata: created `2026-05-04T13:45:00.304548+00:00`; modified `2026-05-04T13:46:09.285295+00:00`; size `1796151`; snapshot `2026-05-30T00:14:12+08:00`
 - Coverage: Agent vision inspected the full 1184x1328 course infographic. Workflow, example mapping table, generalization panel, specification table, payment case, value list, and anti-patterns are readable.
 
 ## Summary
@@ -48,10 +48,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 从示例到规则再到可执行规格的核心流程。
-- compiled-concept candidate: [[concepts/Example Mapping|Example Mapping]] — 可沉淀主流程、备选、异常、边界示例的需求澄清方法。
-- compiled-concept candidate: [[concepts/Gherkin|Gherkin]] — 可补充 Given/When/Then 在 SbE 中的规格表达角色。
-- map-entry candidate: [[maps/软件工程基础学习地图|软件工程基础学习地图]] — 可作为行为规格与自动化验收的学习节点。
+- compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 从示例到规则再到可执行规格的核心流程。
+- related: Example Mapping — 可沉淀主流程、备选、异常、边界示例的需求澄清方法。
+- related: Gherkin — 可补充 Given/When/Then 在 SbE 中的规格表达角色。
+- related: 软件工程基础学习地图 — 可作为行为规格与自动化验收的学习节点。
 
 ## Maintenance Notes
 

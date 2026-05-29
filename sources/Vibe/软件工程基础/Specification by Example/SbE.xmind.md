@@ -44,8 +44,8 @@ status: partial
 
 ## Links
 
-- compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 候选概念；本 XMind 提供外部阅读来源，但主体内容不足。
-- map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 候选地图入口；可作为 SbE 阅读材料节点。
+- compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 本 XMind 提供外部阅读来源，但主体内容不足。
+- map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为 SbE 阅读材料节点。
 
 ## Maintenance Notes
 

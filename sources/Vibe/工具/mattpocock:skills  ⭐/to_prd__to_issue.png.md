@@ -48,8 +48,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept candidate: [[concepts/PRD 到垂直切片 Issue|PRD 到垂直切片 Issue]] — 可沉淀需求收敛、issue 模板和 vertical slice 拆分准则。
-- map-entry candidate: [[maps/Vibe Coding 工作流学习地图|Vibe Coding 工作流学习地图]] — 可作为规划到执行交接的流程节点。
+- related: PRD 到垂直切片 Issue — 可沉淀需求收敛、issue 模板和 vertical slice 拆分准则。
+- related: Vibe Coding 工作流学习地图 — 可作为规划到执行交接的流程节点。
 
 ## Maintenance Notes
 
