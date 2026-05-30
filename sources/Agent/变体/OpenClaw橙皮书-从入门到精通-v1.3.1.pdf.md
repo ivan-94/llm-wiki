@@ -48,7 +48,7 @@ No external links found in extracted content.
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- related: [[entities/OpenClaw|OpenClaw]] — 该橙皮书是 OpenClaw 的体系化手册，作为实体页的部署/安全/生态后续深读来源；当前仅前 3 页预览，证据为目录级。
 
 ## Maintenance Notes
 

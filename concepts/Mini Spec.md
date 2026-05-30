@@ -34,11 +34,16 @@ Mini Spec 是小切片任务的规格护栏。
 
 - [[sources/Vibe/Spec/Mini Spec.xmind|Mini Spec.xmind]]
 
+## Change Request Handling
+
+Mini Spec 的变更请求（change request）处理流程：当需求发生变更时，应基于原始 Mini Spec 提出差量修改说明，而不是重写整个 spec。这样 Agent 可以清楚看到变更前后的边界差异，避免偏移。详见 [[sources/Vibe/Vibe 实践记录.xmind|Vibe 实践记录]]。
+
 ## Relations
 
 - part-of: [[concepts/Spec-Driven Development|Spec-Driven Development]]
-- depends-on: [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]]
+- depends-on: [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]] — Mini Spec 给局部边界，全局记忆给项目规则，二者互补
 - reduces-risk: [[concepts/决策权泄漏|决策权泄漏]]
+- related-source: [[sources/Vibe/Vibe 实践记录.xmind|Vibe 实践记录]] — 包含变更请求处理的具体实践案例
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]]
 
 ## My Understanding

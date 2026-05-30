@@ -45,7 +45,9 @@ No external links found in extracted content.
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-concept: [[concepts/模型工程（知识注入）|模型工程（知识注入）]] — source 把性能提升分为提示词工程/微调/上下文学习，支撑上下文层 vs 参数层框架。
+- related-source: [[sources/LLM/Transformer/模型工程.xmind|模型工程]] — 同为优化路线索引，互补知识注入二分。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — 性能优化路线轻量索引。
 
 ## Maintenance Notes
 
@@ -53,5 +55,3 @@ No downstream wiki pages were created or updated in this scoped ingest.
 - Sparse source: exported content is only a short taxonomy and one note; no concrete examples, metrics, evaluation method, or implementation steps.
 - Placeholder node: `分支主题 3` has no supporting content.
 - Compile candidates: LLM 性能优化, 提示词工程, 上下文学习, few-shot, 微调.
-
-- Link cleanup candidate: related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.

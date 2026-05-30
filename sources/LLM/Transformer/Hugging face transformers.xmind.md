@@ -42,7 +42,7 @@ No external links found in extracted content.
 
 ## Links
 
-No wiki pages created or modified in this task.
+- related: [[entities/Hugging Face|Hugging Face]] — partial 占位源，仅作 Hugging Face Transformers 待补全资料入口被实体页轻量引用。
 
 ## Maintenance Notes
 
@@ -50,4 +50,4 @@ No wiki pages created or modified in this task.
 - Placeholder branches: `分支主题 1`; `分支主题 2`; `分支主题 3`; `分支主题 4`.
 - Status is `partial` because there is no substantive branch content beyond the title.
 
-- Link cleanup candidate: Compile candidates: Hugging Face Transformers; Transformer 工具链.
+- Compile candidates: Hugging Face Transformers; Transformer 工具链.

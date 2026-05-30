@@ -45,7 +45,7 @@ No external links found in extracted content.
 
 ## Links
 
-- related: [[concepts/Agent Skills|Agent Skills]] — PDF 主题明显围绕 Claude Skills，但当前只有预览页证据。
+- updates: [[concepts/Agent Skills|Agent Skills]] — 作为 Claude Skills 构建指南补入规格层证据；当前仅前 3 页预览，证据为目录/主题级。
 - related: [[entities/Claude Code|Claude Code]] — source 与 Claude 技能生态相关，尚未看到具体 Claude Code 内容。
 - related: [[entities/Anthropic|Anthropic]] — Claude 品牌出现在封面；当前未核验产品或文档细节。
 

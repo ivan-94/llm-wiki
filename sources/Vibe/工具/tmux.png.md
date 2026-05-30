@@ -49,7 +49,9 @@ status: ingested
 
 ## Links
 
-- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入远程/长时间 agent 执行工具。
+- related: [[concepts/远程 Agent 控制栈|远程 Agent 控制栈]] — tmux 是远程控制栈中会话保持层的核心工具。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 远程与运行时工具簇来源。
+- used-in: [[sources/Vibe/工具/远程控制.xmind|远程控制]] — 远程控制场景下 tmux 的具体使用场景描述。
 
 ## Maintenance Notes
 

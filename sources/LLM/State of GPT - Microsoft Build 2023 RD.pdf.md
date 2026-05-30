@@ -48,11 +48,18 @@ No external links found in extracted content.
 
 ## Links
 
-No wiki pages created or modified in this task.
+- compiled-concept: [[concepts/预训练与微调范式|预训练与微调范式]] — 预览页提供 Pretrain/SFT/RM/RL 四阶段管线与预训练数据组成。
+- compiled-concept: [[concepts/指令微调（SFT）|指令微调（SFT）]] — 预览页说明 SFT 用人工 demonstration 训练。
+- compiled-concept: [[concepts/RLHF 与偏好对齐|RLHF 与偏好对齐]] — 预览页给出 Reward Modeling 与 RL 阶段。
+- compiled-entity: [[entities/GPT 与 ChatGPT|GPT 与 ChatGPT]] — deck 讲解 GPT Assistant 训练 recipe。
+- compiled-entity: [[entities/Llama|Llama]] — 预训练数据配比以 LLaMA 为例。
+- related-source: [[sources/LLM/微调生成模型.xmind|微调生成模型]] — 微调簇，互补四阶段管线与具体微调路线。
+- related-source: [[sources/LLM/图解ChatGPT.xmind|图解ChatGPT]] — 同为 ChatGPT 训练管线证据。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — 训练管线总览入口（preview only）。
 
 ## Maintenance Notes
 
 - PDF ingest used the `ai-wiki-pdf-ingest` preview mode: pages 1-3 rendered as images and inspected visually.
 - This is not full-PDF OCR, text extraction, or complete reading. Exact wording and later-slide claims must be checked against the raw PDF before citation-heavy compile.
-
-- Link cleanup candidate: Compile candidates: LLM 训练流程; SFT/RM/RLHF; 预训练数据; GPT Assistant 训练管线.
+- 作者 Andrej Karpathy 的实体页归属其他 wave；本 source 仅文字提及，未建 entity 链接。
+- Compile candidates: LLM 训练流程; SFT/RM/RLHF; 预训练数据; GPT Assistant 训练管线.

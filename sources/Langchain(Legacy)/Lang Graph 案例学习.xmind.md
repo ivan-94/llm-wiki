@@ -55,8 +55,13 @@ RAG 分支把 adaptive RAG、Agentic RAG、Corrective RAG 和 Self RAG 放到同
 
 ## Links
 
-- related: [[concepts/Agent Harness|Agent Harness]] — source 通过工具节点、状态、反思、路由和终止条件补充 Agent 控制面的案例证据。
-- related: [[concepts/Agentic Engineering|Agentic Engineering]] — source 展示把 Agent 行为拆成可验证、可重试、可编排流程的工程化方式。
+- related: [[concepts/Agent Harness|Agent Harness]] — source 通过工具节点、状态、反思、路由和终止条件补充 Agent 控制面的案例证据（legacy · not verified）。
+- related: [[concepts/Agentic Engineering|Agentic Engineering]] — source 展示把 Agent 行为拆成可验证、可重试、可编排流程的工程化方式（legacy · not verified）。
+- compiled-entity: [[entities/LangGraph|LangGraph]] — source 是 LangGraph 实体页的 Agentic RAG 案例和 Graph-based Agent 模式证据（legacy · not verified）。
+- compiled-concept: [[concepts/Agentic RAG|Agentic RAG]] — source 的 Adaptive/Corrective/Self RAG 和 Agentic RAG 决策图是 Agentic RAG 概念页的直接来源（legacy · not verified）。
+- compiled-synthesis: [[synthesis/LangChain 应用模式目录（Legacy）|LangChain 应用模式目录（Legacy）]] — source 提供 LangGraph 特定的 Agent 模式案例（legacy · not verified）。
+- related: [[sources/Langchain(Legacy)/Langchain  表达式语言.xmind|Langchain 表达式语言.xmind]] — LCEL 是 LangGraph 中节点和边的实现基础，两个 source 形成 Runnable 与 Graph 两层（legacy · not verified）。
+- related: [[sources/提示语工程:上下文工程/上下文工程.xmind|上下文工程.xmind]] — LangGraph 的状态、检查点和中断恢复是上下文工程"写入"和"隔离"策略的具体实现（legacy · not verified）。
 
 ## Maintenance Notes
 

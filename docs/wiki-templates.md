@@ -56,6 +56,13 @@ status: ingested
 - Raw metadata: created `2026-05-29T00:00:00+00:00`; modified `2026-05-29T00:00:00+00:00`; size `123456`; snapshot `2026-05-29T00:00:00+00:00`
 - Coverage: <processed scope from ingest skill>
 
+## Source Cluster
+
+- Directory cluster: <raw directory or topic cluster>
+- Cluster role: <entry-point | prerequisite | expansion | case | tool | contrast | supplement | index>
+- Neighbor sources:
+  - <relation-type>: [[sources/<neighbor-source>|<neighbor-source>]] — <why this source is related>
+
 ## Summary
 
 ## Source Digest
@@ -91,11 +98,12 @@ Raw metadata 字段用于后续 raw/source diff：
 区块含义：
 
 - `Source`: raw 路径、类型、状态、覆盖范围等可复查元数据。
+- `Source Cluster`: raw 目录和相邻 source 的语义关系；目录本身视为用户已有组织，不当作路径噪声。
 - `Summary`: 该 raw 的整体摘要。
 - `Source Digest`: LLM 理解 source 后写出的提炼摘要，不是机械 outline、抽样文本、截断导出或完整 raw 导出。
 - `Key Claims`: 可被 concept/entity/synthesis 引用的主张或事实；重要 claim 要可追溯，并区分 raw 明确表达与 agent 推断。
 - `External Links`: raw 中出现的 URL 或外部资料引用；无 URL 时显式写未发现，不伪造链接。
-- `Links`: 本 source 创建或更新过的 wiki 页面；必须使用关系类型，禁止裸 wikilink 列表。
+- `Links`: 本 source 创建或更新过的 wiki 页面，以及应保留的 source-source 关系；必须使用关系类型，禁止裸 wikilink 列表。
 - `Maintenance Notes`: 解析失败、图片不清、冲突、待补充上下文、异常节点、结构错位。
 
 `Source Digest` 边界：
@@ -128,6 +136,8 @@ Source Links 示例：
 - compiled-concept: [[concepts/LLM 评估|LLM 评估]] — 提炼离线/在线评估、Dataset、Experiment、Score 等概念。
 - compiled-entity: [[entities/Langfuse|Langfuse]] — source 以 Langfuse 为评估平台参照。
 - map-entry: [[maps/提示语与上下文工程学习地图|提示语与上下文工程学习地图]] — 纳入提示语/上下文学习路径。
+- same-cluster: [[sources/提示语工程:上下文工程/上下文工程.xmind|上下文工程.xmind]] — 同属提示语与上下文工程目录，提供相邻背景。
+- extends-source: [[sources/提示语工程:上下文工程/LLM 评估.xmind|LLM 评估.xmind]] — 当前 source 把评估概念展开到提示语优化场景。
 ```
 
 ## Concept Template
@@ -187,7 +197,7 @@ review_after: null
 
 ## Entity Template
 
-`entities/` 用于人物、公司、项目、产品、工具、框架、模型、组织。不要为只出现一次且无复用价值的名字创建空实体页。
+`entities/` 用于人物、公司、项目、产品、工具、框架、模型、协议、平台、组织和方法论来源。实体创建标准是它能否连接多个 source/concept/synthesis 或在工作流中承担稳定角色；不要为只出现一次且无复用价值的名字创建空实体页。
 
 ```markdown
 ---

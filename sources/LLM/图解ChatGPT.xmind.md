@@ -54,7 +54,13 @@ ChatGPT 训练流程部分保留了典型 RLHF 管线：预训练以预测下一
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-concept: [[concepts/预训练与微调范式|预训练与微调范式]] — source 用预训练/SFT/RM/RL 还原 ChatGPT 训练管线。
+- compiled-concept: [[concepts/RLHF 与偏好对齐|RLHF 与偏好对齐]] — source 提供奖励模型与 PPO 对齐路径证据。
+- compiled-concept: [[concepts/解码与采样策略|解码与采样策略]] — source 说明逐词生成与温度影响随机性。
+- compiled-entity: [[entities/GPT 与 ChatGPT|GPT 与 ChatGPT]] — source 是 ChatGPT 训练与生成原理的主要案例来源。
+- related-source: [[sources/LLM/语言模型内部原理.xmind|语言模型内部原理]] — 同属表示/架构簇，互补内部机制与产品原理。
+- related-source: [[sources/LLM/微调生成模型.xmind|微调生成模型]] — RLHF/PPO 对齐链路的横向证据。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — 训练管线与生成原理入口。
 
 ## Maintenance Notes
 
@@ -62,5 +68,4 @@ No downstream wiki pages were created or updated in this scoped ingest.
 - Detail preserved: LLM generation principle, model/neural-network explanation, training loop, gradient descent/backpropagation, ChatGPT RLHF stages, and external reading URLs are represented.
 - Truncated/unfinished branch: PPO node ends without a complete explanation in exported content.
 - Compile candidates: ChatGPT 原理, 神经网络基础, 梯度下降, 反向传播, RLHF, 奖励模型, PPO, scaling law, 涌现.
-
-- Link cleanup candidate: related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.
+- 神经网络基础、梯度下降、反向传播、scaling law、涌现尚未单独建页，留作后续 wave 候选。

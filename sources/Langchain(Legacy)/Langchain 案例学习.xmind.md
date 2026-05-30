@@ -54,9 +54,11 @@ RAG 分支给出最完整的端到端路径：WebBaseLoader 加载网页，Recur
 
 ## Links
 
-- related: [[sources/Agent/LangChain.xmind|Agent/LangChain.xmind]] — 现有 source 提供 LangChain 总览背景，本 source 提供案例层证据。
-- related: [[concepts/提示语工程|提示语工程]] — 结构化提取、few-shot、SQL prompt 和请求分析都可补充提示语工程实践。
-- related: [[concepts/上下文工程|上下文工程]] — RAG、聊天历史、请求重写、长文本提取、代码理解均是上下文构造策略。
+- related: [[sources/Agent/LangChain.xmind|Agent/LangChain.xmind]] — 现有 source 提供 LangChain 总览背景，本 source 提供案例层证据（legacy · not verified）。
+- related: [[concepts/提示语工程|提示语工程]] — 结构化提取、few-shot、SQL prompt 和请求分析都可补充提示语工程实践（legacy · not verified）。
+- related: [[concepts/上下文工程|上下文工程]] — RAG、聊天历史、请求重写、长文本提取、代码理解均是上下文构造策略（legacy · not verified）。
+- compiled-synthesis: [[synthesis/LangChain 应用模式目录（Legacy）|LangChain 应用模式目录（Legacy）]] — source 是 RAG/Agent/SQL/提取/请求分析模式目录的核心证据（legacy · not verified）。
+- related: [[sources/Langchain(Legacy)/Langchain  组件.xmind|Langchain 组件.xmind]] — 案例 source 与组件 source 形成"设计模式 ↔ 实现组件"对照关系（legacy · not verified）.
 
 ## Maintenance Notes
 

@@ -55,8 +55,10 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-concept: [[concepts/Agent 沙箱|Agent 沙箱]] — source 是 nsjail MVP 与威胁模型差异的核心证据：用户级 NsJailService、资源边界、隔离边界、不追求强对抗。
+- updates: [[entities/闪极智能体|闪极智能体]] — nsjail 沙箱服务补入闪极运行时实体证据。
+- updates: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 支撑运行时变体对比表的沙箱列证据。
 - related: [[concepts/Agent Harness|Agent Harness]] — 可补充 Agent 命令执行后端的队列、运行、观察和清理边界。
-- related: [[concepts/Agentic Engineering|Agentic Engineering]] — PRD 展示了从 Agent 运行基础设施到 QA/验收清单的工程化约束。
 
 ## Maintenance Notes
 

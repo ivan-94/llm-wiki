@@ -53,8 +53,11 @@ status: ingested
 
 ## Links
 
-- related: [[concepts/LLM 评估|LLM 评估]] — source 补充 dataset、evaluator、offline/online evaluation、CI 回归和内置评估器类型。
-- related: [[entities/Langfuse|Langfuse]] — 可作为 LangSmith/Langfuse 两类 LLM 评估观测平台后续对比的参照，但本 note 未创建 LangSmith 实体页。
+- related: [[concepts/LLM 评估|LLM 评估]] — source 补充 dataset、evaluator、offline/online evaluation、CI 回归和内置评估器类型（legacy · not verified）。
+- compiled-entity: [[entities/LangSmith|LangSmith]] — source 是 LangSmith 实体页的主要知识来源（legacy · not verified）。
+- related: [[entities/Langfuse|Langfuse]] — LangSmith 与 Langfuse 互为对照的 LLM 评估观测平台，两者比较见综合页。
+- compiled-synthesis: [[synthesis/LangSmith 与 Langfuse 可观测性对照（Legacy）|LangSmith 与 Langfuse 可观测性对照（Legacy）]] — source 提供 LangSmith 侧的评估能力和流程（legacy · not verified）。
+- related: [[sources/提示语工程:上下文工程/LLM 评估.xmind|LLM 评估.xmind]] — 两个 source 分别从 LangSmith（legacy）和 Langfuse 角度描述评估闭环，互为参照。
 
 ## Maintenance Notes
 

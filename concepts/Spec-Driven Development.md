@@ -42,7 +42,7 @@ SDD 的价值来自产物分层，而不是“文档更多”：
 - OpenSpec 更像变更治理和规范流程，SpecKit 更强调从 constitution 到 spec/plan/tasks 的约束链。
 - 技术设计方案、规格书和 Mini Spec 是不同粒度的 spec artifact，可以服务不同复杂度任务。
 - 对 Agent 来说，spec 的价值在于减少未定义空间和隐式决策。
-- SDD 与 SbE 的关系是互补：SDD 组织规格资产和执行链，SbE 用具体例子把行为边界和验收反例变硬。
+- SDD 与 SbE 的关系是互补（complements）：SDD 组织规格资产和执行链，SbE 用具体例子把行为边界和验收反例变硬。两者都服务于同一个目标：让 Agent 在明确的行为边界内工作。
 - 对存量系统，spec 还承担防止 Agent 偏离当前事实的作用；对新 feature，spec 更像从想法到任务的脚手架。
 
 ## Examples
@@ -51,6 +51,23 @@ SDD 的价值来自产物分层，而不是“文档更多”：
 - `技术设计方案.xmind` 将背景、目标、约束、接口、数据、风险和验收连接起来。
 - OpenSpec 图片组展示变更 proposal、spec delta、tasks 和验证流程。
 - SpecKit 图片组展示 constitution、spec、plan、tasks 和 artifact 关系。
+
+## Spec Stack Selection Matrix (B4 四格)
+
+不同任务复杂度和治理需求对应不同规格工具：
+
+| 规格工具 | 最适合 | 主要优势 |
+| --- | --- | --- |
+| Mini Spec | 小功能/bug fix/局部重构，个人开发 | 轻量、快速、明确边界 |
+| SpecKit | 新 feature 从想法到任务的完整交付链 | constitution + spec/plan/tasks 约束链 |
+| OpenSpec | 存量系统变更治理，规范维护 | change delta + behavior contract + archive |
+| SbE | 业务规则澄清，验收行为确定 | 具体例子消灭歧义，反例驱动测试 |
+
+选型原则：
+- 探索/快速验证 → Mini Spec
+- 新 feature 完整交付 → SpecKit
+- 存量系统防漂移 → OpenSpec
+- 业务规则有争议或语义复杂 → 引入 SbE examples
 
 ## Common Confusions
 
@@ -71,7 +88,8 @@ SDD 的价值来自产物分层，而不是“文档更多”：
 ## Relations
 
 - enables: [[concepts/Vibe Coding|Vibe Coding]]
-- contrasts-with: [[concepts/Specification by Example|Specification by Example]]
+- complements: [[concepts/Specification by Example|Specification by Example]] — SDD 组织规格资产，SbE 用具体例子强化行为边界（非对立关系）
+- supported-by: [[concepts/共识方法论|共识方法论]] — 共识方法论是 SDD 必要性的宏观理由
 - used-in: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]]
 - used-in: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]]

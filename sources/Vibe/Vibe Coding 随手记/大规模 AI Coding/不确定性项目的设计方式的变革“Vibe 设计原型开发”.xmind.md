@@ -53,12 +53,11 @@ No external links found in extracted content.
 
 ## Links
 
-- related: [[concepts/Vibe Coding|Vibe Coding]] — 可沉淀定调、原型验证、复盘和正式工程化的流程。
-- related: [[concepts/Vibe Coding|Vibe Coding]] — 可总结从完备前置设计转向早期验证的设计范式变化。
-- related: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 可对比原型不可产品化、正式重构和工程质量底线。
+- compiled-concept: [[concepts/Vibe 设计原型开发|Vibe 设计原型开发]] — 本 source 是“定调→原型→复盘→正式工程化”六步流程的主要来源。
+- related: [[concepts/Vibe Coding|Vibe Coding]] — 原型不可产品化规则与 Vibe Coding 两阶段模型（粗生成/精修）互补。
+- compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 原型阶段对应 L1 意图层，正式编码需进入多层控制系统。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为“设计方式变革”章节入口。
 
 ## Maintenance Notes
 
-- 本批 worker 被限制不创建或修改编译层页面；Links 仅记录候选关系。
 - Source 未给出具体项目案例；后续编译概念页时需要用其他 source 或项目记录补充例证。

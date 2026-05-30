@@ -24,15 +24,21 @@ oh-my-claude-code 在本 wiki 中被整理为围绕 Claude Code 的 Hooks、Skil
 
 ## Related Concepts
 
+- example-of: [[concepts/多 Agent 协作协议|多 Agent 协作协议]]
 - example-of: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]]
+- related: [[concepts/子代理委派模式|子代理委派模式]]
 - related: [[concepts/Agent Skills|Agent Skills]]
 - related: [[concepts/Agent 可观测性|Agent 可观测性]]
 - related: [[entities/Claude Code|Claude Code]]
 - contrasts-with: [[entities/ClawTeam|ClawTeam]]
+- contrasts-with: [[entities/Superpowers|Superpowers]] — Superpowers 以 session-hook+TDD 框架增强，oh-my-claude-code 以 Hooks/Agents/State 生命周期管理增强
+- contrasts-with: [[entities/GStack|GStack]] — GStack 以质量门禁 slash commands 增强，oh-my-claude-code 以持久化状态和专业 agent 角色增强
+- contrasts-with: [[entities/Matt Pocock|Matt Pocock]] — Matt 以可组合 GitHub 闭环 skills 增强，oh-my-claude-code 以结构化多 agent 角色和 `.omc/` 状态目录增强
 
 ## Evidence
 
 - [[sources/Agent/多智能体.xmind|多智能体]]
+- [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|解构 Claude Code]] — 提供 Claude Code 的 hooks/skills/agents/state 层的架构上下文，说明 oh-my-claude-code 的设计空间
 
 ## Open Questions
 

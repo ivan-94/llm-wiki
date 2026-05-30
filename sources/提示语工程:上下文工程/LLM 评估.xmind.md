@@ -65,6 +65,8 @@ status: ingested
 - compiled-synthesis: [[synthesis/公文提示词优化评估清单|公文提示词优化评估清单]] — 提供数据集、指标和模型对比的评估维度。
 - compiled-synthesis: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 本轮用于补充 Agent 系统中的评估反馈层。
 - map-entry: [[maps/提示语与上下文工程学习地图|提示语与上下文工程学习地图]] — 纳入提示语/上下文学习路径的评估闭环入口。
+- related: [[sources/提示语工程:上下文工程/提示语工程.xmind|提示语工程.xmind]] — 提示语工程迭代需要本 source 的评估闭环，两个 source 形成"设计 → 测量"的上下游。
+- related: [[sources/Langchain(Legacy)/Langchain  DevOps.xmind|Langchain DevOps.xmind]] — LangSmith evaluator 类型（legacy · not verified）是本 source Langfuse 评估体系的对照参照。
 
 ## Maintenance Notes
 

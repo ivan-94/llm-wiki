@@ -34,6 +34,24 @@ OpenSpec 和 SpecKit 都试图把 AI Coding 从 prompt 驱动推向 spec artifac
 - 如果问题是“业务规则是否真的被理解”，无论 OpenSpec 还是 SpecKit，都要引入 SbE examples。
 - 如果问题是“Agent 是否能长期执行不漂移”，spec artifact 还必须进入 GitHub/CI/HAT/harness 闭环。
 
+## Spec Granularity Selection Matrix (规格粒度选型矩阵)
+
+五格矩阵，帮助选择合适的规格粒度和工具：
+
+| 场景 | 推荐工具 | 核心产物 | 不适用于 |
+| --- | --- | --- | --- |
+| 小功能/bug fix/局部重构 | Mini Spec | target/context/scope/AC | 跨多模块的新 feature |
+| 新 feature 从想法到任务 | SpecKit | constitution+spec+plan+tasks | 存量系统变更治理 |
+| 存量系统变更/防漂移 | OpenSpec | proposal+delta+validation | 纯探索期快速原型 |
+| 业务规则澄清/行为边界 | SbE + Example Mapping | examples+gherkin+tests | 实现细节决策 |
+| 探索/原型/方向验证 | Vibe + 口头 spec | prompt+注释+草图 | 产品交付和持续维护 |
+
+选型决策树：
+- 有没有业务规则争议？→ 先做 SbE/Example Mapping
+- 是新 feature 还是变更？新 feature → SpecKit；变更 → OpenSpec
+- 规模是单文件还是多模块？单文件 → Mini Spec；多模块 → SpecKit/OpenSpec
+- 是探索还是交付？探索 → Vibe；交付 → 按上面选型
+
 ## Evidence
 
 - [[sources/Vibe/Spec/OpenSpec/概览.png|OpenSpec 概览]] 展示 OpenSpec 的角色和流程。

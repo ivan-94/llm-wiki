@@ -49,6 +49,9 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-concept: [[concepts/Mini Spec|Mini Spec]] — related-source：包含变更请求（change request）处理的具体实践案例。
+- compiled-concept: [[concepts/Spec-Driven Development|Spec-Driven Development]] — 实践记录展示概要设计、里程碑、详细设计、变更请求和验收链路的 SDD 落地。
+- enables: [[sources/Vibe/Spec/规格书.xmind|规格书.xmind]] — Vibe 实践记录是规格书理论的实战对应，二者互为参照。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe 实践工作流的核心节点。
 
 ## Maintenance Notes
@@ -56,6 +59,4 @@ No external links found in extracted content.
 - Sheet 1 and sheet 2 are single-topic sheets containing long embedded practice examples; they were read and summarized, but their full component/spec text is not copied into this source note.
 - Exported content contains large code-tree examples and SOP paths; exact implementation details should be rechecked against raw when needed.
 - Some spellings in raw are preserved conceptually but not normalized here, e.g. `implementions`, `optmize`, and `claude sonnect`.
-
-- Link cleanup candidate: related: 规格驱动 AI 开发 — 可沉淀概要设计、里程碑、详细设计、变更请求和验收链路。.
-- Link cleanup candidate: related: Agent 友好工程环境 — 可承载模块化、依赖倒置、声明式、可观测性、CLI、沙箱和质量门控。.
+- Agent 友好工程环境实践已分散编入 [[concepts/Agent Harness|Agent Harness]] 与 [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]]（Wave 4b 可深化）。

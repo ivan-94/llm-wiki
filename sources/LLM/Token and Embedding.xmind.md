@@ -55,6 +55,11 @@ No external links found in extracted content.
 
 - compiled-concept: [[concepts/Token 和 Embedding|Token 和 Embedding]] — source 提供 token、embedding、Word2Vec、BPE/WordPiece 和 text embedding 的学习证据。
 - compiled-concept: [[concepts/Transformer|Transformer]] — source 把表示学习演进连接到 Transformer、BERT 和 GPT。
+- compiled-concept: [[concepts/Encoder 与 Decoder 模型|Encoder 与 Decoder 模型]] — source 明确区分 encoder-only 表示模型与 decoder-only 生成模型。
+- compiled-concept: [[concepts/Chat Template 与 Tokenizer|Chat Template 与 Tokenizer]] — source 提供 BPE/WordPiece 分词器与分词依赖数据集的证据。
+- compiled-entity: [[entities/BERT|BERT]] — source 把 BERT 定位为 encoder-only + WordPiece + MLM。
+- compiled-entity: [[entities/GPT 与 ChatGPT|GPT 与 ChatGPT]] — source 把 GPT 定位为 decoder-only + BPE 生成模型。
+- related-source: [[sources/LLM/Transformer/Transformer.xmind|Transformer.xmind]] — 共享表示学习前置脉络，建议先表示后架构。
 - map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — source 是 LLM 基础学习路径中的表示学习入口。
 
 ## Maintenance Notes

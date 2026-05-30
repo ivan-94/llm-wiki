@@ -48,11 +48,9 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 本图提供 AI Coding 工作流中的 SbE 定位和阶段边界。
+- compiled-synthesis: [[synthesis/SbE 与 AI Coding 验收链路|SbE 与 AI Coding 验收链路]] — 本图将示例、规格、设计、任务、测试串成 AI 编码交付链。
 - map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可放入 SbE 与 AI Coding 实践模块。
 
 ## Maintenance Notes
 
 - Vision-based ingest; exact stage wording should be rechecked against raw image before verbatim quotation.
-- No compiled pages were created in this batch by scope constraint.
-
-- Link cleanup candidate: compiled-concept: 示例驱动 AI Coding — 本图将示例、规格、设计、任务、测试串成 AI 编码交付链。.

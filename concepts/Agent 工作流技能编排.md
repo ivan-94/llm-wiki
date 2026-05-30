@@ -30,21 +30,64 @@ Workflow skills 是 Agent 的工程流水线，每个节点有输入、输出、
 - Source Manifest 是跨 Agent 交接中的关键产物，防止下游只依赖摘要。
 - GitHub issue/PR 可以作为 Agent 工作流状态机和证据流转层。
 
+### 硬依赖图（来自 `地图2.png`）
+
+主流 workflow skills 的前提依赖关系：
+
+```
+setup → grill/grill-with-docs → prototype（可选）→ to-prd → to-issues → triage
+triage → [Ready For Agent] → tdd / deliver-issue
+tdd → cross-review → create-pr
+triage → [HAT Ready] → hat-dispatch → hat-run → hat-copilot（可选）
+create-pr → merge-pr
+```
+
+关键规则：
+- `to-issues` 必须在 `to-prd` 之后（prerequisite）
+- `tdd` 必须在切片就绪并通过 triage 后才能启动（enables）
+- `hat-prepare` 是 `hat-run`/`hat-dispatch` 的严格前提（prerequisite）
+
+### Agent Brief 产物链
+
+工作流产物的传递路径：
+
+```
+grill → 需求共识 → CONTEXT.md 更新
+to-prd → PRD（含 Source Manifest）
+to-issues → Vertical Slice Issues（含边界、验收条件）
+triage → Agent Brief（Ready For Agent issue）
+worktree → 隔离执行 → TDD 实现
+cross-review → diff evidence + review 报告
+hat-prepare → 验收环境 + prepare.sh + 验收清单
+hat-run → summary.md + results.json + artifacts
+create-pr → PR body（含测试证据和 open risks）
+```
+
+### 父/子 Agent + Worktree 职责分工
+
+- **父 Agent**：探索代码库、规划切片顺序、分析并发依赖、编排子 Agent、合并结果、cross-review、准备 HAT。
+- **子 Agent**：在隔离 worktree 中接受 Agent Brief，执行 TDD，产出 commit + 测试报告，只向父 Agent 汇报。
+- **看板管理**（见 `看板管理.xmind`）：可作为编排 UI 候选，把 triage/delivery/HAT 的 Agent 工作流产品化为可视状态机 + 命令启动器。
+
 ## Evidence
 
-- [[sources/Vibe/工具/mattpocock:skills  ⭐/地图.png|地图]]
-- [[sources/Vibe/工具/mattpocock:skills  ⭐/地图2.png|地图2]]
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/地图.png|地图.png]] — skill 全景图（推荐学习入口）
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/地图2.png|地图2.png]] — 硬依赖图，展示 skills 之间的前提/使能关系
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/to_prd__to_issue.png|to_prd__to_issue]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/triage 分诊.png|triage 分诊]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/tdd.png|tdd]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/定制化.xmind|定制化]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|我的流程]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/基于 github 的工作流.png|基于 github 的工作流]]
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/看板管理.xmind|看板管理]] — 编排 UI 候选，Agent 工作流的可视状态机设计草案
 
 ## Relations
 
 - contains: [[concepts/Agent Skills|Agent Skills]]
+- contains: [[concepts/Agent Brief|Agent Brief]] — Brief 是工作流编排的任务分发核心产物
+- contains: [[concepts/Vertical Slice Issue|Vertical Slice Issue]] — Slice 是编排的任务分发单元
 - used-in: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
+- enables: [[concepts/反馈工程（Feedback Engineering）|反馈工程（Feedback Engineering）]] — 工作流产物链为反馈工程提供信号结构
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]]
 
 ## My Understanding

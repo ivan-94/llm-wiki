@@ -58,6 +58,8 @@ source 从 Needle-in-a-Haystack 基准切入，指出长上下文窗口扩大不
 - compiled-synthesis: [[synthesis/RAG 与长上下文|RAG 与长上下文]] — source 是本轮 RAG 与长上下文综合页的核心对比材料。
 - map-entry: [[maps/LLM 应用与数据处理学习地图|LLM 应用与数据处理学习地图]] — source 支撑应用层检索与上下文策略学习路径。
 - related: [[concepts/上下文工程|上下文工程]] — 长上下文、RAG、摘要索引和查询分析都是上下文选择与压缩策略。
+- related: [[sources/RAG/RAG.xmind|RAG.xmind]] — 互补：本 source 覆盖 RAG/长上下文取舍与 RAPTOR，对方覆盖生产级 RAG 控制面。
+- related: [[sources/RAG/长记忆.xmind|长记忆.xmind]] — 长期记忆是让 RAG 跨会话化的延伸，与本 source 的长上下文化讨论相关。
 
 ## Maintenance Notes
 

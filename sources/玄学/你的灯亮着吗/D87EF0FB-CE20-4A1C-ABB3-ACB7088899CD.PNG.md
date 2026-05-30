@@ -53,6 +53,9 @@ No external links found in extracted content.
 - compiled-concept: [[concepts/问题定义|问题定义]] — source 提供识别问题主人和利益相关者的判断框架证据。
 - compiled-synthesis: [[synthesis/问题定义实践框架|问题定义实践框架]] — source 支撑实践框架中的问题主人识别步骤。
 - map-entry: [[maps/问题定义学习地图|问题定义学习地图]] — source 是问题主人主题的学习材料。
+- related: [[sources/玄学/你的灯亮着吗/E22C41D2-E980-4618-9416-F023812BA27D.PNG|全书灵魂概览]] — part-of 系列 hub；本图为第 3 篇。
+- related: [[sources/玄学/你的灯亮着吗/740079EE-F814-4958-809C-C2EF7281198B.PNG|第2篇]] — 7 图序列上一篇（prerequisite）。
+- related: [[sources/玄学/你的灯亮着吗/60C3B978-631B-4DF5-9B5E-0E1F25D24CB0.PNG|第4篇]] — 序列下一篇，找到主人后评估方案副作用。
 
 ## Maintenance Notes
 

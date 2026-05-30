@@ -49,7 +49,9 @@ No external links found in extracted content.
 
 ## Links
 
-- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入 agent skills/workflow 工具。
+- compiled-entity: [[entities/Superpowers|Superpowers]] — 本 source 是 Superpowers 实体的主要证据来源。
+- compiled-concept: [[concepts/AI 软件工厂|AI 软件工厂]] — Superpowers 是 AI 软件工厂的 session-hook 注入形态实现。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 三大 Skills 框架工具簇来源。
 
 ## Maintenance Notes
 

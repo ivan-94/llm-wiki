@@ -49,6 +49,8 @@ status: ingested
 - related: [[concepts/结构化文档解析|结构化文档解析]] — source 补充 DOCX Open XML 包结构、关系解析和语义重建的底层格式证据。
 - related: [[synthesis/LLM 应用数据处理流水线|LLM 应用数据处理流水线]] — 可支撑 Office 文档从包结构解析到 LLM 可消费表示的预处理环节。
 - map-entry: [[maps/LLM 应用与数据处理学习地图|LLM 应用与数据处理学习地图]] — 可作为 Office/DOCX 资料预处理的格式入口。
+- related: [[sources/数据处理/资料预处理.xmind|资料预处理.xmind]] — 本 source 提供 DOCX 格式底层知识，对方负责 Office 格式的实际转换工具选型。
+- related: [[sources/数据处理/结构化文档提取.xmind|结构化文档提取.xmind]] — DOCX Open XML 包结构是文档 AI 结构提取的格式基础，两个 source 在 pipeline 中互补。
 
 ## Maintenance Notes
 

@@ -42,8 +42,10 @@ No external links found in extracted content.
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
-Compile candidates: 自回归模型, 时间序列预测, 语言模型.
+- compiled-concept: [[concepts/自回归语言模型|自回归语言模型]] — source 提供自回归“用过去预测未来”的最小定义，连接时间序列与语言模型。
+- related-source: [[sources/LLM/语言模型内部原理.xmind|语言模型内部原理]] — 把自回归从时间序列延伸到逐 token 生成。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — 自回归概念的辅助证据。
+- Compile candidates: 自回归模型, 时间序列预测, 语言模型.
 
 ## Maintenance Notes
 

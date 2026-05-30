@@ -51,8 +51,9 @@ P1/P2 把这些原则扩展成更完整的 Agent 操作面：字段裁剪、quie
 
 ## Links
 
+- compiled-concept: [[concepts/Agent-friendly CLI（ACI）|Agent-friendly CLI（ACI）]] — checklist 给出 ACI 的 P0/P1/P2 和最小可落地七件事，是该概念页核心证据。
+- related: [[concepts/Agent 工具调用|Agent 工具调用]] — CLI 作为 agent-facing 工具接入协议的检查标准。
 - related: [[concepts/Agent Harness|Agent Harness]] — CLI contract、非交互、安全默认值和可观测性可补充 harness 的工具面约束。
-- related: [[concepts/Agentic Engineering|Agentic Engineering]] — source 可作为 Agent 工程化工具接口标准的证据。
 - related: [[concepts/Agent Skills|Agent Skills]] — source 明确建议用 `SKILL.md`/agent 文档描述调用准则。
 
 ## Maintenance Notes

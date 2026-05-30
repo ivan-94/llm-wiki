@@ -50,7 +50,12 @@ No external links found in extracted content.
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-entity: [[entities/Nano Bot|Nano Bot]] — source 是 Nano Bot 实体页的主要证据：最小 runtime 骨架与文件记忆。
+- compiled-concept: [[concepts/Agent MessageBus|Agent MessageBus]] — `MessageBus` 解耦渠道与 agent、控制消息与子代理回灌是该概念页的核心证据。
+- compiled-concept: [[concepts/子代理委派模式|子代理委派模式]] — SpawnTool 子代理结果经 MessageBus 回灌主循环是委派模式证据。
+- updates: [[concepts/Agent Runtime|Agent Runtime]] — 作为总线型/最小架构取向补入 runtime 变体分类轴。
+- updates: [[concepts/Agent Skills|Agent Skills]] — 强注入/弱注入（always:true 强注入、其余 XML 摘要弱注入）补强 Skills 注入机制。
+- updates: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 进入运行时变体对比表的总线型一行。
 
 ## Maintenance Notes
 

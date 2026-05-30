@@ -49,6 +49,26 @@ Agentic Engineering 的作用就是把这种自动补全变成可控流程：目
 - [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/Vibe Coding 的 Sweet Spot：从粗生成到精修.xmind|Vibe Coding 的 Sweet Spot]] 支撑任务粒度、状态外置、会话隔离和强验证循环。
 - [[sources/Vibe/软件工程基础/Specification by Example/5 落地和反模式.png|5 落地和反模式]] 支撑示例化验收不能退化成 QA 单独写测试脚本。
 
+## Productize First, Then Engineer (先产品化后工程化)
+
+一个健康的 AI 产品演进路径：
+
+1. **Vibe 探索期**：用 Vibe Coding 快速验证方向和用户价值，容忍高自由度、低治理密度。
+2. **MVP 稳定期**：用户验证成功后，开始引入 spec artifact、测试和决策边界，但不需要完整 Agentic Engineering。
+3. **工程化期**：产品复杂度超过单人单 session 可控范围后，全面切换到 Agentic Engineering：harness、worktree、CONTEXT.md、SbE、HAT、CI 闭环。
+4. **持续对齐期**：L5 Learning 层激活，失败棘轮化为规则和工具，系统能力持续提升。
+
+原则：**不要在探索期引入工程化负担，也不要在交付期停留在 Vibe 模式**。过早工程化阻碍探索；过晚工程化导致技术债以 Agent 可见但不可控的形式累积。
+
+## AI Native Organization Dimension (AI Native 组织维度)
+
+AI Native 组织不只是"用了 AI 工具"，而是在组织层面重新分配了认知劳动：
+
+- 工程师的核心能力迁移：从"写代码"→ "设计可验收的工作系统"（spec、harness、evidence、guardrail）。
+- 团队分工重组：传统 BA/Dev/QA 三角 → Three Amigos 的 AI 时代版（产品/工程/AI Agent 协作者）。
+- 知识沉淀方式变化：口头传递 + 文档 → AGENTS.md/CONTEXT.md/skill/工程宪法 的机器可读形式。
+- 速度瓶颈迁移：代码生成速度不再是瓶颈 → 目标设定、审查、验收和知识回写成为新的限速因素。
+
 ## Implications
 
 - 原型期可以偏 Vibe Coding，交付期必须向 Agentic Engineering 收敛。

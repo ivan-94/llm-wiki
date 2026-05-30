@@ -44,6 +44,7 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-concept: [[concepts/低代码 Agent 平台 vs 代码优先 Runtime|低代码 Agent 平台 vs 代码优先 Runtime]] - source 提供 AI 原生编排（FastGPT/Dify/Langflow/Coze/FlowiseAI/RAGFlow/LangGraph）与通用自动化（n8n/Zapier）并列的产品谱系证据。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - 编排引擎产品清单可作为 Agentic 工程工具层的后续补充证据。
 - related: [[concepts/Agent Harness|Agent Harness]] - workflow 产品可能服务于工具编排、流程约束和执行验证，但本 source 尚未展开 harness 细节。
 

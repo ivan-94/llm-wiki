@@ -55,6 +55,12 @@ No external links found in extracted content.
 
 - compiled-concept: [[concepts/Transformer|Transformer]] — source 提供从 one-hot/词袋、Word2Vec、RNN 到注意力和 Transformer 的演进证据。
 - compiled-concept: [[concepts/Token 和 Embedding|Token 和 Embedding]] — source 支撑分布式表示、词向量和文本表示学习的前置脉络。
+- compiled-concept: [[concepts/注意力机制|注意力机制]] — source 给出 RNN→注意力→自注意力→多头注意力的演进台阶。
+- compiled-concept: [[concepts/Encoder 与 Decoder 模型|Encoder 与 Decoder 模型]] — source 区分 GPT 单向生成与 BERT 双向理解。
+- compiled-entity: [[entities/GPT 与 ChatGPT|GPT 与 ChatGPT]] — source 把 GPT 定位为单向自回归生成路线。
+- compiled-entity: [[entities/BERT|BERT]] — source 把 BERT 定位为双向 MLM 理解路线。
+- related-source: [[sources/LLM/语言模型内部原理.xmind|语言模型内部原理]] — 架构演进的下一步是内部机制细节。
+- related-source: [[sources/LLM/Token and Embedding.xmind|Token and Embedding]] — 共享表示学习前置脉络。
 - map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — source 是 LLM 基础学习路径中的架构演进入口。
 
 ## Maintenance Notes

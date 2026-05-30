@@ -30,6 +30,7 @@ Transformer 让语言模型从 RNN 的顺序处理转向高度并行的上下文
 - 位置编码补足无循环结构带来的顺序信息。
 - Transformer block 通常由注意力层和前馈网络组成，前馈网络承载大量训练后知识。
 - GPT 偏 decoder-only 自回归生成，BERT 偏 encoder-only 双向理解。
+- 因果掩码（causal mask）让解码器只能看到当前及之前的 token，是自回归生成的前提；encoder 双向注意力不加因果掩码。
 
 ## Examples
 
@@ -42,7 +43,9 @@ Transformer 让语言模型从 RNN 的顺序处理转向高度并行的上下文
 
 - 注意力机制不是 Transformer 的全部；位置编码、前馈层、残差和归一化同样重要。
 - Transformer 能处理长距离依赖，不等于长上下文内所有信息都会被可靠使用。
-- BERT 和 GPT 都基于 Transformer，但训练目标和使用方向不同。
+- BERT 和 GPT 都基于 Transformer，但训练目标和使用方向不同（见 [[concepts/Encoder 与 Decoder 模型|Encoder 与 Decoder 模型]]）。
+- 自注意力（序列内部相互关注）与多头注意力（多组并行注意力）不是同一层；后者是前者的并行扩展。
+- 因果掩码只在解码/自回归场景需要，不要默认所有注意力都带掩码。
 
 ## Evidence
 
@@ -53,9 +56,13 @@ Transformer 让语言模型从 RNN 的顺序处理转向高度并行的上下文
 
 ## Relations
 
-- prerequisite: [[concepts/Token 和 Embedding|Token 和 Embedding]]
-- enables: [[concepts/LLM 微调|LLM 微调]]
-- used-in: [[concepts/RAG|RAG]]
+- prerequisite: [[concepts/Token 和 Embedding|Token 和 Embedding]] — 注意力作用在 token 的向量表示上。
+- contains: [[concepts/注意力机制|注意力机制]] — 自注意力/多头注意力是 Transformer block 的核心子层。
+- contains: [[concepts/Encoder 与 Decoder 模型|Encoder 与 Decoder 模型]] — encoder-only/decoder-only 是 Transformer 的两条特化路线。
+- enables: [[concepts/自回归语言模型|自回归语言模型]] — decoder + 因果掩码实现自回归生成。
+- enables: [[concepts/KV Cache|KV Cache]] — 缓存注意力 key/value 优化推理。
+- enables: [[concepts/LLM 微调|LLM 微调]] — 架构基础上才有各类微调。
+- used-in: [[concepts/RAG|RAG]] — 检索增强生成基于 Transformer 模型（他人维护，仅互链）。
 - map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]]
 
 ## My Understanding

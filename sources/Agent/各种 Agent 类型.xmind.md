@@ -51,6 +51,7 @@ No external links found in extracted content.
 
 ## Links
 
+- related: [[concepts/RAG|RAG]] — source 名为「各种 Agent 类型」，实为 RAG 能力谱系（原生 RAG、ReRank、多模态、Agentic RAG、混合、Graph RAG）；纠正 [[concepts/AI Agent|AI Agent]] 此前对它的误引，证据应归 RAG。
 - related: [[concepts/上下文工程|上下文工程]] — Router 和检索策略选择都依赖把正确上下文放进正确链路。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] — MultiAgent RAG 提供了一个把 Agent 协作嵌入检索生成系统的具体场景。
 - related: [[concepts/LLM 评估|LLM 评估]] — RAG 类型选择需要通过准确性、可解释性、成本和延迟等指标验证。

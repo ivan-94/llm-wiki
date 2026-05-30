@@ -56,15 +56,20 @@ OpenClaw 和多 Agent 章节把这些原则具体化：通过 Gateway、Channel 
 ## Links
 
 - compiled-concept: [[concepts/AI Agent|AI Agent]] - source 提供 Agent Loop、控制模式、多 Agent 和记忆边界，是本轮 AI Agent 概念页的核心证据。
+- compiled-concept: [[concepts/Agent 控制模式|Agent 控制模式]] - source 给出 Prompt Chaining/Routing/Parallelization/Orchestrator-Workers/Evaluator-Optimizer 五类控制模式。
+- compiled-concept: [[concepts/Workflow 与 Agent 的边界|Workflow 与 Agent 的边界]] - source 用控制权区分 workflow 与 agent。
+- compiled-concept: [[concepts/多 Agent 协作协议|多 Agent 协作协议]] - source 提供任务图、worktree 隔离、交叉验证、深度限制等多 Agent 协议证据。
+- compiled-concept: [[concepts/子代理委派模式|子代理委派模式]] - source 提供 worktree 子代理、最小系统提示和异步委派证据。
+- compiled-concept: [[concepts/Agent-friendly CLI（ACI）|Agent-friendly CLI（ACI）]] - source 的工具接口演进（API → ACI → Tool Search → Programmatic Tool Calling）支撑 ACI 概念。
 - compiled-synthesis: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] - source 支撑把 Agent 编译为 loop、harness、context、tools、memory、sandbox 的系统工程视角。
-- map-entry: [[maps/Agent 学习地图|Agent 学习地图]] - source 作为 Agent 学习路径的系统总览入口。
+- map-entry: [[maps/Agent 学习地图|Agent 学习地图]] - source 作为 Agent 学习路径的系统总览枢纽。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 提供 Agent 控制模式、多 Agent 组织、自主度和工程化基础设施的系统框架。
 - related: [[concepts/Agent Harness|Agent Harness]] - source 明确定义 harness 的四个组成，并列出 OpenAI Agent 优先开发实践。
 - related: [[concepts/Agent Skills|Agent Skills]] - source 将 Skills 作为 Agent Loop 外围能力和程序性记忆的一部分。
 - related: [[concepts/上下文工程|上下文工程]] - source 对上下文分层、压缩、缓存和文件系统接口有完整展开。
 - related: [[concepts/Vibe Coding|Vibe Coding]] - source 中的长任务续跑、worktree 子 Agent 和端到端自主执行可补充 Vibe Coding 的工程化实践。
 - related: [[entities/Agent Client Protocol|Agent Client Protocol]] - source 的 ACI 与工具接口演进可作为协议化工具接口的候选背景。
-- entity-candidate: [[entities/OpenClaw|OpenClaw]] — raw 提供了五层架构、安全边界、长任务恢复和记忆机制，后续值得判断是否创建实体页。
+- compiled-entity: [[entities/OpenClaw|OpenClaw]] — raw 提供五层架构、安全边界、长任务恢复和记忆机制，作为 OpenClaw 实体页的补充证据。
 
 ## Maintenance Notes
 

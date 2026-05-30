@@ -49,10 +49,11 @@ Cursor Tab 被描述为区别于传统光标补全的能力：它不仅补全当
 
 ## Links
 
-- compiled-entity: [[entities/Cursor|Cursor]] — source 提供 Cursor Tab、Composer、@Codebase、上下文入口、`.cursorrules` 和 Shadow Workspace 的产品能力证据。
+- compiled-entity: [[entities/Cursor|Cursor]] — 提供 Cursor Tab、Composer、@Codebase、上下文入口、`.cursorrules` 和 Shadow Workspace 的产品能力证据。
 - related: [[concepts/Vibe Coding|Vibe Coding]] — Cursor 是 AI Coding 工具案例，可为后续补充工具链实践证据。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] — Composer、Shadow Workspace 和代码库上下文体现 agent 化开发环境的早期形态。
-- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为后续工具地图中的 Cursor 条目候选。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 协议与 CLI 底座工具簇中的 IDE 参照。
+- contrasts-with: [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|解构 Claude Code]] — Cursor 以 IDE+代码库索引为核心，Claude Code 以终端+SDK 定制为核心。
 
 ## Maintenance Notes
 

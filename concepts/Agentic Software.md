@@ -23,6 +23,28 @@ Agentic Software 是以目标、上下文、记忆和编排为核心的软件形
 
 传统软件像固定菜单；Agentic Software 像一个有记忆、有工具、有审计轨迹的任务编排层。
 
+## 闪极眼镜场景分层（L1–L6）
+
+以 AI 眼镜（闪极）为例，说明 Agentic Software 的六层能力递进：
+
+| 层级 | 能力描述 | Agentic 程度 |
+| --- | --- | --- |
+| L1 | 静态信息叠加（AR 导航/字幕） | 无 Agent，规则驱动 |
+| L2 | 上下文感知展示（识别场景、人脸提示） | 感知 + 触发，无规划 |
+| L3 | 主动询问与澄清（遇到不确定时主动提问） | 简单 Agent 循环 |
+| L4 | 任务拆解与执行（识别意图，拆成步骤完成） | 完整 Agent 执行 |
+| L5 | 记忆与个性化（记住偏好，历史行为影响输出） | Agent + 持久记忆 |
+| L6 | 主动感知与预测（无需触发，提前判断和行动） | Proactive Agentic |
+
+AI 眼镜的真正价值在 L5–L6：常时在场的感知前端 + 后台记忆系统把持续感知转化为对用户的深度理解。
+
+## Open Channel Architecture
+
+Agentic Software 的另一个产品方向是开放 Channel：
+- 传统 SaaS 功能变成原子能力，可被第三方 Agent 调用。
+- 用户不需要进入具体 App，Agent 代理用户在多个 Channel 之间流转。
+- 竞争壁垒从"最好用的 UI"转向"最好的 Agent 接口和最深的上下文"。
+
 ## Key Claims
 
 - Agentic Software 不是给传统软件加聊天框，而是重排入口、资产、架构和商业模式。
@@ -32,7 +54,8 @@ Agentic Software 是以目标、上下文、记忆和编排为核心的软件形
 
 ## Evidence
 
-- [[sources/Vibe/Agentic Software.xmind|Agentic Software.xmind]]
+- [[sources/Vibe/Agentic Software.xmind|Agentic Software.xmind]] — 目标导向、动态 UI、上下文资产和原子能力编排的定义框架。
+- [[sources/Vibe/Harness Engineering.xmind|Harness Engineering.xmind]] — 未来框架 sheet 将软件建模为 Intent、Constraints、Feedback 和系统认知层。
 
 ## Relations
 

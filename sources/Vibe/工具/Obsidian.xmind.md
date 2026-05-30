@@ -47,7 +47,8 @@ No external links found in extracted content.
 
 ## Links
 
-- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为本地知识库和 Agent 可读文件系统主题的工具入口。
+- compiled-entity: [[entities/Obsidian|Obsidian]] — 本 source 是 Obsidian 实体的主要证据来源。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 知识管理工具簇来源。
 
 ## Maintenance Notes
 

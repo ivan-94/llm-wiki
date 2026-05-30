@@ -24,6 +24,7 @@ ClawTeam 在本 wiki 中被整理为 CLI + 文件状态 + tmux/subprocess + work
 
 ## Related Concepts
 
+- example-of: [[concepts/多 Agent 协作协议|多 Agent 协作协议]]
 - example-of: [[concepts/Agent Runtime|Agent Runtime]]
 - related: [[concepts/Agent 可观测性|Agent 可观测性]]
 - related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]]

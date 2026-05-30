@@ -49,6 +49,7 @@ No external links found in extracted content.
 
 ## Links
 
+- updates: [[concepts/AI Agent|AI Agent]] - source 提供模型/工具/编排层认知架构、Planning→Executing→Adjusting 工作循环和 Agent/Model 边界。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 提供 Agent 的基础定义、认知架构和 Agent/Model 边界。
 - related: [[concepts/上下文工程|上下文工程]] - source 将上下文学习和检索增强上下文学习列为提升模型性能的路线。
 

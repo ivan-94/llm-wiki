@@ -72,8 +72,15 @@ status: ingested
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
-Compile candidates: 深度学习基础, Keras 实战学习路径, 机器学习泛化, CNN, RNN, Transformer, 语言模型, LoRA, 模型训练最佳实践, map-candidate: 深度学习学习地图, entity-candidate: Keras, entity-candidate: KerasNLP, entity-candidate: GPT-2.
+- compiled-concept: [[concepts/注意力机制|注意力机制]] — Transformer sheet 提供多头注意力、位置编码、因果掩码证据。
+- compiled-concept: [[concepts/自回归语言模型|自回归语言模型]] — 语言模型 sheet 用“给定上下文预测下一个词元”定义。
+- compiled-concept: [[concepts/解码与采样策略|解码与采样策略]] — source 区分贪婪采样与温度采样。
+- compiled-concept: [[concepts/Encoder 与 Decoder 模型|Encoder 与 Decoder 模型]] — Transformer sheet 用编码器/解码器做英西翻译 Seq2Seq。
+- compiled-concept: [[concepts/PEFT 与 LoRA|PEFT 与 LoRA]] — source 给出 768×768 vs rank 4 适配器参数量对比。
+- compiled-concept: [[concepts/模型量化|模型量化]] — 最佳实践 sheet 讲混合精度训练。
+- related-source: [[sources/LLM/Transformer/Transformer.xmind|Transformer.xmind]] — 作为深度学习侧的 Transformer/语言模型可选前置。
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]] — 作为可选前置（神经网络/梯度下降通识底座）。
+- Compile candidates: 深度学习基础, Keras 实战学习路径, 机器学习泛化, CNN, RNN, 模型训练最佳实践, map-candidate: 深度学习学习地图, entity-candidate: Keras, entity-candidate: KerasNLP, entity-candidate: GPT-2.
 
 ## Maintenance Notes
 

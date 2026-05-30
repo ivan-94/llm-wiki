@@ -49,7 +49,10 @@ No external links found in extracted content.
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-entity: [[entities/Coze|Coze]] — source 是 Coze 实体页的主要证据：Bot 编排、知识库、记忆、工作流和 API 能力。
+- compiled-concept: [[concepts/低代码 Agent 平台 vs 代码优先 Runtime|低代码 Agent 平台 vs 代码优先 Runtime]] — source 提供低代码平台一侧（快速编排、托管、灵活性受限）的核心证据。
+- updates: [[concepts/Agent Runtime|Agent Runtime]] — 作为低代码平台取向补入 runtime 变体分类轴。
+- updates: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 进入运行时变体对比表的低代码平台一行。
 
 ## Maintenance Notes
 

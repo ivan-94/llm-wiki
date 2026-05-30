@@ -50,6 +50,8 @@ No external links found in extracted content.
 ## Links
 
 - compiled-entity: [[entities/Agent Client Protocol|Agent Client Protocol]] — 可沉淀 ACP 的治理、定位、协议模块、生态角色和限制。
+- contrasts-with: [[entities/Model Context Protocol|Model Context Protocol]] — ACP 管 client-agent 通信，MCP 管 agent-工具通信，两者互补。
+- enables: [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|解构 Claude Code]] — ACP 是 Claude Code CLI 作为 agent 侧实现的协议基础。
 
 ## Maintenance Notes
 

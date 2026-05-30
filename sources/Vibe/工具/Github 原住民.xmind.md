@@ -50,8 +50,11 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-synthesis: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 六层 GitHub 治理体系的核心来源，包括最小可用版本和六层武器。
 - compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 支撑 GitHub 作为 Agentic delivery 的状态机与证据流转层。
-- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 GitHub 协作与自动化工作流章节。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — GitHub-HAT 工作流簇的核心来源。
+- prerequisite: [[sources/Vibe/工具/mattpocock:skills  ⭐/基于 github 的工作流.png|基于 github 的工作流]] — Github 原住民是理解 GitHub 工作流图的前提知识。
+- used-in: [[entities/GStack|GStack]] — GStack 的发布和质量门禁流程以 GitHub 为基础平台。
 
 ## Maintenance Notes
 

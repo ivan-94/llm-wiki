@@ -70,8 +70,10 @@ status: ingested
 
 ## Links
 
-- related: [[entities/Claude Code|Claude Code]] — 可沉淀整体架构、交互、定制和运行模型。
-- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 该 source 可作为 Claude Code 主题学习地图的主入口。
+- compiled-entity: [[entities/Claude Code|Claude Code]] — 提供六层架构（交互/上下文/定制/执行/编排/治理）和 SubAgent/Teams/动态工作流的完整证据。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — Claude Code 工具簇的核心来源。
+- contrasts-with: [[sources/案例/Cursor.xmind|Cursor.xmind]] — Cursor 以 IDE+代码库索引为核心，Claude Code 以终端+SDK 定制为核心。
+- enables: [[sources/Vibe/工具/ACP.xmind|ACP.xmind]] — Claude Code CLI 是 ACP agent 侧的参照实现。
 
 ## Maintenance Notes
 

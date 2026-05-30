@@ -60,7 +60,11 @@ OpenClaw 的哲学偏向极简和自我扩展。导图强调 CLI 是智能体连
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-entity: [[entities/OpenClaw|OpenClaw]] — source 是 OpenClaw 实体页的主要证据：Gateway/Node/Channel、Loopback-first、文本记忆、CLI、skills、多 Agent 隔离。
+- updates: [[concepts/Agent Runtime|Agent Runtime]] — 作为本地优先/极简工具面取向补入 runtime 变体分类轴。
+- updates: [[concepts/Agent 记忆生命周期|Agent 记忆生命周期]] — Daily Log、MEMORY.md、Pre-Compaction 是记忆写入时机和压缩触发的证据。
+- updates: [[concepts/Agent 沙箱|Agent 沙箱]] — Docker 沙箱、不内置 MCP 的 CLI 工具面是执行边界证据。
+- updates: [[synthesis/Agent 系统工程综述|Agent 系统工程综述]] — 进入运行时变体对比表的本地优先一行。
 
 ## Maintenance Notes
 

@@ -50,7 +50,10 @@ No external links found in extracted content.
 
 ## Links
 
-- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为多 agent 执行和 HAT 验收基础设施节点。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 远程与运行时工具簇，多 agent 执行环境来源。
+- related: [[concepts/远程 Agent 控制栈|远程 Agent 控制栈]] — 并发执行环境是控制栈的执行层隔离实现。
+- implemented-by: [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|我的流程]] — 我的流程中的并发执行模式在这份 source 中有具体环境搭建实现。
+- enables: [[sources/Vibe/工具/mattpocock:skills  ⭐/看板管理.xmind|看板管理]] — 看板 Runner 层依赖并发执行环境提供的 agent 沙箱。
 
 ## Maintenance Notes
 

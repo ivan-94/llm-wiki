@@ -51,10 +51,11 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: [[concepts/Agent Skills|Agent Skills]] — 可提炼小型、可组合、可适配的工程 skill 设计原则。
-- related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 可沉淀 PRD、issue、triage、TDD、diagnose 和 PR 的协作链条。
-- related: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 可提炼状态、标签、评论、webhook、引用和任务市场的任务管理模型。
-- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe Coding 工程化 workflow 主入口。
+- compiled-concept: [[concepts/Agent Skills|Agent Skills]] — 可提炼小型、可组合、可适配的工程 skill 设计原则和三分法。
+- compiled-entity: [[entities/Matt Pocock|Matt Pocock]] — 提供四失败模式、工程链路和 GitHub 协议层升格。
+- updates: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 提供 PRD、issue、triage、TDD、diagnose 和 PR 的协作链条。
+- compiled-synthesis: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 提炼 triage labels、Agent Brief 和 Issue 协议层。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — Vibe 工程化 workflow 主入口。
 
 ## Maintenance Notes
 

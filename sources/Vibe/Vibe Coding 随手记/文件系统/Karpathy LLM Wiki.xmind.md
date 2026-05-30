@@ -46,14 +46,13 @@ source 把 LLM Wiki 定义为一种“先编译、后查询、持续回写”的
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
+- compiled-entity: [[entities/Andrej Karpathy|Andrej Karpathy]] — 根节点外链指向 Karpathy 对 LLM Wiki 模式的讨论帖。
+- compiled-concept: [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]] — source 将 AGENTS.md 定义为 ingest/query/compile/lint/file-back 规则层。
+- related: [[concepts/分层文档索引|分层文档索引]] — raw/wiki/rules 三层结构与分层文档索引概念互补（meta，非 Wave 4a 主产物）。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为本 wiki 规则体系的元资料入口。
 
 ## Maintenance Notes
 
 - source 内含大量示例目录和模板片段；本 note 已提炼其结构和职责，没有保存完整导出。
 - 外链只提取了 X/Twitter URL，未联网核验。
-
-- Link cleanup candidate: compiled-concept: LLM Wiki — source 系统说明 raw/wiki/rules 三层结构和持续编译流程。.
-- Link cleanup candidate: compiled-concept: 知识复利 — source 强调每次新增资料都更新已有概念和综合，而不是产生孤立摘要。.
-- Link cleanup candidate: compiled-concept: File Back — source 将有长期价值的 query/output 归档回 wiki。.
-- Link cleanup candidate: map-entry: AI Wiki 维护学习地图 — source 可作为本 wiki 规则体系的元资料。.
+- LLM Wiki、知识复利、File Back 等术语已体现在本仓库 `AGENTS.md` 工作流中，不单独建 meta concept 页。

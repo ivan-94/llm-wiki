@@ -48,13 +48,11 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-synthesis: [[synthesis/DDD–SbE–BDD–TDD 协作链路|DDD–SbE–BDD–TDD 协作链路]] — 本图是四方法协作分工与衔接的主要来源。
 - related: [[concepts/Specification by Example|Specification by Example]] — 图片提供 SbE 在需求对齐和验收层的定位。
-- related: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为软件工程基础中“从业务到测试实现”的学习节点。
+- map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为软件工程基础中“从业务到测试实现”的学习节点。
 
 ## Maintenance Notes
 
 - Image source note created from vision inspection; no OCR file or derived asset was written.
-- This batch scope only permits source notes, so no concept, synthesis, map, index, or log page was modified.
 - Exact visible text should be rechecked against the raw image before quotation because the infographic contains dense small labels.
-
-- Link cleanup candidate: related: DDD SbE BDD TDD 协作链路 — 候选综合；图片适合与同目录 SbE 流程图一起编译四种工程方法的关系。.

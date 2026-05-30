@@ -49,6 +49,8 @@ No external links found in extracted content.
 
 ## Links
 
+- compiled-entity: [[entities/闪极智能体|闪极智能体]] — `ai_glass` 与闪极智能体同属一条 AI 眼镜产品线，专家路由（ExpertClient/match_expert）和记忆管家是早期架构证据。
+- compiled-concept: [[concepts/多渠道记忆协议|多渠道记忆协议]] — 记忆管家的时间范围 + 关键词 + 向量混合检索是多渠道/混合记忆的早期形态。
 - related: [[concepts/上下文工程|上下文工程]] — 记忆管家和专家路由涉及历史上下文筛选与检索。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] — 专家客户端和路由可作为 agent 系统架构案例。
 

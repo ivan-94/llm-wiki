@@ -52,6 +52,7 @@ status: ingested
 - related: [[entities/Claude Code|Claude Code]] — 可沉淀启动、会话、脚本化、权限、上下文和远程能力。
 - related: [[concepts/Agent 沙箱|Agent 沙箱]] — 文档提供工具白名单、黑名单、permission mode 与 bare mode 例子。
 - related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 CLI 操作层学习入口。
+- related: [[sources/Vibe/工具/Claude Code/claude code cli.png|claude code cli.png]] — 同主题图片 source，两者覆盖相同 CLI 功能的不同表达形式。
 
 ## Maintenance Notes
 

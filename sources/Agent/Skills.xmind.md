@@ -67,7 +67,7 @@ source 把 Skill 定义为包含 `SKILL.md` 的文件夹，至少有 `name` 与 
 
 ## Links
 
-- related: [[concepts/Agent Skills|Agent Skills]] — source 是现有 Agent Skills 概念页的直接补强材料。
+- updates: [[concepts/Agent Skills|Agent Skills]] — source 补充 Agent Skills 规格层：SKILL.md 结构、description=触发、发现/激活/执行、scripts 约束。
 - related: [[concepts/上下文工程|上下文工程]] — source 明确把 Skills 归入上下文工程和渐进式披露。
 - related: [[concepts/Agent Harness|Agent Harness]] — scripts、hooks、资源加载和 skill discovery 可补充 harness 控制面。
 - related: [[entities/Anthropic|Anthropic]] — source 多处引用 Claude/Anthropic Skills 文档和实践，但未核验当前产品状态。

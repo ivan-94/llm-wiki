@@ -43,6 +43,7 @@ AI/
 ```
 
 - `sources/`: raw 文件的一一转换结果，目录层级镜像 raw，是证据入口。
+- raw 目录本身是用户已有的主题组织；同一 raw 目录下的 source 默认属于一个 source cluster，必须在 ingest/compile 时判断互证、前后置、重复、对比或案例关系。
 - `concepts/`: 概念页，跨多个 source 的稳定学习节点。
 - `entities/`: 人物、公司、项目、产品、工具、框架、模型、组织。
 - `synthesis/`: 跨来源分析、对比、路线图、判断、wiki 健康报告。
@@ -59,6 +60,7 @@ AI/
 - Raw boundary: 禁止修改、重命名、移动、删除 raw 文件；禁止在 raw 目录或其旁边写中间产物；禁止为了工具成功而修复 raw；禁止直接解包、修改或手写解析 `.xmind`。允许读取 raw、使用 vision 理解图片、按 workflow 在 wiki 目录写派生产物。如果 raw 需要人工修复，必须记录到 source note `Maintenance Notes`、`index.md` Needs Attention 和 `log.md`。
 - File scope: 当前支持 `.xmind`、图片、Markdown、PDF、Excalidraw raw。其他文件类型默认不 ingest、不转换、不创建 source note；发现时只在 `index.md` Needs Attention 或 `log.md` 记录为 unsupported，除非用户明确扩展支持范围。
 - Source mapping: 对当前支持的 raw，`sources/` 必须镜像 raw 目录层级和文件名。raw `.md` 直接映射为同名 `.md`；其他支持类型映射为 `<原文件名含扩展名>.md`。不支持类型不创建 `sources/...`。
+- Source clusters: 新建或刷新 source note 前，必须查看 raw 所在目录和同目录已有 `sources/...`。source note 应记录目录主题、cluster role，以及与同目录或相邻目录 source 的 typed relation；如果没有可确认邻居，也要说明判断结果。
 - Raw links: source note 必须同时保留 FinderX iCloud raw 链接和 `raw:<source_relpath>`；链接必须指向 raw 文件，不指向 wiki 派生文件。
 - Raw metadata: 新建或刷新 source note 时必须在 frontmatter 记录 `raw_created_at`、`raw_modified_at`、`raw_size`、`raw_fingerprint`、`raw_snapshot_at`。更新判断使用 raw 文件内容修改时间 `mtime`；不要使用 `ctime`，因为 iCloud 或本地元数据变化会污染它。旧 source note 缺少这些字段时，先标记为 `needs_metadata` 或重新 ingest/backfill 后再依赖更新/移动判断。
 - External links: 支持类型中可可靠提取或看见的 URL 必须进入 source note 的 `## External Links`，并尽量保留标题/锚文本、URL、支撑主题或用途；没有 URL 时写 `No external links found in extracted content.`。不要伪造只有标题没有 URL 的外链，将其放入 `Maintenance Notes` 或 `Open Questions`。不要联网核验外链，除非用户明确要求或当前任务需要当前事实；未核验时标注 `not verified`。
@@ -66,8 +68,9 @@ AI/
 - Source digest: 导出材料只是临时输入。`Source Digest` 必须是 LLM 消化后的提炼，不得保存完整 raw 导出、机械 outline、前 N 行采样或截断导出。
 - Large source detail: 大型或多 sheet source 完成前，必须确认高信号细节已有落点：可复用二级分类、关键步骤、指标维度、命名框架、异常节点、编号/结构问题。落点可以是 `Source Digest`、`Key Claims`、`Maintenance Notes` 或下游页面。
 - Claims: source note 的 `Key Claims` 要区分 raw 明确表达和 agent 推断。建议用 `explicit:` 或 `inferred:` 开头；稀疏 source、案例 source 和 agent 补全较多的 source 必须这样标注。
-- Links: 任何面向知识图谱的链接列表都必须说明关系；禁止只有裸 wikilink 的列表。source note 的 `Links` 必须列出本次创建或修改过的页面，并说明贡献。
+- Links: 任何面向知识图谱的链接列表都必须说明关系；禁止只有裸 wikilink 的列表。source note 的 `Links` 必须同时覆盖本次创建或修改过的页面、相关 source-source 关系，并说明贡献或关系判断。
 - Questions: agent 不能自动创建 `questions/` 页面。只有用户明确要求沉淀、写入、保存某个问题或问答时，才创建或更新 `questions/`。
+- Entity density: 实体不只限于大公司或知名产品。人物、组织、项目、工具、框架、模型、协议、平台、方法论来源只要反复出现、连接多个 source/concept/synthesis，或在工作流中承担稳定角色，就应考虑创建或更新 `entities/`。
 - Empty pages: 不创建没有 Evidence/Relations 的空壳页；不要为只出现一次且无复用价值的产品名创建实体页，先用 `entity-candidate`。
 - Language and wikilinks: 正文默认中文，保留必要英文术语。文件名优先可读，中文名和官方英文名可混用。内部链接使用 Obsidian wikilink，不要为 slug 化牺牲可读性。
 
@@ -139,14 +142,24 @@ Ingest 处理的是单个 raw。目标是建立或更新对应 `sources/...`。
 
 1. 读取 `AGENTS.md`、[wiki-templates.md](docs/wiki-templates.md) 和 `index.md`。
 2. 确认 raw 文件路径和目标 source note 路径。
-3. 按类型路由读取 raw；`.xmind`、图片、raw Markdown、`.pdf`、`.excalidraw` 分别使用对应 `ai-wiki-*-ingest` skill。
-4. 写 frontmatter raw metadata、`Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
-5. 更新 `index.md` Source Coverage 和 `log.md`。
-6. 进入 Compile 判断：这个 source 是否改变已有概念、实体、综合、学习地图，或用户显式创建的问题页。
+3. 识别 raw 所属 source cluster：查看同目录 raw、同目录已有 source note、相关 maps/synthesis，判断本 source 是目录入口、细节展开、案例、工具、对比、补充还是索引。
+4. 按类型路由读取 raw；`.xmind`、图片、raw Markdown、`.pdf`、`.excalidraw` 分别使用对应 `ai-wiki-*-ingest` skill。
+5. 写 frontmatter raw metadata、`Source Cluster`、`Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
+6. 更新 `index.md` Source Coverage 和 `log.md`。
+7. 进入 Compile Gate：这个 source 是否改变已有概念、实体、综合、学习地图，或用户显式创建的问题页；是否需要与 source cluster 内其他 source 建立 typed links。
 
 ## Compile Workflow
 
 Compile 是把 source 内容编译进全局知识图谱。
+
+Compile Gate 必须逐项判断：
+
+1. Cluster: raw 目录提供了什么主题结构？本 source 在 cluster 中是入口、前置、展开、案例、对比、工具还是补充？
+2. Concepts: 是否产生新概念、补强已有概念、暴露易混点或改变心智模型？
+3. Entities: 是否出现可复用实体，或让已有实体获得新证据、新角色、新关系？
+4. Synthesis: 是否改变跨来源判断、对比、路线图、风险或决策依据？
+5. Maps: 是否应进入学习路径；如果同一目录或主题下已有 3 个以上 source 指向同一学习目标，必须考虑创建或更新 map/synthesis。
+6. Source links: 是否应与同目录、父子目录或同工具链 source 建立 `same-cluster`、`prerequisite-source`、`extends-source`、`contrasts-source`、`duplicate-or-overlap`、`case-of` 或 `toolchain-neighbor` 关系？
 
 应该更新：
 
@@ -162,6 +175,8 @@ Compile 是把 source 内容编译进全局知识图谱。
 - 能组织学习路径的 map 页面。
 
 每次 compile 后，在 source note 的 `Links` 中用关系类型列出创建或修改过的页面，并用短句说明该 source 对页面的贡献。
+
+如果判断不创建 concept/entity/synthesis/map，也要在 `Maintenance Notes` 或 `Links` 中留下原因，避免下游 agent 重新做同一轮浅判断。
 
 ## Query And File Back
 
@@ -247,6 +262,8 @@ synthesis/wiki-health-YYYY-MM-DD.md
 - missing pages: 高频概念/实体是否缺少独立页。
 - weak evidence: claim 是否缺少 source 链接。
 - weak relations: `Relations` 是否只有无类型链接。
+- weak source clusters: source note 是否忽略同目录 source、缺少 cluster role 或缺少必要 source-source typed links。
+- weak entities: 多个 source 反复出现的工具、框架、项目、人物或协议是否仍停留在零散文本里，没有实体页或 `entity-candidate` 记录。
 - review drift: `review_after` 过期但未进入 Review Queue。
 - raw mirror bloat: `sources/` 是否保存了完整 raw 导出而不是 digest。
 - mechanical digest: `Source Digest` 是否只是机械 outline、文本采样或截断导出，而不是 LLM 消化后的提炼。
@@ -275,6 +292,13 @@ source note 的 `Links` 推荐类型：
 - `user-question`: 本 source 关联到用户显式提出或要求创建的问题页。
 - `map-entry`: 本 source 所属或更新的学习地图。
 - `updates`: 本 source 更新了已有页面。
+- `same-cluster`: 与另一个 source 属于同一 raw 目录主题簇。
+- `prerequisite-source`: 阅读或理解当前 source 的前置 source。
+- `extends-source`: 对另一个 source 的细节展开、步骤补充或深挖。
+- `contrasts-source`: 与另一个 source 构成方法、工具、观点或案例对比。
+- `duplicate-or-overlap`: 与另一个 source 内容明显重叠，可互相校验或去重。
+- `case-of`: 当前 source 是某概念、方法、工具或问题的案例。
+- `toolchain-neighbor`: 与另一个 source 属于同一工具链、工作流阶段或执行闭环。
 - `related`: 只有弱关系但仍值得保留；必须用一句话说明原因。
 
 ## Asset Policy
