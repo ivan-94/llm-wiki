@@ -50,7 +50,6 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Obsidian — 若主 Obsidian.xmind 缺失，可参考此备份恢复核心概念定义。
 - maintenance-candidate: [[sources/Vibe/工具/.xmind-backups/Obsidian.before-id-repair.$(date +%s).xmind|Obsidian.before-id-repair.$(date +%s).xmind]] — 备份快照自记录；用于 ID 修复前后对比和恢复判断。
 
 ## Maintenance Notes
@@ -60,3 +59,5 @@ No external links found in extracted content.
 - Filename contains literal shell-like text `$(date +%s)`, so keep the exact raw path quoted in commands and links.
 - The sheet still contains default placeholder branches `分支主题 1` to `分支主题 4`, but the `核心概念` subtree has substantive definitions.
 - XMind helper command succeeded: `python3 .codex/skills/ai-wiki-xmind-ingest/scripts/export_xmind_source.py "$RAW_XMIND" --json`.
+
+- Link cleanup candidate: related: Obsidian — 若主 Obsidian.xmind 缺失，可参考此备份恢复核心概念定义。.

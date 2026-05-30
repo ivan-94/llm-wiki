@@ -62,10 +62,11 @@ status: ingested
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 给出 Agent 可操作工具接口的工程约束。
 - related: [[concepts/Agent Harness|Agent Harness]] - CLI 退出码、结构化错误、dry-run 和非交互控制可作为执行边界与反馈信号。
 - related: [[entities/Agent Client Protocol|Agent Client Protocol]] - source 与 Agent 工具协议和 ACI 方向高度相关，但讨论对象是 CLI 而不是具体协议。
-- entity-candidate: CLI-Anything - raw 仅列为库链接，待后续补充用途和成熟度。
-- entity-candidate: opencli - raw 仅列为库链接，待后续补充用途和成熟度。
 
 ## Maintenance Notes
 
 - Sheet `checklist` only contains placeholder branches `分支主题 1` through `分支主题 4`; no actionable checklist content was available there.
 - No external links were browsed or verified during ingest.
+
+- Link cleanup candidate: entity-candidate: CLI-Anything - raw 仅列为库链接，待后续补充用途和成熟度。.
+- Link cleanup candidate: entity-candidate: opencli - raw 仅列为库链接，待后续补充用途和成熟度。.

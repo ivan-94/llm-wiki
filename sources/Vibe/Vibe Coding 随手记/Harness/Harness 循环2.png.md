@@ -52,8 +52,8 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Agent Harness|Agent Harness]] — 可提供 harness 循环和可优化对象。
-- related: Agent 行为塑形 — 图中强调通过观察和环境设计塑造 Agent 行为。
-- related: Agent Harness 工程化框架 — 可与 Harness 循环1 和 XMind sources 共同综合成闭环模型。
+- related: [[concepts/Agent Harness|Agent Harness]] — 图中强调通过观察和环境设计塑造 Agent 行为。
+- related: [[concepts/Agent Harness|Agent Harness]] — 可与 Harness 循环1 和 XMind sources 共同综合成闭环模型。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为从“写代码”转向“调教运行环境”的学习入口。
 
 ## Maintenance Notes

@@ -1,6 +1,8 @@
 # AI Wiki Index
 
 ## Recently Updated
+- 2026-05-30: Repaired source note `Links` sections so graph links use real wikilinks and candidate-only items live in Maintenance Notes.
+- 2026-05-30: Expanded the knowledge graph with 13 new concepts and 9 new entities before the source Links repair pass.
 - 2026-05-30: Fully synced all supported raw files: 77 new source notes ingested, 22 existing source notes metadata-backfilled, and raw diff now reports 201 unchanged.
 - 2026-05-30: Compiled full-sync review into Agent, LLM, RAG/data-processing, and problem-definition learning structures.
 - 2026-05-30: Deepened Vibe compile with a layered engineering model linking intent, behavior specs, decision control, harness, evidence, and learning loops.
@@ -228,17 +230,26 @@
   - `ingested` [[sources/生图/电商商品图绘制.xmind|生图/电商商品图绘制.xmind]]
 
 ## Concepts
+- [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]]
 - [[concepts/AI Agent|AI Agent]]
+- [[concepts/AI Coding 偏移控制|AI Coding 偏移控制]]
 - [[concepts/AI 生图提示词|AI 生图提示词]]
 - [[concepts/Agent Harness|Agent Harness]]
+- [[concepts/Agent Runtime|Agent Runtime]]
 - [[concepts/Agent Skills|Agent Skills]]
+- [[concepts/Agent 全局记忆|Agent 全局记忆]]
+- [[concepts/Agent 可观测性|Agent 可观测性]]
+- [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]]
 - [[concepts/Agent 工具调用|Agent 工具调用]]
 - [[concepts/Agent 沙箱|Agent 沙箱]]
 - [[concepts/Agent 记忆|Agent 记忆]]
+- [[concepts/Agent 反馈回路|Agent 反馈回路]]
+- [[concepts/Agentic Software|Agentic Software]]
 - [[concepts/Agentic Engineering|Agentic Engineering]]
 - [[concepts/LLM 微调|LLM 微调]]
 - [[concepts/LLM 评估|LLM 评估]]
 - [[concepts/LLM-as-a-Judge|LLM-as-a-Judge]]
+- [[concepts/Mini Spec|Mini Spec]]
 - [[concepts/RAG|RAG]]
 - [[concepts/Spec-Driven Development|Spec-Driven Development]]
 - [[concepts/Specification by Example|Specification by Example]]
@@ -246,21 +257,34 @@
 - [[concepts/Transformer|Transformer]]
 - [[concepts/Vibe Coding|Vibe Coding]]
 - [[concepts/上下文工程|上下文工程]]
+- [[concepts/反捷径证据|反捷径证据]]
 - [[concepts/人物生图提示词|人物生图提示词]]
+- [[concepts/决策权泄漏|决策权泄漏]]
 - [[concepts/提示语工程|提示语工程]]
 - [[concepts/电商商品图生成|电商商品图生成]]
 - [[concepts/系统提示语|系统提示语]]
 - [[concepts/结构化文档解析|结构化文档解析]]
+- [[concepts/行为契约式规格|行为契约式规格]]
 - [[concepts/问题定义|问题定义]]
+- [[concepts/工程宪法|工程宪法]]
 
 ## Entities
 - [[entities/Agent Client Protocol|Agent Client Protocol]]
 - [[entities/Anthropic|Anthropic]]
 - [[entities/Claude Code|Claude Code]]
+- [[entities/ClawTeam|ClawTeam]]
+- [[entities/Codex|Codex]]
+- [[entities/Coze|Coze]]
 - [[entities/Cursor|Cursor]]
+- [[entities/Hermes|Hermes]]
 - [[entities/LangChain|LangChain]]
 - [[entities/Langfuse|Langfuse]]
 - [[entities/Model Context Protocol|Model Context Protocol]]
+- [[entities/Nano Bot|Nano Bot]]
+- [[entities/OpenClaw|OpenClaw]]
+- [[entities/OpenSpec|OpenSpec]]
+- [[entities/SpecKit|SpecKit]]
+- [[entities/oh-my-claude-code|oh-my-claude-code]]
 
 ## Synthesis
 - [[synthesis/Agent 系统工程综述|Agent 系统工程综述]]
@@ -293,6 +317,19 @@ No question pages yet.
 No outputs yet.
 
 ## Review Queue
+- 2026-06-06: [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]]
+- 2026-06-06: [[concepts/AI Coding 偏移控制|AI Coding 偏移控制]]
+- 2026-06-06: [[concepts/Agent Runtime|Agent Runtime]]
+- 2026-06-06: [[concepts/Agent 全局记忆|Agent 全局记忆]]
+- 2026-06-06: [[concepts/Agent 可观测性|Agent 可观测性]]
+- 2026-06-06: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]]
+- 2026-06-06: [[concepts/Agent 反馈回路|Agent 反馈回路]]
+- 2026-06-06: [[concepts/Agentic Software|Agentic Software]]
+- 2026-06-06: [[concepts/Mini Spec|Mini Spec]]
+- 2026-06-06: [[concepts/反捷径证据|反捷径证据]]
+- 2026-06-06: [[concepts/决策权泄漏|决策权泄漏]]
+- 2026-06-06: [[concepts/行为契约式规格|行为契约式规格]]
+- 2026-06-06: [[concepts/工程宪法|工程宪法]]
 - 2026-06-05: [[concepts/AI 生图提示词|AI 生图提示词]]
 - 2026-06-05: [[concepts/Agent Harness|Agent Harness]]
 - 2026-06-05: [[concepts/Agent Skills|Agent Skills]]

@@ -46,12 +46,14 @@ source 把 LLM Wiki 定义为一种“先编译、后查询、持续回写”的
 
 ## Links
 
-- compiled-concept: LLM Wiki — source 系统说明 raw/wiki/rules 三层结构和持续编译流程。
-- compiled-concept: 知识复利 — source 强调每次新增资料都更新已有概念和综合，而不是产生孤立摘要。
-- compiled-concept: File Back — source 将有长期价值的 query/output 归档回 wiki。
-- map-entry: AI Wiki 维护学习地图 — source 可作为本 wiki 规则体系的元资料。
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
 - source 内含大量示例目录和模板片段；本 note 已提炼其结构和职责，没有保存完整导出。
 - 外链只提取了 X/Twitter URL，未联网核验。
+
+- Link cleanup candidate: compiled-concept: LLM Wiki — source 系统说明 raw/wiki/rules 三层结构和持续编译流程。.
+- Link cleanup candidate: compiled-concept: 知识复利 — source 强调每次新增资料都更新已有概念和综合，而不是产生孤立摘要。.
+- Link cleanup candidate: compiled-concept: File Back — source 将有长期价值的 query/output 归档回 wiki。.
+- Link cleanup candidate: map-entry: AI Wiki 维护学习地图 — source 可作为本 wiki 规则体系的元资料。.

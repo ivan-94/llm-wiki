@@ -46,10 +46,11 @@ No external links found in extracted content.
 
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - 编排引擎产品清单可作为 Agentic 工程工具层的后续补充证据。
 - related: [[concepts/Agent Harness|Agent Harness]] - workflow 产品可能服务于工具编排、流程约束和执行验证，但本 source 尚未展开 harness 细节。
-- entity-candidate: Langflow - raw 中被置于核心位置，但当前没有足够信息创建实体页。
-- entity-candidate: FastGPT, Dify, Coze, FlowiseAI, RAGFlow, LangGraph, n8n, Zapier - raw 仅提供候选产品清单，待更多来源补足角色和比较维度。
 
 ## Maintenance Notes
 
 - Workbook contains sparse placeholder branches `分支主题 2` and `分支主题 4`.
 - No evaluation criteria, screenshots, product notes, or conclusions were present in the exported sheet.
+
+- Link cleanup candidate: entity-candidate: Langflow - raw 中被置于核心位置，但当前没有足够信息创建实体页。.
+- Link cleanup candidate: entity-candidate: FastGPT, Dify, Coze, FlowiseAI, RAGFlow, LangGraph, n8n, Zapier - raw 仅提供候选产品清单，待更多来源补足角色和比较维度。.

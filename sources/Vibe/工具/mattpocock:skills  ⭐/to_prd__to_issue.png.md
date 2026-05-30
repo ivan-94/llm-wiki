@@ -48,8 +48,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: PRD 到垂直切片 Issue — 可沉淀需求收敛、issue 模板和 vertical slice 拆分准则。
-- related: Vibe Coding 工作流学习地图 — 可作为规划到执行交接的流程节点。
+- related: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 可沉淀需求收敛、issue 模板和 vertical slice 拆分准则。
+- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为规划到执行交接的流程节点。
 
 ## Maintenance Notes
 

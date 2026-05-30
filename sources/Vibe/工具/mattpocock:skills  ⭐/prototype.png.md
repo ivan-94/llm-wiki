@@ -45,8 +45,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: 可丢弃原型工作流 — 可沉淀 Logic/UI prototype 分支和“学到答案后清理”的原则。
-- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“设计不确定性探索”分支。
+- related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 可沉淀 Logic/UI prototype 分支和“学到答案后清理”的原则。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 mattpocock skills 中“设计不确定性探索”分支。
 
 ## Maintenance Notes
 

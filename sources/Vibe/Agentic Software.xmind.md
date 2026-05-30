@@ -52,10 +52,10 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: Agentic Software — 本 source 给出目标导向、动态 UI、上下文资产和原子能力编排的定义框架。
-- compiled-concept: 上下文作为软件资产 — 资料强调记忆、偏好、SOP 和历史行为构成壁垒。
-- compiled-concept: 动态 UI — 资料区分场景化、临时性和个体化界面。
-- compiled-concept: AI 眼镜 — 资料把 AI 眼镜定位为常时在场的感知前端。
+- compiled-concept: [[concepts/Agentic Software|Agentic Software]] — 本 source 给出目标导向、动态 UI、上下文资产和原子能力编排的定义框架。
+- compiled-concept: [[concepts/Agentic Software|Agentic Software]] — 资料强调记忆、偏好、SOP 和历史行为构成壁垒。
+- compiled-concept: [[concepts/Agentic Software|Agentic Software]] — 资料区分场景化、临时性和个体化界面。
+- compiled-concept: [[concepts/Agentic Software|Agentic Software]] — 资料把 AI 眼镜定位为常时在场的感知前端。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 适合作为 Vibe 主题中的产品形态总览。
 
 ## Maintenance Notes

@@ -54,7 +54,7 @@ ChatGPT 训练流程部分保留了典型 RLHF 管线：预训练以预测下一
 
 ## Links
 
-- related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
@@ -62,3 +62,5 @@ ChatGPT 训练流程部分保留了典型 RLHF 管线：预训练以预测下一
 - Detail preserved: LLM generation principle, model/neural-network explanation, training loop, gradient descent/backpropagation, ChatGPT RLHF stages, and external reading URLs are represented.
 - Truncated/unfinished branch: PPO node ends without a complete explanation in exported content.
 - Compile candidates: ChatGPT 原理, 神经网络基础, 梯度下降, 反向传播, RLHF, 奖励模型, PPO, scaling law, 涌现.
+
+- Link cleanup candidate: related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.

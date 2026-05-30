@@ -44,10 +44,11 @@ No external links found in extracted content.
 
 ## Links
 
-- related: 设计拷问工作流 — 可沉淀“一次一个问题、场景压测、代码验证、文档回写”的 workflow skill 模式。
-- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“文档化设计澄清”分支。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 mattpocock skills 中“文档化设计澄清”分支。
 
 ## Maintenance Notes
 
 - 图片为信息图，整体清晰；小字号说明可能存在视觉读取误差，精确措辞需回看 raw。
 - 未联网核验 `CONTEXT.md`、`CONTEXT-MAP.md` 或 ADR 相关实践，只记录图片中可见内容。
+
+- Link cleanup candidate: related: 设计拷问工作流 — 可沉淀“一次一个问题、场景压测、代码验证、文档回写”的 workflow skill 模式。.

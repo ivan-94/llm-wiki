@@ -46,12 +46,13 @@ source 的核心是把一个可持续运行的文本游戏拆成可被 agent 读
 
 ## Links
 
-- compiled-concept: 文件系统作为 Agent 状态层 — source 提供目录职责、状态文件、历史日志和规则文件的完整示例。
-- compiled-concept: Agent Hooks — source 以强制存档和随机变量说明 hook 对长期运行的干预作用。
-- compiled-entity: Agent Game — 候选实体；source 明确指向 Agent Game 项目及其文件系统设计。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — source 可归入 Agent 运行时文件系统设计。
 
 ## Maintenance Notes
 
 - XMind 内容覆盖文件结构和职责，但没有给出真实文件示例正文；如需实现级复用，应回到仓库或 raw 继续核对具体模板。
 - 外链只提取了 root topic 中的 GitHub URL，未联网核验。
+
+- Link cleanup candidate: compiled-concept: 文件系统作为 Agent 状态层 — source 提供目录职责、状态文件、历史日志和规则文件的完整示例。.
+- Link cleanup candidate: compiled-concept: Agent Hooks — source 以强制存档和随机变量说明 hook 对长期运行的干预作用。.
+- Link cleanup candidate: compiled-entity: Agent Game — 候选实体；source 明确指向 Agent Game 项目及其文件系统设计。.

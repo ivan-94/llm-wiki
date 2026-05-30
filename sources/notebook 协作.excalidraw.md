@@ -50,6 +50,7 @@ No external links found in extracted content.
 
 - related: [[concepts/提示语工程|提示语工程]] — 风格改写和意图推断可作为提示语/任务接口应用场景。
 - related: [[concepts/上下文工程|上下文工程]] — notebook 块串联和素材组织涉及上下文结构化。
+- related: [[synthesis/LLM 应用数据处理流水线|LLM 应用数据处理流水线]] — notebook 块串联、素材组织和管道化内容生产可补充交互式资料处理场景。
 
 ## Maintenance Notes
 

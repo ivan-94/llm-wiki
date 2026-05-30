@@ -50,11 +50,13 @@ No external links found in extracted content.
 
 ## Links
 
-- batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
-- compile-candidate: Nano Bot; Agent runtime 最小架构; MessageBus; Agent 文件记忆; Skills 注入; 子代理回灌; Cron 与 Heartbeat.
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
 - XMind helper reported `ok: true`; no `sheets_error`.
 - Several branch labels such as `协议` and `Channel` are sparse; they were treated as structure markers, not standalone claims.
 - This batch intentionally did not update `index.md` or `log.md`.
+
+- Link cleanup candidate: batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
+- Link cleanup candidate: compile-candidate: Nano Bot; Agent runtime 最小架构; MessageBus; Agent 文件记忆; Skills 注入; 子代理回灌; Cron 与 Heartbeat.

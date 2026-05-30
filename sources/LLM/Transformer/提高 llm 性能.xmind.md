@@ -45,7 +45,7 @@ No external links found in extracted content.
 
 ## Links
 
-- related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
@@ -53,3 +53,5 @@ No external links found in extracted content.
 - Sparse source: exported content is only a short taxonomy and one note; no concrete examples, metrics, evaluation method, or implementation steps.
 - Placeholder node: `分支主题 3` has no supporting content.
 - Compile candidates: LLM 性能优化, 提示词工程, 上下文学习, few-shot, 微调.
+
+- Link cleanup candidate: related: no downstream wiki pages were updated in this scoped ingest batch; compile candidates are listed in `Maintenance Notes` as plain text.

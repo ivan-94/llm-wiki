@@ -51,9 +51,10 @@ No external links found in extracted content.
 
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] - source 提供 Agent 的基础定义、认知架构和 Agent/Model 边界。
 - related: [[concepts/上下文工程|上下文工程]] - source 将上下文学习和检索增强上下文学习列为提升模型性能的路线。
-- entity-candidate: Google Agent 白皮书 - raw 只列出扩展资料标题，没有 URL 或具体观点，待补充来源。
 
 ## Maintenance Notes
 
 - `认知架构` 下有一个空白节点，`ReAct` 下也有空白节点。
 - `Fine-turning based learning` 疑似拼写应为 `Fine-tuning based learning`，未修改 raw，仅记录为原文异常。
+
+- Link cleanup candidate: entity-candidate: Google Agent 白皮书 - raw 只列出扩展资料标题，没有 URL 或具体观点，待补充来源。.

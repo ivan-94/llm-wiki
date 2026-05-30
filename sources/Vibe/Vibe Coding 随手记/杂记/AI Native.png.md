@@ -46,12 +46,13 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: AI Native — source 提供 AI Native 与 AI Enhanced 的边界和四维评估框架。
-- compiled-concept: Agent Friendly — source 将 Agent 可参与理解、执行、反馈和迭代作为系统原生能力。
-- compiled-concept: Human-to-Agent Alignment — source 用组织对比说明共识成本迁移。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — source 可作为 AI Native 组织/工程/产品设计框架。
 
 ## Maintenance Notes
 
 - 图片文字整体清晰；小号 bullet 由 vision 读取，精确引用时仍建议回 raw 图人工复核。
 - 未发现可见 URL。
+
+- Link cleanup candidate: compiled-concept: AI Native — source 提供 AI Native 与 AI Enhanced 的边界和四维评估框架。.
+- Link cleanup candidate: compiled-concept: Agent Friendly — source 将 Agent 可参与理解、执行、反馈和迭代作为系统原生能力。.
+- Link cleanup candidate: compiled-concept: Human-to-Agent Alignment — source 用组织对比说明共识成本迁移。.

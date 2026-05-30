@@ -46,11 +46,12 @@ status: ingested
 
 ## Links
 
-No downstream wiki pages were created or updated in this scoped ingest.
-
-Compile candidates: 结构化文档解析, Office 文档预处理, DOCX Open XML 包结构, 文档关系解析.
+- related: [[concepts/结构化文档解析|结构化文档解析]] — source 补充 DOCX Open XML 包结构、关系解析和语义重建的底层格式证据。
+- related: [[synthesis/LLM 应用数据处理流水线|LLM 应用数据处理流水线]] — 可支撑 Office 文档从包结构解析到 LLM 可消费表示的预处理环节。
+- map-entry: [[maps/LLM 应用与数据处理学习地图|LLM 应用与数据处理学习地图]] — 可作为 Office/DOCX 资料预处理的格式入口。
 
 ## Maintenance Notes
 
 - 导出内容包含一段 `[Content_Types].xml` 示例，source note 已提炼其作用，没有保存完整 XML 作为 raw cache。
 - 该 source 是格式结构说明，未覆盖具体解析库、边界案例或真实 `.docx` 样本验证。
+- Compile candidates: Office 文档预处理, DOCX Open XML 包结构, 文档关系解析.

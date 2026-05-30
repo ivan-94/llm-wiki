@@ -52,8 +52,8 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Agent Skills|Agent Skills]] — 可提炼小型、可组合、可适配的工程 skill 设计原则。
-- related: Agent 工作流协议 — 可沉淀 PRD、issue、triage、TDD、diagnose 和 PR 的协作链条。
-- related: GitHub Issue 作为 Agent 协议层 — 可提炼状态、标签、评论、webhook、引用和任务市场的任务管理模型。
+- related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 可沉淀 PRD、issue、triage、TDD、diagnose 和 PR 的协作链条。
+- related: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 可提炼状态、标签、评论、webhook、引用和任务市场的任务管理模型。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe Coding 工程化 workflow 主入口。
 
 ## Maintenance Notes

@@ -51,11 +51,11 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Spec-Driven Development|Spec-Driven Development]] — 本图提供 OpenSpec 与 SpecKit 两种 SDD 工作流的对象、流程、产物和适用边界对比。
-- compiled-entity: OpenSpec — 候选实体；本图描述其 change-driven / delta-driven 规格账本定位。
-- compiled-entity: SpecKit — 候选实体；本图描述其 feature-driven / branch-driven 交付脚手架定位。
-- compiled-synthesis: OpenSpec 与 SpecKit 工作流对比 — 候选综合；本图可作为两种 spec workflow 的核心对照证据。
+- compiled-entity: [[entities/OpenSpec|OpenSpec]] — 候选实体；本图描述其 change-driven / delta-driven 规格账本定位。
+- compiled-entity: [[entities/SpecKit|SpecKit]] — 候选实体；本图描述其 feature-driven / branch-driven 交付脚手架定位。
+- compiled-synthesis: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 候选综合；本图可作为两种 spec workflow 的核心对照证据。
 - compiled-synthesis: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]] — 支撑 OpenSpec/SpecKit 在深度模型中分别承担当前事实账本和 feature 交付脚手架。
-- map-entry: Vibe Coding 与 Spec-Driven Development 学习地图 — 候选学习地图入口；本图适合作为 OpenSpec/SpecKit 选择与组合路径的总览。
+- map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 候选学习地图入口；本图适合作为 OpenSpec/SpecKit 选择与组合路径的总览。
 
 ## Maintenance Notes
 

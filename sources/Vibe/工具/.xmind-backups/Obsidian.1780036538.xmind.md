@@ -45,7 +45,6 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Obsidian — 仅在主 Obsidian.xmind 不可用或需要恢复分类时参考，不直接编译。
 - maintenance-candidate: [[sources/Vibe/工具/.xmind-backups/Obsidian.1780036538.xmind|Obsidian.1780036538.xmind]] — 备份快照自记录；用于追踪 Obsidian.xmind 修复/演进。
 
 ## Maintenance Notes
@@ -54,3 +53,5 @@ No external links found in extracted content.
 - This is an Obsidian.xmind backup/repair snapshot under `.xmind-backups`; avoid compiling it separately from the main `Obsidian.xmind`.
 - Content appears materially duplicate with `Obsidian.1780036387.xmind` and `Obsidian.1780036461.xmind`.
 - XMind helper command succeeded: `python3 .codex/skills/ai-wiki-xmind-ingest/scripts/export_xmind_source.py "$RAW_XMIND" --json`.
+
+- Link cleanup candidate: related: Obsidian — 仅在主 Obsidian.xmind 不可用或需要恢复分类时参考，不直接编译。.

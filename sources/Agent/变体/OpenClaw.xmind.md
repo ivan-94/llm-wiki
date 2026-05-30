@@ -60,8 +60,7 @@ OpenClaw 的哲学偏向极简和自我扩展。导图强调 CLI 是智能体连
 
 ## Links
 
-- batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
-- compile-candidate: OpenClaw; Loopback-first Agent; 本地优先 Agent runtime; Agent 记忆系统; Agent 工作区; Agent 心跳; Skills 生态; 多 Agent 隔离.
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
@@ -69,3 +68,6 @@ OpenClaw 的哲学偏向极简和自我扩展。导图强调 CLI 是智能体连
 - Some branches are structural placeholders or sparse, including empty nodes under `三层架构`, `通信流程`, `CLI`, and `生态`; they were not treated as detailed claims.
 - External links were extracted from the XMind export and were not browsed or verified.
 - This batch intentionally did not update `index.md` or `log.md`.
+
+- Link cleanup candidate: batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
+- Link cleanup candidate: compile-candidate: OpenClaw; Loopback-first Agent; 本地优先 Agent runtime; Agent 记忆系统; Agent 工作区; Agent 心跳; Skills 生态; 多 Agent 隔离.

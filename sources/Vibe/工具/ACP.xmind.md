@@ -50,10 +50,11 @@ No external links found in extracted content.
 ## Links
 
 - compiled-entity: [[entities/Agent Client Protocol|Agent Client Protocol]] — 可沉淀 ACP 的治理、定位、协议模块、生态角色和限制。
-- related: Agent Client 协议层 — 可描述 IDE/client 与 agent 的标准交互边界。
-- related: Vibe Coding 工具体系 — 可作为 agentic coding client/agent 协议工具入口。
 
 ## Maintenance Notes
 
 - Exported content names Zed、JetBrains、Ben Brandt、Sergey Ignatov and protocol evolution details, but no URLs were present; no external verification was performed.
 - Protocol details may change over time; future compile should re-check official ACP documentation if current-state accuracy is required.
+
+- Link cleanup candidate: related: Agent Client 协议层 — 可描述 IDE/client 与 agent 的标准交互边界。.
+- Link cleanup candidate: related: Vibe Coding 工具体系 — 可作为 agentic coding client/agent 协议工具入口。.

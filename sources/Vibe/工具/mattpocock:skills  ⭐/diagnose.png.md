@@ -47,8 +47,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Diagnose 调试闭环 — 可提炼困难 bug 诊断的六阶段纪律和红绿反馈标准。
-- related: Agent 反馈回路 — 可补充失败信号、复现率、确定性和成本排序。
+- related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 可提炼困难 bug 诊断的六阶段纪律和红绿反馈标准。
+- related: [[concepts/Agent 反馈回路|Agent 反馈回路]] — 可补充失败信号、复现率、确定性和成本排序。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 bug 诊断和调试 skill 主题入口。
 
 ## Maintenance Notes

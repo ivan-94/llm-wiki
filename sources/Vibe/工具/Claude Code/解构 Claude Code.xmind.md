@@ -70,15 +70,16 @@ status: ingested
 
 ## Links
 
-- related: Claude Code — 可沉淀整体架构、交互、定制和运行模型。
-- related: Claude Code SubAgent — source 有专门 sheet 说明子代理用途、委派、配置、生命周期和协作模式。
-- related: Agent Teams — source 对比团队与 SubAgent 的粒度、人机交互和协作机制。
-- related: 动态工作流 — source 解释把编排逻辑搬进脚本后的执行模型。
-- related: CLAUDE.md 设计 — source 汇总 CLAUDE.md、rules、skills、commands 和渐进披露原则。
-- related: Claude Code 学习地图 — 该 source 可作为 Claude Code 主题学习地图的主入口。
+- related: [[entities/Claude Code|Claude Code]] — 可沉淀整体架构、交互、定制和运行模型。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 该 source 可作为 Claude Code 主题学习地图的主入口。
 
 ## Maintenance Notes
 
 - 部分节点为空标题或占位，例如架构下的空节点、内置工具下的空节点、最佳实践中的“分支主题 2/3/4”，compile 时应忽略或标记为待补充。
 - source 中包含示例 API key/token 形态的配置片段；source note 已避免复制完整敏感片段，后续引用时也应避免传播。
 - 外链均从 XMind 导出内容提取，本次未联网核验当前有效性或产品版本状态。
+
+- Link cleanup candidate: related: Claude Code SubAgent — source 有专门 sheet 说明子代理用途、委派、配置、生命周期和协作模式。.
+- Link cleanup candidate: related: Agent Teams — source 对比团队与 SubAgent 的粒度、人机交互和协作机制。.
+- Link cleanup candidate: related: 动态工作流 — source 解释把编排逻辑搬进脚本后的执行模型。.
+- Link cleanup candidate: related: CLAUDE.md 设计 — source 汇总 CLAUDE.md、rules、skills、commands 和渐进披露原则。.

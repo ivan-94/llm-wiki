@@ -51,10 +51,10 @@ No external links found in extracted content.
 
 ## Links
 
-- related: SpecKit Artifact 图谱 — 可沉淀项目级和 feature 级产物结构及格式约束。
-- related: 需求到任务的可追踪链 — 可沉淀 User Story 到 Implementation 的编号与证据关系。
+- related: [[entities/SpecKit|SpecKit]] — 可沉淀项目级和 feature 级产物结构及格式约束。
+- related: [[concepts/Spec-Driven Development|Spec-Driven Development]] — 可沉淀 User Story 到 Implementation 的编号与证据关系。
 - compiled-synthesis: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可补充 SpecKit 产物结构侧的对比证据。
-- related: Vibe Spec 工作流学习地图 — 可作为 SpecKit artifact 细节节点。
+- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 SpecKit artifact 细节节点。
 
 ## Maintenance Notes
 

@@ -47,11 +47,12 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Obsidian 知识库 — 可提炼 Vault、Markdown note、frontmatter、wikilink、attachment 和插件工作台的基础模型。
-- related: 个人知识图谱 — 可补充 Backlinks、Graph、Unlinked Mentions 和 MOC 如何形成关系网络。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为本地知识库和 Agent 可读文件系统主题的工具入口。
 
 ## Maintenance Notes
 
 - XMind helper 成功导出全部 1 个 sheet；未发现外部 URL。
 - source 是工具概念介绍，不包含具体 Obsidian 插件配置或 AI Wiki 实操细节；后续 compile 时不要把它误写成当前 wiki 的完整规则来源。
+
+- Link cleanup candidate: related: Obsidian 知识库 — 可提炼 Vault、Markdown note、frontmatter、wikilink、attachment 和插件工作台的基础模型。.
+- Link cleanup candidate: related: 个人知识图谱 — 可补充 Backlinks、Graph、Unlinked Mentions 和 MOC 如何形成关系网络。.

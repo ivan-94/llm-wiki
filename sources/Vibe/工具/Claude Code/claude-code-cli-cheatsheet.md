@@ -49,9 +49,9 @@ status: ingested
 
 ## Links
 
-- related: Claude Code CLI — 可沉淀启动、会话、脚本化、权限、上下文和远程能力。
-- related: Agent 权限边界 — 文档提供工具白名单、黑名单、permission mode 与 bare mode 例子。
-- related: Claude Code 学习地图 — 可作为 CLI 操作层学习入口。
+- related: [[entities/Claude Code|Claude Code]] — 可沉淀启动、会话、脚本化、权限、上下文和远程能力。
+- related: [[concepts/Agent 沙箱|Agent 沙箱]] — 文档提供工具白名单、黑名单、permission mode 与 bare mode 例子。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 CLI 操作层学习入口。
 
 ## Maintenance Notes
 

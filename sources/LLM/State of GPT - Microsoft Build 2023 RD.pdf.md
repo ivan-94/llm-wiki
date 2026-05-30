@@ -48,10 +48,11 @@ No external links found in extracted content.
 
 ## Links
 
-- No wiki pages created or modified in this task.
-- Compile candidates: LLM 训练流程; SFT/RM/RLHF; 预训练数据; GPT Assistant 训练管线.
+No wiki pages created or modified in this task.
 
 ## Maintenance Notes
 
 - PDF ingest used the `ai-wiki-pdf-ingest` preview mode: pages 1-3 rendered as images and inspected visually.
 - This is not full-PDF OCR, text extraction, or complete reading. Exact wording and later-slide claims must be checked against the raw PDF before citation-heavy compile.
+
+- Link cleanup candidate: Compile candidates: LLM 训练流程; SFT/RM/RLHF; 预训练数据; GPT Assistant 训练管线.

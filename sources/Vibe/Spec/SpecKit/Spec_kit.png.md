@@ -48,10 +48,10 @@ No external links found in extracted content.
 
 ## Links
 
-- related: SpecKit 工作流 — 可沉淀 SpecKit 命令序列、产物链和质量闭环。
-- related: Specification-Driven Development — 可沉淀“规格是 source of truth，代码是规格表达”的开发模型。
+- related: [[entities/SpecKit|SpecKit]] — 可沉淀 SpecKit 命令序列、产物链和质量闭环。
+- related: [[concepts/Spec-Driven Development|Spec-Driven Development]] — 可沉淀“规格是 source of truth，代码是规格表达”的开发模型。
 - compiled-synthesis: [[synthesis/OpenSpec 与 SpecKit 对比|OpenSpec 与 SpecKit 对比]] — 可支撑 OpenSpec 与 SpecKit 在账本/脚手架定位上的差异。
-- related: Vibe Spec 工作流学习地图 — 可作为 SpecKit 入口节点。
+- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 SpecKit 入口节点。
 
 ## Maintenance Notes
 

@@ -48,11 +48,13 @@ No external links found in extracted content.
 
 ## Links
 
-- batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
-- compile-candidate: OpenClaw 橙皮书; OpenClaw 学习地图; OpenClaw 部署指南; OpenClaw Skills 系统; Agent 安全与成本.
+No downstream wiki pages were created or updated in this scoped ingest.
 
 ## Maintenance Notes
 
 - PDF helper rendered pages 1-3 of 109 only. This is a first-three-page visual preview, not full-PDF OCR, text extraction, or complete reading.
 - The preview shows source names such as OpenClaw 官方文档, GitHub 仓库, 社区调研, B站, YouTube, 公众号 and 飞书文档, but no explicit URLs were visible in the rendered pages; they were not added to `External Links`.
 - This batch intentionally did not update `index.md` or `log.md`.
+
+- Link cleanup candidate: batch-boundary: No wiki concept, entity, synthesis, map, index, or log pages were created or updated for this batch, per task instruction.
+- Link cleanup candidate: compile-candidate: OpenClaw 橙皮书; OpenClaw 学习地图; OpenClaw 部署指南; OpenClaw Skills 系统; Agent 安全与成本.

@@ -53,9 +53,9 @@ No external links found in extracted content.
 
 ## Links
 
-- related: 云端 Coding Agent — 本 source 可支撑云端 coding agent 的环境、权限、执行、恢复和审查能力定义。
-- related: Agent 自动化工作流 — 本 source 可补充 CLI、SDK、MCP、GitHub Action、routine 与 CI 触发的分层模型。
-- entity-candidate: Codex — 本 source 整理 Codex 的云端、CLI、SDK、App Server、MCP 和 GitHub Action 能力边界。
+- related: [[concepts/Agent Runtime|Agent Runtime]] — 本 source 可支撑云端 coding agent 的环境、权限、执行、恢复和审查能力定义。
+- related: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 本 source 可补充 CLI、SDK、MCP、GitHub Action、routine 与 CI 触发的分层模型。
+- entity-candidate: [[entities/Codex|Codex]] — 本 source 整理 Codex 的云端、CLI、SDK、App Server、MCP 和 GitHub Action 能力边界。
 - compiled-entity: [[entities/Claude Code|Claude Code]] — 本 source 整理 Claude Code 的云端会话、environment、routine、plan/review 和 GitHub Actions 能力边界。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为云端 agent 平台能力与工作流选型章节的证据入口。
 

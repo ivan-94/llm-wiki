@@ -49,12 +49,13 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: Agent Skills Framework — 本 source 提供 skills 作为框架和方法论的总览。
-- compiled-concept: 子代理驱动开发 — 本 source 描述任务拆分、子代理执行和两阶段评审。
-- compiled-concept: TDD for AI Coding — 本 source 把红绿重构作为 AI 编码约束。
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入 agent skills/workflow 工具。
 
 ## Maintenance Notes
 
 - `partial`: helper 成功导出 7 个 sheet，但 `brainstorming`、`writing planning`、`systematic-debugging`、`test-driven-development `、`writing-skills` 等子 sheet 基本只有标题或空节点；当前 note 未把这些占位页当作完整技能说明。
 - XMind 内存在 `xmind:#...` 内部链接，属于 workbook sheet 引用，不作为 External Links。
+
+- Link cleanup candidate: compiled-concept: Agent Skills Framework — 本 source 提供 skills 作为框架和方法论的总览。.
+- Link cleanup candidate: compiled-concept: 子代理驱动开发 — 本 source 描述任务拆分、子代理执行和两阶段评审。.
+- Link cleanup candidate: compiled-concept: TDD for AI Coding — 本 source 把红绿重构作为 AI 编码约束。.

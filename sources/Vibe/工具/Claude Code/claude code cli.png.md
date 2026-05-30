@@ -49,8 +49,8 @@ status: ingested
 
 ## Links
 
-- related: Claude Code CLI — 可沉淀 CLI 入口、权限、上下文、脚本化和远程能力。
-- related: Claude Code 学习地图 — 可作为命令行能力速查入口。
+- related: [[entities/Claude Code|Claude Code]] — 可沉淀 CLI 入口、权限、上下文、脚本化和远程能力。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为命令行能力速查入口。
 
 ## Maintenance Notes
 

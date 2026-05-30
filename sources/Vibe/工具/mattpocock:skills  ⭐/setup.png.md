@@ -44,8 +44,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Agent Skill 项目上下文初始化 — 可沉淀 issue tracker、triage label、domain docs 三类上下文初始化规则。
-- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“setup/context bootstrap”分支。
+- related: [[concepts/Agent Skills|Agent Skills]] — 可沉淀 issue tracker、triage label、domain docs 三类上下文初始化规则。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 mattpocock skills 中“setup/context bootstrap”分支。
 
 ## Maintenance Notes
 

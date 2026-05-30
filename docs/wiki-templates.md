@@ -324,10 +324,10 @@ scope: Agent
 ```markdown
 ## Relations
 
-- prerequisite: [[concepts/Token and Embedding|Token 和 Embedding]]
+- prerequisite: [[concepts/Token 和 Embedding|Token 和 Embedding]]
 - contrasts-with: [[concepts/RAG|RAG]]
 - implemented-by: [[entities/LangChain|LangChain]]
 - related-source: [[sources/LLM/Transformer/Transformer.xmind|Transformer.xmind]]
-- map-entry: [[maps/大模型学习地图|大模型学习地图]]
+- map-entry: [[maps/LLM 基础学习地图|LLM 基础学习地图]]
 - entity-candidate: Langflow
 ```

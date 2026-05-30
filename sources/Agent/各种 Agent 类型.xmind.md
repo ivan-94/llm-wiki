@@ -54,13 +54,14 @@ No external links found in extracted content.
 - related: [[concepts/上下文工程|上下文工程]] — Router 和检索策略选择都依赖把正确上下文放进正确链路。
 - related: [[concepts/Agentic Engineering|Agentic Engineering]] — MultiAgent RAG 提供了一个把 Agent 协作嵌入检索生成系统的具体场景。
 - related: [[concepts/LLM 评估|LLM 评估]] — RAG 类型选择需要通过准确性、可解释性、成本和延迟等指标验证。
-- entity-candidate: Neo4j — source 将其列为 Graph RAG 可能维护的图数据库之一。
-- entity-candidate: TigerGraph — source 将其列为 Graph RAG 可能维护的图数据库之一。
-- entity-candidate: Pinecone — source 将其列为 Graph RAG 可能维护的向量数据库之一。
-- entity-candidate: Milvus — source 将其列为 Graph RAG 可能维护的向量数据库之一。
 
 ## Maintenance Notes
 
 - XMind helper 成功发现并导出全部 sheet。
 - source 标题为“各种 Agent 类型”，但实际内容集中在 RAG/Graph RAG/Agentic RAG 类型；后续 compile 时应避免把它误读为完整 Agent 类型 taxonomy。
 - External Links 未发现 URL，未联网核验任何工具或产品名。
+
+- Link cleanup candidate: entity-candidate: Neo4j — source 将其列为 Graph RAG 可能维护的图数据库之一。.
+- Link cleanup candidate: entity-candidate: TigerGraph — source 将其列为 Graph RAG 可能维护的图数据库之一。.
+- Link cleanup candidate: entity-candidate: Pinecone — source 将其列为 Graph RAG 可能维护的向量数据库之一。.
+- Link cleanup candidate: entity-candidate: Milvus — source 将其列为 Graph RAG 可能维护的向量数据库之一。.

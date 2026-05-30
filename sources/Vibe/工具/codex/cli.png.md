@@ -55,9 +55,9 @@ status: ingested
 
 ## Links
 
-- related: Codex CLI — 可提炼安装登录、交互会话、flags、配置、脚本化和排错的操作模型。
-- related: Agent 权限与沙箱 — 可补充 sandbox、approval、workspace-write、danger-full-access 和 yolo 风险边界。
-- related: AGENTS.md — 可补充 repo 级长期记忆、工程约定和 done means 的角色。
+- related: [[entities/Codex|Codex]] — 可提炼安装登录、交互会话、flags、配置、脚本化和排错的操作模型。
+- related: [[concepts/Agent 沙箱|Agent 沙箱]] — 可补充 sandbox、approval、workspace-write、danger-full-access 和 yolo 风险边界。
+- related: [[concepts/AGENTS.md 设计模式|AGENTS.md 设计模式]] — 可补充 repo 级长期记忆、工程约定和 done means 的角色。
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 Codex CLI 日常操作入口。
 
 ## Maintenance Notes

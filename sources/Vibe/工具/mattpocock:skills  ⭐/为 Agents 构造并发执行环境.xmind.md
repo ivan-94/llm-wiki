@@ -50,11 +50,12 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Agent 并发执行环境 — 可沉淀 worktree、Compose sandbox、动态端口、manifest 和 CLI 生命周期契约。
-- related: Vibe Coding 工作流学习地图 — 可作为多 agent 执行和 HAT 验收基础设施节点。
+- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为多 agent 执行和 HAT 验收基础设施节点。
 
 ## Maintenance Notes
 
 - XMind helper succeeded with `ok: true` and empty `sheets_error`; all 1 discovered sheet was exported and digested.
 - The exported workbook includes project-specific example names such as `sharge-agent-pr17`, `eye-dev`, and `glasses`; treat them as illustrative examples unless compiling into a project-specific runtime guide.
 - No index/log updates were made because this batch worker was restricted to the five source notes only.
+
+- Link cleanup candidate: related: Agent 并发执行环境 — 可沉淀 worktree、Compose sandbox、动态端口、manifest 和 CLI 生命周期契约。.

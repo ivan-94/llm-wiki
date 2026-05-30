@@ -53,8 +53,8 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Vibe Coding|Vibe Coding]] — 本 source 可支撑 Vibe Coding 与传统软件工程对象的映射关系。
-- related: Agent 行为系统 — 本 source 明确把 skills、instructions、hooks、context、workflow 和 trace 视为工程化对象。
-- related: Agent Guardrails — 本 source 可补充 hooks、policy checks、evals 和运行时保护的作用。
+- related: [[concepts/Agent Harness|Agent Harness]] — 本 source 明确把 skills、instructions、hooks、context、workflow 和 trace 视为工程化对象。
+- related: [[concepts/Agent Harness|Agent Harness]] — 本 source 可补充 hooks、policy checks、evals 和运行时保护的作用。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 Vibe/Agentic Coding 基础心智模型入口。
 
 ## Maintenance Notes

@@ -47,11 +47,12 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: Cucumber — 本图提供 Cucumber 的职责边界、运行链路和组件结构。
-- compiled-concept: Gherkin — 本图展示 Given-When-Then 场景如何绑定到执行代码。
 - map-entry: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可放入 Cucumber 和 BDD 工具链模块。
 
 ## Maintenance Notes
 
 - Vision-based ingest; no URLs are visible in the image.
 - No compiled pages were created in this batch by scope constraint.
+
+- Link cleanup candidate: compiled-concept: Cucumber — 本图提供 Cucumber 的职责边界、运行链路和组件结构。.
+- Link cleanup candidate: compiled-concept: Gherkin — 本图展示 Given-When-Then 场景如何绑定到执行代码。.

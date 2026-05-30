@@ -44,8 +44,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Agent 仓库治理 Skills — 可整合安全护栏、提交钩子、测试数据迁移和脚手架生成的仓库级辅助模式。
-- related: Vibe 工具与 Agent Skills 学习地图 — 可作为 mattpocock skills 中“repo helper”分支。
+- related: [[concepts/Agent Skills|Agent Skills]] — 可整合安全护栏、提交钩子、测试数据迁移和脚手架生成的仓库级辅助模式。
+- related: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 可作为 mattpocock skills 中“repo helper”分支。
 
 ## Maintenance Notes
 

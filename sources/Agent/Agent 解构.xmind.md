@@ -64,7 +64,7 @@ OpenClaw 和多 Agent 章节把这些原则具体化：通过 Gateway、Channel 
 - related: [[concepts/上下文工程|上下文工程]] - source 对上下文分层、压缩、缓存和文件系统接口有完整展开。
 - related: [[concepts/Vibe Coding|Vibe Coding]] - source 中的长任务续跑、worktree 子 Agent 和端到端自主执行可补充 Vibe Coding 的工程化实践。
 - related: [[entities/Agent Client Protocol|Agent Client Protocol]] - source 的 ACI 与工具接口演进可作为协议化工具接口的候选背景。
-- entity-candidate: OpenClaw - raw 提供了五层架构、安全边界、长任务恢复和记忆机制，后续值得判断是否创建实体页。
+- entity-candidate: [[entities/OpenClaw|OpenClaw]] — raw 提供了五层架构、安全边界、长任务恢复和记忆机制，后续值得判断是否创建实体页。
 
 ## Maintenance Notes
 

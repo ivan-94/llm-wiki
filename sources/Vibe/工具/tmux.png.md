@@ -49,10 +49,11 @@ status: ingested
 
 ## Links
 
-- compiled-concept: tmux 远程工作流 — 本图提供会话、窗格和恢复现场的操作基础。
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 适合归入远程/长时间 agent 执行工具。
 
 ## Maintenance Notes
 
 - Vision ingest; QR code 未解码，未作为外链记录。
 - 图片里 “man tmux” 是本地手册入口，不是 URL；未写入 External Links。
+
+- Link cleanup candidate: compiled-concept: tmux 远程工作流 — 本图提供会话、窗格和恢复现场的操作基础。.

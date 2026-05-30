@@ -46,8 +46,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: GitHub Issue 状态机 — 本图提供 labels、状态流转、失败回流与成功闭环。
-- compiled-concept: Agent Brief 交接合同 — 本图把 Brief 明确为 Agent 可接手的交付契约。
+- compiled-concept: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 本图提供 labels、状态流转、失败回流与成功闭环。
+- compiled-concept: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 本图把 Brief 明确为 Agent 可接手的交付契约。
 - compiled-synthesis: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 候选综合；本图可作为 GitHub Issues 工作流的核心证据。
 
 ## Maintenance Notes

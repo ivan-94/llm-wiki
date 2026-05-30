@@ -48,8 +48,8 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Issue 分诊状态机 — 可沉淀类别角色、状态角色、分流规则和 Agent Brief 输出。
-- related: Vibe Coding 工作流学习地图 — 可作为 issue 进入 agent 执行前的治理节点。
+- related: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]] — 可沉淀类别角色、状态角色、分流规则和 Agent Brief 输出。
+- related: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为 issue 进入 agent 执行前的治理节点。
 
 ## Maintenance Notes
 

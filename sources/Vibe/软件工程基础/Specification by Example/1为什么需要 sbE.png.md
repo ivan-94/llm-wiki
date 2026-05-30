@@ -48,11 +48,12 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Specification by Example|Specification by Example]] — 可沉淀 SbE 解决需求误解、模糊需求和验收不可执行的问题背景。
-- related: 可执行规格 — 可补充从自然语言文档到 Given/When/Then 验收示例的转换价值。
-- related: 软件工程基础学习地图 — 可作为需求沟通与验收测试主题的入口。
+- related: [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]] — 可作为需求沟通与验收测试主题的入口。
 
 ## Maintenance Notes
 
 - 图片主要文字清晰；小号示意图文字已按可见内容概括，精确引用时应回看 raw。
 - Standish Group 的 31% 数据未联网核验来源和上下文。
 - 未修改 `index.md`、`log.md` 或编译页；本批 worker 只记录 compile 候选关系。
+
+- Link cleanup candidate: related: 可执行规格 — 可补充从自然语言文档到 Given/When/Then 验收示例的转换价值。.

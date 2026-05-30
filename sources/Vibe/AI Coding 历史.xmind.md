@@ -47,8 +47,8 @@ No external links found in extracted content.
 
 ## Links
 
-- compiled-concept: AI Coding 历史 — 本 source 提供从补全工具到编程 Agent 的时间线骨架。
-- compiled-concept: Coding Agent — Devin 节点可作为“编程 Agent 工作流”转折证据。
+- compiled-concept: [[concepts/Vibe Coding|Vibe Coding]] — 本 source 提供从补全工具到编程 Agent 的时间线骨架。
+- compiled-concept: [[concepts/AI Agent|AI Agent]] — Devin 节点可作为“编程 Agent 工作流”转折证据。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 适合作为 Vibe 主题下的历史背景材料。
 
 ## Maintenance Notes

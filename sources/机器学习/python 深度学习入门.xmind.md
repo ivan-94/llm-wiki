@@ -73,7 +73,6 @@ status: ingested
 ## Links
 
 No downstream wiki pages were created or updated in this scoped ingest.
-
 Compile candidates: 深度学习基础, Keras 实战学习路径, 机器学习泛化, CNN, RNN, Transformer, 语言模型, LoRA, 模型训练最佳实践, map-candidate: 深度学习学习地图, entity-candidate: Keras, entity-candidate: KerasNLP, entity-candidate: GPT-2.
 
 ## Maintenance Notes

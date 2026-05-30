@@ -42,11 +42,12 @@ No external links found in extracted content.
 
 ## Links
 
-- No wiki pages created or modified in this task.
-- Compile candidates: Hugging Face Transformers; Transformer 工具链.
+No wiki pages created or modified in this task.
 
 ## Maintenance Notes
 
 - XMind export succeeded for all discovered sheets, but source content is placeholder-only.
 - Placeholder branches: `分支主题 1`; `分支主题 2`; `分支主题 3`; `分支主题 4`.
 - Status is `partial` because there is no substantive branch content beyond the title.
+
+- Link cleanup candidate: Compile candidates: Hugging Face Transformers; Transformer 工具链.

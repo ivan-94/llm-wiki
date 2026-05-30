@@ -51,11 +51,12 @@ No external links found in extracted content.
 ## Links
 
 - compiled-concept: [[concepts/Vibe Coding|Vibe Coding]] — 可用于定义 Vibe Coding 的阶段目标、验收标准和适用边界。
-- related: 严肃 Coding — 可用于沉淀从 demo 到可维护产品的工程化要求。
-- related: Vibe Coding 与严肃 Coding 的阶段分工 — 可支持产品思维、工程思维和 Builder 能力的对比分析。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为“产品验证到工程化落地”的学习路径入口。
 
 ## Maintenance Notes
 
 - Vision ingest only; no OCR tool was run. The image text is broadly clear, but exact small字 wording should be rechecked against the raw image when quoted.
 - No index, log, concept, entity, synthesis, map, or question pages were modified in this batch by scope constraint.
+
+- Link cleanup candidate: related: 严肃 Coding — 可用于沉淀从 demo 到可维护产品的工程化要求。.
+- Link cleanup candidate: related: Vibe Coding 与严肃 Coding 的阶段分工 — 可支持产品思维、工程思维和 Builder 能力的对比分析。.

@@ -53,12 +53,13 @@ No external links found in extracted content.
 
 ## Links
 
-- related: Agent Runtime — 可沉淀 agent sandbox、manifest、动态端口、日志和状态查询契约。
-- related: 并发 Agent 执行环境 — 可总结 worktree、Compose project、cache/state 边界和生命周期命令。
-- related: HAT 友好运行环境 — 可连接 HAT/browser 验收所需的服务启动、wait、日志和 artifact 机制。
+- related: [[concepts/Agent Runtime|Agent Runtime]] — 可沉淀 agent sandbox、manifest、动态端口、日志和状态查询契约。
+- related: [[concepts/Agent Runtime|Agent Runtime]] — 可总结 worktree、Compose project、cache/state 边界和生命周期命令。
 - map-entry: [[maps/Vibe Coding 学习地图|Vibe Coding 学习地图]] — 可作为大规模 AI Coding 基础设施章节入口。
 
 ## Maintenance Notes
 
 - 本批 worker 被限制不创建或修改编译层页面；Links 仅记录候选关系。
 - Source 中的 YAML、JSON 和 CLI 片段是设计草案；source note 已提炼关键契约，未保存完整示例代码。
+
+- Link cleanup candidate: related: HAT 友好运行环境 — 可连接 HAT/browser 验收所需的服务启动、wait、日志和 artifact 机制。.
