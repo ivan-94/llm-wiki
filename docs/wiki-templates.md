@@ -29,7 +29,7 @@ review_after: 2026-06-05
 
 ## Source Note Template
 
-每个 `sources/*.md` 必须使用此结构。类型专属读取方式、覆盖范围和限制按对应 ingest skill 记录到 `Source` / `Maintenance Notes`。
+每个外部 raw 对应的 `sources/*.md` 必须使用此结构。类型专属读取方式、覆盖范围和限制按对应 ingest skill 记录到 `Source` / `Maintenance Notes`。`human/raw` 对应的 `human/sources/*.md` 使用下方 Human Source Note Template。
 
 ```markdown
 ---
@@ -76,7 +76,7 @@ status: ingested
 ## Maintenance Notes
 ```
 
-`source_type` 当前建议值：`xmind`、`image`、`markdown`、`pdf`、`excalidraw`。其他 raw 类型当前不处理，不应创建 source note，除非 `AGENTS.md` 明确扩展支持范围。
+`source_type` 当前建议值：`xmind`、`image`、`markdown`、`pdf`、`excalidraw`。其他外部 raw 类型当前不处理，不应创建 source note，除非 `AGENTS.md` 明确扩展支持范围。
 
 Raw metadata 字段用于后续 raw/source diff：
 
@@ -139,6 +139,64 @@ Source Links 示例：
 - same-cluster: [[sources/提示语工程:上下文工程/上下文工程.xmind|上下文工程.xmind]] — 同属提示语与上下文工程目录，提供相邻背景。
 - extends-source: [[sources/提示语工程:上下文工程/LLM 评估.xmind|LLM 评估.xmind]] — 当前 source 把评估概念展开到提示语优化场景。
 ```
+
+## Human Source Note Template
+
+每个被 ingest 的 `human/raw/*.md` 在 `human/sources/*.md` 下创建或更新对应 source note。人类原文是来源，不是 agent 可改写草稿；agent 的摘要、claims、links 和维护判断写入 `human/sources/`。
+
+```markdown
+---
+source_type: human_markdown
+source_origin: human
+raw_path: "human/raw/<human-raw-relative-path>.md"
+source_relpath: "<human-raw-relative-path>.md"
+raw_created_at: 2026-05-30T00:00:00+00:00
+raw_modified_at: 2026-05-30T00:00:00+00:00
+raw_size: 12345
+raw_fingerprint: "size=12345;birth=2026-05-30T00:00:00+00:00;mtime=2026-05-30T00:00:00+00:00"
+raw_snapshot_at: 2026-05-30T00:00:00+00:00
+ingested_at: 2026-05-30
+status: ingested
+---
+
+# <Human note title>
+
+## Source
+
+- Human raw: [[human/raw/<human-raw-relative-path>|<Human note title>]]
+- Raw ref: `human-raw:<human-raw-relative-path>.md`
+- Type: human_markdown
+- Status: ingested
+- Raw metadata: created `2026-05-30T00:00:00+00:00`; modified `2026-05-30T00:00:00+00:00`; size `12345`; snapshot `2026-05-30T00:00:00+00:00`
+- Coverage: full Markdown note read; linked attachments or embedded notes are not included unless explicitly listed.
+
+## Source Cluster
+
+- Directory cluster: <human/raw directory or user-defined topic>
+- Cluster role: <entry-point | prerequisite | expansion | case | tool | contrast | supplement | index>
+- Neighbor sources:
+  - <relation-type>: [[human/sources/<neighbor-source>|<neighbor-source>]] — <why this human source is related>
+
+## Summary
+
+## Source Digest
+
+## Key Claims
+
+## External Links
+
+## Links
+
+## Maintenance Notes
+```
+
+Human source note rules:
+
+- Keep the human original untouched; do not normalize wording in `human/raw`.
+- `Source Digest` must be agent digestion of the note, not a pasted copy.
+- `Key Claims` should distinguish `explicit:` statements from `inferred:` interpretation, especially when the note is exploratory.
+- `External Links` records URLs present in the human note; do not verify them unless the user asks or current facts are required.
+- `Maintenance Notes` should record places that need human confirmation, unclear intent, or private/context-sensitive assumptions.
 
 ## Concept Template
 

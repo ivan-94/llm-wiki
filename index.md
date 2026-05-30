@@ -1,6 +1,7 @@
 # AI Wiki Index
 
 ## Recently Updated
+- 2026-05-30: Added `human/` Obsidian note area contract with `inbox`, `raw`, and `sources` separation for human-authored material.
 - 2026-05-30: Phase 3 全库 compile 收尾 — 8 批 source 探索 + 5 wave 落盘（112 concepts、31 entities、15 synthesis、9 maps）+ source Links 互链深化。
 - 2026-05-30: Repaired source note `Links` sections so graph links use real wikilinks and candidate-only items live in Maintenance Notes.
 - 2026-05-30: Fully synced all supported raw files: 77 new source notes ingested, 22 existing source notes metadata-backfilled, and raw diff now reports 201 unchanged.

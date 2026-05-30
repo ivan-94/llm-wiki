@@ -107,6 +107,78 @@ class SyncVaultTests(unittest.TestCase):
             self.assertTrue((vault_root / "concepts" / "Current.md").exists())
             self.assertTrue((vault_root / ".obsidian" / "app.json").exists())
 
+    def test_pull_human_dry_run_reports_vault_human_notes_without_writing_repo(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp)
+            repo_root = workdir / "repo"
+            vault_root = workdir / "vault"
+            (vault_root / "human" / "inbox").mkdir(parents=True)
+            (vault_root / "human" / "raw" / "Obsidian").mkdir(parents=True)
+            (vault_root / "human" / "sources").mkdir(parents=True)
+            (vault_root / "sources").mkdir(parents=True)
+            (vault_root / "human" / "inbox" / "capture.md").write_text("draft", encoding="utf-8")
+            (vault_root / "human" / "raw" / "Obsidian" / "note.md").write_text("source", encoding="utf-8")
+            (vault_root / "human" / "sources" / "note.md").write_text("derived", encoding="utf-8")
+            (vault_root / "sources" / "external.md").write_text("external", encoding="utf-8")
+
+            payload = run_sync(repo_root, vault_root, "--pull-human")
+
+        self.assertEqual(payload["mode"], "dry-run")
+        self.assertEqual(payload["direction"], "vault-to-repo-human")
+        self.assertEqual(
+            [item["relpath"] for item in payload["copy"]],
+            ["human/inbox/capture.md", "human/raw/Obsidian/note.md"],
+        )
+        self.assertFalse((repo_root / "human" / "inbox" / "capture.md").exists())
+        self.assertFalse((repo_root / "human" / "raw" / "Obsidian" / "note.md").exists())
+
+    def test_pull_human_rejects_prune(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp)
+            repo_root = workdir / "repo"
+            vault_root = workdir / "vault"
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(SCRIPT),
+                    "--repo-root",
+                    str(repo_root),
+                    "--vault-root",
+                    str(vault_root),
+                    "--json",
+                    "--pull-human",
+                    "--prune",
+                ],
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("--pull-human does not support --prune", result.stderr)
+
+    def test_pull_human_apply_copies_notes_and_preserves_newer_repo_conflicts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp)
+            repo_root = workdir / "repo"
+            vault_root = workdir / "vault"
+            (vault_root / "human" / "inbox").mkdir(parents=True)
+            (vault_root / "human" / "raw").mkdir(parents=True)
+            (repo_root / "human" / "raw").mkdir(parents=True)
+            (vault_root / "human" / "inbox" / "capture.md").write_text("draft from ios", encoding="utf-8")
+            (vault_root / "human" / "raw" / "note.md").write_text("older vault note", encoding="utf-8")
+            (repo_root / "human" / "raw" / "note.md").write_text("newer repo note", encoding="utf-8")
+            os.utime(vault_root / "human" / "raw" / "note.md", (1_700_000_000, 1_700_000_000))
+            os.utime(repo_root / "human" / "raw" / "note.md", (1_800_000_000, 1_800_000_000))
+
+            payload = run_sync(repo_root, vault_root, "--pull-human", "--apply")
+            self.assertEqual(payload["mode"], "apply")
+            self.assertEqual([item["relpath"] for item in payload["copy"]], ["human/inbox/capture.md"])
+            self.assertEqual([item["relpath"] for item in payload["conflict"]], ["human/raw/note.md"])
+            self.assertEqual((repo_root / "human" / "inbox" / "capture.md").read_text(encoding="utf-8"), "draft from ios")
+            self.assertEqual((repo_root / "human" / "raw" / "note.md").read_text(encoding="utf-8"), "newer repo note")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -6,13 +6,14 @@
 
 - 本文件是执行入口、全局硬规则和 ingest 路由清单；写页面时还要读取 [wiki-templates.md](docs/wiki-templates.md) 中对应模板。
 - 类型专属 ingest 规则内聚到对应 skill；如果 skill 与本文件的全局硬规则冲突，以本文件为准。
-- raw 是只读事实来源；wiki 是 LLM 维护的编译后知识层。
+- 外部 raw 和 `human/raw/` 是只读事实来源；wiki 是 LLM 维护的编译后知识层。
 - 每次 ingest、query、review、lint 都要判断是否值得沉淀回 wiki。
 - 页面应帮助用户学习和复习，而不只是保存摘要。
 
 ## Fixed Paths
 
 - Raw source root: `/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI`
+- Human source root: 当前项目根目录下的 `human/raw/`。
 - Wiki root: 当前项目根目录。
 - Canonical guide: 当前项目根目录下的 `AGENTS.md`。
 - Template appendix: `docs/wiki-templates.md`。
@@ -28,6 +29,10 @@ AI/
   log.md
   docs/
     wiki-templates.md
+  human/
+    inbox/
+    raw/
+    sources/
   sources/
   concepts/
   entities/
@@ -44,6 +49,10 @@ AI/
 
 - `sources/`: raw 文件的一一转换结果，目录层级镜像 raw，是证据入口。
 - raw 目录本身是用户已有的主题组织；同一 raw 目录下的 source 默认属于一个 source cluster，必须在 ingest/compile 时判断互证、前后置、重复、对比或案例关系。
+- `human/`: 人类在 Obsidian 中写作和积累的区域，不属于外部 raw 镜像。
+- `human/inbox/`: 临时笔记和未整理想法；agent 默认不 ingest、不 compile、不纳入 coverage。
+- `human/raw/`: 人类长期笔记和原创材料；agent 默认只读，只有用户明确要求或笔记声明 `ingest_policy: allowed` 时才作为 human source ingest。
+- `human/sources/`: `human/raw/` 被 ingest 和 compile 后的 source note / 索引层，目录层级镜像 `human/raw/`。
 - `concepts/`: 概念页，跨多个 source 的稳定学习节点。
 - `entities/`: 人物、公司、项目、产品、工具、框架、模型、组织。
 - `synthesis/`: 跨来源分析、对比、路线图、判断、wiki 健康报告。
@@ -58,11 +67,13 @@ AI/
 ## Hard Rules
 
 - Raw boundary: 禁止修改、重命名、移动、删除 raw 文件；禁止在 raw 目录或其旁边写中间产物；禁止为了工具成功而修复 raw；禁止直接解包、修改或手写解析 `.xmind`。允许读取 raw、使用 vision 理解图片、按 workflow 在 wiki 目录写派生产物。如果 raw 需要人工修复，必须记录到 source note `Maintenance Notes`、`index.md` Needs Attention 和 `log.md`。
+- Human boundary: 禁止自动改写、移动、删除 `human/inbox/` 和 `human/raw/` 下的人类原文；`human/raw/` 是内部来源域，不是 agent 草稿区。agent 的消化、摘要、claims、links 写入 `human/sources/`，再按 compile gate 写入 `concepts/`、`entities/`、`synthesis/`、`maps/` 或用户显式创建的 `questions/`。
 - File scope: 当前支持 `.xmind`、图片、Markdown、PDF、Excalidraw raw。其他文件类型默认不 ingest、不转换、不创建 source note；发现时只在 `index.md` Needs Attention 或 `log.md` 记录为 unsupported，除非用户明确扩展支持范围。
-- Source mapping: 对当前支持的 raw，`sources/` 必须镜像 raw 目录层级和文件名。raw `.md` 直接映射为同名 `.md`；其他支持类型映射为 `<原文件名含扩展名>.md`。不支持类型不创建 `sources/...`。
-- Source clusters: 新建或刷新 source note 前，必须查看 raw 所在目录和同目录已有 `sources/...`。source note 应记录目录主题、cluster role，以及与同目录或相邻目录 source 的 typed relation；如果没有可确认邻居，也要说明判断结果。
-- Raw links: source note 必须同时保留 FinderX iCloud raw 链接和 `raw:<source_relpath>`；链接必须指向 raw 文件，不指向 wiki 派生文件。
-- Raw metadata: 新建或刷新 source note 时必须在 frontmatter 记录 `raw_created_at`、`raw_modified_at`、`raw_size`、`raw_fingerprint`、`raw_snapshot_at`。更新判断使用 raw 文件内容修改时间 `mtime`；不要使用 `ctime`，因为 iCloud 或本地元数据变化会污染它。旧 source note 缺少这些字段时，先标记为 `needs_metadata` 或重新 ingest/backfill 后再依赖更新/移动判断。
+- Human file scope: `human/raw/` 当前默认只 ingest Markdown 笔记；附件或非 Markdown 文件只在用户明确要求且有对应规则时处理。`human/inbox/` 永远不自动进入 source coverage。
+- Source mapping: 对当前支持的外部 raw，`sources/` 必须镜像 raw 目录层级和文件名。raw `.md` 直接映射为同名 `.md`；其他支持类型映射为 `<原文件名含扩展名>.md`。对当前支持的 human raw，`human/sources/` 必须镜像 `human/raw/` 目录层级和 Markdown 文件名。不支持类型不创建 `sources/...` 或 `human/sources/...`。
+- Source clusters: 新建或刷新 source note 前，必须查看来源文件所在目录和同目录已有 source note。外部 raw 查看 `sources/...`；human raw 查看 `human/sources/...`。source note 应记录目录主题、cluster role，以及与同目录或相邻目录 source 的 typed relation；如果没有可确认邻居，也要说明判断结果。
+- Raw links: 外部 source note 必须同时保留 FinderX iCloud raw 链接和 `raw:<source_relpath>`；human source note 必须保留指向 `human/raw/...` 的 wikilink 和 `human-raw:<human-raw-relpath>`；链接必须指向来源文件，不指向 wiki 派生文件。
+- Raw metadata: 新建或刷新 source note 时必须在 frontmatter 记录 `raw_created_at`、`raw_modified_at`、`raw_size`、`raw_fingerprint`、`raw_snapshot_at`。更新判断使用来源文件内容修改时间 `mtime`；不要使用 `ctime`，因为 iCloud 或本地元数据变化会污染它。旧 source note 缺少这些字段时，先标记为 `needs_metadata` 或重新 ingest/backfill 后再依赖更新/移动判断。
 - External links: 支持类型中可可靠提取或看见的 URL 必须进入 source note 的 `## External Links`，并尽量保留标题/锚文本、URL、支撑主题或用途；没有 URL 时写 `No external links found in extracted content.`。不要伪造只有标题没有 URL 的外链，将其放入 `Maintenance Notes` 或 `Open Questions`。不要联网核验外链，除非用户明确要求或当前任务需要当前事实；未核验时标注 `not verified`。
 - Skill routing: 处理 `.xmind` 必须使用 `ai-wiki-xmind-ingest`；处理图片必须使用 `ai-wiki-image-ingest`；处理 raw Markdown 必须使用 `ai-wiki-markdown-ingest`；处理 `.pdf` 必须使用 `ai-wiki-pdf-ingest`；处理 `.excalidraw` 必须使用 `ai-wiki-excalidraw-ingest`。底层命令和类型专属覆盖策略由对应 skill 定义，不在 `AGENTS.md` 分散维护。
 - Source digest: 导出材料只是临时输入。`Source Digest` 必须是 LLM 消化后的提炼，不得保存完整 raw 导出、机械 outline、前 N 行采样或截断导出。
@@ -96,6 +107,9 @@ wiki: sources/LLM/长文材料/Survey.pdf.md
 
 raw:  Agent/闪极智能体/闪极智能体 2.excalidraw
 wiki: sources/Agent/闪极智能体/闪极智能体 2.excalidraw.md
+
+human raw:  human/raw/Obsidian/我的 Obsidian 学习笔记.md
+human wiki: human/sources/Obsidian/我的 Obsidian 学习笔记.md
 ```
 
 当前支持类型：
@@ -119,13 +133,22 @@ finderx://open?icloud=<URL encoded path under iCloud Drive>
 
 本项目 raw root 对应的 iCloud 前缀是 `思维导图/AI`。URL encode 每个路径片段，保留 `/` 分隔符。
 
+Human raw 链接格式：
+
+```text
+[[human/raw/<path-without-md-extension>|<title>]]
+human-raw:<path-under-human-raw>
+```
+
+`human/raw/` 是 vault 内部路径，不使用 FinderX 链接。human source note 也必须记录来源文件 metadata，便于判断是否需要刷新。
+
 ## Workflow Matrix
 
 | Operation | Read First | Required Writes | Prohibited / Gate |
 | --- | --- | --- | --- |
-| Ingest | `AGENTS.md`, `docs/wiki-templates.md`, `index.md`, raw file, required type skill | corresponding `sources/...`, `index.md` Source Coverage, `log.md`, then Compile判断 | do not write raw; do not paste full exports; do not bypass required type skill; do not auto-create `questions/` |
-| Compile | relevant `sources/`, existing concepts/entities/synthesis/maps, templates | changed concepts/entities/synthesis/maps, source note `Links`, `index.md`, `log.md` | no empty pages; no product-name-only entity pages; no user-unrequested question pages |
-| Query | `index.md`, relevant wiki pages, raw if needed | answer with evidence; optionally update `synthesis/`/map/index/log when high value | create `questions/` only on explicit user request |
+| Ingest | `AGENTS.md`, `docs/wiki-templates.md`, `index.md`, raw file or human raw note, required type skill/template | corresponding `sources/...` or `human/sources/...`, `index.md` Source Coverage, `log.md`, then Compile判断 | do not write raw or human original; do not paste full exports; do not bypass required type skill/template; do not auto-create `questions/` |
+| Compile | relevant `sources/` and `human/sources/`, existing concepts/entities/synthesis/maps, templates | changed concepts/entities/synthesis/maps, source note `Links`, `index.md`, `log.md` | no empty pages; no product-name-only entity pages; no user-unrequested question pages |
+| Query | `index.md`, relevant wiki pages, source notes, human sources if needed | answer with evidence; optionally update `synthesis/`/map/index/log when high value | create `questions/` only on explicit user request; do not modify human originals |
 | Output | relevant source/concept/synthesis pages and output target | file under `outputs/`, related `synthesis/` or user-created `questions/`, `index.md`, `log.md` | do not leave generated output unregistered |
 | Review | `index.md` Review Queue, related map, target page | updated learning fields, `My Understanding`, `review_after`, `log.md` | do not write generic summaries; focus on recall gaps |
 | Lint | full wiki index and target checks | `synthesis/wiki-health-YYYY-MM-DD.md`, `index.md` Needs Attention, `log.md` | run only when user asks |
@@ -138,15 +161,16 @@ Collect -> Ingest -> Compile -> Query -> Output -> File Back -> Review -> Lint -
 
 ## Ingest Workflow
 
-Ingest 处理的是单个 raw。目标是建立或更新对应 `sources/...`。
+Ingest 处理的是单个外部 raw 或 human raw。目标是建立或更新对应 `sources/...` 或 `human/sources/...`。
 
 1. 读取 `AGENTS.md`、[wiki-templates.md](docs/wiki-templates.md) 和 `index.md`。
-2. 确认 raw 文件路径和目标 source note 路径。
-3. 识别 raw 所属 source cluster：查看同目录 raw、同目录已有 source note、相关 maps/synthesis，判断本 source 是目录入口、细节展开、案例、工具、对比、补充还是索引。
-4. 按类型路由读取 raw；`.xmind`、图片、raw Markdown、`.pdf`、`.excalidraw` 分别使用对应 `ai-wiki-*-ingest` skill。
-5. 写 frontmatter raw metadata、`Source Cluster`、`Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
-6. 更新 `index.md` Source Coverage 和 `log.md`。
-7. 进入 Compile Gate：这个 source 是否改变已有概念、实体、综合、学习地图，或用户显式创建的问题页；是否需要与 source cluster 内其他 source 建立 typed links。
+2. 确认来源域：外部 raw root 或 `human/raw/`。外部 raw 写入 `sources/...`；human raw 写入 `human/sources/...`。
+3. 确认来源文件路径和目标 source note 路径。`human/inbox/` 不作为 ingest 输入。
+4. 识别 source cluster：外部 raw 查看同目录 raw 和同目录已有 `sources/...`；human raw 查看同目录 human note 和同目录已有 `human/sources/...`。判断本 source 是目录入口、细节展开、案例、工具、对比、补充还是索引。
+5. 按类型路由读取来源；外部 `.xmind`、图片、raw Markdown、`.pdf`、`.excalidraw` 分别使用对应 `ai-wiki-*-ingest` skill。human raw 当前默认只处理 Markdown，并使用 docs 中的 Human Source Note Template；以后如果新增 dedicated skill，以该 skill 为准。
+6. 写 frontmatter raw metadata、`Source Cluster`、`Summary`、`Source Digest`、`Key Claims`、`External Links`、`Links`、`Maintenance Notes`。
+7. 更新 `index.md` Source Coverage 和 `log.md`。
+8. 进入 Compile Gate：这个 source 是否改变已有概念、实体、综合、学习地图，或用户显式创建的问题页；是否需要与 source cluster 内其他 source 建立 typed links。
 
 ## Compile Workflow
 
@@ -254,7 +278,7 @@ synthesis/wiki-health-YYYY-MM-DD.md
 
 检查项：
 
-- source coverage: raw 是否都有对应 source note。
+- source coverage: 外部 raw 是否都有对应 source note；声明为可 ingest 的 `human/raw` Markdown 是否有对应 `human/sources` source note。`human/inbox` 不参与 coverage。
 - broken links: Obsidian links 是否指向存在页面。
 - orphan pages: 页面是否没有被 index/source/concept/entity/map 引用。
 - stale claims: 旧页面是否被新 source 反驳或需要更新。
@@ -325,6 +349,7 @@ assets/sources/<raw 相对目录>/<原文件名>
 - `ai-wiki-markdown-ingest` 处理 raw Markdown。
 - `ai-wiki-pdf-ingest` 处理 `.pdf`。
 - `ai-wiki-excalidraw-ingest` 处理 `.excalidraw`。
+- human raw Markdown 当前按 Human Source Note Template ingest 到 `human/sources/`；如果后续存在 `ai-wiki-human-ingest`，以该 skill 为准。
 - vision 查看图片。
 - 必要时写一次性脚本做统计、链接检查、表格或图表生成。
 
@@ -360,7 +385,7 @@ assets/sources/<raw 相对目录>/<原文件名>
 ## Needs Attention
 ```
 
-`Source Coverage` 按 raw 目录层级列出 `sources/...`，标注 `ingested`、`partial`、`blocked` 或 `needs-review`。`Review Queue` 汇总到期或需要复习的页面。`Needs Attention` 汇总解析失败、图片不清、冲突未解决、缺少来源的页面。
+`Source Coverage` 按来源域组织：外部 raw 按 raw 目录层级列出 `sources/...`；human sources 按 `human/raw` 目录层级列出 `human/sources/...`。状态标注 `ingested`、`partial`、`blocked` 或 `needs-review`。`Review Queue` 汇总到期或需要复习的页面。`Needs Attention` 汇总解析失败、图片不清、冲突未解决、缺少来源的页面。
 
 ## Log Contract
 
