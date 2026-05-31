@@ -131,8 +131,8 @@ class CodexDailyHelperTests(unittest.TestCase):
                         "type": "response_item",
                         "payload": {
                             "type": "function_call",
-                            "name": "read_thread",
-                            "arguments": json.dumps({"threadId": "abc", "cursor": "secret-cursor"}),
+                            "name": "list_threads",
+                            "arguments": json.dumps({"query": "2026-05-30", "limit": 50}),
                         },
                     },
                     {
@@ -169,8 +169,8 @@ class CodexDailyHelperTests(unittest.TestCase):
         self.assertIn(long_user_message, result.stdout)
         self.assertLess(result.stdout.index("user: |-"), result.stdout.index("assistant: |-"))
         self.assertLess(result.stdout.index("assistant: |-"), result.stdout.index("tool_call: exec_command x2"))
-        self.assertIn("tool_call: read_thread", result.stdout)
-        self.assertIn("has_cursor: true", result.stdout)
+        self.assertIn("tool_call: list_threads", result.stdout)
+        self.assertIn("query: 2026-05-30", result.stdout)
         self.assertNotIn("workdir:", result.stdout)
         self.assertIn("assistant_final: |-", result.stdout)
 

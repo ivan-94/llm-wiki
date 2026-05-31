@@ -19,10 +19,10 @@ description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要
 2. 发现候选 thread。
    - 如果 thread 工具未加载，先通过 tool discovery 搜索 `list_threads`。
    - 用 `list_threads` 获取当天相关 thread 的标题、preview、状态、cwd、创建/更新时间。
-   - `read_thread` 只在有明确目的时使用：本机 timeline 缺失/滞后，或需要补读活跃、重要 thread 的当前状态。失败或未使用都记录到 `Source Manifest`。
 3. 读取 group timeline。先看输出里的 `parent_workflows`，再按其中列出的 group ids 读取阶段事实。
 
    ```bash
+   # 输出 yaml
    python3 .codex/skills/ai-wiki-codex-daily/scripts/collect_session_facts.py \
      --date YYYY-MM-DD
    ```
@@ -30,23 +30,24 @@ description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要
    按 group 读取事实：
 
    ```bash
+   # 输出 yaml
    python3 .codex/skills/ai-wiki-codex-daily/scripts/collect_session_facts.py \
      --date YYYY-MM-DD \
      --group-id <group-id>
    ```
 
-   只在调试或需要反查完整结构时使用 `--json` 或 `--full`。
 4. 从 parent workflow 和 group 提炼事实：用户请求、最后状态、agent/subagent 编排、关键轨迹、产物、未解决问题和下一步。关键轨迹要覆盖重要探索、决策、转向、失败、验证、收尾，以及可观测的上下文压缩事件；不要把弱信号推断成压缩事件。
-5. 写作前横向比较当天 parent workflows 和 groups：共同问题、验证缺口、协作摩擦、有效编排、工具/harness 改进点、可复用决策。日报正文默认按 parent workflow 归并，再按 group/stage 展开；没有父线程的独立 session 再单列。
+5. 写作前横向比较当天 parent workflows 和 groups：不要按固定栏目凑结论，先找最值得解释的张力点、转折、失败修正、反事实风险和用户纠偏。优先问“为什么今天会这样”“如果没有这个验证或纠正会留下什么隐患”“这会改变 Agent 下次怎么做”。日报正文默认按 parent workflow 归并，再按 group/stage 展开；没有父线程的独立 session 再单列。
 6. 读取 `references/daily-note-template.md` 后写日报正文。正文由 Agent 基于事实取舍和复盘，不机械填模板；超长 worker prompt 只摘要任务、约束、写入范围和输出要求。目标文件已存在时，不要静默覆盖，除非用户明确要求 refresh。
 
 ## 日报质量标准
 
 - frontmatter 必须包含 `type: codex-daily` 和 `ingest_policy: on-request`。
 - `Source Manifest` 必须列出公开 thread 工具使用情况、读取过的 parent workflow ids、group ids、fallback 来源和覆盖限制。
+- `工作日报（对上汇报）` 必须以 Codex 使用者或团队工作口吻写，面向上级同步进展、结果、风险和下一步；避免暴露过多 agent/thread/tool 内部细节。
 - `Session 明细` 必须包含用户输入、最后状态、关键轨迹、产物和下一步。
-- `分析` 要跨 session 提炼模式：协作摩擦、有效做法、漏掉的检查、值得复用的决策。
-- `启发与建议` 要给出具体改进：如何更好地和 Codex 交互、workflow/harness 怎么优化、哪些内容适合生成 skill、该补什么知识、该深入研究什么。
+- `分析与洞察` 要跨 session 提炼当天最有解释力的模式、矛盾、风险或有效做法；先解释事实背后的机制，再落到会改变下次行为的判断，不要机械填满固定栏目。
+- `启发与下一步` 要把洞察转成少量高价值行动选择，说明它来自哪个摩擦或失败信号、要改变什么工作方式、下次什么触发条件启用；流程沉淀、知识补齐、研究线索只在确有高价值时提出。
 - 不要粘贴完整 transcript、完整命令输出或冗长工具日志。
 - 不要把日报当作 canonical source note；只有用户明确要求 ingest 时，才进入 `human/sources`。
 
@@ -67,7 +68,7 @@ python3 .codex/skills/ai-wiki-codex-daily/scripts/collect_session_facts.py \
   --group-id source-links-repair-workers
 ```
 
-该脚本只用于提供事实时间线，不负责写日报正文。默认 YAML/Markdown；调试时可加 `--full` 或 `--json`。
+该脚本只用于提供事实时间线，不负责写日报正文。默认输出为 Agent 写日报可直接阅读的 YAML/Markdown。
 
 ## 参考
 
