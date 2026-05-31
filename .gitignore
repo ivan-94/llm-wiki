@@ -4,6 +4,7 @@ outputs/tmp/
 tmp/
 .scratch/
 .obsidian/
+.codex/cache/
 
 # Python/local tooling caches
 __pycache__/

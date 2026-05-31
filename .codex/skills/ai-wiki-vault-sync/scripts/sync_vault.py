@@ -14,7 +14,17 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[4]
 VAULT_ROOT = Path("/Users/ivan/Library/Mobile Documents/iCloud~md~obsidian/Documents/ai")
 TOP_LEVEL_FILES = ("index.md", "log.md", "AGENTS.md")
-DIRECTORIES = ("sources", "concepts", "entities", "synthesis", "questions", "maps", "outputs", "assets")
+DIRECTORIES = (
+    "sources",
+    "concepts",
+    "entities",
+    "synthesis",
+    "questions",
+    "maps",
+    "outputs",
+    "assets",
+    "human",
+)
 DOC_FILES = ("docs/wiki-templates.md",)
 HUMAN_PULL_DIRECTORIES = ("human/inbox", "human/raw")
 SOURCE_IGNORE_NAMES = {".DS_Store", ".gitkeep"}

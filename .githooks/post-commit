@@ -1,0 +1,31 @@
+#!/bin/sh
+set -u
+
+if [ "${AI_WIKI_SKIP_POST_COMMIT_SYNC:-}" = "1" ]; then
+  exit 0
+fi
+
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+cd "$repo_root" || exit 0
+
+sync_script=".codex/skills/ai-wiki-vault-sync/scripts/sync_vault.py"
+if [ ! -f "$sync_script" ]; then
+  echo "post-commit: vault sync skipped; missing $sync_script" >&2
+  exit 0
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "post-commit: vault sync skipped; python3 not found" >&2
+  exit 0
+fi
+
+log_path=".git/ai-wiki-post-commit-sync.log"
+echo "post-commit: syncing AI wiki to iCloud vault..."
+if python3 "$sync_script" --apply --json >"$log_path" 2>&1; then
+  echo "post-commit: vault sync complete; log: $log_path"
+else
+  status=$?
+  echo "post-commit: vault sync failed with exit $status; commit kept; log: $log_path" >&2
+fi
+
+exit 0

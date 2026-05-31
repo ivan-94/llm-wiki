@@ -23,6 +23,12 @@ Apply the plan:
 python3 .codex/skills/ai-wiki-vault-sync/scripts/sync_vault.py --apply --json
 ```
 
+Install the repo post-commit hook for the current clone/worktree:
+
+```bash
+.githooks/install.sh
+```
+
 Apply and remove stale files from managed wiki areas:
 
 ```bash
@@ -66,13 +72,16 @@ The helper syncs:
 - `docs/wiki-templates.md`
 - `sources/`, `concepts/`, `entities/`, `synthesis/`, `questions/`, `maps/`
 - `outputs/`, `assets/`
+- `human/`
 
 With `--pull-human`, the helper copies from the vault back to the repo only:
 
 - `human/inbox/`
 - `human/raw/`
 
-The helper does not sync `.git/`, `.codex/`, `.obsidian/`, external raw source directories, `human/sources/`, compiled wiki directories during `--pull-human`, temporary files outside managed paths, or agent runtime artifacts.
+Git does not auto-install hooks from a repository checkout. Run `.githooks/install.sh` once per clone or worktree that should auto-sync after commit. The hook runs repo-to-vault `--apply` after each commit and keeps the commit even if sync fails.
+
+The helper does not sync `.git/`, `.codex/`, `.obsidian/`, external raw source directories, compiled wiki directories during `--pull-human`, temporary files outside managed paths, or agent runtime artifacts.
 
 ## Safety Rules
 
