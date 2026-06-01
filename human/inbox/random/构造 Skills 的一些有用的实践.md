@@ -1,0 +1,1 @@
+- 让 Sub Agent 来运行 Skills, 父 Agent 评估，这是一种验收策略。  [[2026-06-01_Codex日报]]
