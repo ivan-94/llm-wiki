@@ -1,0 +1,9 @@
+{
+  "id": "ai-wiki-inbox-toolbar",
+  "name": "AI Wiki Inbox Toolbar",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Shows non-invasive inbox workflow buttons above AI Wiki inbox notes.",
+  "author": "AI Wiki",
+  "isDesktopOnly": false
+}

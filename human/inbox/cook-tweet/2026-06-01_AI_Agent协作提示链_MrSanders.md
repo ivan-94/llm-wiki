@@ -1,6 +1,12 @@
 ---
 type: cook-tweet
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: 2026-06-01
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
 source_kind: x-post
 x_url: https://x.com/MrSanders/status/2060487209375990205
 canonical_url: https://x.com/MrSanders/status/2060487209375990205

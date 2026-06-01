@@ -1,6 +1,12 @@
 ---
 type: cook-podcast
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: 2026-05-31
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
 source_kind: apple-podcast
 podcast: 硬地骇客
 episode: EP126 Agent Harness 🏇

@@ -33,6 +33,7 @@ AI/
     inbox/
     raw/
     sources/
+    archived/
   sources/
   concepts/
   entities/
@@ -53,6 +54,7 @@ AI/
 - `human/inbox/`: 临时笔记和未整理想法；agent 默认不 ingest、不 compile、不纳入 coverage。
 - `human/raw/`: 人类长期笔记和原创材料；agent 默认只读，只有用户明确要求或笔记声明 `ingest_policy: allowed` 时才作为 human source ingest。
 - `human/sources/`: `human/raw/` 被 ingest 和 compile 后的 source note / 索引层，目录层级镜像 `human/raw/`。
+- `human/archived/`: 从 `human/inbox/` 废弃或暂不处理的笔记归档；不属于 source coverage，也不自动 ingest。
 - `concepts/`: 概念页，跨多个 source 的稳定学习节点。
 - `entities/`: 人物、公司、项目、产品、工具、框架、模型、组织。
 - `synthesis/`: 跨来源分析、对比、路线图、判断、wiki 健康报告。
@@ -63,6 +65,28 @@ AI/
 - `docs/`: agent 规则附录和长模板，不存放 raw 派生知识页。
 
 不要再使用旧目录名 `topics/` 或 `syntheses/`。旧内容应迁移到 `concepts/` 和 `synthesis/`。
+
+## Human Inbox Workflow
+
+`human/inbox/` 是待消化内容池，不是 canonical source 层；不纳入 coverage，也不自动 ingest / compile。Agent 生成的 inbox note 默认写入：
+
+```yaml
+inbox_status: unread
+inbox_created_at: YYYY-MM-DD
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
+```
+
+状态只允许 `unread`、`read`、`raw`、`ingested`、`archived`。默认流转是 `unread -> read -> raw -> ingested`，也允许 `unread/read -> archived`。
+
+- `read` / `unread`: 只改 frontmatter。
+- `raw`: 剪切到 `human/raw/inbox/...`，成为可按 human raw 规则处理的来源。
+- `archived`: 剪切到 `human/archived/inbox/...`，不进入 raw / ingest。
+- `ingested`: 已从 `human/raw/` ingest 到 `human/sources/`，并完成必要 compile 判断。
+
+
 
 ## Hard Rules
 

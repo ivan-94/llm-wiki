@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1780207642940,
+      "title": "测试",
+      "options": {
+        "collapse-filter": false,
+        "search": "-file:index.md -path:maps  ",
+        "showTags": false,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": false,
+        "colorGroups": [
+          {
+            "query": "path:human  ",
+            "color": {
+              "a": 1,
+              "rgb": 14048348
+            }
+          },
+          {
+            "query": "path:concepts  ",
+            "color": {
+              "a": 1,
+              "rgb": 6058198
+            }
+          },
+          {
+            "query": "path:entities  ",
+            "color": {
+              "a": 1,
+              "rgb": 11392604
+            }
+          },
+          {
+            "query": "path:synthesis  ",
+            "color": {
+              "a": 1,
+              "rgb": 6084188
+            }
+          }
+        ],
+        "collapse-display": false,
+        "showArrow": false,
+        "textFadeMultiplier": -1.4,
+        "nodeSizeMultiplier": 2.13443576388889,
+        "lineSizeMultiplier": 1.10381944444444,
+        "collapse-forces": false,
+        "centerStrength": 0.233984375,
+        "repelStrength": 12.0633680555556,
+        "linkStrength": 0.827039930555556,
+        "linkDistance": 326,
+        "scale": 0.11975302565567629,
+        "close": false
+      }
+    }
+  ]
+}

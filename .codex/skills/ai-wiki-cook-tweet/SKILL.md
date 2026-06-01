@@ -99,6 +99,12 @@ Frontmatter：
 ---
 type: cook-tweet
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: YYYY-MM-DD
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
 source_kind: x-post | x-thread | x-article
 x_url: <input URL>
 canonical_url: <canonical x.com URL if known>

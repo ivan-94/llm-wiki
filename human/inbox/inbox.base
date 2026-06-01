@@ -1,0 +1,89 @@
+filters:
+  and:
+    - file.ext == "md"
+    - inbox_status != null
+    - file.inFolder("human/inbox") || file.inFolder("human/raw/inbox") || file.inFolder("human/archived/inbox")
+properties:
+  inbox_status:
+    displayName: Inbox Status
+  inbox_created_at:
+    displayName: Created
+  inbox_read_at:
+    displayName: Read At
+  raw_path:
+    displayName: Raw Path
+  ingested_at:
+    displayName: Ingested At
+  archive_reason:
+    displayName: Archive Reason
+  type:
+    displayName: Type
+  source_kind:
+    displayName: Source Kind
+  file.name:
+    displayName: Note
+views:
+  - type: table
+    name: Board by status
+    groupBy:
+      property: inbox_status
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - inbox_status
+    columnSize:
+      file.name: 702
+      note.type: 98
+  - type: table
+    name: Unread
+    filters:
+      and:
+        - inbox_status == "unread"
+    order:
+      - file.name
+      - type
+      - source_kind
+      - inbox_created_at
+  - type: table
+    name: Ready for raw
+    filters:
+      and:
+        - inbox_status == "read"
+    order:
+      - file.name
+      - type
+      - source_kind
+      - inbox_read_at
+      - raw_path
+  - type: table
+    name: In raw
+    filters:
+      and:
+        - inbox_status == "raw"
+    order:
+      - file.name
+      - type
+      - source_kind
+      - raw_path
+  - type: table
+    name: Ingested
+    filters:
+      and:
+        - inbox_status == "ingested"
+    order:
+      - file.name
+      - type
+      - source_kind
+      - raw_path
+      - ingested_at
+  - type: table
+    name: Archived
+    filters:
+      and:
+        - inbox_status == "archived"
+    order:
+      - file.name
+      - type
+      - source_kind
+      - archive_reason

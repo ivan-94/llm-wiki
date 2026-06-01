@@ -126,6 +126,12 @@ Frontmatter：
 ---
 type: cook-podcast
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: YYYY-MM-DD
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
 source_kind: apple-podcast
 podcast: <podcast title>
 episode: <episode title>

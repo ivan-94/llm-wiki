@@ -1,0 +1,7 @@
+.ai-wiki-inbox-title-action {
+  color: var(--text-muted);
+}
+
+.ai-wiki-inbox-title-action:hover {
+  color: var(--text-normal);
+}

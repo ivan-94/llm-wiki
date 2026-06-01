@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki GitHub 烹饪"
+  short_description: "把 GitHub 仓库烹饪成 inbox 项目笔记"
+  default_prompt: "使用 $ai-wiki-cook-github 将 GitHub 仓库链接烹饪成一篇 human inbox 项目笔记。"
