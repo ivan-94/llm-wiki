@@ -1,6 +1,6 @@
 # Codex 周报模板
 
-用于 `human/raw/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md`。
+用于 `human/inbox/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md`。
 
 这是写作结构，不是机械填空模板。Agent 需要基于七天日报事实进行二次综合，重点放在工作流、工作方式、效率、质量和组织化沉淀。
 
@@ -13,6 +13,13 @@ week_end: {week_end}
 type: codex-weekly
 generated_at: {generated_at}
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: {generated_date}
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
+source_kind: codex-report
 ---
 
 # {week_start} to {week_end} Codex周报
@@ -38,7 +45,7 @@ ingest_policy: on-request
 
 ## 每日摘要索引
 
-- [[human/raw/codex-daily/YYYY-MM-DD_Codex日报|YYYY-MM-DD]]: <一句话主题>；信号: <值得带入周报的工作方式、质量、效率或风险信号>
+- [[human/inbox/codex-daily/YYYY-MM-DD_Codex日报|YYYY-MM-DD]]: <一句话主题>；信号: <值得带入周报的工作方式、质量、效率或风险信号>
 - YYYY-MM-DD: missing; no daily report found.
 
 ## 分析与洞察
@@ -52,6 +59,6 @@ ingest_policy: on-request
 ## 待跟进归并
 
 - [ ] <归并后的后续动作>
-  - 来源: [[human/raw/codex-daily/YYYY-MM-DD_Codex日报|YYYY-MM-DD]]
+  - 来源: [[human/inbox/codex-daily/YYYY-MM-DD_Codex日报|YYYY-MM-DD]]
   - 归并判断: <为什么这些待办属于同一件事>
 ```

@@ -1,6 +1,6 @@
 ---
 name: ai-wiki-codex-daily
-description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要求 Codex 日报、今日 Codex 总结、session 复盘、交互复盘、workflow/harness 改进分析，或要求写入 human/raw/codex-daily 时使用。
+description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要求 Codex 日报、今日 Codex 总结、session 复盘、交互复盘、workflow/harness 改进分析，或要求写入 human/inbox/codex-daily 时使用。
 ---
 
 # AI Wiki Codex 日报
@@ -9,13 +9,13 @@ description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要
 
 从 Codex thread/session 生成一篇“事实 + 轨迹 + 洞察 + 启发”的日报。用公开 thread 工具发现候选工作，用本机 group timeline 读取完整事实；公开工具不足时不要阻塞日报。
 
-输出是一篇 human raw 笔记：`human/raw/codex-daily/YYYY-MM-DD_{title}.md`。不要自动 ingest 到 `human/sources`，不要自动更新 `index.md` 或 `log.md`。
+输出是一篇 inbox 笔记：`human/inbox/codex-daily/YYYY-MM-DD_{title}.md`。使用 `human/inbox` 的 `inbox_status` frontmatter 规则；不要自动 ingest 到 `human/sources`，不要自动更新 `index.md` 或 `log.md`。
 
 ## 工作流
 
 1. 确定目标日期、标题和输出路径。
    - 默认日期：当前本地日期，默认标题：`Codex日报`。
-   - 输出路径：`human/raw/codex-daily/YYYY-MM-DD_{title}.md`。
+   - 输出路径：`human/inbox/codex-daily/YYYY-MM-DD_{title}.md`。
 2. 发现候选 thread。
    - 如果 thread 工具未加载，先通过 tool discovery 搜索 `list_threads`。
    - 用 `list_threads` 获取当天相关 thread 的标题、preview、状态、cwd、创建/更新时间。
@@ -42,7 +42,7 @@ description: 为本 AI wiki 生成按日维度的 Codex 使用日报。用户要
 
 ## 日报质量标准
 
-- frontmatter 必须包含 `type: codex-daily` 和 `ingest_policy: on-request`。
+- frontmatter 必须包含 `type: codex-daily`、`ingest_policy: on-request`、`inbox_status: unread`、`inbox_created_at`、`inbox_read_at`、`raw_path`、`ingested_at` 和 `archive_reason`。
 - `Source Manifest` 必须列出公开 thread 工具使用情况、读取过的 parent workflow ids、group ids、fallback 来源和覆盖限制。
 - `工作日报（对上汇报）` 必须以 Codex 使用者或团队工作口吻写，面向上级同步进展、结果、风险和下一步；避免暴露过多 agent/thread/tool 内部细节。
 - `Session 明细` 必须包含用户输入、最后状态、关键轨迹、产物和下一步。
@@ -72,4 +72,4 @@ python3 .codex/skills/ai-wiki-codex-daily/scripts/collect_session_facts.py \
 
 ## 参考
 
-- `references/daily-note-template.md`：human raw 日报的通用结构，供 Agent 写作时参考。
+- `references/daily-note-template.md`：inbox 日报的通用结构，供 Agent 写作时参考。

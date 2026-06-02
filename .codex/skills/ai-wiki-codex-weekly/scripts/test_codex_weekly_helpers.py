@@ -24,6 +24,13 @@ title: "2026-05-25 Codex日报"
 date: 2026-05-25
 type: codex-daily
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: 2026-05-25
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
+source_kind: codex-report
 ---
 
 # 2026-05-25 Codex日报
@@ -83,7 +90,7 @@ class WeeklyHelperTests(unittest.TestCase):
     def test_collects_report_with_wikilink_and_sections(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            daily_dir = root / "human/raw/codex-daily"
+            daily_dir = root / "human/inbox/codex-daily"
             daily_dir.mkdir(parents=True)
             report_path = daily_dir / "2026-05-25_Codex日报.md"
             report_path.write_text(DAILY_TEXT, encoding="utf-8")
@@ -92,7 +99,7 @@ class WeeklyHelperTests(unittest.TestCase):
                 date(2026, 5, 25),
                 date(2026, 5, 25),
                 daily_dir=daily_dir,
-                weekly_dir=root / "human/raw/codex-weekly",
+                weekly_dir=root / "human/inbox/codex-weekly",
                 cwd=root,
             )
 
@@ -101,21 +108,44 @@ class WeeklyHelperTests(unittest.TestCase):
             self.assertEqual(report["frontmatter_type"], "codex-daily")
             self.assertEqual(
                 report["wikilink"],
-                "[[human/raw/codex-daily/2026-05-25_Codex日报|2026-05-25]]",
+                "[[human/inbox/codex-daily/2026-05-25_Codex日报|2026-05-25]]",
             )
             self.assertIn("今日概览", report["sections"])
             self.assertEqual(report["warnings"], None)
 
+    def test_collects_raw_status_report_from_inbox_workflow(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            daily_dir = root / "human/raw/inbox/codex-daily"
+            daily_dir.mkdir(parents=True)
+            report_path = daily_dir / "2026-05-25_Codex日报.md"
+            report_path.write_text(DAILY_TEXT, encoding="utf-8")
+
+            payload = collector.collect_reports(
+                date(2026, 5, 25),
+                date(2026, 5, 25),
+                daily_dir=(root / "human/inbox/codex-daily", daily_dir),
+                weekly_dir=root / "human/inbox/codex-weekly",
+                cwd=root,
+            )
+
+            report = payload["reports"][0]
+            self.assertEqual(report["status"], "found")
+            self.assertEqual(
+                report["wikilink"],
+                "[[human/raw/inbox/codex-daily/2026-05-25_Codex日报|2026-05-25]]",
+            )
+
     def test_missing_report_is_soft_status(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            daily_dir = root / "human/raw/codex-daily"
+            daily_dir = root / "human/inbox/codex-daily"
             daily_dir.mkdir(parents=True)
             payload = collector.collect_reports(
                 date(2026, 5, 25),
                 date(2026, 5, 26),
                 daily_dir=daily_dir,
-                weekly_dir=root / "human/raw/codex-weekly",
+                weekly_dir=root / "human/inbox/codex-weekly",
                 cwd=root,
             )
             self.assertEqual([report["status"] for report in payload["reports"]], ["missing", "missing"])
@@ -124,7 +154,7 @@ class WeeklyHelperTests(unittest.TestCase):
     def test_wrong_type_and_missing_sections_warn_without_failure(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            daily_dir = root / "human/raw/codex-daily"
+            daily_dir = root / "human/inbox/codex-daily"
             daily_dir.mkdir(parents=True)
             (daily_dir / "2026-05-25_Codex日报.md").write_text(
                 """---
@@ -144,7 +174,7 @@ Only one section.
                 date(2026, 5, 25),
                 date(2026, 5, 25),
                 daily_dir=daily_dir,
-                weekly_dir=root / "human/raw/codex-weekly",
+                weekly_dir=root / "human/inbox/codex-weekly",
                 cwd=root,
             )
             report = payload["reports"][0]

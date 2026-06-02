@@ -1,6 +1,6 @@
 # Codex 日报模板
 
-用于 `human/raw/codex-daily/YYYY-MM-DD_{title}.md`。
+用于 `human/inbox/codex-daily/YYYY-MM-DD_{title}.md`。
 
 这是写作结构，不是机械填空模板。Agent 需要基于 thread/session 事实进行判断、归纳和复盘，保留必要关键轨迹。
 
@@ -12,6 +12,13 @@ type: codex-daily
 generated_at: {generated_at}
 source_strategy: "{source_strategy}"
 ingest_policy: on-request
+inbox_status: unread
+inbox_created_at: {generated_date}
+inbox_read_at:
+raw_path:
+ingested_at:
+archive_reason:
+source_kind: codex-report
 ---
 
 # {date} {title}

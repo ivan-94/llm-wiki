@@ -81,6 +81,7 @@ archive_reason:
 
 状态只允许 `unread`、`read`、`raw`、`ingested`、`archived`。默认流转是 `unread -> read -> raw -> ingested`，也允许 `unread/read -> archived`。
 
+- Codex 日报和周报也属于 inbox note，默认分别写入 `human/inbox/codex-daily/` 和 `human/inbox/codex-weekly/`，必须使用同一套 `inbox_status` frontmatter，不直接写入 `human/raw/`。
 - `read` / `unread`: 只改 frontmatter。
 - `raw`: 剪切到 `human/raw/inbox/...`，成为可按 human raw 规则处理的来源。
 - `archived`: 剪切到 `human/archived/inbox/...`，不进入 raw / ingest。

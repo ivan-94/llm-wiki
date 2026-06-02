@@ -13,6 +13,7 @@ tmp/
 .obsidian/plugins/*
 !.obsidian/plugins/quickadd/
 .obsidian/plugins/quickadd/*
+!.obsidian/plugins/obsidian-icon-folder/
 !.obsidian/plugins/quickadd/data.json
 !.obsidian/plugins/ai-wiki-inbox-toolbar/
 .obsidian/plugins/ai-wiki-inbox-toolbar/*

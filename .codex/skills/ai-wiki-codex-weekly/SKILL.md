@@ -1,6 +1,6 @@
 ---
 name: ai-wiki-codex-weekly
-description: Generate a weekly work review from existing Codex daily reports in this AI wiki. Use when the user asks for a Codex weekly report, seven-day daily report synthesis, weekly workflow/work-efficiency review, or writing to human/raw/codex-weekly.
+description: Generate a weekly work review from existing Codex daily reports in this AI wiki. Use when the user asks for a Codex weekly report, seven-day daily report synthesis, weekly workflow/work-efficiency review, or writing to human/inbox/codex-weekly.
 ---
 
 # AI Wiki Codex 周报
@@ -9,11 +9,11 @@ description: Generate a weekly work review from existing Codex daily reports in 
 
 从已经存在的 Codex 日报生成一篇周报。周报的重点不是复述执行流水，而是基于日报材料提炼一周的工作主线、工作流变化、效率损耗或收益、质量风险、组织化沉淀和下周调整。
 
-输出是一篇 human raw 笔记：`human/raw/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md`。不要自动 ingest 到 `human/sources`，不要自动更新 `index.md` 或 `log.md`。
+输出是一篇 inbox 笔记：`human/inbox/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md`。使用 `human/inbox` 的 `inbox_status` frontmatter 规则；不要自动 ingest 到 `human/sources`，不要自动更新 `index.md` 或 `log.md`。
 
 ## 输入边界
 
-- 输入材料限于 `human/raw/codex-daily/` 下已经存在的日报 Markdown。
+- 输入材料限于 inbox 工作流里的 Codex 日报 Markdown，默认查找 `human/inbox/codex-daily/` 和已流转到 raw 状态的 `human/raw/inbox/codex-daily/`。
 - 缺失或格式不完整的日期只在 `每日摘要索引` 中表达。
 - collector 仅做日期、文件、Obsidian 链接、frontmatter 和分节抽取。
 
@@ -41,7 +41,7 @@ description: Generate a weekly work review from existing Codex daily reports in 
 
 ## 周报质量标准
 
-- frontmatter 必须包含 `type: codex-weekly`、`week_start`、`week_end` 和 `ingest_policy: on-request`。
+- frontmatter 必须包含 `type: codex-weekly`、`week_start`、`week_end`、`ingest_policy: on-request`、`inbox_status: unread`、`inbox_created_at`、`inbox_read_at`、`raw_path`、`ingested_at` 和 `archive_reason`。
 - `工作周报（对上汇报）` 面向上级同步本周推进、结果、风险和下周计划；面向业务和管理语境表达，不展开执行细节。
 - `本周主线` 用 3-5 条概括这一周真正围绕的工作主题，不做冗长分类表。
 - `每日摘要索引` 必须用 Obsidian wikilink 引用已存在日报；缺失日期写明 missing，不伪造链接。
@@ -55,7 +55,7 @@ description: Generate a weekly work review from existing Codex daily reports in 
 生成后至少检查：
 
 ```bash
-rg -n "^(type: codex-weekly|week_start:|week_end:|ingest_policy: on-request|## 工作周报（对上汇报）|## 本周主线|## 每日摘要索引|## 分析与洞察|## 启发与下周调整|## 待跟进归并)" \
-  human/raw/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md
-git diff --check -- human/raw/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md
+rg -n "^(type: codex-weekly|week_start:|week_end:|ingest_policy: on-request|inbox_status: unread|## 工作周报（对上汇报）|## 本周主线|## 每日摘要索引|## 分析与洞察|## 启发与下周调整|## 待跟进归并)" \
+  human/inbox/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md
+git diff --check -- human/inbox/codex-weekly/YYYY-MM-DD_to_YYYY-MM-DD_Codex周报.md
 ```

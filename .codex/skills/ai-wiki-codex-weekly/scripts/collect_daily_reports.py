@@ -10,11 +10,14 @@ import sys
 from dataclasses import dataclass, asdict
 from datetime import date, timedelta
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 
-DEFAULT_DAILY_DIR = Path("human/raw/codex-daily")
-DEFAULT_WEEKLY_DIR = Path("human/raw/codex-weekly")
+DEFAULT_DAILY_DIRS = (
+    Path("human/inbox/codex-daily"),
+    Path("human/raw/inbox/codex-daily"),
+)
+DEFAULT_WEEKLY_DIR = Path("human/inbox/codex-weekly")
 DEFAULT_MAX_SECTION_CHARS = 2400
 KEY_SECTIONS = (
     "今日概览",
@@ -123,13 +126,30 @@ def extract_h2_sections(body: str, max_chars: int = DEFAULT_MAX_SECTION_CHARS) -
     return extracted
 
 
-def find_daily_report(day: date, daily_dir: Path) -> tuple[Path | None, list[str]]:
-    warnings: list[str] = []
-    exact = daily_dir / f"{day.isoformat()}_Codex日报.md"
-    if exact.exists():
-        return exact, warnings
+def normalize_daily_dirs(daily_dirs: Path | Iterable[Path]) -> list[Path]:
+    if isinstance(daily_dirs, Path):
+        return [daily_dirs]
+    return list(daily_dirs)
 
-    candidates = sorted(daily_dir.glob(f"{day.isoformat()}_*.md"))
+
+def find_daily_report(day: date, daily_dirs: Path | Iterable[Path]) -> tuple[Path | None, list[str]]:
+    warnings: list[str] = []
+    dirs = normalize_daily_dirs(daily_dirs)
+    exact_matches = [
+        daily_dir / f"{day.isoformat()}_Codex日报.md"
+        for daily_dir in dirs
+        if (daily_dir / f"{day.isoformat()}_Codex日报.md").exists()
+    ]
+    if exact_matches:
+        if len(exact_matches) > 1:
+            warnings.append("multiple_daily_candidates")
+        return exact_matches[0], warnings
+
+    candidates = sorted(
+        candidate
+        for daily_dir in dirs
+        for candidate in daily_dir.glob(f"{day.isoformat()}_*.md")
+    )
     if not candidates:
         return None, warnings
     if len(candidates) > 1:
@@ -152,9 +172,10 @@ def obsidian_wikilink(path: Path, day: date, cwd: Path) -> str:
     return f"[[{target}|{day.isoformat()}]]"
 
 
-def read_report(day: date, daily_dir: Path, cwd: Path, max_section_chars: int) -> DailyReport:
-    expected = daily_dir / f"{day.isoformat()}_Codex日报.md"
-    path, warnings = find_daily_report(day, daily_dir)
+def read_report(day: date, daily_dirs: Path | Iterable[Path], cwd: Path, max_section_chars: int) -> DailyReport:
+    dirs = normalize_daily_dirs(daily_dirs)
+    expected = dirs[0] / f"{day.isoformat()}_Codex日报.md"
+    path, warnings = find_daily_report(day, dirs)
     if path is None:
         return DailyReport(date=day.isoformat(), status="missing", expected_path=expected.as_posix())
 
@@ -188,14 +209,15 @@ def read_report(day: date, daily_dir: Path, cwd: Path, max_section_chars: int) -
 def collect_reports(
     start: date,
     end: date,
-    daily_dir: Path = DEFAULT_DAILY_DIR,
+    daily_dir: Path | Iterable[Path] = DEFAULT_DAILY_DIRS,
     weekly_dir: Path = DEFAULT_WEEKLY_DIR,
     max_section_chars: int = DEFAULT_MAX_SECTION_CHARS,
     cwd: Path | None = None,
     mode: str = "natural-week",
 ) -> dict[str, Any]:
     root = cwd or Path.cwd()
-    reports = [read_report(day, daily_dir, root, max_section_chars) for day in each_day(start, end)]
+    daily_dirs = normalize_daily_dirs(daily_dir)
+    reports = [read_report(day, daily_dirs, root, max_section_chars) for day in each_day(start, end)]
     found = sum(1 for report in reports if report.status == "found")
     output_path = weekly_dir / f"{start.isoformat()}_to_{end.isoformat()}_Codex周报.md"
     return {
@@ -260,7 +282,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--start-date", type=parse_iso_date)
     parser.add_argument("--end-date", type=parse_iso_date)
     parser.add_argument("--recent-days", type=int)
-    parser.add_argument("--daily-dir", type=Path, default=DEFAULT_DAILY_DIR)
+    parser.add_argument(
+        "--daily-dir",
+        type=Path,
+        action="append",
+        dest="daily_dirs",
+        help="Directory containing daily reports. Can be repeated; defaults to inbox workflow locations.",
+    )
     parser.add_argument("--weekly-dir", type=Path, default=DEFAULT_WEEKLY_DIR)
     parser.add_argument("--max-section-chars", type=int, default=DEFAULT_MAX_SECTION_CHARS)
     parser.add_argument("--json", action="store_true")
@@ -278,7 +306,7 @@ def main(argv: list[str] | None = None) -> int:
     payload = collect_reports(
         start,
         end,
-        daily_dir=args.daily_dir,
+        daily_dir=args.daily_dirs or DEFAULT_DAILY_DIRS,
         weekly_dir=args.weekly_dir,
         max_section_chars=args.max_section_chars,
         mode=mode,
