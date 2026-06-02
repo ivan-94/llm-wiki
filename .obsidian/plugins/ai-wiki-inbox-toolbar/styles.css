@@ -1,7 +1,9 @@
-.ai-wiki-inbox-title-action {
+.ai-wiki-inbox-title-action,
+.ai-wiki-local-graph-title-action {
   color: var(--text-muted);
 }
 
-.ai-wiki-inbox-title-action:hover {
+.ai-wiki-inbox-title-action:hover,
+.ai-wiki-local-graph-title-action:hover {
   color: var(--text-normal);
 }

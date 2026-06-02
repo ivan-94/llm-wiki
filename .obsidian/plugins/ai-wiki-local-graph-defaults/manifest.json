@@ -1,0 +1,9 @@
+{
+  "id": "ai-wiki-local-graph-defaults",
+  "name": "AI Wiki Local Graph Defaults",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Applies AI Wiki default display, filter, and color settings to Obsidian local graph panes.",
+  "author": "AI Wiki",
+  "isDesktopOnly": false
+}

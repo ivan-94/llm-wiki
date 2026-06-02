@@ -6,7 +6,9 @@
   "templater-obsidian",
   "quickadd",
   "ai-wiki-inbox-toolbar",
+  "ai-wiki-local-graph-defaults",
   "fold-properties-by-default",
   "obsidian-icon-folder",
-  "homepage"
+  "homepage",
+  "calendar"
 ]

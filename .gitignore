@@ -20,6 +20,10 @@ tmp/
 !.obsidian/plugins/ai-wiki-inbox-toolbar/manifest.json
 !.obsidian/plugins/ai-wiki-inbox-toolbar/main.js
 !.obsidian/plugins/ai-wiki-inbox-toolbar/styles.css
+!.obsidian/plugins/ai-wiki-local-graph-defaults/
+.obsidian/plugins/ai-wiki-local-graph-defaults/*
+!.obsidian/plugins/ai-wiki-local-graph-defaults/manifest.json
+!.obsidian/plugins/ai-wiki-local-graph-defaults/main.js
 .codex/cache/
 
 # Python/local tooling caches
