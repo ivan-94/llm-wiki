@@ -63,7 +63,7 @@ claude "build a harness for a fintech risk-assessment team"
 ## 主要架构
 
 ```mermaid
-flowchart LR
+flowchart TB
   User["用户领域描述"] --> Trigger["Claude Code plugin / skill trigger"]
   Trigger --> MainSkill["skills/harness/SKILL.md"]
   MainSkill --> Audit["Phase 0: 现有 harness 审计"]
