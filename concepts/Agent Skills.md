@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-05-30
+updated_at: 2026-06-01
 status: active
-source_count: 19
+source_count: 23
 learning_status: new
 confidence: 2
 difficulty: 3
@@ -79,6 +79,13 @@ Lightweight mode 的特点：有明确触发词、一次性或持续、告知停
 
 ## Evidence
 
+### 2026-06-01 扩展技能刷新
+
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png|Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png]] — 补充 skill 审查、交付封装和 HAT-friendly 改造证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind]] — 补充 skill 审查、交付封装和 HAT-friendly 改造证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind]] — 补充 skill 审查、交付封装和 HAT-friendly 改造证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind]] — 补充 skill 审查、交付封装和 HAT-friendly 改造证据。
+
 - [[sources/Agent/Skills.xmind|Skills.xmind]]
 - [[sources/Agent/claude skill.pdf|claude skill.pdf]]
 - [[sources/Agent/变体/Nano Bot .xmind|Nano Bot .xmind]]
@@ -98,6 +105,8 @@ Lightweight mode 的特点：有明确触发词、一次性或持续、告知停
 - related: [[concepts/上下文工程|上下文工程]]
 - enabled-by: [[concepts/Agent 工具调用|Agent 工具调用]]
 - contains: [[concepts/Skill 触发契约|Skill 触发契约]] — 触发契约是 skill 可用性的核心控制面
+- contains: [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] — HAT skills 是 workflow skill 在验收阶段的协议化组合
+- related: [[concepts/Agent 上下文审计|Agent 上下文审计]] — 上下文审计可检查 skill 触发与入口文档是否让新 Agent 误判
 - used-in: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 - implemented-by: [[entities/Superpowers|Superpowers]] — session-hook 注入型框架实现
 - implemented-by: [[entities/GStack|GStack]] — slash commands 质量门禁套件实现

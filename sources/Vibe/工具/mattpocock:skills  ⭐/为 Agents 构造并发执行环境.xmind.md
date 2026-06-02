@@ -2,12 +2,12 @@
 source_type: xmind
 raw_path: "/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI/Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind"
 source_relpath: "Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind"
-raw_created_at: 2026-05-11T01:36:02.940063+00:00
-raw_modified_at: 2026-05-11T01:36:02.941113+00:00
-raw_size: 2769304
-raw_fingerprint: "size=2769304;birth=2026-05-11T01:36:02.940063+00:00;mtime=2026-05-11T01:36:02.941113+00:00"
-raw_snapshot_at: 2026-05-29T16:07:40+00:00
-ingested_at: 2026-05-30
+raw_created_at: 2026-06-01T10:42:26.453483+00:00
+raw_modified_at: 2026-06-01T10:42:26.542267+00:00
+raw_size: 2728350
+raw_fingerprint: "size=2728350;birth=2026-06-01T10:42:26.453483+00:00;mtime=2026-06-01T10:42:26.542267+00:00"
+raw_snapshot_at: 2026-06-01T13:47:46.128658+00:00
+ingested_at: 2026-06-01
 status: ingested
 ---
 
@@ -19,30 +19,35 @@ status: ingested
 - Raw ref: `raw:Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind`
 - Type: xmind
 - Status: ingested
-- Raw metadata: created `2026-05-11T01:36:02.940063+00:00`; modified `2026-05-11T01:36:02.941113+00:00`; size `2769304`; snapshot `2026-05-29T16:07:40+00:00`
-- Coverage: XMind helper exported all discovered sheets; sheet count `1`; sheet titles: `为 Agents 构造并发执行环境`; topic count `75`.
+- Raw metadata: created `2026-06-01T10:42:26.453483+00:00`; modified `2026-06-01T10:42:26.542267+00:00`; size `2728350`; snapshot `2026-06-01T13:47:46.128658+00:00`
+- Coverage: XMind helper exported all sheets; `sheet_count=1`; `0` titled `为 Agents 构造并发执行环境` with 75 topics.
+
+## Source Cluster
+
+- Directory cluster: Vibe/工具/mattpocock:skills  ⭐
+- Cluster role: tool
+- Neighbor sources:
+  - same-cluster: [[sources/Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind|Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind]] — 同属 Matt Pocock Skills cluster，提供工作流技能总体方法论。
+  - same-cluster: [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind]] — 同属个人 Agent 工作流 cluster，提供端到端流程位置。
 
 ## Summary
 
-这份 XMind 规划了面向并发 agent 的项目运行环境：用 git worktree 隔离文件系统，用独立 Compose project 隔离运行时命名空间和端口，用共享 cache 降低构建成本，用 manifest、CLI 和容器内脚本让 agent 可复现地启动、测试、迁移、查看状态和清理环境。
+这份 XMind 设计面向并发 Agent 的隔离执行环境：用 git worktree 分离文件系统，用独立 Compose 分离运行时和状态，并用 `.agent/bin/agent` 脚本统一沙箱生命周期。
 
 ## Source Digest
 
-资料从人类 dev container 的限制切入：dev container 适合固定工作区和固定端口的人类开发体验，但并发 agent 不能直接共享同一个实例，否则会遇到端口冲突、容器命名冲突、共享状态污染和日志位置不确定等问题。方案保留 dev container 的基础构建能力，同时拆出面向 agent 的 Compose 覆盖文件：共享 image/build、MySQL/Redis 基础服务、Maven cache、Node 运行环境和 Node module cache；agent 侧通过 `${WORKTREE_PATH}` 挂载独立 worktree，通过 `${ADMIN_HOST_PORT:-0}` 等动态端口避免冲突，并用 Compose project 名作为隔离命名空间。
+source 先指出 dev container 面向人类开发者，默认带有固定 container、固定端口和单工作区假设；并发 Agent 任务还需要处理端口冲突、不能共享现有实例、状态隔离和日志定位问题。因此它提出 `docker-compose.agent.yml` 继承共享 compose：镜像、build、MySQL/Redis、Maven/Node cache 可以共享，但 MySQL/Redis 数据和 compose project 默认隔离。
 
-运行管理层被设计成两类脚本。容器内脚本负责业务程序生命周期，例如 start、stop、migrate、status、wait，并要求启动幂等，比如自动终止已有进程再启动。容器外 `.agent/bin/agent` 管理 sandbox，包括 init、up、exec、start、stop、migrate、status、logs、down、clean 等命令。关键设计是每个 sandbox 生成 `.agent/runs/{id}/manifest.json` 和 `agent.env`，记录 project、worktree、composeFiles、ports、urls、logs 和 artifacts，避免 agent 依靠记忆推断环境状态。
-
-资料还强调命令语义边界：`exec` 用于 compile/test/lint 等一次性任务，`start` 用于长期服务以供 HAT/browser 使用；`down` 只停止 sandbox，`clean` 还删除独立数据卷；cache 可以共享，但 MySQL/Redis 数据默认按 agent 隔离。最后建议把通用流程写入 AGENTS.md，把详细教程和 CLI reference 放入 docs，让后续 agent 能按同一运行契约工作。
+source 的关键设计是把 Agent sandbox 变成可管理对象：`.agent/runs/{id}` 保存 manifest、端口和日志；`.agent/bin/agent init/up/exec/start/stop/migrate/status/logs/destroy` 管理生命周期；业务脚本在容器内用 `.agent-runtime/bin/project start/stop/migrate/status/wait` 保持幂等、健康检查和机器可读输出。
 
 ## Key Claims
 
-- explicit: dev container 面向人类开发者，并发 agent 需要额外处理端口冲突和实例共享问题。
-- explicit: agent 运行环境应通过独立 Compose project、动态端口和独立 worktree 隔离并发任务。
-- explicit: image/build、Maven/npm/pnpm cache、Node 运行环境等可共享；MySQL/Redis 数据默认每个 agent 独立。
-- explicit: `.agent/bin/agent` 应提供 init、up、exec、start、stop、migrate、status、logs、down、clean 等管理命令。
-- explicit: 每个 sandbox 应生成 manifest，不让 agent 依靠记忆保存端口、URL、worktree 和日志位置。
-- explicit: `exec` 用于一次性命令，`start` 用于启动长期服务供 HAT/browser 使用。
-- inferred: 这份方案的核心目标是把 agent 并发执行从“临时命令习惯”提升为可发现、可清理、可复用的运行时契约。
+- explicit: dev container 面向人类开发者，并发 Agent 任务需要额外处理端口冲突和实例隔离。
+- explicit: Agent compose sandbox 应使用独立 compose project，端口动态分配，cache 可共享，state 默认隔离。
+- explicit: 每个 sandbox 应生成 manifest，避免 Agent 靠记忆保存状态。
+- explicit: Agent CLI 应提供 init、up、exec、start、stop、migrate、status、logs、destroy 等生命周期命令。
+- explicit: `status --json` 和友好的 `--help`/错误信息是 Agent 可操作性的关键。
+- inferred: Agent Runtime 的核心不是 Docker 本身，而是把运行环境状态、端口、日志、健康检查和幂等操作产品化。
 
 ## External Links
 
@@ -50,15 +55,12 @@ No external links found in extracted content.
 
 ## Links
 
-- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 远程与运行时工具簇，多 agent 执行环境来源。
-- related: [[concepts/远程 Agent 控制栈|远程 Agent 控制栈]] — 并发执行环境是控制栈的执行层隔离实现。
-- implemented-by: [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|我的流程]] — 我的流程中的并发执行模式在这份 source 中有具体环境搭建实现。
-- enables: [[sources/Vibe/工具/mattpocock:skills  ⭐/看板管理.xmind|看板管理]] — 看板 Runner 层依赖并发执行环境提供的 agent 沙箱。
+- updates: [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]] — 补充 Matt Pocock 扩展 skill 在工作流链路中的位置。
+- updates: [[concepts/Agent Skills|Agent Skills]] — 补充 workflow/helper/lightweight skills 的具体节点。
+- compiled-entity: [[entities/Matt Pocock|Matt Pocock]] — 提供 Matt Pocock Skills 扩展集证据。
+- map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]] — 纳入 Matt Pocock Skills 工具 cluster。
 
 ## Maintenance Notes
 
-- XMind helper succeeded with `ok: true` and empty `sheets_error`; all 1 discovered sheet was exported and digested.
-- The exported workbook includes project-specific example names such as `sharge-agent-pr17`, `eye-dev`, and `glasses`; treat them as illustrative examples unless compiling into a project-specific runtime guide.
-- No index/log updates were made because this batch worker was restricted to the five source notes only.
-
-- Link cleanup candidate: related: Agent 并发执行环境 — 可沉淀 worktree、Compose sandbox、动态端口、manifest 和 CLI 生命周期契约。.
+- XMind helper 成功导出全部 1 个 sheet；每个 sheet 已在本次批量 ingest 中读取并消化。
+- 本 source note 是批量 ingest 生成的消化层，不保存完整 raw 导出；需要细节时应回 raw XMind。

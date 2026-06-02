@@ -1,12 +1,6 @@
 # AI Wiki Index
 
 ## Recently Updated
-- 2026-05-30: Added `human/` Obsidian note area contract with `inbox`, `raw`, and `sources` separation for human-authored material.
-- 2026-05-30: Phase 3 全库 compile 收尾 — 8 批 source 探索 + 5 wave 落盘（112 concepts、31 entities、15 synthesis、9 maps）+ source Links 互链深化。
-- 2026-05-30: Repaired source note `Links` sections so graph links use real wikilinks and candidate-only items live in Maintenance Notes.
-- 2026-05-30: Fully synced all supported raw files: 77 new source notes ingested, 22 existing source notes metadata-backfilled, and raw diff now reports 201 unchanged.
-- 2026-05-29: Ingested the full `Vibe/` raw directory into 102 source notes and compiled core Vibe Coding, Agentic Engineering, Agent Harness, Agent Skills, SDD, and SbE pages.
-- 2026-05-29: Opened ingest support and raw diff coverage for Markdown, PDF, and Excalidraw raw files.
 
 ## Source Coverage
 - `Agent/`
@@ -124,18 +118,12 @@
   - `ingested` [[sources/Vibe/Vibe Coding.xmind|Vibe/Vibe Coding.xmind]]
   - `ingested` [[sources/Vibe/Vibe 实践记录.xmind|Vibe/Vibe 实践记录.xmind]]
   - `ingested` [[sources/Vibe/实战.xmind|Vibe/实战.xmind]]
-  - `partial` [[sources/Vibe/工具/.xmind-backups/Obsidian.1780036245.xmind|Vibe/工具/.xmind-backups/Obsidian.1780036245.xmind]]
-  - `ingested` [[sources/Vibe/工具/.xmind-backups/Obsidian.1780036387.xmind|Vibe/工具/.xmind-backups/Obsidian.1780036387.xmind]]
-  - `ingested` [[sources/Vibe/工具/.xmind-backups/Obsidian.1780036461.xmind|Vibe/工具/.xmind-backups/Obsidian.1780036461.xmind]]
-  - `ingested` [[sources/Vibe/工具/.xmind-backups/Obsidian.1780036538.xmind|Vibe/工具/.xmind-backups/Obsidian.1780036538.xmind]]
-  - `ingested` [[sources/Vibe/工具/.xmind-backups/Obsidian.before-id-repair.$(date +%s).xmind|Vibe/工具/.xmind-backups/Obsidian.before-id-repair.$(date +%s).xmind]]
   - `ingested` [[sources/Vibe/工具/ACP.xmind|Vibe/工具/ACP.xmind]]
   - `ingested` [[sources/Vibe/工具/AI 软件工厂 GStack.xmind|Vibe/工具/AI 软件工厂 GStack.xmind]]
   - `ingested` [[sources/Vibe/工具/Claude Code/claude code cli.png|Vibe/工具/Claude Code/claude code cli.png]]
   - `ingested` [[sources/Vibe/工具/Claude Code/claude-code-cli-cheatsheet|Vibe/工具/Claude Code/claude-code-cli-cheatsheet.md]]
   - `ingested` [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|Vibe/工具/Claude Code/解构 Claude Code.xmind]]
   - `ingested` [[sources/Vibe/工具/Github 原住民.xmind|Vibe/工具/Github 原住民.xmind]]
-  - `ingested` [[sources/Vibe/工具/Obsidian.xmind|Vibe/工具/Obsidian.xmind]]
   - `ingested` [[sources/Vibe/工具/codex/Goal.xmind|Vibe/工具/codex/Goal.xmind]]
   - `ingested` [[sources/Vibe/工具/codex/cli.png|Vibe/工具/codex/cli.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind|Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind]]
@@ -172,6 +160,23 @@
   - `ingested` [[sources/Vibe/软件工程基础/Specification by Example/cucumber-2.png|Vibe/软件工程基础/Specification by Example/cucumber-2.png]]
   - `ingested` [[sources/Vibe/软件工程基础/Specification by Example/sbE与DDD_BDD_TDD.png|Vibe/软件工程基础/Specification by Example/sbE与DDD_BDD_TDD.png]]
   - `ingested` [[sources/Vibe/软件工程基础/Specification by Example/示例.png|Vibe/软件工程基础/Specification by Example/示例.png]]
+  - `ingested` [[sources/Vibe/Vibe Coding 随手记/文件系统/Obsidian.xmind|Vibe/Vibe Coding 随手记/文件系统/Obsidian.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT workerHAT 批量执行器hat-dispatch.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext HAT workerHAT 批量执行器hat-dispatch.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png|Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext deliver prd使用 DAG 批量交付 Slice.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext deliver prd使用 DAG 批量交付 Slice.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext hat-copilot Agent 辅助验收.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext hat-copilot Agent 辅助验收.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext hat-prepare-for-human给人类准备的验收向导.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext hat-prepare-for-human给人类准备的验收向导.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 交叉 review.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 交叉 review.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 合并 PR.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 合并 PR.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 提交 PR.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 提交 PR.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 构建 Agent Runtime.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 构建 Agent Runtime.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 流程控制setup-agent-workflow.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 流程控制setup-agent-workflow.xmind]]
 - `notebook 协作.excalidraw`
   - `partial` [[sources/notebook 协作.excalidraw|notebook 协作.excalidraw]]
 - `sharge/`
@@ -281,6 +286,7 @@
 - [[concepts/Agent 反馈回路|Agent 反馈回路]]
 - [[concepts/Agent 可观测性|Agent 可观测性]]
 - [[concepts/Agent 工作流技能编排|Agent 工作流技能编排]]
+- [[concepts/Agent 上下文审计|Agent 上下文审计]]
 - [[concepts/Agent 全局记忆|Agent 全局记忆]]
 - [[concepts/Agent MessageBus|Agent MessageBus]]
 - [[concepts/Agent 控制模式|Agent 控制模式]]
@@ -300,6 +306,7 @@
 - [[concepts/Agent Coding Guardrails|Agent Coding Guardrails]]
 - [[concepts/Agent 并发执行环境|Agent 并发执行环境]]
 - [[concepts/Agent Brief|Agent Brief]]
+- [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]]
 - [[concepts/Skill 触发契约|Skill 触发契约]]
 - [[concepts/远程 Agent 控制栈|远程 Agent 控制栈]]
 - [[concepts/复合工程（Compound Engineering）|复合工程（Compound Engineering）]]
@@ -510,6 +517,8 @@ No outputs yet.
 - 2026-06-06: [[synthesis/SbE 与 AI Coding 验收链路|SbE 与 AI Coding 验收链路]]
 - 2026-06-06: [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - 2026-06-06: [[synthesis/问题定义实践框架|问题定义实践框架]]
+- 2026-06-08: [[concepts/Agent 上下文审计|Agent 上下文审计]]
+- 2026-06-08: [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]]
 - 2026-06-10: [[concepts/AI 软件工厂|AI 软件工厂]]
 - 2026-06-10: [[concepts/Agent Brief|Agent Brief]]
 - 2026-06-10: [[concepts/Skill 触发契约|Skill 触发契约]]
@@ -550,14 +559,3 @@ No outputs yet.
 - 2026-06-13: [[synthesis/LLM 应用数据处理流水线|LLM 应用数据处理流水线]]
 - 2026-06-13: [[synthesis/RAG 与长上下文|RAG 与长上下文]]
 - 2026-06-13: [[synthesis/提示语工程与上下文工程|提示语工程与上下文工程]]
-
-## Needs Attention
-- All currently supported raw files are mirrored as source notes as of 2026-05-30; raw diff reports 201 unchanged and no added/updated/missing-metadata items.
-- PDF source notes are preview ingests only, not full OCR or full-document reading: `Agent/claude skill.pdf`, `Agent/变体/OpenClaw橙皮书-从入门到精通-v1.3.1.pdf`, `LLM/State of GPT - Microsoft Build 2023 RD.pdf`.
-- Partial or placeholder sources need human/raw follow-up: `notebook 协作.excalidraw`, `Langchain(Legacy)/LangSmith.xmind`, `Agent/智能体工程的 8 个等级.xmind`, `Agent/闪极智能体/闪极智能体.xmind`, `LLM/Transformer/BERT 模型微调.xmind`, `LLM/Transformer/Hugging face transformers.xmind`, and previously recorded partial Vibe sources.
-- `Langchain(Legacy)` pages are historical learning material; current LangChain/LangGraph/LangSmith API and product behavior must be verified before implementation decisions.
-- Tool/product/API details are time-sensitive and not externally verified during ingest, including MCP registries, prompt caching provider behavior, Cursor, Document AI tools, ASR tools, OpenClaw, OpenSandbox, and Vibe tool links.
-- Vision and Excalidraw ingests are not exact OCR or pixel-level reconstruction; precise quotes, UI text, small labels, freedraw content, and embedded images should be checked against raw.
-- `Vibe/工具/.xmind-backups/` source notes are backup snapshots for maintenance/recovery and should not be used as primary concept evidence unless explicitly needed.
-- Broken wikilink cleanup (2026-05-30): fixed escaped pipe in [[concepts/Agent Runtime|Agent Runtime]], wrong path char in [[concepts/Skill 触发契约|Skill 触发契约]], nonexistent SpecKit image paths in [[concepts/工程宪法|工程宪法]], cucumber-3/4/5 dead links in [[maps/Vibe 软件工程基础学习地图|Vibe 软件工程基础学习地图]], and `.md`-suffix cheatsheet links; index `.xmind-backups` source notes still point at missing wiki pages.
-- Raw source root remains `/Users/ivan/Library/Mobile Documents/com~apple~CloudDocs/思维导图/AI`.

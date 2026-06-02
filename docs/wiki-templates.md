@@ -109,7 +109,7 @@ Raw metadata 字段用于后续 raw/source diff：
 `Source Digest` 边界：
 
 - 先读完对应 ingest skill 覆盖范围内的全部可用材料，再用自己的话概括它“讲了什么、为什么重要、能贡献给哪些知识节点”。
-- 对大型或结构复杂 source，压缩前必须检查高信号细节是否被保留。
+- 对大型或结构复杂 source，压缩前必须检查可复用细节是否已被消化进摘要、claims、关系或下游页面；不要把导出标题采样、机械 outline 或前 N 行放进 `Maintenance Notes` 当覆盖证明。
 - 非支持类型 raw 当前不处理；不要为 Office 文档、音视频、压缩包等创建 source digest。
 - 完整 raw 细节必须回 raw 读取，不能把 `sources/` 变成 raw 的 markdown cache。
 

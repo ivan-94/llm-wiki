@@ -101,7 +101,7 @@ archive_reason:
 - External links: 支持类型中可可靠提取或看见的 URL 必须进入 source note 的 `## External Links`，并尽量保留标题/锚文本、URL、支撑主题或用途；没有 URL 时写 `No external links found in extracted content.`。不要伪造只有标题没有 URL 的外链，将其放入 `Maintenance Notes` 或 `Open Questions`。不要联网核验外链，除非用户明确要求或当前任务需要当前事实；未核验时标注 `not verified`。
 - Skill routing: 处理 `.xmind` 必须使用 `ai-wiki-xmind-ingest`；处理图片必须使用 `ai-wiki-image-ingest`；处理 raw Markdown 必须使用 `ai-wiki-markdown-ingest`；处理 `.pdf` 必须使用 `ai-wiki-pdf-ingest`；处理 `.excalidraw` 必须使用 `ai-wiki-excalidraw-ingest`。底层命令和类型专属覆盖策略由对应 skill 定义，不在 `AGENTS.md` 分散维护。
 - Source digest: 导出材料只是临时输入。`Source Digest` 必须是 LLM 消化后的提炼，不得保存完整 raw 导出、机械 outline、前 N 行采样或截断导出。
-- Large source detail: 大型或多 sheet source 完成前，必须确认高信号细节已有落点：可复用二级分类、关键步骤、指标维度、命名框架、异常节点、编号/结构问题。落点可以是 `Source Digest`、`Key Claims`、`Maintenance Notes` 或下游页面。
+- Large source detail: 大型或多 sheet source 完成前，必须把真正可复用的细节消化进 `Source Digest`、`Key Claims`、`Links` 或下游页面，例如关键步骤、指标维度、命名框架、异常节点和结构问题。不要在 `Maintenance Notes` 保存导出标题采样、机械 outline 或前 N 行作为覆盖证明。
 - Claims: source note 的 `Key Claims` 要区分 raw 明确表达和 agent 推断。建议用 `explicit:` 或 `inferred:` 开头；稀疏 source、案例 source 和 agent 补全较多的 source 必须这样标注。
 - Links: 任何面向知识图谱的链接列表都必须说明关系；禁止只有裸 wikilink 的列表。source note 的 `Links` 必须同时覆盖本次创建或修改过的页面、相关 source-source 关系，并说明贡献或关系判断。
 - Questions: agent 不能自动创建 `questions/` 页面。只有用户明确要求沉淀、写入、保存某个问题或问答时，才创建或更新 `questions/`。

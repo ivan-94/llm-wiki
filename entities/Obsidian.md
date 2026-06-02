@@ -1,6 +1,6 @@
 ---
 page_type: entity
-updated_at: 2026-05-30
+updated_at: 2026-06-01
 status: active
 source_count: 1
 ---
@@ -23,6 +23,7 @@ Obsidian 是本 AI Wiki 的技术基础。wiki 的 source note / concept / entit
 - Frontmatter 支持 YAML 元数据，配合插件可用于过滤、排序、状态管理。
 - Obsidian 本身是工具箱，真正价值来自如何设计"收集 → 整理 → 连接 → 复用"的 workflow。
 - 类比：Obsidian 之于 Markdown 知识管理，类似 VSCode 之于代码编辑——可扩展的工作台，而非封闭产品。
+- 在 AI wiki 工作流里，Obsidian 还承担 Inbox、XMind/图片输入、ChatGPT 生成 Markdown、Codex 日报/周报、recap/insight/knowledge gap 回顾的第二大脑文件系统底座。
 
 ## Related Concepts
 
@@ -32,7 +33,7 @@ Obsidian 是本 AI Wiki 的技术基础。wiki 的 source note / concept / entit
 
 ## Evidence
 
-- [[sources/Vibe/工具/Obsidian.xmind|Obsidian.xmind]] — 描述 Vault、note、frontmatter、link、backlinks、Canvas、Graph、MOC 和 Obsidian 作为 Markdown VSCode 的心智模型。
+- [[sources/Vibe/Vibe Coding 随手记/文件系统/Obsidian.xmind|Obsidian.xmind]] — 描述 Vault、note、frontmatter、link、backlinks、Canvas、Graph、MOC，并补充 Obsidian 作为 AI 第二大脑文件系统底座的工作流。
 
 ## Open Questions
 

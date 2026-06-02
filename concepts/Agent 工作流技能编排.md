@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-05-30
+updated_at: 2026-06-01
 status: active
-source_count: 8
+source_count: 15
 learning_status: new
 confidence: 2
 difficulty: 4
@@ -29,6 +29,8 @@ Workflow skills 是 Agent 的工程流水线，每个节点有输入、输出、
 - setup/triage/to-prd/to-issue/tdd/review/hat/pr 等 skill 形成从想法到交付的链路。
 - Source Manifest 是跨 Agent 交接中的关键产物，防止下游只依赖摘要。
 - GitHub issue/PR 可以作为 Agent 工作流状态机和证据流转层。
+- HAT 是工作流的验收协议层，`hat-prepare` 负责可复现验收条件，`hat-run` 负责按 prepare 产物执行并保存证据。
+- `agent-context-audit` 属于治理阶段，用隔离 sub-agent 暴露入口文档、skill 描述和 handoff 里的认知偏差。
 
 ### 硬依赖图（来自 `地图2.png`）
 
@@ -69,7 +71,21 @@ create-pr → PR body（含测试证据和 open risks）
 - **子 Agent**：在隔离 worktree 中接受 Agent Brief，执行 TDD，产出 commit + 测试报告，只向父 Agent 汇报。
 - **看板管理**（见 `看板管理.xmind`）：可作为编排 UI 候选，把 triage/delivery/HAT 的 Agent 工作流产品化为可视状态机 + 命令启动器。
 
+### HAT 与上下文治理
+
+- [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] 把用户路径验收拆成 prepare/run/human handoff 三段，避免实现完成后只剩人工临场判断。
+- HAT-friendly 前后端改造属于工作流的项目侧前置条件：稳定选择器、URL 状态、日志、Request Id 和可观测性决定验收能否被 Agent 稳定执行。
+- [[concepts/Agent 上下文审计|Agent 上下文审计]] 用 sub-agent 答题和主 Agent 评分来检查新 Agent 是否能从当前入口材料形成正确行动模型。
+
 ## Evidence
+
+### 2026-06-01 扩展工作流刷新
+
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind]] — 2026-06-01 raw diff refresh补充的 Matt Pocock 扩展工作流证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind]] — 2026-06-01 raw diff refresh补充的 Matt Pocock 扩展工作流证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind]] — 2026-06-01 raw diff refresh补充的 Matt Pocock 扩展工作流证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 流程控制setup-agent-workflow.xmind|Vibe/工具/mattpocock:skills  ⭐/Ext 流程控制setup-agent-workflow.xmind]] — 2026-06-01 raw diff refresh补充的 Matt Pocock 扩展工作流证据。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind]] — 2026-06-01 raw diff refresh补充的 Matt Pocock 扩展工作流证据。
 
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/地图.png|地图.png]] — skill 全景图（推荐学习入口）
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/地图2.png|地图2.png]] — 硬依赖图，展示 skills 之间的前提/使能关系
@@ -86,6 +102,8 @@ create-pr → PR body（含测试证据和 open risks）
 - contains: [[concepts/Agent Skills|Agent Skills]]
 - contains: [[concepts/Agent Brief|Agent Brief]] — Brief 是工作流编排的任务分发核心产物
 - contains: [[concepts/Vertical Slice Issue|Vertical Slice Issue]] — Slice 是编排的任务分发单元
+- contains: [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] — HAT 是工作流中的验收协议层
+- contains: [[concepts/Agent 上下文审计|Agent 上下文审计]] — 上下文审计是工作流治理阶段的反馈机制
 - used-in: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 - enables: [[concepts/反馈工程（Feedback Engineering）|反馈工程（Feedback Engineering）]] — 工作流产物链为反馈工程提供信号结构
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]]

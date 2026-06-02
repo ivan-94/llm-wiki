@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-05-30
+updated_at: 2026-06-01
 status: active
 scope: Vibe/工具
 ---
@@ -25,7 +25,7 @@ scope: Vibe/工具
 3. 读 [[entities/Claude Code|Claude Code]]，理解六层架构（交互/上下文/定制/执行/编排/治理）。
 4. 读 [[entities/Agent Client Protocol|Agent Client Protocol]]，理解 client-agent 协议层与 MCP 的分工。
 5. 读 [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]，把 GitHub 六层 + triage labels + Agent Brief 串起来。
-6. 按场景深入：远程控制 → `tmux.png`/`远程控制.xmind`；知识管理 → Obsidian；长任务 → Codex Goal Mode。
+6. 按场景深入：远程控制 → `tmux.png`/`远程控制.xmind`；知识管理 → Obsidian；长任务 → Codex Goal Mode；验收 → [[concepts/HAT（Hand Acceptance Test）|HAT]]；治理 → [[concepts/Agent 上下文审计|Agent 上下文审计]]。
 
 ## Tool Clusters
 
@@ -39,6 +39,11 @@ scope: Vibe/工具
 - Superpowers: [[sources/Vibe/工具/superpower.xmind|superpower]]（partial）、[[entities/Superpowers|Superpowers]]
 - GStack: [[sources/Vibe/工具/AI 软件工厂 GStack.xmind|AI 软件工厂 GStack]]、[[entities/GStack|GStack]]
 
+### Matt Pocock 扩展 Skills（2026-06-01 refresh）
+- HAT: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind|hat-prepare]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind|hat-run]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT workerHAT 批量执行器hat-dispatch.xmind|hat-dispatch]]
+- 交付: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind|deliver-issue]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext deliver prd使用 DAG 批量交付 Slice.xmind|deliver-prd]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 提交 PR.xmind|create-pr]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 合并 PR.xmind|merge-pr]]
+- 治理: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind|agent-context-audit]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind|hat-frontend-friendly]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind|hat-backend-friendly]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png|skills 审查]]
+
 ### GitHub-HAT 工作流
 - GitHub: [[sources/Vibe/工具/Github 原住民.xmind|Github 原住民]]
 - HAT: [[sources/Vibe/工具/mattpocock:skills  ⭐/定制化.xmind|定制化]]（hat-prepare/hat-run）
@@ -49,7 +54,7 @@ scope: Vibe/工具
 - 并发执行: [[sources/Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind|为 Agents 构造并发执行环境]]
 
 ### 知识管理
-- Obsidian: [[sources/Vibe/工具/Obsidian.xmind|Obsidian.xmind]]、[[entities/Obsidian|Obsidian]]
+- Obsidian: [[sources/Vibe/Vibe Coding 随手记/文件系统/Obsidian.xmind|Obsidian.xmind]]、[[entities/Obsidian|Obsidian]]
 
 ## Key Concepts
 
@@ -59,9 +64,10 @@ scope: Vibe/工具
 - [[concepts/Vertical Slice Issue|Vertical Slice Issue]] — issue 的结构要求
 - [[concepts/CONTEXT.md 领域语言|CONTEXT.md 领域语言]] — 项目语言契约
 - [[concepts/Skill 触发契约|Skill 触发契约]] — skill 可用性控制面
+- [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] — 用户路径验收协议层
+- [[concepts/Agent 上下文审计|Agent 上下文审计]] — 新 Agent 入口认知审计方法
 
 ## Open Gaps
 
 - CLI flags、ACP transport 演进、Claude Code、Codex 等当前产品状态未联网核验。
-- `.xmind-backups` 下的 Obsidian 备份 source 只用于维护，不参与主学习路径。
 - 看板管理是设计草案，实际 `agent-board` CLI/App 状态未验证。

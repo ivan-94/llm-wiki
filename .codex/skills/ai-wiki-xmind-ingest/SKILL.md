@@ -46,7 +46,7 @@ Use the source-note template from `docs/wiki-templates.md`. XMind-specific requi
 - `status: blocked` when sheet discovery/export cannot produce useful content.
 - Record sheet count and sheet titles in `Source` or `Maintenance Notes`; every sheet must be accounted for.
 - `Source Digest` must synthesize the workbook across sheets. Do not paste the complete exported Markdown, mechanical outline, first-N-lines sample, or truncated export.
-- Preserve high-signal XMind details somewhere: important branches, second-level taxonomies, critical paths, named frameworks, step lists, metric dimensions, placeholder/anomaly nodes, and numbering/structure problems.
+- Preserve reusable XMind details by digesting them into `Source Digest`, `Key Claims`, `Links`, or downstream pages: important branches, second-level taxonomies, critical paths, named frameworks, step lists, metric dimensions, placeholder/anomaly nodes, and numbering/structure problems. Do not write exported heading samples, mechanical outlines, or first-N-line snippets into `Maintenance Notes` as coverage proof.
 - Preserve every URL found in exported Markdown in `External Links` with brief context; if none are found, write `No external links found in extracted content.`
 - Use `explicit:` for claims directly stated or strongly supported by exported content; use `inferred:` for agent synthesis, classification, or implications.
 - Record placeholder titles, partial content, parse limits, and cleanup needs under `Maintenance Notes`.

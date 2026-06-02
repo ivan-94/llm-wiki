@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Obsidian Doctor"
+  short_description: "诊断 Obsidian vault 和 wiki 健康状况"
+  default_prompt: "使用 $ai-wiki-obsidian-doctor 为这个 AI wiki 运行只读 Obsidian vault 健康检查，包括 unresolved 链接、孤岛/死端笔记、index/log 契约问题，以及本地 path-style wikilink 问题。"
