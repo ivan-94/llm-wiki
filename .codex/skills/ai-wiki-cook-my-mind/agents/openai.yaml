@@ -1,4 +1,4 @@
 interface:
-  display_name: "Cook My Mind"
+  display_name: "AI Wiki - Cook My Mind"
   short_description: "把用户原始想法和当前对话上下文整理成 AI wiki inbox 思维快照。"
   default_prompt: "cook my mind：请保留我的原始想法，并把它延伸、总结成一篇带信息图的 human inbox 笔记。"

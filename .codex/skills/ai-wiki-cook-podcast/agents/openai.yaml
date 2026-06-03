@@ -1,4 +1,4 @@
 interface:
-  display_name: "AI Wiki 播客烹饪"
+  display_name: "AI Wiki - Cook Podcast"
   short_description: "把 Apple Podcasts 单集烹饪成 inbox 笔记"
   default_prompt: "使用 $ai-wiki-cook-podcast 将 Apple Podcasts 单集链接烹饪成一篇 human inbox 笔记。"

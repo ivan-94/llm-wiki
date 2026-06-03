@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "🎗",
       "📥",
       "LiArchive",
       "LiCalendarDays",
-      "📅",
-      "LiTwitter"
+      "📅"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,5 +41,6 @@
   "human/inbox/codex-weekly": "📅",
   "human/inbox/codex-daily": "LiCalendarDays",
   "human/archived": "LiArchive",
-  "human/inbox": "📥"
+  "human/inbox": "📥",
+  "human/inbox/cook-my-mind": "🎗"
 }

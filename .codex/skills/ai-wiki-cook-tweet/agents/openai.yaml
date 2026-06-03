@@ -1,4 +1,4 @@
 interface:
-  display_name: "AI Wiki Tweet 烹饪"
+  display_name: "AI Wiki - Cook Tweet"
   short_description: "把 X post/thread/article 烹饪成 inbox 笔记"
   default_prompt: "使用 $ai-wiki-cook-tweet 将 X 链接烹饪成一篇 human inbox 笔记。"

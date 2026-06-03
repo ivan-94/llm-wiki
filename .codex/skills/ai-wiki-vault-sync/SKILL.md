@@ -70,6 +70,7 @@ The helper syncs:
 
 - `index.md`, `log.md`, `AGENTS.md`
 - `docs/wiki-templates.md`
+- `.obsidian/`
 - `sources/`, `concepts/`, `entities/`, `synthesis/`, `questions/`, `maps/`
 - `outputs/`, `assets/`
 - `human/`
@@ -81,7 +82,7 @@ With `--pull-human`, the helper copies from the vault back to the repo only:
 
 Git does not auto-install hooks from a repository checkout. Run `.githooks/install.sh` once per clone or worktree that should auto-sync after commit. The hook runs repo-to-vault `--apply` after each commit and keeps the commit even if sync fails.
 
-The helper does not sync `.git/`, `.codex/`, `.obsidian/`, external raw source directories, compiled wiki directories during `--pull-human`, temporary files outside managed paths, or agent runtime artifacts.
+The helper does not sync `.git/`, `.codex/`, external raw source directories, compiled wiki directories during `--pull-human`, temporary files outside managed paths, or agent runtime artifacts.
 
 ## Safety Rules
 
@@ -89,7 +90,7 @@ The helper does not sync `.git/`, `.codex/`, `.obsidian/`, external raw source d
 - Use `--apply` only after reviewing `copy`, `update`, and `conflict`.
 - Use `--prune` only when the user wants the iCloud mirror to remove stale managed files.
 - Do not combine `--pull-human` and `--prune`; human-note deletes are intentionally not synced.
-- Do not treat `--prune` as permission to remove vault settings; `.obsidian/` is not managed.
+- Treat repo `.obsidian/` as the source of truth for repo-to-vault sync. Differing vault `.obsidian/` files are updated from the repo even when the vault copy has a newer mtime.
 - If a target file is newer than the repo copy and contents differ, the helper reports `conflict` and does not overwrite it.
 - In `--pull-human`, if a repo human note is newer than the vault copy and contents differ, the helper reports `conflict` and does not overwrite it.
 - Resolve conflicts manually by deciding whether the repo or the vault copy should win; do not add general bidirectional merge behavior to this skill.

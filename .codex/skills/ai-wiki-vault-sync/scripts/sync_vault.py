@@ -15,6 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 VAULT_ROOT = Path("/Users/ivan/Library/Mobile Documents/iCloud~md~obsidian/Documents/ai")
 TOP_LEVEL_FILES = ("index.md", "log.md", "AGENTS.md")
 DIRECTORIES = (
+    ".obsidian",
     "sources",
     "concepts",
     "entities",
@@ -29,6 +30,7 @@ DOC_FILES = ("docs/wiki-templates.md",)
 HUMAN_PULL_DIRECTORIES = ("human/inbox", "human/raw")
 SOURCE_IGNORE_NAMES = {".DS_Store", ".gitkeep"}
 TARGET_IGNORE_NAMES = {".DS_Store"}
+REPO_SOURCE_OF_TRUTH_PREFIXES = (".obsidian/",)
 
 
 @dataclass(frozen=True)
@@ -120,6 +122,10 @@ def same_file(source: Path, target: Path) -> bool:
     return target.exists() and filecmp.cmp(source, target, shallow=False)
 
 
+def repo_source_of_truth(relpath: str) -> bool:
+    return relpath.startswith(REPO_SOURCE_OF_TRUTH_PREFIXES)
+
+
 def plan_items(source_items: list[SyncItem], target_root: Path, prune: bool, delete: list[dict[str, str]] | None = None) -> dict[str, list[dict[str, str]]]:
     copy: list[SyncItem] = []
     update: list[SyncItem] = []
@@ -133,6 +139,8 @@ def plan_items(source_items: list[SyncItem], target_root: Path, prune: bool, del
             copy.append(planned)
         elif same_file(item.source_path, target_path):
             skip.append(planned)
+        elif repo_source_of_truth(item.relpath):
+            update.append(planned)
         elif target_path.stat().st_mtime > item.source_path.stat().st_mtime + 0.000001:
             conflict.append(planned)
         else:

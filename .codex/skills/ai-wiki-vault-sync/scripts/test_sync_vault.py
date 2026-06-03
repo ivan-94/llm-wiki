@@ -48,17 +48,20 @@ class SyncVaultTests(unittest.TestCase):
             vault_root = workdir / "vault"
             (repo_root / "concepts").mkdir(parents=True)
             (repo_root / ".codex" / "skills").mkdir(parents=True)
+            (repo_root / ".obsidian").mkdir(parents=True)
             (repo_root / "concepts" / "RAG.md").write_text("# RAG\n", encoding="utf-8")
             (repo_root / "concepts" / ".gitkeep").write_text("", encoding="utf-8")
             (repo_root / ".codex" / "skills" / "internal.md").write_text("skip", encoding="utf-8")
+            (repo_root / ".obsidian" / "app.json").write_text("{}", encoding="utf-8")
 
             payload = run_sync(repo_root, vault_root)
 
         self.assertEqual(payload["mode"], "dry-run")
-        self.assertEqual([item["relpath"] for item in payload["copy"]], ["concepts/RAG.md"])
+        self.assertEqual([item["relpath"] for item in payload["copy"]], [".obsidian/app.json", "concepts/RAG.md"])
         self.assertEqual(payload["update"], [])
         self.assertEqual(payload["conflict"], [])
         self.assertFalse((vault_root / "concepts" / "RAG.md").exists())
+        self.assertFalse((vault_root / ".obsidian" / "app.json").exists())
         self.assertFalse((vault_root / ".codex" / "skills" / "internal.md").exists())
 
     def test_apply_copies_allowed_files_and_does_not_overwrite_newer_target_conflicts(self):
@@ -84,7 +87,25 @@ class SyncVaultTests(unittest.TestCase):
             self.assertEqual((vault_root / "concepts" / "RAG.md").read_text(encoding="utf-8"), "# RAG\n")
             self.assertEqual((vault_root / "index.md").read_text(encoding="utf-8"), "# Edited on iOS\n")
 
-    def test_prune_deletes_only_stale_managed_files_and_keeps_obsidian_config(self):
+    def test_obsidian_config_is_repo_source_of_truth_even_when_target_is_newer(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            workdir = Path(tmp)
+            repo_root = workdir / "repo"
+            vault_root = workdir / "vault"
+            (repo_root / ".obsidian").mkdir(parents=True)
+            (vault_root / ".obsidian").mkdir(parents=True)
+            (repo_root / ".obsidian" / "app.json").write_text('{"repo": true}\n', encoding="utf-8")
+            (vault_root / ".obsidian" / "app.json").write_text('{"vault": true}\n', encoding="utf-8")
+            os.utime(repo_root / ".obsidian" / "app.json", (1_700_000_000, 1_700_000_000))
+            os.utime(vault_root / ".obsidian" / "app.json", (1_800_000_000, 1_800_000_000))
+
+            payload = run_sync(repo_root, vault_root, "--apply")
+
+            self.assertEqual([item["relpath"] for item in payload["update"]], [".obsidian/app.json"])
+            self.assertEqual(payload["conflict"], [])
+            self.assertEqual((vault_root / ".obsidian" / "app.json").read_text(encoding="utf-8"), '{"repo": true}\n')
+
+    def test_prune_deletes_stale_managed_files_including_obsidian_config(self):
         with tempfile.TemporaryDirectory() as tmp:
             workdir = Path(tmp)
             repo_root = workdir / "repo"
@@ -100,12 +121,12 @@ class SyncVaultTests(unittest.TestCase):
             dry_run = run_sync(repo_root, vault_root, "--prune")
             apply = run_sync(repo_root, vault_root, "--apply", "--prune")
 
-            self.assertEqual([item["relpath"] for item in dry_run["delete"]], ["concepts/.gitkeep", "concepts/Old.md"])
-            self.assertEqual([item["relpath"] for item in apply["delete"]], ["concepts/.gitkeep", "concepts/Old.md"])
+            self.assertEqual([item["relpath"] for item in dry_run["delete"]], [".obsidian/app.json", "concepts/.gitkeep", "concepts/Old.md"])
+            self.assertEqual([item["relpath"] for item in apply["delete"]], [".obsidian/app.json", "concepts/.gitkeep", "concepts/Old.md"])
             self.assertFalse((vault_root / "concepts" / "Old.md").exists())
             self.assertFalse((vault_root / "concepts" / ".gitkeep").exists())
             self.assertTrue((vault_root / "concepts" / "Current.md").exists())
-            self.assertTrue((vault_root / ".obsidian" / "app.json").exists())
+            self.assertFalse((vault_root / ".obsidian" / "app.json").exists())
 
     def test_pull_human_dry_run_reports_vault_human_notes_without_writing_repo(self):
         with tempfile.TemporaryDirectory() as tmp:
