@@ -19,12 +19,16 @@ DEFAULT_DAILY_DIRS = (
 )
 DEFAULT_WEEKLY_DIR = Path("human/inbox/codex-weekly")
 DEFAULT_MAX_SECTION_CHARS = 2400
-KEY_SECTIONS = (
+REQUIRED_SECTIONS = (
     "今日概览",
     "工作日报（对上汇报）",
     "分析与洞察",
     "启发与下一步",
     "待跟进",
+)
+
+OPTIONAL_SECTIONS = (
+    "对用户/Codex 交互的批评",
 )
 
 
@@ -188,7 +192,7 @@ def read_report(day: date, daily_dirs: Path | Iterable[Path], cwd: Path, max_sec
         warnings.append("type_warning")
 
     sections = extract_h2_sections(body, max_chars=max_section_chars)
-    missing_sections = [section for section in KEY_SECTIONS if section not in sections]
+    missing_sections = [section for section in REQUIRED_SECTIONS if section not in sections]
     if missing_sections:
         warnings.append("missing_sections")
 
@@ -202,7 +206,12 @@ def read_report(day: date, daily_dirs: Path | Iterable[Path], cwd: Path, max_sec
         frontmatter_type=report_type,
         warnings=warnings or None,
         missing_sections=missing_sections or None,
-        sections={name: sections.get(name, "") for name in KEY_SECTIONS if name in sections} or None,
+        sections={
+            name: sections.get(name, "")
+            for name in (*REQUIRED_SECTIONS, *OPTIONAL_SECTIONS)
+            if name in sections
+        }
+        or None,
     )
 
 

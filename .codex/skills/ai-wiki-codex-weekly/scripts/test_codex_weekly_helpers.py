@@ -48,6 +48,10 @@ source_kind: codex-report
 
 这一天暴露了一个工作方式问题。
 
+## 对用户/Codex 交互的批评
+
+这一天的问题不是结果，而是提问边界给得太晚。
+
 ## 启发与下一步
 
 - 下次提前定义验收边界。
@@ -111,6 +115,7 @@ class WeeklyHelperTests(unittest.TestCase):
                 "[[human/inbox/codex-daily/2026-05-25_Codex日报|2026-05-25]]",
             )
             self.assertIn("今日概览", report["sections"])
+            self.assertIn("对用户/Codex 交互的批评", report["sections"])
             self.assertEqual(report["warnings"], None)
 
     def test_collects_raw_status_report_from_inbox_workflow(self) -> None:
