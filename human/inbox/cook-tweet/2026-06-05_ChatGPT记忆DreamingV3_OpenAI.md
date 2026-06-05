@@ -14,7 +14,7 @@ embed_url: https://twitter.com/shao__meng/status/2062690152569614572
 article_url:
 openai_original_url: https://openai.com/index/chatgpt-memory-dreaming/
 author: meng shao
-handle: @shao__meng
+handle: "@shao__meng"
 created_at: 2026-06-05
 captured_at: 2026-06-05T09:40:05+08:00
 ---
