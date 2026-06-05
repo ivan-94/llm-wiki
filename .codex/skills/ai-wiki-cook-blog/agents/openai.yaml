@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki - Cook Blog"
+  short_description: "把公开博客文章烹饪成 inbox 笔记"
+  default_prompt: "使用 $ai-wiki-cook-blog 将公开博客文章链接烹饪成一篇 human inbox 笔记。"

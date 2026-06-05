@@ -2,6 +2,9 @@
 
 ## Recently Updated
 
+- 2026-06-05: ingested 7 promoted `human/raw/inbox` Markdown notes into `human/sources/inbox`, then compiled core evidence into Agent Harness, workflow skills, LLM evaluation, Codex/Claude Code/Hermes, and AI Wiki Inbox.
+- 2026-06-05: compiled [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]] from the 7 human sources and back-linked the source notes.
+
 ## Source Coverage
 - `Agent/`
   - `ingested` [[sources/Agent/AI  编排引擎调研.xmind|Agent/AI  编排引擎调研.xmind]]
@@ -230,6 +233,14 @@
   - `ingested` [[sources/生图/商品画图/高级3.png|生图/商品画图/高级3.png]]
   - `ingested` [[sources/生图/商品画图/高级4.png|生图/商品画图/高级4.png]]
   - `ingested` [[sources/生图/电商商品图绘制.xmind|生图/电商商品图绘制.xmind]]
+- `human/raw/inbox/`
+  - `ingested` [[human/sources/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness|human/raw/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness.md]]
+  - `ingested` [[human/sources/inbox/cook-my-mind/2026-06-02_Codex作为个人系统超级入口|human/raw/inbox/cook-my-mind/2026-06-02_Codex作为个人系统超级入口.md]]
+  - `ingested` [[human/sources/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客|human/raw/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客.md]]
+  - `ingested` [[human/sources/inbox/cook-podcast/2026-05-31_Y Combinator Startup Podcast_Inside Claude Code With Its Creator Boris Cherny|human/raw/inbox/cook-podcast/2026-05-31_Y Combinator Startup Podcast_Inside Claude Code With Its Creator Boris Cherny.md]]
+  - `ingested` [[human/sources/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders|human/raw/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders.md]]
+  - `ingested` [[human/sources/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777|human/raw/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777.md]]
+  - `ingested` [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|human/raw/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt.md]]
 
 ## Concepts
 
@@ -400,6 +411,7 @@
 
 ## Synthesis
 - [[synthesis/Agent 系统工程综述|Agent 系统工程综述]]
+- [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]]
 - [[synthesis/DDD–SbE–BDD–TDD 协作链路|DDD–SbE–BDD–TDD 协作链路]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 - [[synthesis/LangChain 应用模式目录（Legacy）|LangChain 应用模式目录（Legacy）]]

@@ -1,18 +1,21 @@
 ---
 type: cook-podcast
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-05-31
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客.md
 ingested_at:
-archive_reason:
 source_kind: apple-podcast
 podcast: 硬地骇客
 episode: EP126 Agent Harness 🏇
 apple_url: https://podcasts.apple.com/cn/podcast/%E7%A1%AC%E5%9C%B0%E9%AA%87%E5%AE%A2/id1678465783?i=1000767434232
 audio_url: https://dts-api.xiaoyuzhoufm.com/track/640ee2438be5d40013fe4a87/6a0358b3e1eb34a939468885/media.xyzcdn.net/640ee2438be5d40013fe4a87/lhpMa_yS1MT_xSaVbgKgRH-95FGu.m4a
 created_at: 2026-05-31
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客.md
+promoted_at: 2026-06-05
+source_type: promoted-inbox
 ---
 
 # Agent Harness 工程系统：让模型真正干活
@@ -279,7 +282,7 @@ mindmap
 
 ## 信息图
 
-![[human/inbox/cook-podcast/assets/2026-05-31_Agent Harness 工程系统_硬地骇客/infographic.webp]]
+![[human/raw/inbox/cook-podcast/assets/2026-05-31_Agent Harness 工程系统_硬地骇客/infographic.webp]]
 
 ## 遗漏与不确定
 

@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-06-01
+updated_at: 2026-06-05
 status: active
-source_count: 23
+source_count: 25
 learning_status: new
 confidence: 2
 difficulty: 3
@@ -29,6 +29,8 @@ Skill 是给 Agent 的“操作手册 + 进入条件 + 验证门禁”。
 - 工作流型 skill 可以串起 TDD、triage、PRD、issue、review、HAT 和 PR 交付。
 - Helper skill 更像工程脚手架：设置 pre-commit、git guardrails、迁移测试数据、生成练习目录等。
 - 图示类 source 适合做学习地图，具体实现仍要回到 skill 文件或工具文档核验。
+- human source 补充：skill 文本本身可以成为可评估资产；当任务有标准答案时，可以用 train/val/test、answer key、baseline 和验证门来优化 `best_skill.md`。
+- human source 补充：team-architecture factory 可以生成 agent definitions、skills 和 orchestrator skill，但运行时依赖和验证路径必须写进 Source Manifest 或维护说明。
 
 ### 规格层（来自 `Skills.xmind` / `claude skill.pdf`）
 
@@ -98,6 +100,8 @@ Lightweight mode 的特点：有明确触发词、一次性或持续、告知停
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/定制化.xmind|定制化]]
 - [[sources/Vibe/工具/superpower.xmind|superpower]] — Superpowers 框架（partial）
 - [[sources/Vibe/工具/AI 软件工厂 GStack.xmind|AI 软件工厂 GStack]] — GStack slash commands 质量门禁套件
+- [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|用 SkillOpt 训练可进化 Agent 技能]] — human source，补充 skill 文本可训练、可验证、可审计的资产视角。
+- [[human/sources/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness|Harness 团队架构工厂]] — human source，补充 skill/orchestrator 生成和触发验证案例。
 
 ## Relations
 

@@ -1,21 +1,24 @@
 ---
 type: cook-github
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-06-01
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness.md
 ingested_at:
-archive_reason:
 source_kind: github-repository
-github_url: "https://github.com/revfactory/harness"
-normalized_url: "https://github.com/revfactory/harness"
+github_url: https://github.com/revfactory/harness
+normalized_url: https://github.com/revfactory/harness
 owner: revfactory
 repo: harness
 requested_ref: default
 resolved_commit: b8fb858ea9209d6b0d9000e551d3dedbbacb88aa
 default_branch: main
-cloned_at: "2026-06-01T15:39:37+08:00"
+cloned_at: 2026-06-01T15:39:37+08:00
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness.md
+promoted_at: 2026-06-05
+source_type: promoted-inbox
 ---
 
 # Harness 团队架构工厂
@@ -152,7 +155,7 @@ Harness 的价值点不是“多 agent 越多越好”，而是把团队模式�
 
 ## 信息图
 
-![[human/inbox/cook-github/assets/2026-06-01_Harness团队架构工厂_revfactory_harness/infographic.webp]]
+![[human/raw/inbox/cook-github/assets/2026-06-01_Harness团队架构工厂_revfactory_harness/infographic.webp]]
 
 ## Source Manifest
 

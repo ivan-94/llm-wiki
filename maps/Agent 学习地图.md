@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-05-30
+updated_at: 2026-06-05
 status: active
 scope: Agent
 ---
@@ -26,13 +26,14 @@ scope: Agent
 1. 读 [[concepts/AI Agent|AI Agent]]，建立 Agent Loop、认知架构和系统边界。
 2. 读 [[concepts/Workflow 与 Agent 的边界|Workflow 与 Agent 的边界]] 与 [[concepts/Agent 控制模式|Agent 控制模式]]，理解控制权谱系。
 3. 读 [[synthesis/Agent 系统工程综述|Agent 系统工程综述]]，把各层串成系统视角。
-4. 读 [[concepts/Agent Harness|Agent Harness]]，连接工具、上下文、反馈和验证。
-5. 读 [[concepts/Agent 工具调用|Agent 工具调用]]、[[concepts/Agent-friendly CLI（ACI）|Agent-friendly CLI（ACI）]] 和 [[entities/Model Context Protocol|Model Context Protocol]]，理解工具接入与选型。
-6. 读 [[concepts/Agent 记忆|Agent 记忆]]、[[concepts/Agent 记忆生命周期|Agent 记忆生命周期]]、[[concepts/会话分层存储与压缩|会话分层存储与压缩]] 和 [[concepts/多渠道记忆协议|多渠道记忆协议]]，理解跨 session 状态与治理。
-7. 读 [[concepts/Agent 沙箱|Agent 沙箱]]，理解执行隔离与威胁模型差异。
-8. 读 [[concepts/Agent Runtime|Agent Runtime]]、[[concepts/Agent MessageBus|Agent MessageBus]] 与 [[concepts/低代码 Agent 平台 vs 代码优先 Runtime|低代码 Agent 平台 vs 代码优先 Runtime]]，理解运行时与变体分类。
-9. 读 [[concepts/多 Agent 协作协议|多 Agent 协作协议]] 与 [[concepts/子代理委派模式|子代理委派模式]]，理解协作与委派。
-10. 读 [[concepts/复合工程（Compound Engineering）|复合工程（Compound Engineering）]]，理解经验沉淀的复利。
+4. 读 [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]]，把入口、harness、结构证据、eval gate 和 skill 演进连成操作闭环。
+5. 读 [[concepts/Agent Harness|Agent Harness]]，连接工具、上下文、反馈和验证。
+6. 读 [[concepts/Agent 工具调用|Agent 工具调用]]、[[concepts/Agent-friendly CLI（ACI）|Agent-friendly CLI（ACI）]] 和 [[entities/Model Context Protocol|Model Context Protocol]]，理解工具接入与选型。
+7. 读 [[concepts/Agent 记忆|Agent 记忆]]、[[concepts/Agent 记忆生命周期|Agent 记忆生命周期]]、[[concepts/会话分层存储与压缩|会话分层存储与压缩]] 和 [[concepts/多渠道记忆协议|多渠道记忆协议]]，理解跨 session 状态与治理。
+8. 读 [[concepts/Agent 沙箱|Agent 沙箱]]，理解执行隔离与威胁模型差异。
+9. 读 [[concepts/Agent Runtime|Agent Runtime]]、[[concepts/Agent MessageBus|Agent MessageBus]] 与 [[concepts/低代码 Agent 平台 vs 代码优先 Runtime|低代码 Agent 平台 vs 代码优先 Runtime]]，理解运行时与变体分类。
+10. 读 [[concepts/多 Agent 协作协议|多 Agent 协作协议]] 与 [[concepts/子代理委派模式|子代理委派模式]]，理解协作与委派。
+11. 读 [[concepts/复合工程（Compound Engineering）|复合工程（Compound Engineering）]]，理解经验沉淀的复利。
 
 ## 变体对比分支
 
@@ -91,6 +92,7 @@ scope: Agent
 ## Synthesis To Read
 
 - [[synthesis/Agent 系统工程综述|Agent 系统工程综述]]
+- [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]]
 - [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 

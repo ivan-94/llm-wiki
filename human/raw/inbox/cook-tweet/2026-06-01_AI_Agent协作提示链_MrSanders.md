@@ -1,12 +1,11 @@
 ---
 type: cook-tweet
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-06-01
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders.md
 ingested_at:
-archive_reason:
 source_kind: x-post
 x_url: https://x.com/MrSanders/status/2060487209375990205
 canonical_url: https://x.com/MrSanders/status/2060487209375990205
@@ -15,6 +14,10 @@ author: Luis Sanchez
 handle: "@MrSanders"
 created_at: 2026-05-30
 captured_at: 2026-06-01T09:00:28+08:00
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders.md
+promoted_at: 2026-06-05
+source_type: promoted-inbox
 ---
 
 # AI Agent 协作提示链
@@ -101,7 +104,7 @@ mindmap
 
 ## 信息图
 
-![[human/inbox/cook-tweet/assets/2026-06-01_AI_Agent协作提示链_MrSanders/infographic.webp]]
+![[human/raw/inbox/cook-tweet/assets/2026-06-01_AI_Agent协作提示链_MrSanders/infographic.webp]]
 
 ## 遗漏与不确定
 

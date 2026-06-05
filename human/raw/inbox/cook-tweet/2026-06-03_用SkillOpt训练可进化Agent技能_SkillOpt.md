@@ -1,12 +1,11 @@
 ---
 type: cook-tweet
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-06-03
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt.md
 ingested_at:
-archive_reason:
 source_kind: x-article
 x_url: https://x.com/hooeem/status/2061528919786791154
 canonical_url: https://x.com/hooeem/status/2061528919786791154
@@ -16,6 +15,10 @@ author: hoeem
 handle: "@hooeem"
 created_at: 2026-06-02
 captured_at: 2026-06-03T20:35:56+08:00
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt.md
+promoted_at: 2026-06-05
+source_type: promoted-inbox
 ---
 
 # 用 SkillOpt 训练可进化 Agent 技能
@@ -111,7 +114,7 @@ SkillOpt 把“prompt 工程”里最弱的环节显性化了：我们通常凭�
 
 ## 信息图
 
-![[human/inbox/cook-tweet/assets/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt/infographic.webp]]
+![[human/raw/inbox/cook-tweet/assets/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt/infographic.webp]]
 
 ## 遗漏与不确定
 

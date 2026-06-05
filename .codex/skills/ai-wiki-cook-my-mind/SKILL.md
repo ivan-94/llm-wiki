@@ -79,6 +79,7 @@ captured_at: YYYY-MM-DDTHH:MM:SS+TZ
 ## 隐含假设
 ## 还在摇摆的地方
 ## 可以延伸出的洞察
+## 批判性点评
 ## 可复用原则
 ## 下一步行动
 ## 信息图
@@ -86,6 +87,6 @@ captured_at: YYYY-MM-DDTHH:MM:SS+TZ
 ## Source Manifest
 ```
 
-质量规则：正文默认中文，保留必要英文术语；文件名优先中文可读，不机械照搬用户长句；`已经明确的判断` 只放用户文本支持较强的结论；`隐含假设`、`还在摇摆的地方`、`可以延伸出的洞察` 必须标注为 Agent 归纳或 Agent 延伸；内容很短时仍保留完整章节，但每节可以很短。
+质量规则：正文默认中文，保留必要英文术语；文件名优先中文可读，不机械照搬用户长句；`已经明确的判断` 只放用户文本支持较强的结论；`隐含假设`、`还在摇摆的地方`、`可以延伸出的洞察` 必须标注为 Agent 归纳或 Agent 延伸；`批判性点评` 是必选章节，站在第三者角度点评这段想法或讨论内容本身，可以指出论证跳跃、隐含假设、盲点、适用边界、缺失反例和下一步需要验证的地方；不要评价用户人格、动机或心理状态，不要把 Agent 延伸伪装成用户原话；内容很短时仍保留完整章节，但每节可以很短。
 
 `Source Manifest` 必须列出 source mode、capture source、capture scope、original thought preservation、agent contribution、cache path、infographic path、limitations。没有问题写 `issues: none`。
