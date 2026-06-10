@@ -8,6 +8,7 @@ scope: human-inbox
 ```dataview
 TABLE inbox_created_at AS "Created", type AS "Type", source_kind AS "Kind", inbox_status AS "Status"
 FROM "human/inbox"
+WHERE inbox_status = "unread"
 SORT inbox_created_at DESC
 LIMIT 30
 ```

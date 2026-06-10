@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-06-01
+updated_at: 2026-06-10
 status: active
 scope: Vibe/工具
 ---
@@ -31,7 +31,7 @@ scope: Vibe/工具
 
 ### 协议与 CLI 底座
 - ACP: [[sources/Vibe/工具/ACP.xmind|ACP]]（client-agent 协议）、[[entities/Agent Client Protocol|Agent Client Protocol]]
-- Claude Code: [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|解构 Claude Code]]、[[sources/Vibe/工具/Claude Code/claude code cli.png|cli.png]]、[[sources/Vibe/工具/Claude Code/claude-code-cli-cheatsheet|cheatsheet]]
+- Claude Code: [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|解构 Claude Code]]、[[sources/Vibe/工具/Claude Code/动态工作流.xmind|动态工作流]]、[[sources/Vibe/工具/Claude Code/claude code cli.png|cli.png]]、[[sources/Vibe/工具/Claude Code/claude-code-cli-cheatsheet|cheatsheet]]
 - Codex: [[sources/Vibe/工具/codex/cli.png|cli.png]]、[[sources/Vibe/工具/codex/Goal.xmind|Goal.xmind]]
 
 ### 三大 Skills 框架
@@ -43,6 +43,7 @@ scope: Vibe/工具
 - HAT: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Prepare验收测试准备hat-prepare.xmind|hat-prepare]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT - Hand Acceptance Test Run验收测试执行hat-run.xmind|hat-run]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext HAT workerHAT 批量执行器hat-dispatch.xmind|hat-dispatch]]
 - 交付: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 实现一条龙deliver-issue.xmind|deliver-issue]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext deliver prd使用 DAG 批量交付 Slice.xmind|deliver-prd]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 提交 PR.xmind|create-pr]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 合并 PR.xmind|merge-pr]]
 - 治理: [[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 上下文检查agent-context-audit.xmind|agent-context-audit]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 前端项目如何 Agents HAT Friendly.xmind|hat-frontend-friendly]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext 后端项目如何 Agents HAT Friendly.xmind|hat-backend-friendly]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/Ext Skills 审查.png|skills 审查]]
+- UI/DSL: [[sources/Vibe/工具/mattpocock:skills  ⭐/adversarial-ui-review-loop.png|adversarial-ui-review-loop]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/visual-fidelity-loop.png|visual-fidelity-loop]]、[[sources/Vibe/工具/mattpocock:skills  ⭐/create-dsl-skills.png|create-dsl-skills]]
 
 ### GitHub-HAT 工作流
 - GitHub: [[sources/Vibe/工具/Github 原住民.xmind|Github 原住民]]
@@ -66,6 +67,10 @@ scope: Vibe/工具
 - [[concepts/Skill 触发契约|Skill 触发契约]] — skill 可用性控制面
 - [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] — 用户路径验收协议层
 - [[concepts/Agent 上下文审计|Agent 上下文审计]] — 新 Agent 入口认知审计方法
+- [[concepts/Loop Engineering|Loop Engineering]] — 自动化、worktree、skills、connectors、sub-agents 和 memory 组成的执行循环
+- [[concepts/视觉还原证据链|视觉还原证据链]] — Figma/截图目标还原的视觉 diff 与证据协议
+- [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]] — 无设计稿 UI 改进的只读批判与批准修复循环
+- [[concepts/Skill Contract DSL|Skill Contract DSL]] — 用 contract 约束 skill 触发、输入、输出和控制流
 
 ## Open Gaps
 

@@ -2,6 +2,7 @@
 
 ## Recently Updated
 
+- 2026-06-10: ingested 7 new Vibe raw sources for Loop Engineering, DeSlop, Claude Code dynamic workflows, Figma restoration, and Matt Pocock UI/DSL skills; compiled Loop Engineering and AI 代码垃圾治理 concepts.
 - 2026-06-05: ingested 7 promoted `human/raw/inbox` Markdown notes into `human/sources/inbox`, then compiled core evidence into Agent Harness, workflow skills, LLM evaluation, Codex/Claude Code/Hermes, and AI Wiki Inbox.
 - 2026-06-05: compiled [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]] from the 7 human sources and back-linked the source notes.
 
@@ -82,6 +83,7 @@
   - `partial` [[sources/Vibe/Spec/结构化提示驱动开发.xmind|Vibe/Spec/结构化提示驱动开发.xmind]]
   - `ingested` [[sources/Vibe/Spec/规格书.xmind|Vibe/Spec/规格书.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/2026年中总结.xmind|Vibe/Vibe Coding 随手记/2026年中总结.xmind]]
+  - `ingested` [[sources/Vibe/Vibe Coding 随手记/Skills/Figma 还原复杂视觉稿.png|Vibe/Vibe Coding 随手记/Skills/Figma 还原复杂视觉稿.png]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Harness/Agent Harness Engineering.xmind|Vibe/Vibe Coding 随手记/Harness/Agent Harness Engineering.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Harness/Harness = EMPOWER + CONSTRAIN.xmind|Vibe/Vibe Coding 随手记/Harness/Harness = EMPOWER + CONSTRAIN.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Harness/Harness 循环1.png|Vibe/Vibe Coding 随手记/Harness/Harness 循环1.png]]
@@ -93,11 +95,13 @@
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Harness/浏览器兼容性测试.xmind|Vibe/Vibe Coding 随手记/Harness/浏览器兼容性测试.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Harness/调教 AI 和传统的编程很相似.png|Vibe/Vibe Coding 随手记/Harness/调教 AI 和传统的编程很相似.png]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/Vibe Coding 随手记.xmind|Vibe/Vibe Coding 随手记/Vibe Coding 随手记.xmind]]
+  - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/Loop Engineering.xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/Loop Engineering.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/Vibe Coding 的 Sweet Spot：从粗生成到精修.xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/Vibe Coding 的 Sweet Spot：从粗生成到精修.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/claude code 大型项目落地.PNG|Vibe/Vibe Coding 随手记/大规模 AI Coding/claude code 大型项目落地.PNG]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/不确定性项目的设计方式的变革“Vibe 设计原型开发”.xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/不确定性项目的设计方式的变革“Vibe 设计原型开发”.xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/为 Agents 构造并发执行环境.xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/为 Agents 构造并发执行环境.xmind]]
   - `partial` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/先污染后治理.xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/先污染后治理.xmind]]
+  - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/垃圾治理(DeSlop).xmind|Vibe/Vibe Coding 随手记/大规模 AI Coding/垃圾治理(DeSlop).xmind]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/共识方法论/共识方法论.png|Vibe/Vibe Coding 随手记/大规模 AI Coding/共识方法论/共识方法论.png]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/共识方法论/共识方法论变革.png|Vibe/Vibe Coding 随手记/大规模 AI Coding/共识方法论/共识方法论变革.png]]
   - `ingested` [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/具体化与泛化.PNG|Vibe/Vibe Coding 随手记/大规模 AI Coding/具体化与泛化.PNG]]
@@ -125,11 +129,14 @@
   - `ingested` [[sources/Vibe/工具/AI 软件工厂 GStack.xmind|Vibe/工具/AI 软件工厂 GStack.xmind]]
   - `ingested` [[sources/Vibe/工具/Claude Code/claude code cli.png|Vibe/工具/Claude Code/claude code cli.png]]
   - `ingested` [[sources/Vibe/工具/Claude Code/claude-code-cli-cheatsheet|Vibe/工具/Claude Code/claude-code-cli-cheatsheet.md]]
+  - `ingested` [[sources/Vibe/工具/Claude Code/动态工作流.xmind|Vibe/工具/Claude Code/动态工作流.xmind]]
   - `ingested` [[sources/Vibe/工具/Claude Code/解构 Claude Code.xmind|Vibe/工具/Claude Code/解构 Claude Code.xmind]]
   - `ingested` [[sources/Vibe/工具/Github 原住民.xmind|Vibe/工具/Github 原住民.xmind]]
   - `ingested` [[sources/Vibe/工具/codex/Goal.xmind|Vibe/工具/codex/Goal.xmind]]
   - `ingested` [[sources/Vibe/工具/codex/cli.png|Vibe/工具/codex/cli.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind|Vibe/工具/mattpocock:skills  ⭐/Matt Pocock Skills.xmind]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/adversarial-ui-review-loop.png|Vibe/工具/mattpocock:skills  ⭐/adversarial-ui-review-loop.png]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/create-dsl-skills.png|Vibe/工具/mattpocock:skills  ⭐/create-dsl-skills.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/diagnose.png|Vibe/工具/mattpocock:skills  ⭐/diagnose.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/grill_with_doc.png|Vibe/工具/mattpocock:skills  ⭐/grill_with_doc.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/helpers.png|Vibe/工具/mattpocock:skills  ⭐/helpers.png]]
@@ -139,6 +146,7 @@
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/tdd.png|Vibe/工具/mattpocock:skills  ⭐/tdd.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/to_prd__to_issue.png|Vibe/工具/mattpocock:skills  ⭐/to_prd__to_issue.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/triage 分诊.png|Vibe/工具/mattpocock:skills  ⭐/triage 分诊.png]]
+  - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/visual-fidelity-loop.png|Vibe/工具/mattpocock:skills  ⭐/visual-fidelity-loop.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind|Vibe/工具/mattpocock:skills  ⭐/为 Agents 构造并发执行环境.xmind]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/优化架构.png|Vibe/工具/mattpocock:skills  ⭐/优化架构.png]]
   - `ingested` [[sources/Vibe/工具/mattpocock:skills  ⭐/地图.png|Vibe/工具/mattpocock:skills  ⭐/地图.png]]
@@ -315,12 +323,15 @@
 - [[concepts/Vibe Coding|Vibe Coding]]
 - [[concepts/AI Coding 偏移控制|AI Coding 偏移控制]]
 - [[concepts/Agent Coding Guardrails|Agent Coding Guardrails]]
+- [[concepts/AI 代码垃圾治理|AI 代码垃圾治理]]
 - [[concepts/Agent 并发执行环境|Agent 并发执行环境]]
 - [[concepts/Agent Brief|Agent Brief]]
 - [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]]
 - [[concepts/Skill 触发契约|Skill 触发契约]]
+- [[concepts/Skill Contract DSL|Skill Contract DSL]]
 - [[concepts/远程 Agent 控制栈|远程 Agent 控制栈]]
 - [[concepts/复合工程（Compound Engineering）|复合工程（Compound Engineering）]]
+- [[concepts/Loop Engineering|Loop Engineering]]
 - [[concepts/探索-执行上下文隔离|探索-执行上下文隔离]]
 - [[concepts/异常治理闭环|异常治理闭环]]
 - [[concepts/反馈工程（Feedback Engineering）|反馈工程（Feedback Engineering）]]
@@ -341,6 +352,8 @@
 - [[concepts/工程宪法|工程宪法]]
 - [[concepts/反捷径证据|反捷径证据]]
 - [[concepts/决策权泄漏|决策权泄漏]]
+- [[concepts/视觉还原证据链|视觉还原证据链]]
+- [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]]
 
 ### 问题定义
 - [[concepts/问题定义|问题定义]]

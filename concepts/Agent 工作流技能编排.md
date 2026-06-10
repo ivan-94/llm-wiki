@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-06-05
+updated_at: 2026-06-10
 status: active
-source_count: 18
+source_count: 26
 learning_status: new
 confidence: 2
 difficulty: 4
@@ -33,6 +33,8 @@ Workflow skills 是 Agent 的工程流水线，每个节点有输入、输出、
 - `agent-context-audit` 属于治理阶段，用隔离 sub-agent 暴露入口文档、skill 描述和 handoff 里的认知偏差。
 - human source 补充：复杂改造前可以要求 agent 先输出 anchored architecture review、类型接口、调用栈、seams/adapters 和 production/test 双调用图，再沉淀为 tech spec 交给 TDD 实现。
 - human source 补充：plan mode 的价值是生成可审查意图；subagent 的核心价值是多个未互相污染的上下文窗口，父 Agent 负责合并证据和最终决策。
+- 视觉类 workflow skill 也需要明确输入、证据、角色边界、停止条件和复评循环；不能只靠主观"看起来像"或"更好看"。
+- DSL-backed skill 把 workflow/modes/graph/state/loop 等控制流写成可审查契约，可降低自然语言 skill 的歧义和隐式约定。
 
 ### 硬依赖图（来自 `地图2.png`）
 
@@ -101,6 +103,10 @@ create-pr → PR body（含测试证据和 open risks）
 - [[human/sources/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders|AI Agent 协作提示链]] — human source，补充架构审查、双调用图、spec 和 TDD 实现交接链路。
 - [[human/sources/inbox/cook-podcast/2026-05-31_Y Combinator Startup Podcast_Inside Claude Code With Its Creator Boris Cherny|Inside Claude Code With Its Creator Boris Cherny]] — human source，补充 plan mode、subagent lane 和短规则维护原则。
 - [[human/sources/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness|Harness 团队架构工厂]] — human source，补充 agent team、subagent、hybrid orchestrator 的团队架构案例。
+- [[sources/Vibe/Vibe Coding 随手记/Skills/Figma 还原复杂视觉稿.png|Figma 还原复杂视觉稿.png]] — 视觉稿还原工作流，强调 annotation、人工审核、diff loop 和 validation evidence。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/adversarial-ui-review-loop.png|adversarial-ui-review-loop.png]] — 无设计稿 UI 审美审查循环，区分组织者、设计师和开发者职责。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/visual-fidelity-loop.png|visual-fidelity-loop.png]] — 有目标设计稿时的 Target/Discipline/Capture/Diff/Patch/Verify 视觉还原循环。
+- [[sources/Vibe/工具/mattpocock:skills  ⭐/create-dsl-skills.png|create-dsl-skills.png]] — DSL-backed skill 的 contract/workflow/state/loop 表达。
 
 ## Relations
 
@@ -109,6 +115,10 @@ create-pr → PR body（含测试证据和 open risks）
 - contains: [[concepts/Vertical Slice Issue|Vertical Slice Issue]] — Slice 是编排的任务分发单元
 - contains: [[concepts/HAT（Hand Acceptance Test）|HAT（Hand Acceptance Test）]] — HAT 是工作流中的验收协议层
 - contains: [[concepts/Agent 上下文审计|Agent 上下文审计]] — 上下文审计是工作流治理阶段的反馈机制
+- contains: [[concepts/Loop Engineering|Loop Engineering]] — Loop Engineering 把工作流技能编排推进到自动调度、验证和会话外记忆循环
+- contains: [[concepts/视觉还原证据链|视觉还原证据链]] — 视觉还原类 workflow 的证据协议
+- contains: [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]] — 无设计稿 UI 改进类 workflow 的审查协议
+- contains: [[concepts/Skill Contract DSL|Skill Contract DSL]] — 用 contract 表达 workflow skill 的触发、输入、输出和控制流
 - used-in: [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
 - enables: [[concepts/反馈工程（Feedback Engineering）|反馈工程（Feedback Engineering）]] — 工作流产物链为反馈工程提供信号结构
 - map-entry: [[maps/Vibe Coding 工具地图|Vibe Coding 工具地图]]

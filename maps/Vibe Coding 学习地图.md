@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-05-30
+updated_at: 2026-06-10
 status: active
 scope: Vibe
 ---
@@ -46,11 +46,16 @@ scope: Vibe
 - [[concepts/工程宪法|工程宪法]]
 - [[concepts/Implementation Notes 审计|Implementation Notes 审计]]
 - [[concepts/Agent 并发执行环境|Agent 并发执行环境]]
+- [[concepts/Loop Engineering|Loop Engineering]]
 - [[concepts/Vibe 设计原型开发|Vibe 设计原型开发]]
 - [[concepts/异常治理闭环|异常治理闭环]]
+- [[concepts/AI 代码垃圾治理|AI 代码垃圾治理]]
 - [[concepts/探索-执行上下文隔离|探索-执行上下文隔离]]
 - [[concepts/Agent Coding Guardrails|Agent Coding Guardrails]]
 - [[concepts/软件工厂陷阱|软件工厂陷阱]]
+- [[concepts/视觉还原证据链|视觉还原证据链]]
+- [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]]
+- [[concepts/Skill Contract DSL|Skill Contract DSL]]
 
 ## Synthesis To Read
 
