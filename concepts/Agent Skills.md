@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-06-10
+updated_at: 2026-06-11
 status: active
-source_count: 29
+source_count: 32
 learning_status: new
 confidence: 2
 difficulty: 3
@@ -32,6 +32,9 @@ Skill 是给 Agent 的“操作手册 + 进入条件 + 验证门禁”。
 - human source 补充：skill 文本本身可以成为可评估资产；当任务有标准答案时，可以用 train/val/test、answer key、baseline 和验证门来优化 `best_skill.md`。
 - human source 补充：team-architecture factory 可以生成 agent definitions、skills 和 orchestrator skill，但运行时依赖和验证路径必须写进 Source Manifest 或维护说明。
 - Matt Pocock 视觉/DSL 图补充：skill 可以是审美审查、视觉还原或 DSL 契约，不限于后端工程流水线；关键仍是触发边界、输入证据、输出可用性和验证门。
+- Anthropic Claude Code source 补充：skill 是可执行上下文包，可以包含 scripts、references、assets、data、hooks 和 memory；高质量 skill 的核心是 failure shaping、gotchas 和 progressive disclosure。
+- GitHub tool source 补充：复杂 skill 可以拆成宿主模型契约和 deterministic engine；`last30days-skill` 用 `SKILL.md` 约束 planning/output，用 Python 管线处理多源检索和排序。
+- GitHub review source 补充：代码质量 skill 可以把 AI review slop 治理成 taxonomy、Iron Law、false-positive guard、eval 和 validator，而不是只写主观审查提示词。
 
 ### 规格层（来自 `Skills.xmind` / `claude skill.pdf`）
 
@@ -103,6 +106,9 @@ Lightweight mode 的特点：有明确触发词、一次性或持续、告知停
 - [[sources/Vibe/工具/AI 软件工厂 GStack.xmind|AI 软件工厂 GStack]] — GStack slash commands 质量门禁套件
 - [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|用 SkillOpt 训练可进化 Agent 技能]] — human source，补充 skill 文本可训练、可验证、可审计的资产视角。
 - [[human/sources/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness|Harness 团队架构工厂]] — human source，补充 skill/orchestrator 生成和触发验证案例。
+- [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|Claude Code 团队如何使用技能]] — human source，补充 Anthropic 内部 skill 分类、gotchas、progressive disclosure、hooks、memory 和 marketplace 路径。
+- [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|近30天多源研究技能]] — human source，补充 data acquisition/analysis skill 的 contract + engine 案例。
+- [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|brooks-lint：AI 审查 Slop 治理]] — human source，补充 code quality/review skill 的反 slop 协议案例。
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/adversarial-ui-review-loop.png|adversarial-ui-review-loop.png]] — UI 审美审查 skill，补充只读批判、P0/P1 筛选和批准修复循环。
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/visual-fidelity-loop.png|visual-fidelity-loop.png]] — 视觉还原 skill，补充 target/diff/patch/verify 证据链。
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/create-dsl-skills.png|create-dsl-skills.png]] — DSL-backed skill，补充 contract.pyi、examples 和机械验证路线。

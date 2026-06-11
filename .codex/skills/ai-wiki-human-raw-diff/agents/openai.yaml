@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Wiki Human Raw Diff"
+  short_description: "Diff human raw Markdown against human source notes"
+  default_prompt: "Use $ai-wiki-human-raw-diff to compare the AI wiki human/raw directory with human/sources and report added, deleted, updated, moved, unchanged, metadata-missing, unapproved, and unsupported files."

@@ -1,8 +1,8 @@
 ---
 page_type: synthesis
-updated_at: 2026-06-05
+updated_at: 2026-06-11
 status: active
-source_count: 7
+source_count: 10
 learning_status: new
 confidence: 3
 difficulty: 4
@@ -21,7 +21,7 @@ review_after: 2026-06-19
 Capture -> Cook -> Ingest -> Plan/Spec -> Execute -> Eval/HAT -> Learn -> Update Skill/Harness
 ```
 
-这条链路把 7 个 human source 连接成一个系统：
+这条链路把 10 个 human source 连接成一个系统：
 
 | 阶段 | 核心问题 | 证据来源 |
 | --- | --- | --- |
@@ -32,6 +32,9 @@ Capture -> Cook -> Ingest -> Plan/Spec -> Execute -> Eval/HAT -> Learn -> Update
 | 实现前证据 | Agent 是否真的理解接口、调用栈、seam 和测试替身？ | [[human/sources/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders|AI Agent 协作提示链]] |
 | 输出后质量门 | 输出是否经过 benchmark、metric、threshold 和 approval？ | [[human/sources/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777|AI 输出质量控制与 Hermes 评估循环]] |
 | Skill 演进 | 失败样例是否变成可评分数据集和 `best_skill.md`？ | [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|用 SkillOpt 训练可进化 Agent 技能]] |
+| Skill 运营 | skill library 是否有 gotchas、usage measurement、sandbox traction 和 marketplace 晋升？ | [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|Claude Code 团队如何使用技能]] |
+| 研究证据获取 | Agent 是否能按需汇聚近实时多源社会信号，而不是只读网页搜索结果？ | [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|近30天多源研究技能]] |
+| 审查反 slop | AI review 是否遵守证据链、误报护栏和 eval，而不是泛泛建议？ | [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|brooks-lint：AI 审查 Slop 治理]] |
 
 ## Key Judgments
 
@@ -42,6 +45,8 @@ Capture -> Cook -> Ingest -> Plan/Spec -> Execute -> Eval/HAT -> Learn -> Update
 - **输出后必须有质量门。** Prompt、memory、context file 只是在修输入侧；没有 test cases、metrics、threshold 和 gate，质量只能靠主观感觉。
 - **失败要回写成资产。** 一次 agent 失败如果没有进入测试、HAT 步骤、review checklist、AGENTS 规则或 skill 样例，下次仍会重复发生。
 - **Skill 可以被评估和训练。** SkillOpt 的启发不是某个工具本身，而是把 skill 文本当作可读、可审计、可版本化、可用 held-out examples 改进的工程资产。
+- **Skill library 需要运营。** Anthropic Claude Code source 提醒，gotchas、progressive disclosure、hooks、memory、usage measurement 和 marketplace 晋升路径，是让 skill 从个人提示变成团队资产的运营层。
+- **证据获取和审查都要反 slop。** `last30days-skill` 把研究输入做成多源检索/排序/聚类，brooks-lint 把审查输出做成 Iron Law / clean eval；二者分别治理“输入证据 slop”和“输出审查 slop”。
 
 ## Practical Protocol
 
@@ -106,6 +111,9 @@ Capture -> Cook -> Ingest -> Plan/Spec -> Execute -> Eval/HAT -> Learn -> Update
 - [[human/sources/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders|AI Agent 协作提示链]] — 实现前结构证据和 TDD 交接协议。
 - [[human/sources/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777|AI 输出质量控制与 Hermes 评估循环]] — 输出质量门、benchmark 三要素和失败回写。
 - [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|用 SkillOpt 训练可进化 Agent 技能]] — skill 文本可评估、可训练、可审计。
+- [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|Claude Code 团队如何使用技能]] — skill library 分类、gotchas、hooks、memory、measurement 和 marketplace 运营。
+- [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|近30天多源研究技能]] — 多源近实时研究 skill，补充证据获取和 JIT 检索工具面。
+- [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|brooks-lint：AI 审查 Slop 治理]] — AI review 反 slop skill，补充证据链、误报护栏和 eval。
 
 ## My Take
 

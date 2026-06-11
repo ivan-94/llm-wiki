@@ -1,8 +1,8 @@
 ---
 page_type: entity
-updated_at: 2026-05-30
+updated_at: 2026-06-11
 status: active
-source_count: 5
+source_count: 6
 ---
 
 # GPT 与 ChatGPT
@@ -23,6 +23,7 @@ GPT（Generative Pre-trained Transformer）是 OpenAI 的 decoder-only 自回归
 - ChatGPT 通过分析上下文预测最可能的下一个词，逐词生成连贯回复，底层架构指向 Transformer（explicit，`图解ChatGPT.xmind`）。
 - ChatGPT 训练路径含预训练、监督微调、奖励模型和强化学习（PPO）（explicit，`图解ChatGPT.xmind`）。
 - `State of GPT` deck（Andrej Karpathy）把 GPT Assistant 训练拆为 Pretraining/SFT/RM/RL 四阶段（explicit，`State of GPT.pdf` 预览，仅前 3 页）。
+- ChatGPT memory / Dreaming V3 source 把产品记忆描述为后台合成、持续更新、可审阅的 memory state，重点是 freshness、continuity 和 relevance（explicit/inferred，human source）。
 
 ## Related Concepts
 
@@ -38,6 +39,7 @@ GPT（Generative Pre-trained Transformer）是 OpenAI 的 decoder-only 自回归
 - [[sources/LLM/Token and Embedding.xmind|Token and Embedding]]
 - [[sources/LLM/Transformer/Transformer.xmind|Transformer.xmind]]
 - [[sources/LLM/State of GPT - Microsoft Build 2023 RD.pdf|State of GPT]]
+- [[human/sources/inbox/cook-tweet/2026-06-05_ChatGPT记忆DreamingV3_OpenAI|ChatGPT 记忆进入 Dreaming V3]]
 
 ## Open Questions
 

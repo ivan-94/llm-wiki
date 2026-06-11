@@ -1,20 +1,23 @@
 ---
 type: cook-blog
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-06-05
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic.md
 ingested_at:
-archive_reason:
 source_kind: blog-article
-source_url: "https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills"
-canonical_url: "https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills"
+source_url: https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills
+canonical_url: https://claude.com/blog/lessons-from-building-claude-code-how-we-use-skills
 captured_at: 2026-06-05T15:11:09+08:00
 site: Claude / Anthropic
 title: "Lessons from building Claude Code: How we use skills"
-author: "Thariq Shihipar"
+author: Thariq Shihipar
 published_at: 2026-06-03
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic.md
+promoted_at: 2026-06-11
+source_type: promoted-inbox
 ---
 
 # Claude Code 团队如何使用技能
@@ -153,7 +156,7 @@ mindmap
 
 ## 信息图
 
-![[human/inbox/cook-blog/assets/2026-06-05_Claude_Code团队如何使用技能_Anthropic/infographic.webp]]
+![[human/raw/inbox/cook-blog/assets/2026-06-05_Claude_Code团队如何使用技能_Anthropic/infographic.webp]]
 
 ## 遗漏与不确定
 

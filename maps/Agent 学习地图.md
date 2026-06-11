@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-06-05
+updated_at: 2026-06-11
 status: active
 scope: Agent
 ---
@@ -61,9 +61,11 @@ scope: Agent
 - [[concepts/Agentic Engineering|Agentic Engineering]]
 - [[concepts/Agent Harness|Agent Harness]]
 - [[concepts/Agent Skills|Agent Skills]]
+- [[concepts/Skill 触发契约|Skill 触发契约]]
 - [[concepts/Agent 工具调用|Agent 工具调用]]
 - [[concepts/Agent-friendly CLI（ACI）|Agent-friendly CLI（ACI）]]
 - [[concepts/Agent 记忆|Agent 记忆]]
+- [[concepts/Agent 全局记忆|Agent 全局记忆]]
 - [[concepts/Agent 记忆生命周期|Agent 记忆生命周期]]
 - [[concepts/会话分层存储与压缩|会话分层存储与压缩]]
 - [[concepts/多渠道记忆协议|多渠道记忆协议]]
@@ -80,6 +82,8 @@ scope: Agent
 - [[entities/Model Context Protocol|Model Context Protocol]]
 - [[entities/LangChain|LangChain]]
 - [[entities/Claude Code|Claude Code]]
+- [[entities/Anthropic|Anthropic]]
+- [[entities/GPT 与 ChatGPT|GPT 与 ChatGPT]]
 - [[entities/Agent Client Protocol|Agent Client Protocol]]
 - [[entities/闪极智能体|闪极智能体]]
 - [[entities/Nano Bot|Nano Bot]]
@@ -95,6 +99,12 @@ scope: Agent
 - [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]]
 - [[synthesis/Vibe Coding 工程化深度模型|Vibe Coding 工程化深度模型]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
+
+## Human Source Cases
+
+- [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|Claude Code 团队如何使用技能]] — Agent Skills 从个人技巧走向团队 marketplace 和可度量操作包的案例。
+- [[human/sources/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic|当 AI 开始构建自己]] — Agentic Engineering 中人类职责从编码迁移到目标、验证和治理的案例。
+- [[human/sources/inbox/cook-tweet/2026-06-05_ChatGPT记忆DreamingV3_OpenAI|ChatGPT 记忆 Dreaming V3]] — 长期记忆的 freshness、staleness 和 reviewable memory summary 产品案例。
 
 ## Review Queue
 

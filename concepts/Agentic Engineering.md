@@ -1,8 +1,8 @@
 ---
 page_type: concept
-updated_at: 2026-05-30
+updated_at: 2026-06-11
 status: active
-source_count: 7
+source_count: 8
 learning_status: new
 confidence: 3
 difficulty: 4
@@ -49,6 +49,7 @@ Agentic Engineering 的控制面可以分成五类：
 - 对复杂系统，工程师的价值更集中在目标设定、系统建模、风险判断和验收标准，而不是逐行键入代码。
 - Agentic Engineering 的关键不是“多 Agent”，而是让 Agent 的每个动作有来源、边界、反馈和可交接证据。
 - 失败不应只被修掉；高频失败应该被回写成规则、skill、hook、测试、模板或文档入口，使系统下限持续抬升。
+- Anthropic AI 研发自动化 source 补充：AI 执行成本下降后，工程师价值进一步迁移到任务 steering、实验设计、结果可信度判断、审查和治理协调。
 
 ## Eight Maturity Levels Alignment
 
@@ -92,6 +93,7 @@ Agentic Engineering 的控制面可以分成五类：
 - [[sources/Vibe/Vibe Coding 随手记/文件系统/Agent Game.xmind|Agent Game]]
 - [[sources/Vibe/Vibe Coding 随手记/大规模 AI Coding/异常治理.xmind|异常治理]]
 - [[sources/Vibe/工具/mattpocock:skills  ⭐/我的流程.xmind|我的流程]]
+- [[human/sources/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic|当 AI 开始构建自己]] — human source，补充 AI 研发自动化和人类瓶颈迁移证据。
 
 ## Relations
 

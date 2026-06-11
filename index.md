@@ -2,6 +2,7 @@
 
 ## Recently Updated
 
+- 2026-06-11: ingested 5 promoted `human/raw/inbox` Markdown notes for Anthropic Claude Code skills, AI self-improving R&D, last30days research skill, brooks-lint review governance, and ChatGPT Dreaming memory; compiled evidence into skills, memory, DeSlop, Loop Engineering, entities, workflow synthesis, and Agent/Vibe maps.
 - 2026-06-10: ingested 7 new Vibe raw sources for Loop Engineering, DeSlop, Claude Code dynamic workflows, Figma restoration, and Matt Pocock UI/DSL skills; compiled Loop Engineering and AI 代码垃圾治理 concepts.
 - 2026-06-05: ingested 7 promoted `human/raw/inbox` Markdown notes into `human/sources/inbox`, then compiled core evidence into Agent Harness, workflow skills, LLM evaluation, Codex/Claude Code/Hermes, and AI Wiki Inbox.
 - 2026-06-05: compiled [[synthesis/Agent 工作流可进化闭环|Agent 工作流可进化闭环]] from the 7 human sources and back-linked the source notes.
@@ -242,13 +243,18 @@
   - `ingested` [[sources/生图/商品画图/高级4.png|生图/商品画图/高级4.png]]
   - `ingested` [[sources/生图/电商商品图绘制.xmind|生图/电商商品图绘制.xmind]]
 - `human/raw/inbox/`
+  - `ingested` [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|human/raw/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic.md]]
+  - `ingested` [[human/sources/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic|human/raw/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic.md]]
   - `ingested` [[human/sources/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness|human/raw/inbox/cook-github/2026-06-01_Harness团队架构工厂_revfactory_harness.md]]
+  - `ingested` [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|human/raw/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill.md]]
+  - `ingested` [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|human/raw/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint.md]]
   - `ingested` [[human/sources/inbox/cook-my-mind/2026-06-02_Codex作为个人系统超级入口|human/raw/inbox/cook-my-mind/2026-06-02_Codex作为个人系统超级入口.md]]
   - `ingested` [[human/sources/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客|human/raw/inbox/cook-podcast/2026-05-31_Agent Harness 工程系统_硬地骇客.md]]
   - `ingested` [[human/sources/inbox/cook-podcast/2026-05-31_Y Combinator Startup Podcast_Inside Claude Code With Its Creator Boris Cherny|human/raw/inbox/cook-podcast/2026-05-31_Y Combinator Startup Podcast_Inside Claude Code With Its Creator Boris Cherny.md]]
   - `ingested` [[human/sources/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders|human/raw/inbox/cook-tweet/2026-06-01_AI_Agent协作提示链_MrSanders.md]]
   - `ingested` [[human/sources/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777|human/raw/inbox/cook-tweet/2026-06-01_AI输出质量控制与Hermes评估循环_EXM7777.md]]
   - `ingested` [[human/sources/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt|human/raw/inbox/cook-tweet/2026-06-03_用SkillOpt训练可进化Agent技能_SkillOpt.md]]
+  - `ingested` [[human/sources/inbox/cook-tweet/2026-06-05_ChatGPT记忆DreamingV3_OpenAI|human/raw/inbox/cook-tweet/2026-06-05_ChatGPT记忆DreamingV3_OpenAI.md]]
 
 ## Concepts
 

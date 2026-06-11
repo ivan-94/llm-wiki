@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-06-10
+updated_at: 2026-06-11
 status: active
 scope: Vibe
 ---
@@ -36,6 +36,7 @@ scope: Vibe
 - [[concepts/Agentic Engineering|Agentic Engineering]]
 - [[concepts/Agent Harness|Agent Harness]]
 - [[concepts/Agent Skills|Agent Skills]]
+- [[concepts/Skill 触发契约|Skill 触发契约]]
 - [[concepts/Spec-Driven Development|Spec-Driven Development]]
 - [[concepts/Specification by Example|Specification by Example]]
 - [[concepts/共识方法论|共识方法论]]
@@ -56,6 +57,7 @@ scope: Vibe
 - [[concepts/视觉还原证据链|视觉还原证据链]]
 - [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]]
 - [[concepts/Skill Contract DSL|Skill Contract DSL]]
+- [[concepts/JIT 检索（Just-in-Time Retrieval）|JIT 检索（Just-in-Time Retrieval）]]
 
 ## Synthesis To Read
 
@@ -65,6 +67,12 @@ scope: Vibe
 - [[synthesis/SbE 与 AI Coding 验收链路|SbE 与 AI Coding 验收链路]]
 - [[synthesis/DDD–SbE–BDD–TDD 协作链路|DDD–SbE–BDD–TDD 协作链路]]
 - [[synthesis/GitHub 驱动的 Agent 开发闭环|GitHub 驱动的 Agent 开发闭环]]
+
+## Human Source Cases
+
+- [[human/sources/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic|当 AI 开始构建自己]] — Vibe Coding 工程化后，人类瓶颈从写代码迁移到目标设定、验收和治理的证据。
+- [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|近30天多源研究技能]] — 将外部近期信号转成可复用证据输入的 JIT 检索案例。
+- [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|brooks-lint：AI 审查 Slop 治理]] — 把 AI review 的 false positive 和形式化 clean eval 编译进 DeSlop 质量门。
 
 ## Review Queue
 

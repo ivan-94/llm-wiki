@@ -1,6 +1,6 @@
 ---
 page_type: map
-updated_at: 2026-06-10
+updated_at: 2026-06-11
 status: active
 scope: Vibe/工具
 ---
@@ -57,6 +57,11 @@ scope: Vibe/工具
 ### 知识管理
 - Obsidian: [[sources/Vibe/Vibe Coding 随手记/文件系统/Obsidian.xmind|Obsidian.xmind]]、[[entities/Obsidian|Obsidian]]
 
+### Human Skill / Tool Cases
+- Anthropic Skills: [[human/sources/inbox/cook-blog/2026-06-05_Claude_Code团队如何使用技能_Anthropic|Claude Code 团队如何使用技能]] — 补充生产团队如何把 skills 组织成 folder package、description 触发契约、gotchas 和 marketplace 分发。
+- Research Skill: [[human/sources/inbox/cook-github/2026-06-09_近30天多源研究技能_mvanhorn_last30days-skill|近30天多源研究技能]] — data acquisition / analysis skill 案例，展示 JIT 检索、查询计划和多源近实时证据聚合。
+- Review Skill: [[human/sources/inbox/cook-github/2026-06-10_AI审查Slop治理_brooks-lint_hyhmrright_brooks-lint|brooks-lint：AI 审查 Slop 治理]] — code quality / review skill 案例，展示 AI review false-positive、clean eval 和 validator 边界治理。
+
 ## Key Concepts
 
 - [[concepts/AI 软件工厂|AI 软件工厂]] — 工具生态的抽象概念
@@ -71,6 +76,8 @@ scope: Vibe/工具
 - [[concepts/视觉还原证据链|视觉还原证据链]] — Figma/截图目标还原的视觉 diff 与证据协议
 - [[concepts/对抗式 UI 审美审查|对抗式 UI 审美审查]] — 无设计稿 UI 改进的只读批判与批准修复循环
 - [[concepts/Skill Contract DSL|Skill Contract DSL]] — 用 contract 约束 skill 触发、输入、输出和控制流
+- [[concepts/JIT 检索（Just-in-Time Retrieval）|JIT 检索（Just-in-Time Retrieval）]] — data acquisition skill 的近实时证据获取模式
+- [[concepts/AI 代码垃圾治理|AI 代码垃圾治理]] — review skill 的反 slop 质量门
 
 ## Open Gaps
 

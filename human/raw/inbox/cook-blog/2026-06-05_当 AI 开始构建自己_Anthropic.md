@@ -1,18 +1,21 @@
 ---
 type: cook-blog
-ingest_policy: on-request
-inbox_status: unread
+ingest_policy: allowed
+inbox_status: raw
 inbox_created_at: 2026-06-05
 inbox_read_at:
-raw_path:
+raw_path: human/raw/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic.md
 ingested_at:
-archive_reason:
 source_kind: blog-article
-source_url: "https://www.anthropic.com/institute/recursive-self-improvement"
+source_url: https://www.anthropic.com/institute/recursive-self-improvement
 canonical_url:
 captured_at: 2026-06-05T14:02:32+08:00
 site: Anthropic
-title: "When AI builds itself"
+title: When AI builds itself
+previous_inbox_status: unread
+promoted_from: human/inbox/cook-blog/2026-06-05_当 AI 开始构建自己_Anthropic.md
+promoted_at: 2026-06-11
+source_type: promoted-inbox
 ---
 
 # 当 AI 开始构建自己
@@ -135,7 +138,7 @@ mindmap
 
 ## 信息图
 
-![[human/inbox/cook-blog/assets/2026-06-05_当 AI 开始构建自己_Anthropic/infographic.webp]]
+![[human/raw/inbox/cook-blog/assets/2026-06-05_当 AI 开始构建自己_Anthropic/infographic.webp]]
 
 ## 遗漏与不确定
 
